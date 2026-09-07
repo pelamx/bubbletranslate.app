@@ -194,3 +194,16 @@ footer.site { border-top: 1px solid var(--border); padding: 40px 0; color: var(-
 @media (max-width: 860px) {
   .pricing { grid-template-columns: 1fr; }
 }
+
+/* Coming-soon download card */
+.dl-card { position: relative; }
+.soon-badge {
+  position: absolute; top: 14px; right: 14px;
+  background: var(--bg); border: 1px solid var(--border); color: var(--muted);
+  font-size: .72rem; font-weight: 700; letter-spacing: .5px; text-transform: uppercase;
+  padding: 4px 10px; border-radius: 999px;
+}
+.btn-soon {
+  background: var(--bg-soft); color: var(--muted); border: 1px dashed var(--border);
+  cursor: not-allowed;
+}
