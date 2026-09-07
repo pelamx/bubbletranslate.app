@@ -199,19 +199,20 @@
         </div>
         <div class="dl-grid">
           <div class="dl-card" data-os="mac">
+            <span class="soon-badge" data-i18n="dl.mac.badge">Coming soon</span>
             <div class="os">🍎</div>
             <h3>macOS</h3>
-            <p data-i18n="dl.mac.desc">Universal · app bundle in a DMG · 7&nbsp;MB</p>
-            <a class="btn btn-primary" href="downloads/bubbleTranslate-macos.dmg" download data-i18n="dl.mac.btn">Download .dmg</a>
+            <p data-i18n="dl.mac.desc">The macOS build lands soon.</p>
+            <span class="btn btn-soon" aria-disabled="true" data-i18n="dl.mac.btn">Coming soon</span>
             <div class="install-note" data-i18n="dl.mac.note">
-              Open the DMG and drag <b>bubbleTranslate.app</b> into Applications. It's ad-hoc signed, so the first launch is blocked — open <b>System Settings › Privacy &amp; Security</b> and click <b>Open Anyway</b>. Then grant <b>Accessibility</b> when asked.
+              The metered macOS build isn't published yet. On a Mac you can build it now with <b>./release.sh</b> — see <a href="https://github.com/pelamx/bubbleTranslate" style="color:var(--brand);" target="_blank" rel="noopener">GitHub</a>.
             </div>
           </div>
           <div class="dl-card" data-os="linux">
             <div class="os">🐧</div>
             <h3>Linux</h3>
-            <p data-i18n="dl.linux.desc">x86-64 executable · needs glibc 2.43+ · 15&nbsp;MB</p>
-            <a class="btn btn-primary" href="downloads/bubbleTranslate-linux-x86_64" download data-i18n="dl.linux.btn">Download binary</a>
+            <p data-i18n="dl.linux.desc">x86-64 executable · needs glibc 2.43+ · 20&nbsp;MB</p>
+            <a class="btn btn-primary" href="https://github.com/pelamx/bubbleTranslate/raw/main/bubbleTranslate-linux-x86_64" download data-i18n="dl.linux.btn">Download binary</a>
             <div class="install-note">
               <span data-i18n="dl.linux.run">Make it executable and run it:</span>
               <pre><code>chmod +x bubbleTranslate-linux-x86_64
@@ -282,6 +283,6 @@
     </div>
   </footer>
 
-  <script src="script.js?v=2"></script>
+  <script src="script.js?v=3"></script>
 </body>
 </html>

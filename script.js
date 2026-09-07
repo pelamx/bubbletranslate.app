@@ -93,10 +93,11 @@ const I18N = {
 
     'dl.head.h2': 'Download BubbleTranslate',
     'dl.head.p': 'Free to install, with 10 translations a day. Upgrade to Pro anytime for unlimited.',
-    'dl.mac.desc': 'Universal · app bundle in a DMG · 7&nbsp;MB',
-    'dl.mac.btn': 'Download .dmg',
-    'dl.mac.note': 'Open the DMG and drag <b>bubbleTranslate.app</b> into Applications. It\'s ad-hoc signed, so the first launch is blocked — open <b>System Settings › Privacy &amp; Security</b> and click <b>Open Anyway</b>. Then grant <b>Accessibility</b> when asked.',
-    'dl.linux.desc': 'x86-64 executable · needs glibc 2.43+ · 15&nbsp;MB',
+    'dl.mac.badge': 'Coming soon',
+    'dl.mac.desc': 'The macOS build lands soon.',
+    'dl.mac.btn': 'Coming soon',
+    'dl.mac.note': 'The metered macOS build isn\'t published yet. On a Mac you can build it now with <b>./release.sh</b> — see <a href="https://github.com/pelamx/bubbleTranslate" style="color:var(--brand);" target="_blank" rel="noopener">GitHub</a>.',
+    'dl.linux.desc': 'x86-64 executable · needs glibc 2.43+ · 20&nbsp;MB',
     'dl.linux.btn': 'Download binary',
     'dl.linux.run': 'Make it executable and run it:',
     'dl.linux.note2': 'On an older distro, or GNOME Wayland, build from source instead.',
@@ -126,7 +127,7 @@ const I18N = {
     'cta.btn': '↓ Get BubbleTranslate free',
 
     'js.downloadFor': '↓ Download for {os}',
-    'js.winSoon': 'Windows — coming soon',
+    'js.osSoon': '{os} — coming soon',
     'js.yourSystem': 'Your system'
   },
 
@@ -205,10 +206,11 @@ const I18N = {
 
     'dl.head.h2': 'BubbleTranslate\'i indirin',
     'dl.head.p': 'Kurulumu ücretsiz, günde 10 çeviriyle. Sınırsız için istediğiniz zaman Pro\'ya geçin.',
-    'dl.mac.desc': 'Universal · DMG içinde uygulama paketi · 7&nbsp;MB',
-    'dl.mac.btn': '.dmg indir',
-    'dl.mac.note': 'DMG\'yi açın ve <b>bubbleTranslate.app</b>\'i Uygulamalar\'a sürükleyin. Ad-hoc imzalı olduğu için ilk açılış engellenir — <b>Sistem Ayarları › Gizlilik ve Güvenlik</b>\'i açıp <b>Yine de Aç</b>\'a tıklayın. Ardından istendiğinde <b>Erişilebilirlik</b> izni verin.',
-    'dl.linux.desc': 'x86-64 çalıştırılabilir dosya · glibc 2.43+ gerekir · 15&nbsp;MB',
+    'dl.mac.badge': 'Yakında',
+    'dl.mac.desc': 'macOS sürümü yakında geliyor.',
+    'dl.mac.btn': 'Yakında',
+    'dl.mac.note': 'Ölçümlü macOS sürümü henüz yayınlanmadı. Bir Mac\'te <b>./release.sh</b> ile şimdi derleyebilirsiniz — <a href="https://github.com/pelamx/bubbleTranslate" style="color:var(--brand);" target="_blank" rel="noopener">GitHub</a>\'a bakın.',
+    'dl.linux.desc': 'x86-64 çalıştırılabilir dosya · glibc 2.43+ gerekir · 20&nbsp;MB',
     'dl.linux.btn': 'İkili dosyayı indir',
     'dl.linux.run': 'Çalıştırılabilir yapın ve çalıştırın:',
     'dl.linux.note2': 'Daha eski bir dağıtımda veya GNOME Wayland\'da bunun yerine kaynaktan derleyin.',
@@ -238,7 +240,7 @@ const I18N = {
     'cta.btn': '↓ BubbleTranslate\'i ücretsiz al',
 
     'js.downloadFor': '↓ {os} için indir',
-    'js.winSoon': 'Windows — yakında',
+    'js.osSoon': '{os} — yakında',
     'js.yourSystem': 'Sizin sisteminiz'
   },
 
@@ -317,10 +319,11 @@ const I18N = {
 
     'dl.head.h2': 'Descarga BubbleTranslate',
     'dl.head.p': 'Instalación gratuita, con 10 traducciones al día. Pásate a Pro cuando quieras para ilimitado.',
-    'dl.mac.desc': 'Universal · paquete de app en un DMG · 7&nbsp;MB',
-    'dl.mac.btn': 'Descargar .dmg',
-    'dl.mac.note': 'Abre el DMG y arrastra <b>bubbleTranslate.app</b> a Aplicaciones. Está firmada ad-hoc, así que el primer inicio se bloquea: abre <b>Ajustes del Sistema › Privacidad y Seguridad</b> y pulsa <b>Abrir de todos modos</b>. Luego concede <b>Accesibilidad</b> cuando se pida.',
-    'dl.linux.desc': 'ejecutable x86-64 · requiere glibc 2.43+ · 15&nbsp;MB',
+    'dl.mac.badge': 'Próximamente',
+    'dl.mac.desc': 'La versión para macOS llegará pronto.',
+    'dl.mac.btn': 'Próximamente',
+    'dl.mac.note': 'La versión medida para macOS aún no está publicada. En un Mac puedes compilarla ahora con <b>./release.sh</b> — mira <a href="https://github.com/pelamx/bubbleTranslate" style="color:var(--brand);" target="_blank" rel="noopener">GitHub</a>.',
+    'dl.linux.desc': 'ejecutable x86-64 · requiere glibc 2.43+ · 20&nbsp;MB',
     'dl.linux.btn': 'Descargar binario',
     'dl.linux.run': 'Hazlo ejecutable y ejecútalo:',
     'dl.linux.note2': 'En una distro más antigua, o GNOME Wayland, compílalo desde el código fuente.',
@@ -350,7 +353,7 @@ const I18N = {
     'cta.btn': '↓ Consigue BubbleTranslate gratis',
 
     'js.downloadFor': '↓ Descargar para {os}',
-    'js.winSoon': 'Windows — próximamente',
+    'js.osSoon': '{os} — próximamente',
     'js.yourSystem': 'Tu sistema'
   }
 };
@@ -410,10 +413,14 @@ if (langSwitch) {
 // ---- OS detection + platform-aware download routing ----
 // One place that maps an OS to its download. Add the Windows file here when
 // it's ready and the whole site starts offering it automatically.
+// Only the metered build (10 free translations a day, then Pro) is ever
+// offered. The Linux binary is the plain-named metered build on the app repo's
+// main branch. macOS has no metered DMG published yet, and Windows has no build
+// yet — both are "coming soon" (file: null) until their metered build exists.
 const DOWNLOADS = {
-  mac:     { file: 'downloads/bubbleTranslate-macos.dmg',      label: 'macOS' },
-  linux:   { file: 'downloads/bubbleTranslate-linux-x86_64',   label: 'Linux' },
-  windows: { file: null,                                       label: 'Windows' } // null = coming soon
+  mac:     { file: null,                                                                          label: 'macOS' },
+  linux:   { file: 'https://github.com/pelamx/bubbleTranslate/raw/main/bubbleTranslate-linux-x86_64', label: 'Linux' },
+  windows: { file: null,                                                                          label: 'Windows' }
 };
 
 function detectOS() {
@@ -442,9 +449,11 @@ function wirePlatformButton(btn, localise) {
   if (info && info.file) {
     btn.setAttribute('href', info.file);
     btn.setAttribute('download', '');
-  } else if (os === 'windows') {
+  } else if (info) {
+    // Known OS (mac/windows) but no metered build yet: send to the
+    // download section and flash that OS's "coming soon" card.
     btn.setAttribute('href', '#download');
-    btn.addEventListener('click', flashWindowsSoon);
+    btn.addEventListener('click', () => flashSoonCard(os));
   }
   // Mark buttons whose label should track the detected OS + language.
   if (localise) btn.dataset.platformBtn = '1';
@@ -456,15 +465,15 @@ function refreshPlatformLabels() {
     const info = DOWNLOADS[os];
     if (info && info.file) {
       btn.textContent = t('js.downloadFor').replace('{os}', info.label);
-    } else if (os === 'windows') {
-      btn.textContent = t('js.winSoon');
+    } else if (info) {
+      btn.textContent = t('js.osSoon').replace('{os}', info.label);
     }
     // unknown: leave whatever data-i18n set (e.g. "Download free").
   });
 }
 
-function flashWindowsSoon() {
-  const card = document.querySelector('.dl-card[data-os="windows"]');
+function flashSoonCard(which) {
+  const card = document.querySelector('.dl-card[data-os="' + which + '"]');
   if (!card) return;
   card.classList.add('flash');
   setTimeout(() => card.classList.remove('flash'), 1600);
