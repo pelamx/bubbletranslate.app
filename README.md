@@ -10,8 +10,8 @@ Hosted with **GitHub Pages** at https://pelamx.github.io/
 
 The download buttons link to the released builds in the app repo:
 
-- macOS: https://github.com/pelamx/bubbleTranslate/raw/main/bubbleTranslate.dmg
-- Linux: https://github.com/pelamx/bubbleTranslate/raw/main/bubbleTranslate-linux-x86_64
+- macOS: https://github.com/pelamx/bubbleTranslate/releases/download/v1.0/bubbleTranslate-macos.dmg
+- Linux: https://github.com/pelamx/bubbleTranslate/releases/download/v1.0/bubbleTranslate-linux-x86_64
 
 App source and full docs: https://github.com/pelamx/bubbleTranslate
 
