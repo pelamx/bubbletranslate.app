@@ -146,3 +146,19 @@ footer.site { border-top: 1px solid var(--border); padding: 40px 0; color: var(-
   .menu-btn { display: block; }
   .nav-links.open { display: flex; position: absolute; top: 68px; left: 0; right: 0; flex-direction: column; background: var(--bg-soft); padding: 20px; border-bottom: 1px solid var(--border); }
 }
+
+/* Install notes under download cards */
+.install-note {
+  margin-top: 16px; text-align: left; font-size: .85rem; color: var(--muted);
+  border-top: 1px solid var(--border); padding-top: 14px; line-height: 1.55;
+}
+.install-note b { color: var(--text); font-weight: 600; }
+.install-note pre {
+  background: var(--bg); border: 1px solid var(--border); border-radius: 10px;
+  padding: 12px 14px; margin: 10px 0 0; overflow-x: auto;
+}
+.install-note code, .src-text em {
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+}
+.install-note pre code { color: var(--accent); font-size: .82rem; }
+.src-text em { color: var(--text); font-style: normal; }
