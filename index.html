@@ -45,7 +45,7 @@
           <h1>Select text anywhere. Read the translation <span class="grad">in a bubble.</span></h1>
           <p class="lead">BubbleTranslate is a small desktop app that watches what you select. Highlight text in a PDF, a terminal, a browser, or an editor, and a bubble appears right at your cursor with the translation. No copy-paste, no switching windows.</p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#download">↓ Download free</a>
+            <a class="btn btn-primary" id="heroDownload" href="#download">↓ Download free</a>
             <a class="btn btn-ghost" href="#how">See how it works</a>
           </div>
           <p class="hero-note">Free · 10 translations a day · Pro from $2/month for unlimited</p>
@@ -138,7 +138,7 @@
               <li>✓ One licence key, no re-buying</li>
               <li>✓ Supports the app's development</li>
             </ul>
-            <a class="btn btn-primary plan-cta" href="https://github.com/pelamx/bubbleTranslate#the-free-trial-and-pro" target="_blank" rel="noopener">Upgrade to Pro</a>
+            <a class="btn btn-primary plan-cta" id="proBuy" href="https://github.com/pelamx/bubbleTranslate#the-free-trial-and-pro" target="_blank" rel="noopener">Upgrade to Pro</a>
           </div>
         </div>
         <p style="text-align:center; margin-top:22px; color:var(--muted); font-size:.9rem;">
@@ -155,7 +155,7 @@
           <p>Free to install, with 10 translations a day. Upgrade to Pro anytime for unlimited.</p>
         </div>
         <div class="dl-grid">
-          <div class="dl-card">
+          <div class="dl-card" data-os="mac">
             <div class="os">🍎</div>
             <h3>macOS</h3>
             <p>Universal · app bundle in a DMG · 7&nbsp;MB</p>
@@ -164,7 +164,7 @@
               Open the DMG and drag <b>bubbleTranslate.app</b> into Applications. It's ad-hoc signed, so the first launch is blocked — open <b>System Settings › Privacy &amp; Security</b> and click <b>Open Anyway</b>. Then grant <b>Accessibility</b> when asked.
             </div>
           </div>
-          <div class="dl-card">
+          <div class="dl-card" data-os="linux">
             <div class="os">🐧</div>
             <h3>Linux</h3>
             <p>x86-64 executable · needs glibc 2.43+ · 15&nbsp;MB</p>
@@ -176,11 +176,11 @@
               On an older distro, or GNOME Wayland, build from source instead.
             </div>
           </div>
-          <div class="dl-card">
+          <div class="dl-card" data-os="windows">
             <span class="soon-badge">Coming soon</span>
             <div class="os">🪟</div>
             <h3>Windows</h3>
-            <p>A Windows build is in the works.</p>
+            <p>It is coming soon.</p>
             <span class="btn btn-soon" aria-disabled="true">Coming soon</span>
             <div class="install-note">
               Want to hear when it lands? Watch the project on

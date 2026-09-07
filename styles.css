@@ -207,3 +207,17 @@ footer.site { border-top: 1px solid var(--border); padding: 40px 0; color: var(-
   background: var(--bg-soft); color: var(--muted); border: 1px dashed var(--border);
   cursor: not-allowed;
 }
+
+/* OS-detected download card */
+.dl-card.detected { border-color: var(--brand); box-shadow: 0 16px 40px rgba(79,140,255,.22); }
+.detected-tag {
+  position: absolute; top: 14px; left: 14px;
+  background: linear-gradient(135deg, var(--brand), var(--brand-2)); color: #fff;
+  font-size: .72rem; font-weight: 700; letter-spacing: .5px; text-transform: uppercase;
+  padding: 4px 10px; border-radius: 999px;
+}
+.dl-card.flash { animation: cardflash 1.6s ease; }
+@keyframes cardflash {
+  0%, 100% { border-color: var(--border); }
+  20%, 60% { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(35,213,171,.25); }
+}
