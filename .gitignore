@@ -1,0 +1,16 @@
+# Free-version app builds are NOT tracked in git.
+# They are hosted / uploaded separately, so the repo stays free of binaries.
+downloads/*.dmg
+downloads/*.exe
+downloads/*.msi
+downloads/*.AppImage
+downloads/*.zip
+downloads/bubbleTranslate-linux-*
+downloads/bubbleTranslate-macos*
+
+# The demo video IS tracked (the site needs it) — keep it.
+!downloads/video/
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
