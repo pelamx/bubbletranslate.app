@@ -62,7 +62,7 @@ header.site {
 .hero-note { margin-top: 16px; color: var(--muted); font-size: .9rem; }
 
 /* Mockup bubble */
-.mockup { position: relative; }
+.mockup { position: relative; align-self: start; }
 .window {
   background: var(--card); border: 1px solid var(--border); border-radius: var(--radius);
   box-shadow: var(--shadow); overflow: hidden;
@@ -71,6 +71,15 @@ header.site {
 .dot { width: 12px; height: 12px; border-radius: 50%; }
 .dot.r { background: #ff5f57; } .dot.y { background: #febc2e; } .dot.g { background: #28c840; }
 .window-body { padding: 22px; display: grid; gap: 14px; }
+
+/* Demo video */
+.video-frame {
+  width: 100%;
+  background: var(--card); border: 1px solid var(--border); border-radius: var(--radius);
+  box-shadow: var(--shadow); overflow: hidden;
+}
+.demo-video { display: block; width: 100%; height: auto; background: #000; }
+.video-caption { margin: 12px 2px 0; color: var(--muted); font-size: .85rem; text-align: center; }
 .src-text { color: var(--muted); font-size: .95rem; }
 .bubble {
   position: relative; align-self: start;

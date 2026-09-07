@@ -51,22 +51,23 @@
           <p class="hero-note">Free · 10 translations a day · Pro from $2/month for unlimited</p>
         </div>
         <div class="mockup">
-          <div class="window">
+          <div class="video-frame">
             <div class="window-bar"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span></div>
-            <div class="window-body">
-              <div class="src-text">You selected: <em>「今日はいい天気ですね」</em></div>
-              <div class="bubble">
-                <div class="lang">Japanese → English</div>
-                <strong>"The weather is really nice today, isn't it?"</strong>
-                <div class="float-badge">🫧 at your cursor</div>
-              </div>
-              <div class="src-text">You selected: <em>Merhaba dünya</em></div>
-              <div class="bubble">
-                <div class="lang">Turkish → English</div>
-                <strong>"Hello world"</strong>
-              </div>
-            </div>
+            <video
+              class="demo-video"
+              controls
+              autoplay
+              muted
+              loop
+              playsinline
+              preload="metadata"
+              poster="downloads/video/poster.jpg">
+              <source src="downloads/video/bubbleTranslate-demo.mp4" type="video/mp4">
+              Your browser can't play this video.
+              <a href="downloads/video/bubbleTranslate-demo.mp4">Download the demo instead.</a>
+            </video>
           </div>
+          <p class="video-caption">▶ A real screen recording — select text, read the bubble.</p>
         </div>
       </div>
     </section>
