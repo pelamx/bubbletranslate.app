@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BubbleTranslate — Instant on-screen translation for your desktop</title>
+  <meta name="description" content="BubbleTranslate is a lightweight desktop app that reads any text on your screen and shows the translation in a floating bubble. Games, comics, PDFs, apps — translated instantly.">
+  <meta name="theme-color" content="#0b1020">
+  <!-- Open Graph -->
+  <meta property="og:title" content="BubbleTranslate — Instant on-screen translation">
+  <meta property="og:description" content="Read any text on your screen and get an instant translation in a floating bubble.">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site">
+    <div class="container nav">
+      <a class="brand" href="#top">
+        <img class="logo" src="favicon.svg" alt="BubbleTranslate logo">
+        BubbleTranslate
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#features">Features</a>
+        <a href="#how">How it works</a>
+        <a href="#download">Download</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <div class="nav-cta">
+        <a class="btn btn-primary" href="#download">Get the app</a>
+        <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="pill">🫧 100+ languages · Works offline-first</span>
+          <h1>Translate anything <span class="grad">on your screen</span> in a bubble.</h1>
+          <p class="lead">BubbleTranslate reads text from games, comics, PDFs, and any app, then shows the translation in a floating bubble right where you're looking. No copy-paste, no switching windows.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#download">↓ Download free</a>
+            <a class="btn btn-ghost" href="#how">See how it works</a>
+          </div>
+          <p class="hero-note">Free to use · Windows, macOS &amp; Linux · No account required</p>
+        </div>
+        <div class="mockup">
+          <div class="window">
+            <div class="window-bar"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span></div>
+            <div class="window-body">
+              <div class="src-text">「今日はいい天気ですね」</div>
+              <div class="bubble">
+                <div class="lang">Japanese → English</div>
+                <strong>"The weather is really nice today, isn't it?"</strong>
+                <div class="float-badge">Translated in 0.3s</div>
+              </div>
+              <div class="src-text">Selecciona cualquier texto…</div>
+              <div class="bubble">
+                <div class="lang">Spanish → English</div>
+                <strong>"Select any text…"</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features">
+      <div class="container">
+        <div class="section-head">
+          <h2>Everything you need to read the world</h2>
+          <p>Fast, private, and built to stay out of your way.</p>
+        </div>
+        <div class="grid-3">
+          <div class="card"><div class="icon">⚡</div><h3>Instant capture</h3><p>Draw a box around any text on screen and get the translation in a fraction of a second.</p></div>
+          <div class="card"><div class="icon">🔍</div><h3>Built-in OCR</h3><p>Reads text from images, games, and scanned PDFs — even where you can't select the text.</p></div>
+          <div class="card"><div class="icon">🌐</div><h3>100+ languages</h3><p>From Japanese and Korean to Arabic and Spanish, with automatic source detection.</p></div>
+          <div class="card"><div class="icon">🔒</div><h3>Private by design</h3><p>Offline-first engine keeps your screen content on your machine. No account needed.</p></div>
+          <div class="card"><div class="icon">🎮</div><h3>Made for gamers</h3><p>A floating overlay that works over full-screen games and visual novels without alt-tabbing.</p></div>
+          <div class="card"><div class="icon">⌨️</div><h3>Global hotkeys</h3><p>Trigger a translation from anywhere with a shortcut you choose. It's always one key away.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section id="how" style="background: var(--bg-soft);">
+      <div class="container">
+        <div class="section-head">
+          <h2>Three steps to a translation</h2>
+          <p>No copy-paste. No browser tabs. Just point and read.</p>
+        </div>
+        <div class="steps">
+          <div class="step"><h3>Press your hotkey</h3><p>Hit the shortcut and your cursor turns into a capture tool anywhere on screen.</p></div>
+          <div class="step"><h3>Select the text</h3><p>Drag a box around the words you want. BubbleTranslate reads them instantly.</p></div>
+          <div class="step"><h3>Read the bubble</h3><p>The translation appears in a floating bubble right next to the original text.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Download -->
+    <section id="download" class="download">
+      <div class="container">
+        <div class="section-head">
+          <h2>Download BubbleTranslate</h2>
+          <p>Pick your platform and start translating in under a minute.</p>
+        </div>
+        <div class="dl-grid">
+          <div class="dl-card"><div class="os">🪟</div><h3>Windows</h3><p>Windows 10 &amp; 11 · 64-bit</p><a class="btn btn-primary" href="#">Download .exe</a></div>
+          <div class="dl-card"><div class="os">🍎</div><h3>macOS</h3><p>macOS 12+ · Apple Silicon &amp; Intel</p><a class="btn btn-primary" href="#">Download .dmg</a></div>
+          <div class="dl-card"><div class="os">🐧</div><h3>Linux</h3><p>AppImage · Debian · Arch</p><a class="btn btn-primary" href="#">Download .AppImage</a></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+      <div class="container">
+        <div class="section-head">
+          <h2>Frequently asked questions</h2>
+          <p>Still curious? Everything you need to know before you install.</p>
+        </div>
+        <div class="faq">
+          <details open><summary>Is BubbleTranslate free?</summary><p>Yes. The core app is free to download and use on all platforms. Optional premium translation engines may be offered later.</p></details>
+          <details><summary>Does it work without internet?</summary><p>The offline engine handles common language pairs on-device. Cloud engines are optional for the highest accuracy and rare languages.</p></details>
+          <details><summary>Which languages are supported?</summary><p>Over 100 languages, with automatic detection of the source language so you rarely have to set anything.</p></details>
+          <details><summary>Will it work over full-screen games?</summary><p>Yes. The floating overlay is designed to sit on top of games and visual novels so you never have to alt-tab.</p></details>
+          <details><summary>Is my screen data sent anywhere?</summary><p>With the offline engine, captured text never leaves your computer. If you enable a cloud engine, only the selected text is sent for translation.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA band -->
+    <section>
+      <div class="container">
+        <div class="cta-band">
+          <h2>Ready to read the world?</h2>
+          <p>Download BubbleTranslate and turn any screen into your language.</p>
+          <a class="btn btn-primary" href="#download">↓ Get BubbleTranslate free</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site">
+    <div class="container foot-grid">
+      <div class="brand"><img class="logo" src="favicon.svg" alt=""> BubbleTranslate</div>
+      <nav class="foot-links">
+        <a href="#features">Features</a>
+        <a href="#download">Download</a>
+        <a href="#faq">FAQ</a>
+        <a href="https://github.com/pelamx" target="_blank" rel="noopener">GitHub</a>
+      </nav>
+      <div>© <span id="year"></span> BubbleTranslate</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
