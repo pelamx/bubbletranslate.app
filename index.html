@@ -83,7 +83,7 @@
     <section id="features">
       <div class="container">
         <div class="section-head">
-          <h2 data-i18n="feat.head.h2">A translator that stays out of your way</h2>
+          <h2 data-i18n="feat.head.h2">New experience in translation, no interruption while foreign docs and readings.</h2>
           <p data-i18n="feat.head.p">The window is somewhere to visit, not somewhere to live. The app just watches your selections and answers.</p>
         </div>
         <div class="grid-3">
@@ -184,9 +184,6 @@
             <a class="btn btn-primary plan-cta" id="proBuy" href="https://github.com/pelamx/bubbleTranslate#the-free-trial-and-pro" target="_blank" rel="noopener" data-i18n="price.pro.cta">Upgrade to Pro</a>
           </div>
         </div>
-        <p class="pricing-foot" data-i18n="price.foot">
-          Billed monthly or yearly. In Turkey via PayTR, elsewhere via Paddle. Cancel anytime.
-        </p>
       </div>
     </section>
 
@@ -199,13 +196,14 @@
         </div>
         <div class="dl-grid">
           <div class="dl-card" data-os="mac">
-            <span class="soon-badge" data-i18n="dl.mac.badge">Coming soon</span>
             <div class="os">🍎</div>
             <h3>macOS</h3>
-            <p data-i18n="dl.mac.desc">The macOS build lands soon.</p>
-            <span class="btn btn-soon" aria-disabled="true" data-i18n="dl.mac.btn">Coming soon</span>
-            <div class="install-note" data-i18n="dl.mac.note">
-              The metered macOS build isn't published yet. On a Mac you can build it now with <b>./release.sh</b> — see <a href="https://github.com/pelamx/bubbleTranslate" style="color:var(--brand);" target="_blank" rel="noopener">GitHub</a>.
+            <p data-i18n="dl.mac.desc">Apple Silicon · macOS 11 or later · 7&nbsp;MB</p>
+            <a class="btn btn-primary" href="https://github.com/pelamx/bubbleTranslate/raw/main/bubbleTranslate.dmg" download data-i18n="dl.mac.btn">Download DMG</a>
+            <div class="install-note">
+              <span data-i18n="dl.mac.run">Open the DMG and drag the app into Applications.</span>
+              <pre><code>xattr -dr com.apple.quarantine /Applications/bubbleTranslate.app</code></pre>
+              <span data-i18n="dl.mac.note2">The app is ad-hoc signed, so macOS blocks the first launch. Run that once, or use <b>Open Anyway</b> in System Settings › Privacy &amp; Security.</span>
             </div>
           </div>
           <div class="dl-card" data-os="linux">

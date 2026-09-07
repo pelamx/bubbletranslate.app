@@ -38,7 +38,7 @@ const I18N = {
     'hero.note': 'Free · 10 translations a day · Pro from $2/month for unlimited',
     'video.caption': '▶ A real screen recording — select text, read the bubble.',
 
-    'feat.head.h2': 'A translator that stays out of your way',
+    'feat.head.h2': 'New experience in translation, no interruption while foreign docs and readings.',
     'feat.head.p': 'The window is somewhere to visit, not somewhere to live. The app just watches your selections and answers.',
     'feat.1.h3': 'Works in every app',
     'feat.1.p': 'Select text in a PDF, a terminal, a browser, or an editor. If you can highlight it, BubbleTranslate can read it.',
@@ -89,14 +89,13 @@ const I18N = {
     'price.pro.4': '✓ One licence key, no re-buying',
     'price.pro.5': '✓ Supports the app\'s development',
     'price.pro.cta': 'Upgrade to Pro',
-    'price.foot': 'Billed monthly or yearly. In Turkey via PayTR, elsewhere via Paddle. Cancel anytime.',
 
     'dl.head.h2': 'Download BubbleTranslate',
     'dl.head.p': 'Free to install, with 10 translations a day. Upgrade to Pro anytime for unlimited.',
-    'dl.mac.badge': 'Coming soon',
-    'dl.mac.desc': 'The macOS build lands soon.',
-    'dl.mac.btn': 'Coming soon',
-    'dl.mac.note': 'The metered macOS build isn\'t published yet. On a Mac you can build it now with <b>./release.sh</b> — see <a href="https://github.com/pelamx/bubbleTranslate" style="color:var(--brand);" target="_blank" rel="noopener">GitHub</a>.',
+    'dl.mac.desc': 'Apple Silicon · macOS 11 or later · 7&nbsp;MB',
+    'dl.mac.btn': 'Download DMG',
+    'dl.mac.run': 'Open the DMG and drag the app into Applications.',
+    'dl.mac.note2': 'The app is ad-hoc signed, so macOS blocks the first launch. Run that once, or use <b>Open Anyway</b> in System Settings › Privacy &amp; Security.',
     'dl.linux.desc': 'x86-64 executable · needs glibc 2.43+ · 20&nbsp;MB',
     'dl.linux.btn': 'Download binary',
     'dl.linux.run': 'Make it executable and run it:',
@@ -151,7 +150,7 @@ const I18N = {
     'hero.note': 'Ücretsiz · günde 10 çeviri · sınırsız için Pro aylık $2\'den',
     'video.caption': '▶ Gerçek bir ekran kaydı — metni seçin, baloncuğu okuyun.',
 
-    'feat.head.h2': 'Yolunuzdan çekilen bir çevirmen',
+    'feat.head.h2': 'Çeviride yeni bir deneyim — yabancı belgeleri okurken kesinti yok.',
     'feat.head.p': 'Pencere, yaşanacak değil ziyaret edilecek bir yer. Uygulama sadece seçimlerinizi izler ve yanıtlar.',
     'feat.1.h3': 'Her uygulamada çalışır',
     'feat.1.p': 'Bir PDF\'te, terminalde, tarayıcıda veya editörde metin seçin. Seçebiliyorsanız, BubbleTranslate okuyabilir.',
@@ -202,14 +201,13 @@ const I18N = {
     'price.pro.4': '✓ Tek lisans anahtarı, tekrar satın alma yok',
     'price.pro.5': '✓ Uygulamanın gelişimini destekler',
     'price.pro.cta': 'Pro\'ya geç',
-    'price.foot': 'Aylık veya yıllık faturalandırılır. Türkiye\'de PayTR, diğer yerlerde Paddle üzerinden. İstediğiniz zaman iptal edin.',
 
     'dl.head.h2': 'BubbleTranslate\'i indirin',
     'dl.head.p': 'Kurulumu ücretsiz, günde 10 çeviriyle. Sınırsız için istediğiniz zaman Pro\'ya geçin.',
-    'dl.mac.badge': 'Yakında',
-    'dl.mac.desc': 'macOS sürümü yakında geliyor.',
-    'dl.mac.btn': 'Yakında',
-    'dl.mac.note': 'Ölçümlü macOS sürümü henüz yayınlanmadı. Bir Mac\'te <b>./release.sh</b> ile şimdi derleyebilirsiniz — <a href="https://github.com/pelamx/bubbleTranslate" style="color:var(--brand);" target="_blank" rel="noopener">GitHub</a>\'a bakın.',
+    'dl.mac.desc': 'Apple Silicon · macOS 11 veya üzeri · 7&nbsp;MB',
+    'dl.mac.btn': 'DMG indir',
+    'dl.mac.run': 'DMG\'yi açın ve uygulamayı Applications klasörüne sürükleyin.',
+    'dl.mac.note2': 'Uygulama ad-hoc imzalı olduğu için macOS ilk açılışı engeller. Yukarıdaki komutu bir kez çalıştırın veya Sistem Ayarları › Gizlilik ve Güvenlik bölümünden <b>Yine de Aç</b>\'ı seçin.',
     'dl.linux.desc': 'x86-64 çalıştırılabilir dosya · glibc 2.43+ gerekir · 20&nbsp;MB',
     'dl.linux.btn': 'İkili dosyayı indir',
     'dl.linux.run': 'Çalıştırılabilir yapın ve çalıştırın:',
@@ -264,7 +262,7 @@ const I18N = {
     'hero.note': 'Gratis · 10 traducciones al día · Pro desde $2/mes para ilimitado',
     'video.caption': '▶ Una grabación de pantalla real: selecciona texto, lee la burbuja.',
 
-    'feat.head.h2': 'Un traductor que no te estorba',
+    'feat.head.h2': 'Una nueva experiencia en traducción, sin interrupciones al leer documentos extranjeros.',
     'feat.head.p': 'La ventana es un lugar para visitar, no para vivir. La app solo observa lo que seleccionas y responde.',
     'feat.1.h3': 'Funciona en cualquier app',
     'feat.1.p': 'Selecciona texto en un PDF, una terminal, un navegador o un editor. Si puedes resaltarlo, BubbleTranslate puede leerlo.',
@@ -315,14 +313,13 @@ const I18N = {
     'price.pro.4': '✓ Una sola clave de licencia, sin volver a pagar',
     'price.pro.5': '✓ Apoya el desarrollo de la app',
     'price.pro.cta': 'Pásate a Pro',
-    'price.foot': 'Facturación mensual o anual. En Turquía con PayTR, en el resto con Paddle. Cancela cuando quieras.',
 
     'dl.head.h2': 'Descarga BubbleTranslate',
     'dl.head.p': 'Instalación gratuita, con 10 traducciones al día. Pásate a Pro cuando quieras para ilimitado.',
-    'dl.mac.badge': 'Próximamente',
-    'dl.mac.desc': 'La versión para macOS llegará pronto.',
-    'dl.mac.btn': 'Próximamente',
-    'dl.mac.note': 'La versión medida para macOS aún no está publicada. En un Mac puedes compilarla ahora con <b>./release.sh</b> — mira <a href="https://github.com/pelamx/bubbleTranslate" style="color:var(--brand);" target="_blank" rel="noopener">GitHub</a>.',
+    'dl.mac.desc': 'Apple Silicon · macOS 11 o posterior · 7&nbsp;MB',
+    'dl.mac.btn': 'Descargar DMG',
+    'dl.mac.run': 'Abre el DMG y arrastra la app a Aplicaciones.',
+    'dl.mac.note2': 'La app está firmada ad-hoc, así que macOS bloquea el primer inicio. Ejecuta ese comando una vez, o usa <b>Abrir de todos modos</b> en Ajustes del Sistema › Privacidad y seguridad.',
     'dl.linux.desc': 'ejecutable x86-64 · requiere glibc 2.43+ · 20&nbsp;MB',
     'dl.linux.btn': 'Descargar binario',
     'dl.linux.run': 'Hazlo ejecutable y ejecútalo:',
@@ -414,11 +411,12 @@ if (langSwitch) {
 // One place that maps an OS to its download. Add the Windows file here when
 // it's ready and the whole site starts offering it automatically.
 // Only the metered build (10 free translations a day, then Pro) is ever
-// offered. The Linux binary is the plain-named metered build on the app repo's
-// main branch. macOS has no metered DMG published yet, and Windows has no build
-// yet — both are "coming soon" (file: null) until their metered build exists.
+// offered. Both files are the plain-named metered builds on the app repo's main
+// branch. The macOS DMG is arm64 only, so an Intel Mac gets a download it
+// cannot run — worth a universal build before that matters. Windows has no
+// build yet and stays "coming soon" (file: null) until one exists.
 const DOWNLOADS = {
-  mac:     { file: null,                                                                          label: 'macOS' },
+  mac:     { file: 'https://github.com/pelamx/bubbleTranslate/raw/main/bubbleTranslate.dmg',       label: 'macOS' },
   linux:   { file: 'https://github.com/pelamx/bubbleTranslate/raw/main/bubbleTranslate-linux-x86_64', label: 'Linux' },
   windows: { file: null,                                                                          label: 'Windows' }
 };
