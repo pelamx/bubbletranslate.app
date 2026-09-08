@@ -22,6 +22,26 @@ const I18N = {
     'meta.title': 'BubbleTranslate — Select text anywhere, read the translation in a bubble',
     'meta.desc': 'BubbleTranslate is a lightweight desktop app for macOS and Linux. Select text in any app and a bubble appears at your cursor with the translation. 10 free translations a day; go unlimited with Pro from $2/month.',
 
+    // -- /pricing -----------------------------------------------------------
+    'pricing.meta.title': 'Pricing — BubbleTranslate',
+    'pricing.meta.desc': 'BubbleTranslate is free for 10 translations a day. Pro removes the daily limit for $2 a month or $20 a year, on up to three machines.',
+    'pricing.h1': 'Free to use. Pro when ten a day is not enough.',
+    'pricing.sub': 'Every feature is in the free version. Pro changes exactly one thing: it removes the daily limit.',
+    'pricing.counts.h3': 'What counts as a translation',
+    'pricing.counts.p': 'Only a translation you asked for and actually got back. Re-selecting text you already translated today is free, a failed request costs nothing, and switching the target language on a result you have already seen does not charge you twice. The count resets at your own midnight, not at UTC.',
+    'pricing.region.h3': 'How you pay',
+    'pricing.region.p': 'In Turkey the checkout is PayTR and you are charged in lira, for a fixed term that does not renew by itself. Everywhere else it is Paddle, as a subscription you can cancel at any time. The checkout picks the right one for you.',
+    'pricing.faq.h2': 'Before you buy',
+    'pricing.faq.q1': 'What happens when I run out?',
+    'pricing.faq.a1': 'The bubble tells you the allowance is spent and offers Pro. Nothing else changes, and the count comes back at midnight.',
+    'pricing.faq.q2': 'Do I need an account?',
+    'pricing.faq.a2': 'No. There is no sign-up and no password. A purchase gives you a licence key, and the key is all the app ever asks for.',
+    'pricing.faq.q3': 'How many machines?',
+    'pricing.faq.a3': 'Three at a time, on one key. Freeing a slot takes one click in the app on a machine you no longer use.',
+    'pricing.faq.q4': 'Can I get a refund?',
+    'pricing.faq.a4': 'Yes, within 14 days, no reason needed. Cancelling is separate: you keep Pro until the period you paid for ends.',
+    'pricing.cta.buy': 'Go unlimited',
+    'pricing.cta.free': '↓ Download free',
     'nav.features': 'Features',
     'nav.languages': 'Languages',
     'nav.how': 'How it works',
@@ -138,6 +158,26 @@ const I18N = {
     'meta.title': 'BubbleTranslate — Her yerde metin seçin, çeviriyi baloncukta okuyun',
     'meta.desc': 'BubbleTranslate, macOS ve Linux için hafif bir masaüstü uygulamasıdır. Herhangi bir uygulamada metin seçin; imlecinizin yanında çevirisiyle bir baloncuk belirir. Günde 10 ücretsiz çeviri; sınırsız için Pro aylık $2\'den başlar.',
 
+    // -- /pricing -----------------------------------------------------------
+    'pricing.meta.title': 'Fiyatlandırma — BubbleTranslate',
+    'pricing.meta.desc': 'BubbleTranslate günde 10 çeviriye kadar ücretsiz. Pro, günlük sınırı kaldırır: ayda 2 dolar veya yılda 20 dolar, üç makineye kadar.',
+    'pricing.h1': 'Kullanması ücretsiz. Günde on yetmediğinde Pro var.',
+    'pricing.sub': 'Bütün özellikler ücretsiz sürümde. Pro tek bir şeyi değiştirir: günlük sınırı kaldırır.',
+    'pricing.counts.h3': 'Ne çeviri sayılır',
+    'pricing.counts.p': 'Yalnızca sizin istediğiniz ve gerçekten dönen bir çeviri. Bugün zaten çevirdiğiniz bir metni yeniden seçmek ücretsizdir, başarısız istek hiçbir şeye mal olmaz, gördüğünüz bir sonucun hedef dilini değiştirmek de iki kez saymaz. Sayaç UTC\'de değil, sizin gece yarınızda sıfırlanır.',
+    'pricing.region.h3': 'Ödeme nasıl yapılır',
+    'pricing.region.p': 'Türkiye\'de ödeme PayTR üzerinden ve lira olarak alınır; kendiliğinden yenilenmeyen sabit bir süre satın alırsınız. Diğer ülkelerde Paddle üzerinden, istediğiniz an iptal edebileceğiniz bir abonelik olarak işler. Ödeme sayfası doğru olanı kendisi seçer.',
+    'pricing.faq.h2': 'Satın almadan önce',
+    'pricing.faq.q1': 'Hakkım bittiğinde ne olur?',
+    'pricing.faq.a1': 'Baloncuk hakkın bittiğini söyler ve Pro\'yu önerir. Başka hiçbir şey değişmez, sayaç gece yarısı geri gelir.',
+    'pricing.faq.q2': 'Hesap açmam gerekir mi?',
+    'pricing.faq.a2': 'Hayır. Kayıt da parola da yok. Satın alma size bir lisans anahtarı verir, uygulamanın istediği tek şey odur.',
+    'pricing.faq.q3': 'Kaç makinede kullanabilirim?',
+    'pricing.faq.a3': 'Tek anahtarla aynı anda üç makinede. Kullanmadığınız bir makinede yer açmak uygulama içinde tek tık.',
+    'pricing.faq.q4': 'İade alabilir miyim?',
+    'pricing.faq.a4': 'Evet, 14 gün içinde, gerekçe göstermeden. İptal ayrı bir şeydir: ödediğiniz dönem bitene kadar Pro sizde kalır.',
+    'pricing.cta.buy': 'Sınırsıza geç',
+    'pricing.cta.free': '↓ Ücretsiz indir',
     'nav.features': 'Özellikler',
     'nav.languages': 'Diller',
     'nav.how': 'Nasıl çalışır',
@@ -254,6 +294,26 @@ const I18N = {
     'meta.title': 'BubbleTranslate — Selecciona texto donde sea, lee la traducción en una burbuja',
     'meta.desc': 'BubbleTranslate es una ligera app de escritorio para macOS y Linux. Selecciona texto en cualquier app y aparece una burbuja junto al cursor con la traducción. 10 traducciones gratis al día; pásate a ilimitado con Pro desde $2/mes.',
 
+    // -- /pricing -----------------------------------------------------------
+    'pricing.meta.title': 'Precios — BubbleTranslate',
+    'pricing.meta.desc': 'BubbleTranslate es gratis con 10 traducciones al día. Pro quita el límite diario por 2 $ al mes o 20 $ al año, en hasta tres equipos.',
+    'pricing.h1': 'Gratis para usar. Pro cuando diez al día no bastan.',
+    'pricing.sub': 'Todas las funciones están en la versión gratuita. Pro cambia exactamente una cosa: quita el límite diario.',
+    'pricing.counts.h3': 'Qué cuenta como traducción',
+    'pricing.counts.p': 'Solo una traducción que pediste y que realmente llegó. Volver a seleccionar un texto que ya tradujiste hoy es gratis, una petición fallida no cuesta nada, y cambiar el idioma de destino de un resultado que ya viste no se cobra dos veces. El contador se reinicia a tu medianoche, no a la de UTC.',
+    'pricing.region.h3': 'Cómo se paga',
+    'pricing.region.p': 'En Turquía el pago es con PayTR y se cobra en liras, por un plazo fijo que no se renueva solo. En el resto del mundo es Paddle, como una suscripción que puedes cancelar cuando quieras. La página de pago elige la opción correcta por ti.',
+    'pricing.faq.h2': 'Antes de comprar',
+    'pricing.faq.q1': '¿Qué pasa cuando se me acaban?',
+    'pricing.faq.a1': 'La burbuja te dice que se agotó el margen y te ofrece Pro. Nada más cambia, y el contador vuelve a medianoche.',
+    'pricing.faq.q2': '¿Necesito una cuenta?',
+    'pricing.faq.a2': 'No. No hay registro ni contraseña. La compra te da una clave de licencia, y es lo único que la aplicación pide.',
+    'pricing.faq.q3': '¿En cuántos equipos?',
+    'pricing.faq.a3': 'Tres a la vez, con una sola clave. Liberar un puesto es un clic en la aplicación, en un equipo que ya no uses.',
+    'pricing.faq.q4': '¿Puedo pedir un reembolso?',
+    'pricing.faq.a4': 'Sí, dentro de 14 días y sin dar motivos. Cancelar es otra cosa: conservas Pro hasta que termine el periodo pagado.',
+    'pricing.cta.buy': 'Pasar a ilimitado',
+    'pricing.cta.free': '↓ Descargar gratis',
     'nav.features': 'Funciones',
     'nav.languages': 'Idiomas',
     'nav.how': 'Cómo funciona',
@@ -397,10 +457,16 @@ function applyLang(lang) {
     if (val != null) el.innerHTML = val;
   });
 
-  // <title> and meta description.
-  document.title = t('meta.title');
+  // <title> and meta description. Each page names its own pair of keys via
+  // `<body data-meta-key="...">`, because a second page sharing this script
+  // would otherwise be retitled as the landing page every time the language
+  // was applied.
+  const metaKey = document.body.dataset.metaKey || 'meta';
+  const title = t(metaKey + '.title');
+  if (title != null) document.title = title;
   const md = document.querySelector('meta[name="description"]');
-  if (md) md.setAttribute('content', t('meta.desc').replace(/&amp;/g, '&'));
+  const desc = t(metaKey + '.desc');
+  if (md && desc != null) md.setAttribute('content', desc.replace(/&amp;/g, '&'));
 
   // Highlight the active language button.
   document.querySelectorAll('#langSwitch button').forEach(b => {
@@ -489,9 +555,13 @@ function flashSoonCard(which) {
   setTimeout(() => card.classList.remove('flash'), 1600);
 }
 
-// Hero "Download free" tracks the OS; the Pro CTA only gets routing, not a label change.
+// The hero "Download free" button tracks the visitor's OS.
+//
+// The Pro CTA deliberately does not: it used to be wired the same way, which
+// rewrote its href to the installer, so "Upgrade to Pro" downloaded the free
+// build instead of opening the checkout. It is a plain link now, pointing at
+// the buy page the licence service serves.
 wirePlatformButton(document.getElementById('heroDownload'), true);
-wirePlatformButton(document.getElementById('proBuy'), false);
 
 // Highlight the download card that matches this visitor's OS.
 const match = document.querySelector('.dl-card[data-os="' + os + '"]');

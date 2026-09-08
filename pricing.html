@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing — BubbleTranslate</title>
+  <meta name="description" content="BubbleTranslate is free for 10 translations a day. Pro removes the daily limit for $2 a month or $20 a year, on up to three machines.">
+  <meta name="theme-color" content="#0b1020">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Pricing — BubbleTranslate">
+  <meta property="og:description" content="Free for 10 translations a day. Pro removes the daily limit for $2/month or $20/year.">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=4">
+</head>
+<body data-meta-key="pricing.meta">
+  <header class="site">
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <img class="logo" src="favicon.svg" alt="BubbleTranslate logo">
+        BubbleTranslate
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html#features" data-i18n="nav.features">Features</a>
+        <a href="index.html#languages" data-i18n="nav.languages">Languages</a>
+        <a href="index.html#how" data-i18n="nav.how">How it works</a>
+        <a href="pricing.html" data-i18n="nav.pricing">Pricing</a>
+        <a href="index.html#download" data-i18n="nav.download">Download</a>
+        <a href="index.html#faq" data-i18n="nav.faq">FAQ</a>
+      </nav>
+      <div class="nav-cta">
+        <div class="lang-switch" id="langSwitch" role="group" aria-label="Language">
+          <span class="lang-globe" aria-hidden="true">🌐</span>
+          <button type="button" data-lang="en">EN</button>
+          <button type="button" data-lang="tr">TR</button>
+          <button type="button" data-lang="es">ES</button>
+        </div>
+        <a class="btn btn-primary" href="index.html#download" data-i18n="nav.cta">Get the app</a>
+      </div>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="pricing">
+      <div class="container">
+        <div class="section-head">
+          <h1 data-i18n="pricing.h1">Free to use. Pro when ten a day is not enough.</h1>
+          <p data-i18n="pricing.sub">Every feature is in the free version. Pro changes exactly one thing: it removes the daily limit.</p>
+        </div>
+
+        <div class="pricing">
+          <div class="price-card">
+            <h3 data-i18n="price.free.h3">Free</h3>
+            <div class="price"><span class="amount">$0</span><span class="per" data-i18n="price.free.per">forever</span></div>
+            <p class="price-tag" data-i18n="price.free.tag">For light, everyday reading.</p>
+            <ul class="plan-list">
+              <li data-i18n="price.free.1">✓ <b>10 translations per day</b></li>
+              <li data-i18n="price.free.2">✓ Works in every app on macOS &amp; Linux</li>
+              <li data-i18n="price.free.3">✓ Google, MyMemory &amp; DeepL backends</li>
+              <li data-i18n="price.free.4">✓ Bubble at your cursor, menu bar / tray</li>
+              <li data-i18n="price.free.5">✓ No account, no sign-up</li>
+            </ul>
+            <a class="btn btn-ghost plan-cta" href="index.html#download" data-i18n="pricing.cta.free">↓ Download free</a>
+          </div>
+
+          <div class="price-card featured">
+            <div class="ribbon" data-i18n="price.pro.ribbon">Most popular</div>
+            <h3 data-i18n="price.pro.h3">Pro</h3>
+            <div class="price"><span class="amount">$2</span><span class="per" data-i18n="price.pro.per">/ month</span></div>
+            <p class="price-tag" data-i18n="price.pro.tag">or <b>$20 / year</b> — two months free.</p>
+            <ul class="plan-list">
+              <li data-i18n="price.pro.1">✓ <b>Unlimited translations</b></li>
+              <li data-i18n="price.pro.2">✓ Everything in Free</li>
+              <li data-i18n="price.pro.3">✓ Use on up to <b>3 machines</b></li>
+              <li data-i18n="price.pro.4">✓ One licence key, no re-buying</li>
+              <li data-i18n="price.pro.5">✓ Supports the app's development</li>
+            </ul>
+            <a class="btn btn-primary plan-cta"
+               href="https://api.bubbletranslate.app/buy?src=pricing"
+               data-i18n="pricing.cta.buy">Go unlimited</a>
+          </div>
+        </div>
+
+        <!-- The two things a buyer actually needs to know before paying: what
+             spends the allowance, and who takes the money. -->
+        <div class="pricing-notes">
+          <div class="note-card">
+            <h3 data-i18n="pricing.counts.h3">What counts as a translation</h3>
+            <p data-i18n="pricing.counts.p">Only a translation you asked for and actually got back. Re-selecting text you already translated today is free, a failed request costs nothing, and switching the target language on a result you have already seen does not charge you twice. The count resets at your own midnight, not at UTC.</p>
+          </div>
+          <div class="note-card">
+            <h3 data-i18n="pricing.region.h3">How you pay</h3>
+            <p data-i18n="pricing.region.p">In Turkey the checkout is PayTR and you are charged in lira, for a fixed term that does not renew by itself. Everywhere else it is Paddle, as a subscription you can cancel at any time. The checkout picks the right one for you.</p>
+          </div>
+        </div>
+
+        <div class="section-head" style="margin-top:56px;">
+          <h2 data-i18n="pricing.faq.h2">Before you buy</h2>
+        </div>
+        <div class="grid-3 pricing-faq">
+          <div class="card">
+            <h3 data-i18n="pricing.faq.q1">What happens when I run out?</h3>
+            <p data-i18n="pricing.faq.a1">The bubble tells you the allowance is spent and offers Pro. Nothing else changes, and the count comes back at midnight.</p>
+          </div>
+          <div class="card">
+            <h3 data-i18n="pricing.faq.q2">Do I need an account?</h3>
+            <p data-i18n="pricing.faq.a2">No. There is no sign-up and no password. A purchase gives you a licence key, and the key is all the app ever asks for.</p>
+          </div>
+          <div class="card">
+            <h3 data-i18n="pricing.faq.q3">How many machines?</h3>
+            <p data-i18n="pricing.faq.a3">Three at a time, on one key. Freeing a slot takes one click in the app on a machine you no longer use.</p>
+          </div>
+          <div class="card">
+            <h3 data-i18n="pricing.faq.q4">Can I get a refund?</h3>
+            <p data-i18n="pricing.faq.a4">Yes, within 14 days, no reason needed. Cancelling is separate: you keep Pro until the period you paid for ends.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site">
+    <div class="container foot-grid">
+      <div class="brand"><img class="logo" src="favicon.svg" alt=""> BubbleTranslate</div>
+      <nav class="foot-links">
+        <a href="pricing.html" data-i18n="nav.pricing">Pricing</a>
+        <a href="index.html#download" data-i18n="nav.download">Download</a>
+        <a href="terms.html" data-i18n="nav.terms">Terms</a>
+        <a href="privacy.html" data-i18n="nav.privacy">Privacy</a>
+        <a href="refunds.html" data-i18n="nav.refunds">Refunds</a>
+        <a href="mailto:support@bubbletranslate.app" data-i18n="nav.contact">Contact</a>
+        <a href="https://github.com/pelamx/bubbleTranslate" target="_blank" rel="noopener">GitHub</a>
+      </nav>
+      <div>© <span id="year"></span> BubbleTranslate</div>
+    </div>
+  </footer>
+
+  <script src="script.js?v=4"></script>
+</body>
+</html>
