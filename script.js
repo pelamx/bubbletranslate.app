@@ -28,6 +28,10 @@ const I18N = {
     'nav.pricing': 'Pricing',
     'nav.download': 'Download',
     'nav.faq': 'FAQ',
+    'nav.terms': 'Terms',
+    'nav.privacy': 'Privacy',
+    'nav.refunds': 'Refunds',
+    'nav.contact': 'Contact',
     'nav.cta': 'Get the app',
 
     'hero.pill': '🫧 For macOS &amp; Linux · 10 free translations a day',
@@ -140,6 +144,10 @@ const I18N = {
     'nav.pricing': 'Fiyatlar',
     'nav.download': 'İndir',
     'nav.faq': 'SSS',
+    'nav.terms': 'Şartlar',
+    'nav.privacy': 'Gizlilik',
+    'nav.refunds': 'İadeler',
+    'nav.contact': 'İletişim',
     'nav.cta': 'Uygulamayı al',
 
     'hero.pill': '🫧 macOS &amp; Linux için · günde 10 ücretsiz çeviri',
@@ -252,6 +260,10 @@ const I18N = {
     'nav.pricing': 'Precios',
     'nav.download': 'Descargar',
     'nav.faq': 'FAQ',
+    'nav.terms': 'Términos',
+    'nav.privacy': 'Privacidad',
+    'nav.refunds': 'Reembolsos',
+    'nav.contact': 'Contacto',
     'nav.cta': 'Descargar la app',
 
     'hero.pill': '🫧 Para macOS y Linux · 10 traducciones gratis al día',

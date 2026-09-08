@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — BubbleTranslate</title>
+  <meta name="description" content="What BubbleTranslate does and does not collect. The app has no accounts, and the licence service never sees the text you translate.">
+  <meta name="theme-color" content="#0b1020">
+  <meta name="robots" content="index, follow">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=3">
+</head>
+<body>
+  <header class="site">
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <img class="logo" src="favicon.svg" alt="BubbleTranslate logo">
+        BubbleTranslate
+      </a>
+      <nav class="nav-links">
+        <a href="index.html#features">Features</a>
+        <a href="index.html#pricing">Pricing</a>
+        <a href="index.html#download">Download</a>
+        <a href="index.html#faq">FAQ</a>
+      </nav>
+      <div class="nav-cta">
+        <a class="btn btn-primary" href="index.html#download">Get the app</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="legal">
+    <div class="legal-head">
+      <h1>Privacy Policy</h1>
+      <p class="updated">Last updated: 8 September 2026</p>
+    </div>
+
+    <div class="todo">
+      <p><strong>Before publishing:</strong> replace <b>[LEGAL NAME]</b>, <b>[BUSINESS ADDRESS]</b> and
+      <b>[COUNTRY]</b> below with the details of the business that sells BubbleTranslate. Data protection
+      law requires the controller to be identifiable, and payment providers check for it during account
+      verification.</p>
+    </div>
+
+    <div class="summary">
+      <p><strong>The short version.</strong> BubbleTranslate has no accounts and no sign-up. The text you
+      select is sent from your computer straight to the translation service you have chosen, and never
+      passes through our servers. Our licence service exists only to check that a paid licence is valid.
+      It is never on the path of a translation, and it never sees a word you translate.</p>
+      <p>This summary is here to be useful, not to replace what follows.</p>
+    </div>
+
+    <h2 id="who-we-are">1. Who we are</h2>
+    <p>BubbleTranslate is operated by <b>[LEGAL NAME]</b>, <b>[BUSINESS ADDRESS]</b>, <b>[COUNTRY]</b>.
+    In this policy, "we" and "us" mean that business, and "the app" means the BubbleTranslate desktop
+    application for macOS and Linux.</p>
+    <p>We are the data controller for the personal data described here. You can reach us at
+    <a href="mailto:support@bubbletranslate.app">support@bubbletranslate.app</a> about anything in this
+    document.</p>
+
+    <h2 id="text-you-translate">2. The text you translate</h2>
+    <p>This is the part most people want to know about, so it comes first.</p>
+    <p>When you select text and the bubble appears, the app sends that text <strong>directly from your
+    computer</strong> to whichever translation provider is next in your configured chain. It does not
+    travel through any server of ours, and we neither receive nor store it.</p>
+    <p>The providers the app can use are Google Translate, MyMemory and DeepL. Which of them is used, and
+    in what order, is a setting you control in the app. Each provider handles the text under its own
+    privacy policy, and we would encourage you to read the one that applies to the provider you rely on:</p>
+    <ul>
+      <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></li>
+      <li><a href="https://mymemory.translated.net/doc/en/privacy.php" target="_blank" rel="noopener">MyMemory Privacy Policy</a></li>
+      <li><a href="https://www.deepl.com/privacy" target="_blank" rel="noopener">DeepL Privacy Policy</a></li>
+    </ul>
+    <p>Two optional settings send a little more to a provider, and only if you fill them in:</p>
+    <ul>
+      <li>A <strong>DeepL API key</strong>, if you have one. It is stored on your computer and sent to
+      DeepL to authenticate your own requests.</li>
+      <li>A <strong>MyMemory email address</strong>. MyMemory grants a larger free allowance to requests
+      that carry an email address, so if you provide one it is included with each request to that
+      provider. Leave it blank and nothing is sent.</li>
+    </ul>
+    <p>The app keeps a short list of what you have translated recently, so that re-reading the same
+    sentence does not spend your daily allowance twice. That list is held in memory only, for the length
+    of the session. It is never written to disk, not even in hashed form.</p>
+
+    <h2 id="on-your-computer">3. What stays on your computer</h2>
+    <p>The app stores three things locally. None of them is sent to us except where section 4 says so.</p>
+    <table>
+      <tr><th>What</th><th>Contains</th></tr>
+      <tr>
+        <td>Settings</td>
+        <td>Your target language, provider order, bubble behaviour, and the optional DeepL key and
+        MyMemory email described above.</td>
+      </tr>
+      <tr>
+        <td>Daily counter</td>
+        <td>A day number, how many translations you have spent today, and two flags. Nothing derived from
+        anything you selected.</td>
+      </tr>
+      <tr>
+        <td>Licence token</td>
+        <td>Present only if you have activated Pro. A signed statement of what your licence entitles you
+        to, checked locally by the app.</td>
+      </tr>
+    </table>
+    <p>Deleting these files resets the app. They live in the standard configuration and data directories
+    for your operating system.</p>
+
+    <h2 id="licence-service">4. What the licence service receives</h2>
+    <p>If you buy Pro, the app talks to our licence service at <b>api.bubbletranslate.app</b>. It does so
+    when you activate a licence, when it renews the local token roughly once a month, and when you remove
+    a licence from a machine. At no other time, and never to translate anything.</p>
+    <p>Those requests carry:</p>
+    <ul>
+      <li><strong>Your licence key</strong>, on activation.</li>
+      <li><strong>A device identifier.</strong> This is not your hardware ID. The app takes your machine's
+      identifier, combines it with a fixed salt, hashes it with SHA-256 and keeps a truncated part of the
+      result. What reaches us is a short opaque string that is stable for an installation and cannot be
+      turned back into the value it came from.</li>
+      <li><strong>Your operating system name</strong> ("linux" or "macos") and the <strong>app
+      version</strong>, so that support requests can be answered sensibly.</li>
+    </ul>
+    <p>Against your licence we store the licence record itself: an identifier, a hash of the key rather
+    than the key, the plan and billing cycle, its status and expiry, how many machines it allows, and the
+    payment processor plus that processor's reference for the purchase. If you gave an email address at
+    checkout, it is stored here too.</p>
+    <p>For each machine you activate we store one row: the device identifier described above, the
+    operating system, the app version, and when it was first and last seen. Removing a licence from a
+    machine deletes that row.</p>
+    <p>We store a hash of your licence key rather than the key itself, which is why a lost key has to be
+    replaced rather than looked up. That is a deliberate trade: a copy of our database is not a list of
+    working licences.</p>
+
+    <h2 id="payments">5. Payments</h2>
+    <p>We do not see or store your card details. Payment is handled entirely by our payment providers.</p>
+    <ul>
+      <li><strong>Outside Turkey:</strong> <a href="https://www.paddle.com/legal/privacy" target="_blank" rel="noopener">Paddle</a>,
+      which acts as merchant of record for the sale.</li>
+      <li><strong>In Turkey:</strong> <a href="https://www.paytr.com/kvkk" target="_blank" rel="noopener">PayTR</a>,
+      as payment provider.</li>
+    </ul>
+    <p>Each receives the payment information you enter and processes it under its own privacy policy. What
+    comes back to us is confirmation that a purchase happened, a reference for it, and — where you
+    provided one — an email address to send the licence key to.</p>
+
+    <h2 id="email">6. Email</h2>
+    <p>If you give an email address at checkout, we use it to send you your licence key and to answer you
+    if you write to support. We do not send marketing email and there is no mailing list to be added to.</p>
+
+    <h2 id="website">7. This website</h2>
+    <p>This site carries no analytics, no advertising and no tracking scripts, and it sets no cookies.</p>
+    <p>It stores one value in your browser's local storage: which of the three site languages you last
+    chose, so the page opens in it next time. That value never leaves your browser and is not personal
+    data in any useful sense. Clearing your browser's site data removes it.</p>
+    <p>The site is served through Cloudflare, and loads its typeface from Google Fonts. Both receive your
+    IP address as an unavoidable part of delivering a web page, and handle it under their own policies.</p>
+
+    <h2 id="legal-basis">8. Why we are allowed to process this</h2>
+    <p>Where the UK GDPR, the EU GDPR or Turkey's KVKK applies to you, our grounds are:</p>
+    <ul>
+      <li><strong>Performance of a contract</strong> for everything in sections 4 and 5. Without a device
+      identifier and a licence record we cannot tell whether a licence is valid, which is the whole of
+      what you bought.</li>
+      <li><strong>Legitimate interests</strong> for keeping the operating system and app version against a
+      seat, which is what makes a support conversation possible, and for limiting a licence to the number
+      of machines it was sold for.</li>
+      <li><strong>Legal obligation</strong> for records our payment providers and tax rules require us to
+      keep.</li>
+    </ul>
+
+    <h2 id="retention">9. How long we keep it</h2>
+    <p>Licence records are kept for as long as the licence exists and afterwards for as long as tax and
+    accounting rules require us to hold records of the sale. Seat rows are deleted when you remove a
+    licence from that machine. Support email is kept for as long as it is useful to answer follow-up
+    questions, and then deleted.</p>
+
+    <h2 id="sharing">10. Who else sees it</h2>
+    <p>We do not sell personal data, and we do not share it for advertising. It reaches other companies
+    only where they perform part of the service: the translation provider you chose, our payment
+    providers, the email delivery service that sends your licence key, and Cloudflare, which hosts this
+    site and the licence service.</p>
+
+    <h2 id="your-rights">11. Your rights</h2>
+    <p>Depending on where you live, you may have the right to ask for a copy of your personal data, to
+    have it corrected or deleted, to object to or restrict how we use it, and to receive it in a portable
+    form. You can also complain to your local data protection authority.</p>
+    <p>Write to <a href="mailto:support@bubbletranslate.app">support@bubbletranslate.app</a> and we will
+    answer. Please note that we identify a purchase by licence key, payment reference or the email address
+    used at checkout, so telling us one of those is what lets us find you at all.</p>
+    <p>Deleting your licence record ends the licence: the entitlement it grants cannot survive the record
+    that proves it. We will say so before acting on such a request.</p>
+
+    <h2 id="children">12. Children</h2>
+    <p>BubbleTranslate is not directed at children, and we do not knowingly collect personal data from
+    them.</p>
+
+    <h2 id="changes">13. Changes to this policy</h2>
+    <p>If this policy changes, the new version is posted here with a new date at the top. Material changes
+    to how we handle personal data will be announced on this site rather than made quietly.</p>
+
+    <h2 id="contact">14. Contact</h2>
+    <p>Questions, requests and complaints all go to
+    <a href="mailto:support@bubbletranslate.app">support@bubbletranslate.app</a>, and reach
+    <b>[LEGAL NAME]</b>, <b>[BUSINESS ADDRESS]</b>, <b>[COUNTRY]</b>.</p>
+  </main>
+
+  <footer class="site">
+    <div class="container foot-grid">
+      <div class="brand"><img class="logo" src="favicon.svg" alt=""> BubbleTranslate</div>
+      <nav class="foot-links">
+        <a href="index.html#pricing">Pricing</a>
+        <a href="terms.html">Terms</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="refunds.html">Refunds</a>
+        <a href="mailto:support@bubbletranslate.app">Contact</a>
+        <a href="https://github.com/pelamx/bubbleTranslate" target="_blank" rel="noopener">GitHub</a>
+      </nav>
+      <div>© <span id="year"></span> BubbleTranslate</div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

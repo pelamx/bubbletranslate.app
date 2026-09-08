@@ -337,3 +337,96 @@ img, video { max-width: 100%; height: auto; }
   .lang-switch .lang-globe { font-size: .85rem; margin-right: 1px; }
   .lang-switch button { padding: 6px 9px; font-size: .74rem; }
 }
+
+/* ---------------------------------------------------------------- legal ---
+   Privacy, Terms and Refunds. Long-form prose rather than landing-page
+   sections, so it gets a narrower measure and quieter headings than the
+   marketing pages: these are documents people read, not skim. */
+.legal {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 48px 20px 80px;
+}
+.legal .legal-head {
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 24px;
+  margin-bottom: 8px;
+}
+.legal h1 {
+  font-size: clamp(28px, 4vw, 40px);
+  line-height: 1.15;
+  margin: 0 0 12px;
+}
+.legal .updated {
+  color: var(--muted);
+  font-size: 14px;
+  margin: 0;
+}
+.legal h2 {
+  font-size: 20px;
+  margin: 40px 0 12px;
+  scroll-margin-top: 90px;
+}
+.legal h3 {
+  font-size: 16px;
+  margin: 24px 0 8px;
+  color: var(--text);
+}
+.legal p,
+.legal li {
+  color: var(--muted);
+  line-height: 1.7;
+}
+.legal li { margin-bottom: 8px; }
+.legal a { color: var(--brand); }
+.legal strong { color: var(--text); }
+.legal table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 16px 0;
+  font-size: 14px;
+  display: block;
+  overflow-x: auto;
+}
+.legal th,
+.legal td {
+  border: 1px solid var(--border);
+  padding: 10px 12px;
+  text-align: left;
+  vertical-align: top;
+  color: var(--muted);
+}
+.legal th { color: var(--text); background: var(--bg-soft); white-space: nowrap; }
+
+/* The short summary above each document. Not a substitute for the text
+   below it, and it says so. */
+.legal .summary {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px 24px;
+  margin: 28px 0 8px;
+}
+.legal .summary p:last-child { margin-bottom: 0; }
+
+/* Details only the operator can supply. Deliberately loud: a placeholder
+   that ships unnoticed is worse than an ugly box. */
+.legal .todo {
+  background: rgba(255, 176, 32, .08);
+  border: 1px solid rgba(255, 176, 32, .45);
+  border-radius: var(--radius);
+  padding: 16px 20px;
+  margin: 24px 0;
+}
+.legal .todo p { color: #ffd591; margin: 0; }
+
+.legal-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+  padding: 20px;
+  border-top: 1px solid var(--border);
+  margin-top: 48px;
+}
+.legal-nav a { color: var(--muted); text-decoration: none; font-size: 14px; }
+.legal-nav a:hover { color: var(--text); }
