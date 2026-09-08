@@ -1,0 +1,17 @@
+{
+  // The site is served by a Workers Static Assets worker, not by Pages.
+  // `bubbletranslate.app/*` and `www.bubbletranslate.app/*` are routes on
+  // this worker, which is why deploying anywhere else leaves the live site
+  // untouched -- worth knowing before chasing a change that will not appear.
+  //
+  // Deploy with:  npx wrangler deploy
+  "name": "bubbletranslate-site",
+  "compatibility_date": "2025-09-01",
+  "assets": {
+    "directory": "./"
+  },
+  "routes": [
+    { "pattern": "bubbletranslate.app/*", "zone_name": "bubbletranslate.app" },
+    { "pattern": "www.bubbletranslate.app/*", "zone_name": "bubbletranslate.app" }
+  ]
+}

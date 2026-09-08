@@ -1,0 +1,15 @@
+# Repository and tooling files must not be served as part of the site.
+.git
+.gitignore
+.assetsignore
+.wrangler
+wrangler.jsonc
+README.md
+node_modules
+
+# App builds are gitignored and were never served from this site; the
+# download buttons point at the release binaries in the app repo. Shipping
+# them here would publish a stale copy at a second address.
+downloads/*.dmg
+downloads/bubbleTranslate-linux-*
+downloads/bubbleTranslate-macos*
