@@ -124,7 +124,13 @@ section { padding: 72px 0; }
 .download { background: linear-gradient(180deg, transparent, rgba(124,92,255,.06)); }
 .dl-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
 .dl-card { text-align: center; background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 34px 22px; }
-.dl-card .os { font-size: 2.4rem; margin-bottom: 10px; }
+/* The three OS logos arrive with different aspect ratios and different
+   amounts of built-in padding, so each is normalised to its own 160x160
+   transparent canvas before it gets here. `contain` then draws them at one
+   height, and the fixed 48px box keeps the footprint the emoji had -- the
+   cards do not move. */
+.dl-card .os { height: 48px; margin-bottom: 10px; display: flex; align-items: center; justify-content: center; }
+.dl-card .os img { width: 44px; height: 44px; object-fit: contain; display: block; }
 .dl-card h3 { margin: 0 0 4px; }
 .dl-card p { color: var(--muted); margin: 0 0 18px; font-size: .9rem; }
 
