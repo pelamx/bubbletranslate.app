@@ -122,8 +122,20 @@ section { padding: 72px 0; }
 
 /* Download */
 .download { background: linear-gradient(180deg, transparent, rgba(124,92,255,.06)); }
-.dl-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
-.dl-card { text-align: center; background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 34px 22px; }
+/* minmax(0, 1fr), not 1fr: a bare `1fr` track is minmax(auto, 1fr), and that
+   `auto` floor is set by the widest thing that cannot wrap. The macOS card
+   carries `xattr -dr com.apple.quarantine /Applications/bubbleTranslate.app`
+   in a <pre>, which does not wrap, so it dragged its own column wide and left
+   Windows -- which has no code block at all -- squeezed into what was left.
+   Flooring the track at 0 lets the pre's own overflow-x do that job. */
+.dl-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; align-items: stretch; }
+/* The three cards hold different amounts of text -- macOS carries a code
+   block and two notes, Windows carries one line -- so they are made to fill
+   the row's height rather than each taking its own, and the install note is
+   pushed to the bottom so the three frames line up instead of ending
+   wherever their text happens to stop. */
+.dl-card { text-align: center; background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 34px 22px; display: flex; flex-direction: column; min-width: 0; }
+.dl-card .install-note { margin-top: auto; }
 /* The three OS logos arrive with different aspect ratios and different
    amounts of built-in padding, so each is normalised to its own 160x160
    transparent canvas before it gets here. `contain` then draws them at one
