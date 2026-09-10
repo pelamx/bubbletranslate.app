@@ -56,7 +56,7 @@ const I18N = {
 
     'hero.pill': '🫧 For macOS &amp; Linux · 10 free translations a day',
     'hero.h1': 'Select text anywhere. Read the translation <span class="grad">in a bubble.</span>',
-    'hero.lead': 'BubbleTranslate is a small desktop app that watches what you select. Highlight text in a PDF, a terminal, a browser, or an editor, and a bubble appears right at your cursor with the translation. <b>It detects the language for you</b> — you never say what you\'re reading — and translates into the language you chose. No copy-paste, no switching windows.',
+    'hero.lead': 'BubbleTranslate is a desktop app that watches what you select. Highlight text in a PDF, a terminal, a browser, or an editor, and a bubble appears right at your cursor with the translation. <b>It detects the language for you</b> — you never say what you\'re reading — and translates into the language you chose. No copy-paste, no switching windows.',
     'hero.dlfree': '↓ Download free',
     'hero.see': 'See how it works',
     'hero.note': 'Free · 10 translations a day · Pro from $2/month for unlimited',
@@ -91,6 +91,16 @@ const I18N = {
     'how.2.p': 'A small bubble pops up at your cursor with the translation, and quietly hides itself after a few seconds.',
     'how.3.h3': 'Keep working',
     'how.3.p': 'It stays in the menu bar or tray and translates the next thing you select. Change the target language from the bubble\'s ⚙ menu.',
+
+
+    'priv.head.h2': 'Private by design',
+    'priv.head.p': 'The text you select is the only thing that ever leaves your machine — and only when you select it.',
+    'priv.1.h3': 'No translation history',
+    'priv.1.p': 'BubbleTranslate doesn\u2019t store your translation history. The recent list lives in memory for the session and is gone when you quit.',
+    'priv.2.h3': 'The licence server never sees your text',
+    'priv.2.p': 'Your licence server never sees what you translate. It receives your licence key and a device id, and nothing else.',
+    'priv.3.h3': 'Only your selection is sent',
+    'priv.3.p': 'Only the selected text is sent to the translation provider, together with the language to translate into.',
 
     'price.head.h2': 'Simple pricing',
     'price.head.p': 'Start free with 10 translations a day. Go unlimited when you need more.',
@@ -192,7 +202,7 @@ const I18N = {
 
     'hero.pill': '🫧 macOS &amp; Linux için · günde 10 ücretsiz çeviri',
     'hero.h1': 'Her yerde metin seçin. Çeviriyi <span class="grad">bir baloncukta</span> okuyun.',
-    'hero.lead': 'BubbleTranslate, seçtiğiniz metni izleyen küçük bir masaüstü uygulamasıdır. Bir PDF\'te, terminalde, tarayıcıda veya editörde metni seçin; imlecinizin yanında çevirisiyle bir baloncuk belirir. <b>Dili sizin için algılar</b> — ne okuduğunuzu asla söylemezsiniz — ve seçtiğiniz dile çevirir. Kopyala-yapıştır yok, pencere değiştirmek yok.',
+    'hero.lead': 'BubbleTranslate, seçtiğiniz metni izleyen bir masaüstü uygulamasıdır. Bir PDF\'te, terminalde, tarayıcıda veya editörde metni seçin; imlecinizin yanında çevirisiyle bir baloncuk belirir. <b>Dili sizin için algılar</b> — ne okuduğunuzu asla söylemezsiniz — ve seçtiğiniz dile çevirir. Kopyala-yapıştır yok, pencere değiştirmek yok.',
     'hero.dlfree': '↓ Ücretsiz indir',
     'hero.see': 'Nasıl çalıştığını gör',
     'hero.note': 'Ücretsiz · günde 10 çeviri · sınırsız için Pro aylık $2\'den',
@@ -227,6 +237,16 @@ const I18N = {
     'how.2.p': 'İmlecinizde çeviriyle küçük bir baloncuk belirir ve birkaç saniye sonra sessizce gizlenir.',
     'how.3.h3': 'Çalışmaya devam edin',
     'how.3.p': 'Menü çubuğunda veya tepside kalır ve seçtiğiniz bir sonraki şeyi çevirir. Hedef dili baloncuğun ⚙ menüsünden değiştirin.',
+
+
+    'priv.head.h2': 'Tasarımı gereği gizli',
+    'priv.head.p': 'Makinenizden çıkan tek şey seçtiğiniz metindir — o da yalnızca siz seçtiğinizde.',
+    'priv.1.h3': 'Çeviri geçmişi tutulmaz',
+    'priv.1.p': 'BubbleTranslate çeviri geçmişinizi saklamaz. Son çeviriler listesi yalnızca o oturum boyunca bellekte durur ve uygulamadan çıktığınızda kaybolur.',
+    'priv.2.h3': 'Lisans sunucusu metninizi görmez',
+    'priv.2.p': 'Lisans sunucusu ne çevirdiğinizi asla görmez. Yalnızca lisans anahtarınızı ve bir cihaz kimliğini alır, başka hiçbir şey almaz.',
+    'priv.3.h3': 'Yalnızca seçtiğiniz metin gönderilir',
+    'priv.3.p': 'Çeviri sağlayıcısına yalnızca seçtiğiniz metin ve çevrilecek dil gönderilir.',
 
     'price.head.h2': 'Basit fiyatlandırma',
     'price.head.p': 'Günde 10 çeviriyle ücretsiz başlayın. Daha fazlası gerektiğinde sınırsıza geçin.',
@@ -328,7 +348,7 @@ const I18N = {
 
     'hero.pill': '🫧 Para macOS y Linux · 10 traducciones gratis al día',
     'hero.h1': 'Selecciona texto donde sea. Lee la traducción <span class="grad">en una burbuja.</span>',
-    'hero.lead': 'BubbleTranslate es una pequeña app de escritorio que observa lo que seleccionas. Resalta texto en un PDF, una terminal, un navegador o un editor, y aparece una burbuja justo junto al cursor con la traducción. <b>Detecta el idioma por ti</b> — nunca dices qué estás leyendo — y traduce al idioma que elijas. Sin copiar y pegar, sin cambiar de ventana.',
+    'hero.lead': 'BubbleTranslate es una app de escritorio que observa lo que seleccionas. Resalta texto en un PDF, una terminal, un navegador o un editor, y aparece una burbuja justo junto al cursor con la traducción. <b>Detecta el idioma por ti</b> — nunca dices qué estás leyendo — y traduce al idioma que elijas. Sin copiar y pegar, sin cambiar de ventana.',
     'hero.dlfree': '↓ Descargar gratis',
     'hero.see': 'Mira cómo funciona',
     'hero.note': 'Gratis · 10 traducciones al día · Pro desde $2/mes para ilimitado',
@@ -363,6 +383,16 @@ const I18N = {
     'how.2.p': 'Aparece una pequeña burbuja junto al cursor con la traducción y se oculta sola tras unos segundos.',
     'how.3.h3': 'Sigue trabajando',
     'how.3.p': 'Se queda en la barra de menú o la bandeja y traduce lo siguiente que selecciones. Cambia el idioma de destino desde el menú ⚙ de la burbuja.',
+
+
+    'priv.head.h2': 'Privado por diseño',
+    'priv.head.p': 'El texto que seleccionas es lo único que sale de tu equipo — y solo cuando lo seleccionas.',
+    'priv.1.h3': 'Sin historial de traducciones',
+    'priv.1.p': 'BubbleTranslate no guarda tu historial de traducciones. La lista de recientes vive en memoria durante la sesión y desaparece al cerrar la app.',
+    'priv.2.h3': 'El servidor de licencias nunca ve tu texto',
+    'priv.2.p': 'Tu servidor de licencias nunca ve lo que traduces. Recibe tu clave de licencia y un identificador de dispositivo, y nada más.',
+    'priv.3.h3': 'Solo se envía tu selección',
+    'priv.3.p': 'Al proveedor de traducción solo se envía el texto seleccionado, junto con el idioma al que traducir.',
 
     'price.head.h2': 'Precios sencillos',
     'price.head.p': 'Empieza gratis con 10 traducciones al día. Pásate a ilimitado cuando necesites más.',
