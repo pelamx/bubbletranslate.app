@@ -126,7 +126,7 @@ const I18N = {
 
     'dl.head.h2': 'Download BubbleTranslate',
     'dl.head.p': 'Free to install, with 10 translations a day. Upgrade to Pro anytime for unlimited.',
-    'dl.mac.desc': 'Apple Silicon · macOS 11 or later · 7&nbsp;MB',
+    'dl.mac.desc': 'Universal · Apple Silicon &amp; Intel · macOS 11 or later · 15&nbsp;MB',
     'dl.mac.btn': 'Download DMG',
     'dl.mac.run': 'Open the DMG and drag the app into Applications.',
     'dl.mac.note2': 'The app is ad-hoc signed, so macOS blocks the first launch. Run that once, or use <b>Open Anyway</b> in System Settings › Privacy &amp; Security.',
@@ -272,7 +272,7 @@ const I18N = {
 
     'dl.head.h2': 'BubbleTranslate\'i indirin',
     'dl.head.p': 'Kurulumu ücretsiz, günde 10 çeviriyle. Sınırsız için istediğiniz zaman Pro\'ya geçin.',
-    'dl.mac.desc': 'Apple Silicon · macOS 11 veya üzeri · 7&nbsp;MB',
+    'dl.mac.desc': 'Universal · Apple Silicon ve Intel · macOS 11 veya üzeri · 15&nbsp;MB',
     'dl.mac.btn': 'DMG indir',
     'dl.mac.run': 'DMG\'yi açın ve uygulamayı Applications klasörüne sürükleyin.',
     'dl.mac.note2': 'Uygulama ad-hoc imzalı olduğu için macOS ilk açılışı engeller. Yukarıdaki komutu bir kez çalıştırın veya Sistem Ayarları › Gizlilik ve Güvenlik bölümünden <b>Yine de Aç</b>\'ı seçin.',
@@ -418,7 +418,7 @@ const I18N = {
 
     'dl.head.h2': 'Descarga BubbleTranslate',
     'dl.head.p': 'Instalación gratuita, con 10 traducciones al día. Pásate a Pro cuando quieras para ilimitado.',
-    'dl.mac.desc': 'Apple Silicon · macOS 11 o posterior · 7&nbsp;MB',
+    'dl.mac.desc': 'Universal · Apple Silicon e Intel · macOS 11 o posterior · 15&nbsp;MB',
     'dl.mac.btn': 'Descargar DMG',
     'dl.mac.run': 'Abre el DMG y arrastra la app a Aplicaciones.',
     'dl.mac.note2': 'La app está firmada ad-hoc, así que macOS bloquea el primer inicio. Ejecuta ese comando una vez, o usa <b>Abrir de todos modos</b> en Ajustes del Sistema › Privacidad y seguridad.',
