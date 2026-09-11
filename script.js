@@ -56,11 +56,11 @@ const I18N = {
 
     'hero.pill': '🫧 For macOS &amp; Linux · 10 free translations a day',
     'hero.h1': 'Select text anywhere. Read the translation <span class="grad">in a bubble.</span>',
-    'hero.lead': 'BubbleTranslate is a small desktop app that watches what you select. Highlight text in a PDF, a terminal, a browser, or an editor, and a bubble appears right at your cursor with the translation. <b>It detects the language for you</b> — you never say what you\'re reading — and translates into the language you chose. No copy-paste, no switching windows.',
+    'hero.lead': 'BubbleTranslate is a small desktop app that translates what you select. <b>Hold Shift while you select</b> text in a PDF, a terminal, a browser, or an editor, and a bubble appears right at your cursor with the translation. Select without Shift and nothing happens, so copying and pasting is never interrupted. <b>It detects the language for you</b> — you never say what you\'re reading — and translates into the language you chose.',
     'hero.dlfree': '↓ Download free',
     'hero.see': 'See how it works',
     'hero.note': 'Free · 10 translations a day · Pro from $2/month for unlimited',
-    'video.caption': '▶ A real screen recording — select text, read the bubble.',
+    'video.caption': '▶ A real screen recording — hold Shift, select text, read the bubble.',
 
     'feat.head.h2': 'New experience in translation, no interruption while foreign docs and readings.',
     'feat.head.p': 'The window is somewhere to visit, not somewhere to live. The app just watches your selections and answers.',
@@ -84,9 +84,9 @@ const I18N = {
     'lang.note': 'Those are one click away in the bubble. Need another? Any language code the providers accept works too — just set it in the config.',
 
     'how.head.h2': 'Three steps, then it\'s automatic',
-    'how.head.p': 'Set your language once. After that, you just select text.',
-    'how.1.h3': 'Select some text',
-    'how.1.p': 'Highlight anything in any app. BubbleTranslate notices the moment your selection settles.',
+    'how.head.p': 'Set your language once. After that, hold Shift and select.',
+    'how.1.h3': 'Hold Shift and select',
+    'how.1.p': 'Keep Shift down while you highlight anything in any app. Shift is the default; you can change it to Ctrl, Alt or Super — or turn the key off and have every selection translated.',
     'how.2.h3': 'Read the bubble',
     'how.2.p': 'A small bubble pops up at your cursor with the translation, and quietly hides itself after a few seconds.',
     'how.3.h3': 'Keep working',
@@ -143,7 +143,7 @@ const I18N = {
     'faq.q5': 'Does it need an internet connection?',
     'faq.a5': 'Yes. Translations come from online providers — Google, MyMemory, and optionally DeepL — tried in order until one answers. Only the text you select is sent, and only to translate it.',
     'faq.q6': 'What permission does it need?',
-    'faq.a6': 'On macOS, Accessibility — that\'s how the app sees what you\'ve selected. It\'s the only permission it asks for. On Linux nothing extra is required on most X11 and Wayland sessions.',
+    'faq.a6': 'On macOS, Accessibility — that\'s how the app sees what you\'ve selected. It\'s the only permission it asks for. On Linux nothing extra is needed on X11 or Hyprland. On other Wayland desktops, reading the Shift key needs your user to be in the <code>input</code> group; without it every selection is translated instead.',
 
     'cta.h2': 'Read the world without leaving your work',
     'cta.p': 'Download BubbleTranslate free and translate anything you can select.',
@@ -192,11 +192,11 @@ const I18N = {
 
     'hero.pill': '🫧 macOS &amp; Linux için · günde 10 ücretsiz çeviri',
     'hero.h1': 'Her yerde metin seçin. Çeviriyi <span class="grad">bir baloncukta</span> okuyun.',
-    'hero.lead': 'BubbleTranslate, seçtiğiniz metni izleyen küçük bir masaüstü uygulamasıdır. Bir PDF\'te, terminalde, tarayıcıda veya editörde metni seçin; imlecinizin yanında çevirisiyle bir baloncuk belirir. <b>Dili sizin için algılar</b> — ne okuduğunuzu asla söylemezsiniz — ve seçtiğiniz dile çevirir. Kopyala-yapıştır yok, pencere değiştirmek yok.',
+    'hero.lead': 'BubbleTranslate, seçtiğiniz metni çeviren küçük bir masaüstü uygulamasıdır. Bir PDF\'te, terminalde, tarayıcıda veya editörde <b>Shift\'i basılı tutarak</b> metni seçin; imlecinizin yanında çevirisiyle bir baloncuk belirir. Shift\'siz seçtiğinizde hiçbir şey olmaz, böylece kopyala-yapıştır hiç bölünmez. <b>Dili sizin için algılar</b> — ne okuduğunuzu asla söylemezsiniz — ve seçtiğiniz dile çevirir.',
     'hero.dlfree': '↓ Ücretsiz indir',
     'hero.see': 'Nasıl çalıştığını gör',
     'hero.note': 'Ücretsiz · günde 10 çeviri · sınırsız için Pro aylık $2\'den',
-    'video.caption': '▶ Gerçek bir ekran kaydı — metni seçin, baloncuğu okuyun.',
+    'video.caption': '▶ Gerçek bir ekran kaydı — Shift\'i basılı tutun, metni seçin, baloncuğu okuyun.',
 
     'feat.head.h2': 'Çeviride yeni bir deneyim — yabancı belgeleri okurken kesinti yok.',
     'feat.head.p': 'Pencere, yaşanacak değil ziyaret edilecek bir yer. Uygulama sadece seçimlerinizi izler ve yanıtlar.',
@@ -220,9 +220,9 @@ const I18N = {
     'lang.note': 'Bunlar baloncukta tek tıkla seçilebilir. Başka mı lazım? Sağlayıcıların kabul ettiği herhangi bir dil kodu da çalışır — sadece ayar dosyasına yazın.',
 
     'how.head.h2': 'Üç adım, sonrası otomatik',
-    'how.head.p': 'Dilinizi bir kez ayarlayın. Sonrasında sadece metin seçersiniz.',
-    'how.1.h3': 'Bir metin seçin',
-    'how.1.p': 'Herhangi bir uygulamada bir şeyi seçin. BubbleTranslate, seçiminiz tamamlandığı an fark eder.',
+    'how.head.p': 'Dilinizi bir kez ayarlayın. Sonrasında Shift\'i basılı tutup seçin.',
+    'how.1.h3': 'Shift\'i basılı tutup seçin',
+    'how.1.p': 'Herhangi bir uygulamada seçim yaparken Shift\'i basılı tutun. Shift varsayılandır; Ctrl, Alt veya Super olarak değiştirebilir, ya da tuşu tamamen kapatıp her seçimin çevrilmesini sağlayabilirsiniz.',
     'how.2.h3': 'Baloncuğu okuyun',
     'how.2.p': 'İmlecinizde çeviriyle küçük bir baloncuk belirir ve birkaç saniye sonra sessizce gizlenir.',
     'how.3.h3': 'Çalışmaya devam edin',
@@ -279,7 +279,7 @@ const I18N = {
     'faq.q5': 'İnternet bağlantısı gerekir mi?',
     'faq.a5': 'Evet. Çeviriler çevrimiçi sağlayıcılardan gelir — Google, MyMemory ve isteğe bağlı DeepL — biri yanıt verene kadar sırayla denenir. Yalnızca seçtiğiniz metin, yalnızca çevirmek için gönderilir.',
     'faq.q6': 'Hangi izne ihtiyacı var?',
-    'faq.a6': 'macOS\'ta Erişilebilirlik — uygulama seçtiğinizi böyle görür. İstediği tek izin budur. Linux\'ta çoğu X11 ve Wayland oturumunda ek bir şey gerekmez.',
+    'faq.a6': 'macOS\'ta Erişilebilirlik — uygulama seçtiğinizi böyle görür. İstediği tek izin budur. Linux\'ta X11 ve Hyprland\'de ek bir şey gerekmez. Diğer Wayland masaüstlerinde Shift tuşunu okuyabilmek için kullanıcınızın <code>input</code> grubunda olması gerekir; olmazsa tuş şartı uygulanmaz ve her seçim çevrilir.',
 
     'cta.h2': 'İşinizi bırakmadan dünyayı okuyun',
     'cta.p': 'BubbleTranslate\'i ücretsiz indirin ve seçebildiğiniz her şeyi çevirin.',
@@ -328,11 +328,11 @@ const I18N = {
 
     'hero.pill': '🫧 Para macOS y Linux · 10 traducciones gratis al día',
     'hero.h1': 'Selecciona texto donde sea. Lee la traducción <span class="grad">en una burbuja.</span>',
-    'hero.lead': 'BubbleTranslate es una pequeña app de escritorio que observa lo que seleccionas. Resalta texto en un PDF, una terminal, un navegador o un editor, y aparece una burbuja justo junto al cursor con la traducción. <b>Detecta el idioma por ti</b> — nunca dices qué estás leyendo — y traduce al idioma que elijas. Sin copiar y pegar, sin cambiar de ventana.',
+    'hero.lead': 'BubbleTranslate es una pequeña app de escritorio que traduce lo que seleccionas. <b>Mantén pulsada la tecla Shift mientras seleccionas</b> texto en un PDF, una terminal, un navegador o un editor, y aparece una burbuja justo junto al cursor con la traducción. Si seleccionas sin Shift no pasa nada, así que copiar y pegar nunca se interrumpe. <b>Detecta el idioma por ti</b> — nunca dices qué estás leyendo — y traduce al idioma que elijas.',
     'hero.dlfree': '↓ Descargar gratis',
     'hero.see': 'Mira cómo funciona',
     'hero.note': 'Gratis · 10 traducciones al día · Pro desde $2/mes para ilimitado',
-    'video.caption': '▶ Una grabación de pantalla real: selecciona texto, lee la burbuja.',
+    'video.caption': '▶ Una grabación de pantalla real: mantén Shift, selecciona texto, lee la burbuja.',
 
     'feat.head.h2': 'Una nueva experiencia en traducción, sin interrupciones al leer documentos extranjeros.',
     'feat.head.p': 'La ventana es un lugar para visitar, no para vivir. La app solo observa lo que seleccionas y responde.',
@@ -356,9 +356,9 @@ const I18N = {
     'lang.note': 'Están a un clic en la burbuja. ¿Necesitas otro? También funciona cualquier código de idioma que acepten los proveedores: solo ponlo en la configuración.',
 
     'how.head.h2': 'Tres pasos y luego es automático',
-    'how.head.p': 'Configura tu idioma una vez. Después, solo seleccionas texto.',
-    'how.1.h3': 'Selecciona un texto',
-    'how.1.p': 'Resalta cualquier cosa en cualquier app. BubbleTranslate lo nota en cuanto termina tu selección.',
+    'how.head.p': 'Configura tu idioma una vez. Después, mantén Shift y selecciona.',
+    'how.1.h3': 'Mantén Shift y selecciona',
+    'how.1.p': 'Mantén pulsada la tecla Shift mientras resaltas cualquier cosa en cualquier app. Shift es la predeterminada; puedes cambiarla por Ctrl, Alt o Super, o desactivar la tecla y que se traduzca cada selección.',
     'how.2.h3': 'Lee la burbuja',
     'how.2.p': 'Aparece una pequeña burbuja junto al cursor con la traducción y se oculta sola tras unos segundos.',
     'how.3.h3': 'Sigue trabajando',
@@ -415,7 +415,7 @@ const I18N = {
     'faq.q5': '¿Necesita conexión a internet?',
     'faq.a5': 'Sí. Las traducciones vienen de proveedores en línea — Google, MyMemory y, opcionalmente, DeepL — probados en orden hasta que uno responde. Solo se envía el texto que seleccionas, y solo para traducirlo.',
     'faq.q6': '¿Qué permiso necesita?',
-    'faq.a6': 'En macOS, Accesibilidad: así ve la app lo que has seleccionado. Es el único permiso que pide. En Linux no hace falta nada extra en la mayoría de sesiones X11 y Wayland.',
+    'faq.a6': 'En macOS, Accesibilidad: así ve la app lo que has seleccionado. Es el único permiso que pide. En Linux no hace falta nada extra en X11 ni en Hyprland. En otros escritorios Wayland, leer la tecla Shift requiere que tu usuario esté en el grupo <code>input</code>; sin eso se traduce cada selección.',
 
     'cta.h2': 'Lee el mundo sin dejar tu trabajo',
     'cta.p': 'Descarga BubbleTranslate gratis y traduce todo lo que puedas seleccionar.',

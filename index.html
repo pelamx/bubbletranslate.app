@@ -50,7 +50,7 @@
         <div>
           <span class="pill" data-i18n="hero.pill">🫧 For macOS &amp; Linux · 10 free translations a day</span>
           <h1 data-i18n="hero.h1">Select text anywhere. Read the translation <span class="grad">in a bubble.</span></h1>
-          <p class="lead" data-i18n="hero.lead">BubbleTranslate is a small desktop app that watches what you select. Highlight text in a PDF, a terminal, a browser, or an editor, and a bubble appears right at your cursor with the translation. <b>It detects the language for you</b> — you never say what you're reading — and translates into the language you chose. No copy-paste, no switching windows.</p>
+          <p class="lead" data-i18n="hero.lead">BubbleTranslate is a small desktop app that translates what you select. <b>Hold Shift while you select</b> text in a PDF, a terminal, a browser, or an editor, and a bubble appears right at your cursor with the translation. Select without Shift and nothing happens, so copying and pasting is never interrupted. <b>It detects the language for you</b> — you never say what you're reading — and translates into the language you chose.</p>
           <div class="hero-actions">
             <a class="btn btn-primary" id="heroDownload" href="#download" data-i18n="hero.dlfree">↓ Download free</a>
             <a class="btn btn-ghost" href="#how" data-i18n="hero.see">See how it works</a>
@@ -74,7 +74,7 @@
               <a href="downloads/video/bubbleTranslate-demo.mp4">Download the demo instead.</a>
             </video>
           </div>
-          <p class="video-caption" data-i18n="video.caption">▶ A real screen recording — select text, read the bubble.</p>
+          <p class="video-caption" data-i18n="video.caption">▶ A real screen recording — hold Shift, select text, read the bubble.</p>
         </div>
       </div>
     </section>
@@ -137,10 +137,10 @@
       <div class="container">
         <div class="section-head">
           <h2 data-i18n="how.head.h2">Three steps, then it's automatic</h2>
-          <p data-i18n="how.head.p">Set your language once. After that, you just select text.</p>
+          <p data-i18n="how.head.p">Set your language once. After that, hold Shift and select.</p>
         </div>
         <div class="steps">
-          <div class="step"><h3 data-i18n="how.1.h3">Select some text</h3><p data-i18n="how.1.p">Highlight anything in any app. BubbleTranslate notices the moment your selection settles.</p></div>
+          <div class="step"><h3 data-i18n="how.1.h3">Hold Shift and select</h3><p data-i18n="how.1.p">Keep Shift down while you highlight anything in any app. Shift is the default; you can change it to Ctrl, Alt or Super — or turn the key off and have every selection translated.</p></div>
           <div class="step"><h3 data-i18n="how.2.h3">Read the bubble</h3><p data-i18n="how.2.p">A small bubble pops up at your cursor with the translation, and quietly hides itself after a few seconds.</p></div>
           <div class="step"><h3 data-i18n="how.3.h3">Keep working</h3><p data-i18n="how.3.p">It stays in the menu bar or tray and translates the next thing you select. Change the target language from the bubble's ⚙ menu.</p></div>
         </div>
@@ -250,7 +250,7 @@
           <details><summary data-i18n="faq.q3">How do I pay for Pro?</summary><p data-i18n="faq.a3">Monthly or yearly. In Turkey billing goes through PayTR; everywhere else through Paddle, the merchant of record. You can cancel anytime.</p></details>
           <details><summary data-i18n="faq.q4">Which systems does it run on?</summary><p data-i18n="faq.a4">macOS and Linux. There's no Windows build yet. On Linux you need glibc 2.43 or newer for the prebuilt binary; on an older distribution, build from source.</p></details>
           <details><summary data-i18n="faq.q5">Does it need an internet connection?</summary><p data-i18n="faq.a5">Yes. Translations come from online providers — Google, MyMemory, and optionally DeepL — tried in order until one answers. Only the text you select is sent, and only to translate it.</p></details>
-          <details><summary data-i18n="faq.q6">What permission does it need?</summary><p data-i18n="faq.a6">On macOS, Accessibility — that's how the app sees what you've selected. It's the only permission it asks for. On Linux nothing extra is required on most X11 and Wayland sessions.</p></details>
+          <details><summary data-i18n="faq.q6">What permission does it need?</summary><p data-i18n="faq.a6">On macOS, Accessibility — that's how the app sees what you've selected. It's the only permission it asks for. On Linux nothing extra is needed on X11 or Hyprland. On other Wayland desktops, reading the Shift key needs your user to be in the <code>input</code> group; without it every selection is translated instead.</p></details>
         </div>
       </div>
     </section>
