@@ -249,6 +249,17 @@
             </div>
           </div>
         </div>
+        <div class="mac-install" id="mac-install">
+          <h3 data-i18n="mac.install.h3">Installing on macOS — the first run</h3>
+          <ol>
+            <li data-i18n="mac.install.1">Open the DMG and drag <b>bubbleTranslate.app</b> into <b>Applications</b>. Install it there — not run from the DMG or Downloads.</li>
+            <li data-i18n="mac.install.2">Launch it once. macOS says it <b>"could not verify"</b> the app — that's Gatekeeper reacting to an app Apple hasn't notarized, not anything the app does. Dismiss it, open <b>System Settings › Privacy &amp; Security</b>, scroll to Security, and click <b>Open Anyway</b>.</li>
+            <li data-i18n="mac.install.3">Grant <b>Accessibility</b>: <b>System Settings › Privacy &amp; Security › Accessibility</b>, and switch <b>bubbleTranslate</b> on. This is how it reads what you select — a <i>different</i> permission from Open Anyway.</li>
+            <li data-i18n="mac.install.4"><b>Quit and relaunch.</b> The Accessibility permission only takes effect on a fresh start, so quit bubbleTranslate (the globe in the menu bar → Quit) and open it again. Until you do, the window says <b>"Not watching for selections."</b></li>
+            <li data-i18n="mac.install.5">Done. Hold <b>Shift</b> and select text anywhere, and the bubble appears at your cursor.</li>
+          </ol>
+          <p class="mac-install-tip" data-i18n="mac.install.tip">Still "Not watching" after relaunching? Remove bubbleTranslate from the Accessibility list (select it, click −), run <code>xattr -dr com.apple.quarantine /Applications/bubbleTranslate.app</code>, then add it back, switch it on, and relaunch. A leftover entry from an older build can silently block the new one.</p>
+        </div>
         <p class="download-foot" data-i18n="dl.foot">
           Source, build instructions, and full docs live on
           <a href="https://github.com/pelamx/bubbleTranslate" style="color:var(--brand);" target="_blank" rel="noopener">GitHub</a>.
