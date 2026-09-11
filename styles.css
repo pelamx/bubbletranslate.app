@@ -119,6 +119,11 @@ section { padding: 72px 0; }
   background: linear-gradient(135deg, var(--brand), var(--brand-2)); color: #fff; box-shadow: var(--shadow); }
 .step h3 { margin: 12px 0 8px; }
 .step p { margin: 0; color: var(--muted); }
+.how-note { margin-top: 28px; background: var(--card); border: 1px solid var(--border);
+  border-left: 4px solid var(--brand); border-radius: var(--radius); padding: 22px 26px; }
+.how-note h3 { margin: 0 0 8px; font-size: 1.1rem; }
+.how-note p { margin: 0; color: var(--muted); }
+.how-note b { color: var(--text); }
 
 /* Download */
 .download { background: linear-gradient(180deg, transparent, rgba(124,92,255,.06)); }
