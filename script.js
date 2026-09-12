@@ -19,7 +19,7 @@ if (y) y.textContent = new Date().getFullYear();
 // ============================================================
 const I18N = {
   en: {
-    'meta.title': 'BubbleTranslate — Translate anything without leaving your screen',
+    'meta.title': 'BubbleTranslate — Translate anything without leaving your desktop',
     'meta.desc': 'BubbleTranslate is a lightweight desktop app for macOS and Linux. Select text in any app and a bubble appears at your cursor with the translation. 10 free translations a day; go unlimited with Pro from $2/month.',
 
     // -- /pricing -----------------------------------------------------------
@@ -54,8 +54,8 @@ const I18N = {
     'nav.contact': 'Contact',
     'nav.cta': 'Get the app',
 
-    'hero.pill': '🫧 For macOS &amp; Linux · 10 free translations a day',
-    'hero.h1': 'Translate anything <span class="grad">without leaving your screen.</span>',
+    'hero.pill': '🫧 Desktop app for macOS &amp; Linux · 10 free translations a day',
+    'hero.h1': 'Translate anything <span class="grad">without leaving your desktop.</span>',
     'hero.lead': 'No interruption while reading anymore. Stop copy-pasting text into Google Translate. <b>Hold Shift, select text</b>, and read the translation right where you are.',
     'hero.dlfree': '↓ Download free',
     'hero.see': 'See how it works',
@@ -175,7 +175,7 @@ const I18N = {
   },
 
   tr: {
-    'meta.title': 'BubbleTranslate — Ekranınızdan ayrılmadan seçtiğiniz metni çevirin',
+    'meta.title': 'BubbleTranslate — Masaüstünüzden ayrılmadan seçtiğiniz metni çevirin',
     'meta.desc': 'BubbleTranslate, macOS ve Linux için hafif bir masaüstü uygulamasıdır. Herhangi bir uygulamada metin seçin; imlecinizin yanında çevirisiyle bir baloncuk belirir. Günde 10 ücretsiz çeviri; sınırsız için Pro aylık $2\'den başlar.',
 
     // -- /pricing -----------------------------------------------------------
@@ -210,8 +210,8 @@ const I18N = {
     'nav.contact': 'İletişim',
     'nav.cta': 'Uygulamayı al',
 
-    'hero.pill': '🫧 macOS &amp; Linux için · günde 10 ücretsiz çeviri',
-    'hero.h1': '<span class="grad">Ekranınızdan ayrılmadan</span> seçtiğiniz metnin çevirisini yapın.',
+    'hero.pill': '🫧 macOS &amp; Linux için masaüstü uygulaması · günde 10 ücretsiz çeviri',
+    'hero.h1': '<span class="grad">Masaüstünüzden ayrılmadan</span> seçtiğiniz metnin çevirisini yapın.',
     'hero.lead': 'Okurken artık copy/paste dikkatinizi dağıtmayacak. Metinleri Google Translate\'e kopyalayıp yapıştırmayı bırakın. <b>Shift\'i basılı tutun, metni seçin</b> ve çeviriyi tam olduğunuz yerde okuyun.',
     'hero.dlfree': '↓ Ücretsiz indir',
     'hero.see': 'Nasıl çalıştığını gör',
@@ -331,7 +331,7 @@ const I18N = {
   },
 
   es: {
-    'meta.title': 'BubbleTranslate — Traduce lo que sea sin salir de tu pantalla',
+    'meta.title': 'BubbleTranslate — Traduce lo que sea sin salir de tu escritorio',
     'meta.desc': 'BubbleTranslate es una ligera app de escritorio para macOS y Linux. Selecciona texto en cualquier app y aparece una burbuja junto al cursor con la traducción. 10 traducciones gratis al día; pásate a ilimitado con Pro desde $2/mes.',
 
     // -- /pricing -----------------------------------------------------------
@@ -366,8 +366,8 @@ const I18N = {
     'nav.contact': 'Contacto',
     'nav.cta': 'Descargar la app',
 
-    'hero.pill': '🫧 Para macOS y Linux · 10 traducciones gratis al día',
-    'hero.h1': 'Traduce lo que sea <span class="grad">sin salir de tu pantalla.</span>',
+    'hero.pill': '🫧 App de escritorio para macOS y Linux · 10 traducciones gratis al día',
+    'hero.h1': 'Traduce lo que sea <span class="grad">sin salir de tu escritorio.</span>',
     'hero.lead': 'Se acabaron las interrupciones mientras lees. Deja de copiar y pegar texto en Google Translate. <b>Mantén pulsada la tecla Shift y selecciona el texto</b> para leer la traducción justo donde estás.',
     'hero.dlfree': '↓ Descargar gratis',
     'hero.see': 'Mira cómo funciona',
