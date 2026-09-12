@@ -119,27 +119,38 @@ section { padding: 72px 0; }
   background: linear-gradient(135deg, var(--brand), var(--brand-2)); color: #fff; box-shadow: var(--shadow); }
 .step h3 { margin: 12px 0 8px; }
 .step p { margin: 0; color: var(--muted); }
+.how-note { margin-top: 28px; background: var(--card); border: 1px solid var(--border);
+  border-left: 4px solid var(--brand); border-radius: var(--radius); padding: 22px 26px; }
+.how-note h3 { margin: 0 0 8px; font-size: 1.1rem; }
+.how-note p { margin: 0; color: var(--muted); }
+.how-note b { color: var(--text); }
 
 /* Download */
 .download { background: linear-gradient(180deg, transparent, rgba(124,92,255,.06)); }
-/* `minmax(0, 1fr)`, not `1fr`. A bare `1fr` floors each column at its
-   min-content width, and the `chmod`/`xattr` lines inside the install notes
-   do not wrap -- so the two cards with commands in them grew, and the
-   Windows card was squeezed into what was left. */
-.dl-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; }
-.dl-card { text-align: center; background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 34px 22px; }
-/* A fixed square for the mark, so the three logos occupy the same space.
-   Their aspect ratios differ a lot -- the Apple is tall, Tux is wide -- so
-   they are fitted inside one box rather than given one height, which is what
-   makes them look the same size rather than merely the same tall. */
-.dl-card .os {
-  height: 56px; margin-bottom: 12px;
-  display: flex; align-items: center; justify-content: center;
-}
-.dl-card .os img { max-width: 72px; max-height: 56px; object-fit: contain; }
+/* minmax(0, 1fr), not 1fr: a bare `1fr` track is minmax(auto, 1fr), and that
+   `auto` floor is set by the widest thing that cannot wrap. The macOS card
+   carries `xattr -dr com.apple.quarantine /Applications/bubbleTranslate.app`
+   in a <pre>, which does not wrap, so it dragged its own column wide and left
+   Windows -- which has no code block at all -- squeezed into what was left.
+   Flooring the track at 0 lets the pre's own overflow-x do that job. */
+.dl-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; align-items: stretch; }
+/* The three cards hold different amounts of text -- macOS carries a code
+   block and two notes, Windows carries one line -- so they are made to fill
+   the row's height rather than each taking its own, and the install note is
+   pushed to the bottom so the three frames line up instead of ending
+   wherever their text happens to stop. */
+.dl-card { text-align: center; background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 34px 22px; display: flex; flex-direction: column; min-width: 0; }
+.dl-card .install-note { margin-top: auto; }
+/* The three OS logos arrive with different aspect ratios and different
+   amounts of built-in padding, so each is normalised to its own 160x160
+   transparent canvas before it gets here. `contain` then draws them at one
+   height, and the fixed 48px box keeps the footprint the emoji had -- the
+   cards do not move. */
+.dl-card .os { height: 48px; margin-bottom: 10px; display: flex; align-items: center; justify-content: center; }
+.dl-card .os img { width: 44px; height: 44px; object-fit: contain; display: block; }
 .dl-card h3 { margin: 0 0 4px; }
-/* Two lines' worth whether the text needs them or not, so the three download
-   buttons sit on one line instead of stepping down with the longest blurb. */
+/* Two lines' worth whether the text needs them or not. Without it the
+   Windows blurb, which is one line, lifts its button above the other two. */
 .dl-card p { color: var(--muted); margin: 0 0 18px; font-size: .9rem; min-height: 3.3em; }
 
 /* FAQ */
@@ -187,11 +198,34 @@ footer.site { border-top: 1px solid var(--border); padding: 40px 0; color: var(-
 .install-note code, .src-text em {
   font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
 }
-/* Now that the columns are equal, the commands are wider than the card and
-   used to be cut off mid-word with the scroll the only way to see the rest.
-   Wrapping keeps them readable, and `anywhere` lets a long path break. */
+/* The commands are wider than a column, and were being cut off mid-word
+   behind a scrollbar nobody would go looking for. */
 .install-note pre code { color: var(--accent); font-size: .82rem; white-space: pre-wrap; overflow-wrap: anywhere; }
 .src-text em { color: var(--text); font-style: normal; }
+
+/* macOS first-run install guide */
+.mac-install {
+  margin: 32px auto 0; max-width: 760px; text-align: left;
+  background: var(--card); border: 1px solid var(--border);
+  border-left: 4px solid var(--brand); border-radius: var(--radius);
+  padding: 24px 28px;
+}
+.mac-install h3 { margin: 0 0 14px; font-size: 1.15rem; }
+.mac-install ol { margin: 0; padding-left: 1.25rem; display: grid; gap: 12px; }
+.mac-install li { color: var(--muted); line-height: 1.6; padding-left: 4px; }
+.mac-install li::marker { color: var(--brand); font-weight: 700; }
+.mac-install b { color: var(--text); font-weight: 600; }
+.mac-install i { color: var(--text); font-style: italic; }
+.mac-install code {
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  font-size: .82rem; color: var(--accent);
+  background: var(--bg); border: 1px solid var(--border);
+  border-radius: 6px; padding: 1px 6px; overflow-wrap: anywhere;
+}
+.mac-install-tip {
+  margin: 16px 0 0; padding-top: 14px; border-top: 1px solid var(--border);
+  color: var(--muted); font-size: .88rem; line-height: 1.6;
+}
 
 /* Pricing */
 .pricing { display: grid; grid-template-columns: repeat(2, minmax(0, 380px)); gap: 24px; justify-content: center; align-items: stretch; }

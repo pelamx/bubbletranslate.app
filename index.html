@@ -13,7 +13,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=5">
+  <link rel="stylesheet" href="styles.css?v=20260910">
 </head>
 <body>
   <header class="site">
@@ -74,7 +74,7 @@
               <a href="downloads/video/bubbleTranslate-demo.mp4">Download the demo instead.</a>
             </video>
           </div>
-          <p class="video-caption" data-i18n="video.caption">▶ A real screen recording — hold Shift, select text, read the bubble.</p>
+          <p class="video-caption" data-i18n="video.caption">▶ A real screen recording — select text, read the bubble.</p>
         </div>
       </div>
     </section>
@@ -83,13 +83,13 @@
     <section id="features">
       <div class="container">
         <div class="section-head">
-          <h2 data-i18n="feat.head.h2">New experience in translation, no interruption while foreign docs and readings.</h2>
-          <p data-i18n="feat.head.p">The window is somewhere to visit, not somewhere to live. The app just watches your selections and answers.</p>
+          <h2 data-i18n="feat.head.h2">New experience in translation, no interruption while reading foreign docs and readings.</h2>
+          <p data-i18n="feat.head.p">The window is somewhere to visit, not somewhere to live. Hold Shift and select, and the app answers; the rest of the time it stays out of the way.</p>
         </div>
         <div class="grid-3">
           <div class="card"><div class="icon">🖱️</div><h3 data-i18n="feat.1.h3">Works in every app</h3><p data-i18n="feat.1.p">Select text in a PDF, a terminal, a browser, or an editor. If you can highlight it, BubbleTranslate can read it.</p></div>
           <div class="card"><div class="icon">🫧</div><h3 data-i18n="feat.2.h3">Bubble at your cursor</h3><p data-i18n="feat.2.p">The translation appears right where you're reading, then auto-hides. No new tab, no window to hunt for.</p></div>
-          <div class="card"><div class="icon">🔀</div><h3 data-i18n="feat.3.h3">Three backends, in order</h3><p data-i18n="feat.3.p">Google, then MyMemory, then DeepL — tried until one answers. When all refuse, the bubble tells you why.</p></div>
+          <div class="card"><div class="icon">🔀</div><h3 data-i18n="feat.3.h3">Automatic fallback</h3><p data-i18n="feat.3.p">If one translation provider is unavailable, BubbleTranslate automatically tries another.</p></div>
           <div class="card"><div class="icon">🌐</div><h3 data-i18n="feat.4.h3">Lives in the menu bar / tray</h3><p data-i18n="feat.4.p">A globe in the macOS menu bar or the Linux tray. Closing the window doesn't quit; it keeps watching.</p></div>
           <div class="card"><div class="icon">🔑</div><h3 data-i18n="feat.5.h3">One permission</h3><p data-i18n="feat.5.p">Accessibility on macOS, so the app can see what's selected. That's the only thing it asks for.</p></div>
           <div class="card"><div class="icon">⚙️</div><h3 data-i18n="feat.6.h3">Yours to tune</h3><p data-i18n="feat.6.p">Target language, provider order, text size, and auto-hide delay — all editable, saved the moment you change them.</p></div>
@@ -136,13 +136,32 @@
     <section id="how" style="background: var(--bg-soft);">
       <div class="container">
         <div class="section-head">
-          <h2 data-i18n="how.head.h2">Three steps, then it's automatic</h2>
-          <p data-i18n="how.head.p">Set your language once. After that, hold Shift and select.</p>
+          <h2 data-i18n="how.head.h2">Set it once, then Shift to translate</h2>
+          <p data-i18n="how.head.p">Choose your language once. After that, hold a key while you select — plain selections are left alone.</p>
         </div>
         <div class="steps">
-          <div class="step"><h3 data-i18n="how.1.h3">Hold Shift and select</h3><p data-i18n="how.1.p">Keep Shift down while you highlight anything in any app. Shift is the default; you can change it to Ctrl, Alt or Super — or turn the key off and have every selection translated.</p></div>
+          <div class="step"><h3 data-i18n="how.1.h3">Hold Shift and select</h3><p data-i18n="how.1.p">Hold Shift and highlight anything in any app. The bubble appears only for a selection made with the key down, so everyday selecting and copying stay untouched.</p></div>
           <div class="step"><h3 data-i18n="how.2.h3">Read the bubble</h3><p data-i18n="how.2.p">A small bubble pops up at your cursor with the translation, and quietly hides itself after a few seconds.</p></div>
-          <div class="step"><h3 data-i18n="how.3.h3">Keep working</h3><p data-i18n="how.3.p">It stays in the menu bar or tray and translates the next thing you select. Change the target language from the bubble's ⚙ menu.</p></div>
+          <div class="step"><h3 data-i18n="how.3.h3">Keep working</h3><p data-i18n="how.3.p">It stays in the menu bar or tray and translates the next thing you select with the key held. Change the target language from the bubble's ⚙ menu.</p></div>
+        </div>
+        <div class="how-note">
+          <h3 data-i18n="how.note.h3">Prefer a different key?</h3>
+          <p data-i18n="how.note.p">Shift is the default because holding it already extends a selection, so translating stays one gesture. You can switch to <b>Ctrl</b>, <b>Alt</b> or <b>Super</b> (⌘ on macOS) in the app's settings — or choose <b>Any selection</b> to translate everything, the way it worked before. On some Linux Wayland sessions the key can't be detected; there the app translates every selection and says so.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Privacy -->
+    <section id="privacy">
+      <div class="container">
+        <div class="section-head">
+          <h2 data-i18n="priv.head.h2">Private by design</h2>
+          <p data-i18n="priv.head.p">The text you select is the only thing that ever leaves your machine — and only when you select it.</p>
+        </div>
+        <div class="grid-3">
+          <div class="card"><div class="icon">🗂️</div><h3 data-i18n="priv.1.h3">No translation history</h3><p data-i18n="priv.1.p">BubbleTranslate doesn’t store your translation history. The recent list lives in memory for the session and is gone when you quit.</p></div>
+          <div class="card"><div class="icon">🔒</div><h3 data-i18n="priv.2.h3">The licence server never sees your text</h3><p data-i18n="priv.2.p">Your licence server never sees what you translate. It receives your licence key and a device id, and nothing else.</p></div>
+          <div class="card"><div class="icon">✂️</div><h3 data-i18n="priv.3.h3">Only your selection is sent</h3><p data-i18n="priv.3.p">Only the selected text is sent to the translation provider, together with the language to translate into.</p></div>
         </div>
       </div>
     </section>
@@ -162,7 +181,7 @@
             <ul class="plan-list">
               <li data-i18n="price.free.1">✓ <b>10 translations per day</b></li>
               <li data-i18n="price.free.2">✓ Works in every app on macOS &amp; Linux</li>
-              <li data-i18n="price.free.3">✓ Google, MyMemory &amp; DeepL backends</li>
+              <li data-i18n="price.free.3">✓ Automatic provider fallback</li>
               <li data-i18n="price.free.4">✓ Bubble at your cursor, menu bar / tray</li>
               <li data-i18n="price.free.5">✓ No account, no sign-up</li>
             </ul>
@@ -196,9 +215,9 @@
         </div>
         <div class="dl-grid">
           <div class="dl-card" data-os="mac">
-            <div class="os"><img src="logos/apple.png" alt="" loading="lazy"></div>
+            <div class="os"><img src="/logos/apple.png" alt="" aria-hidden="true" width="44" height="44" loading="lazy" decoding="async"></div>
             <h3>macOS</h3>
-            <p data-i18n="dl.mac.desc">Apple Silicon · macOS 11 or later · 7&nbsp;MB</p>
+            <p data-i18n="dl.mac.desc">Universal · Apple Silicon &amp; Intel · macOS 11 or later · 15&nbsp;MB</p>
             <a class="btn btn-primary" href="https://github.com/pelamx/bubbleTranslate/raw/main/bubbleTranslate.dmg" download data-i18n="dl.mac.btn">Download DMG</a>
             <div class="install-note">
               <span data-i18n="dl.mac.run">Open the DMG and drag the app into Applications.</span>
@@ -207,7 +226,7 @@
             </div>
           </div>
           <div class="dl-card" data-os="linux">
-            <div class="os"><img src="logos/linux.webp" alt="" loading="lazy"></div>
+            <div class="os"><img src="/logos/linux.png" alt="" aria-hidden="true" width="44" height="44" loading="lazy" decoding="async"></div>
             <h3>Linux</h3>
             <p data-i18n="dl.linux.desc">x86-64 executable · needs glibc 2.43+ · 20&nbsp;MB</p>
             <a class="btn btn-primary" href="https://github.com/pelamx/bubbleTranslate/raw/main/bubbleTranslate-linux-x86_64" download data-i18n="dl.linux.btn">Download binary</a>
@@ -220,7 +239,7 @@
           </div>
           <div class="dl-card" data-os="windows">
             <span class="soon-badge" data-i18n="dl.win.badge">Coming soon</span>
-            <div class="os"><img src="logos/windows.webp" alt="" loading="lazy"></div>
+            <div class="os"><img src="/logos/windows.png" alt="" aria-hidden="true" width="44" height="44" loading="lazy" decoding="async"></div>
             <h3>Windows</h3>
             <p data-i18n="dl.win.desc">It is coming soon.</p>
             <span class="btn btn-soon" aria-disabled="true" data-i18n="dl.win.btn">Coming soon</span>
@@ -229,6 +248,17 @@
               <a href="https://github.com/pelamx/bubbleTranslate" style="color:var(--brand);" target="_blank" rel="noopener">GitHub</a>.
             </div>
           </div>
+        </div>
+        <div class="mac-install" id="mac-install">
+          <h3 data-i18n="mac.install.h3">Installing on macOS — the first run</h3>
+          <ol>
+            <li data-i18n="mac.install.1">Open the DMG and drag <b>bubbleTranslate.app</b> into <b>Applications</b>. Install it there — not run from the DMG or Downloads.</li>
+            <li data-i18n="mac.install.2">Launch it once. macOS says it <b>"could not verify"</b> the app — that's Gatekeeper reacting to an app Apple hasn't notarized, not anything the app does. Dismiss it, open <b>System Settings › Privacy &amp; Security</b>, scroll to Security, and click <b>Open Anyway</b>.</li>
+            <li data-i18n="mac.install.3">Grant <b>Accessibility</b>: <b>System Settings › Privacy &amp; Security › Accessibility</b>, and switch <b>bubbleTranslate</b> on. This is how it reads what you select — a <i>different</i> permission from Open Anyway.</li>
+            <li data-i18n="mac.install.4"><b>Quit and relaunch.</b> The Accessibility permission only takes effect on a fresh start, so quit bubbleTranslate (the globe in the menu bar → Quit) and open it again. Until you do, the window says <b>"Not watching for selections."</b></li>
+            <li data-i18n="mac.install.5">Done. Hold <b>Shift</b> and select text anywhere, and the bubble appears at your cursor.</li>
+          </ol>
+          <p class="mac-install-tip" data-i18n="mac.install.tip">Still "Not watching" after relaunching? Remove bubbleTranslate from the Accessibility list (select it, click −), run <code>xattr -dr com.apple.quarantine /Applications/bubbleTranslate.app</code>, then add it back, switch it on, and relaunch. A leftover entry from an older build can silently block the new one.</p>
         </div>
         <p class="download-foot" data-i18n="dl.foot">
           Source, build instructions, and full docs live on
@@ -247,10 +277,11 @@
         <div class="faq">
           <details open><summary data-i18n="faq.q1">Is BubbleTranslate free?</summary><p data-i18n="faq.a1">Yes. You get 10 translations a day for free, on macOS and Linux, with no account or sign-up. If you need more, Pro removes the daily limit for $2/month or $20/year.</p></details>
           <details><summary data-i18n="faq.q2">What do I get with Pro?</summary><p data-i18n="faq.a2">Unlimited translations on up to three machines, for $2/month or $20/year (the yearly plan is two months free). One licence key covers all your machines, and it supports the app's ongoing development.</p></details>
-          <details><summary data-i18n="faq.q3">How do I pay for Pro?</summary><p data-i18n="faq.a3">Monthly or yearly. In Turkey billing goes through PayTR; everywhere else through Paddle, the merchant of record. You can cancel anytime.</p></details>
+          <details><summary data-i18n="faq.q3">How do I pay for Pro?</summary><p data-i18n="faq.a3">Monthly or yearly. Billing goes through Paddle, the merchant of record, so you are charged in your own currency with any local tax included. You can cancel anytime.</p></details>
           <details><summary data-i18n="faq.q4">Which systems does it run on?</summary><p data-i18n="faq.a4">macOS and Linux. There's no Windows build yet. On Linux you need glibc 2.43 or newer for the prebuilt binary; on an older distribution, build from source.</p></details>
-          <details><summary data-i18n="faq.q5">Does it need an internet connection?</summary><p data-i18n="faq.a5">Yes. Translations come from online providers — Google, MyMemory, and optionally DeepL — tried in order until one answers. Only the text you select is sent, and only to translate it.</p></details>
-          <details><summary data-i18n="faq.q6">What permission does it need?</summary><p data-i18n="faq.a6">On macOS, Accessibility — that's how the app sees what you've selected. It's the only permission it asks for. On Linux nothing extra is needed on X11 or Hyprland. On other Wayland desktops, reading the Shift key needs your user to be in the <code>input</code> group; without it every selection is translated instead.</p></details>
+          <details><summary data-i18n="faq.q5">Does it need an internet connection?</summary><p data-i18n="faq.a5">Yes. Translations come from online providers, tried in turn until one answers. Only the text you select is sent, and only to translate it.</p></details>
+          <details><summary data-i18n="faq.q6">What permission does it need?</summary><p data-i18n="faq.a6">On macOS, Accessibility — that's how the app sees what you've selected. It's the only permission it asks for. On Linux nothing extra is required on most X11 and Wayland sessions.</p></details>
+          <details><summary data-i18n="faq.q7">Does it translate everything I select?</summary><p data-i18n="faq.a7">No — only selections you make with a key held down. Shift by default, so extending a selection and translating it are one gesture. You can switch the key to Ctrl, Alt or Super, or set it to translate every selection like before. Copying and ordinary highlighting are left alone.</p></details>
         </div>
       </div>
     </section>
