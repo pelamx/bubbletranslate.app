@@ -96,6 +96,18 @@ header.site {
 
 /* Sections */
 section { padding: 72px 0; }
+/* The privacy strip under the hero. Its own padding is nearly nothing: it
+   belongs to the hero above it, not to the features section below. */
+.trust { padding: 0 0 8px; }
+.trust-row {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: center;
+  gap: 8px 22px; padding: 14px 22px; text-decoration: none;
+  border: 1px solid var(--border); border-radius: 14px; background: var(--bg-soft);
+  color: var(--muted); font-size: .9rem; transition: border-color .15s ease;
+}
+.trust-row:hover, .trust-row:focus-visible { border-color: var(--brand); }
+.trust-lead { color: var(--text); font-weight: 600; }
+.trust-more { color: var(--brand); }
 .section-head { text-align: center; max-width: 640px; margin: 0 auto 44px; }
 .section-head h2 { font-size: clamp(1.8rem, 3.5vw, 2.5rem); margin: 0 0 12px; letter-spacing: -.4px; }
 .section-head p { color: var(--muted); font-size: 1.05rem; margin: 0; }

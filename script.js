@@ -62,6 +62,12 @@ const I18N = {
     'hero.note': 'Free · 10 translations a day · Pro from $2/month for unlimited',
     'video.caption': '▶ A real screen recording — select text, read the bubble.',
 
+    'trust.lead': '🔒 Private by design',
+    'trust.1': 'No translation history',
+    'trust.2': 'The licence server never sees your text',
+    'trust.3': 'Only your selection is sent',
+    'trust.more': 'How it works →',
+
     'feat.head.h2': 'New experience in translation, no interruption while reading foreign docs and readings.',
     'feat.1.h3': 'Works wherever you can select text',
     'feat.1.p': 'Select text in a PDF, a terminal, a browser, or an editor. If you can highlight it, BubbleTranslate can read it.',
@@ -218,6 +224,12 @@ const I18N = {
     'hero.note': 'Ücretsiz · günde 10 çeviri · sınırsız için Pro aylık $2\'den',
     'video.caption': '▶ Gerçek bir ekran kaydı — metni seçin, baloncuğu okuyun.',
 
+    'trust.lead': '🔒 Tasarımı gereği gizli',
+    'trust.1': 'Çeviri geçmişi tutulmaz',
+    'trust.2': 'Lisans sunucusu metninizi hiç görmez',
+    'trust.3': 'Yalnızca seçtiğiniz metin gönderilir',
+    'trust.more': 'Nasıl çalışıyor →',
+
     'feat.head.h2': 'Çeviride yeni bir deneyim — yabancı belgeleri okurken kesinti yok.',
     'feat.1.h3': 'Metin seçebildiğiniz her yerde çalışır',
     'feat.1.p': 'Bir PDF\'te, terminalde, tarayıcıda veya editörde metin seçin. Seçebiliyorsanız, BubbleTranslate okuyabilir.',
@@ -373,6 +385,12 @@ const I18N = {
     'hero.see': 'Mira cómo funciona',
     'hero.note': 'Gratis · 10 traducciones al día · Pro desde $2/mes para ilimitado',
     'video.caption': '▶ Una grabación de pantalla real: selecciona texto, lee la burbuja.',
+
+    'trust.lead': '🔒 Privado por diseño',
+    'trust.1': 'Sin historial de traducciones',
+    'trust.2': 'El servidor de licencias nunca ve tu texto',
+    'trust.3': 'Solo se envía lo que seleccionas',
+    'trust.more': 'Cómo funciona →',
 
     'feat.head.h2': 'Una nueva experiencia en traducción, sin interrupciones al leer documentos extranjeros.',
     'feat.1.h3': 'Funciona allí donde puedas seleccionar texto',
