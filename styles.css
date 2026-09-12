@@ -223,26 +223,26 @@ footer.site { border-top: 1px solid var(--border); padding: 40px 0; color: var(-
 .install-note pre code { color: var(--accent); font-size: .82rem; white-space: pre-wrap; overflow-wrap: anywhere; }
 .src-text em { color: var(--text); font-style: normal; }
 
-/* macOS first-run install guide */
-.mac-install {
+/* The per-OS first-run guides */
+.os-install {
   margin: 32px auto 0; max-width: 760px; text-align: left;
   background: var(--card); border: 1px solid var(--border);
   border-left: 4px solid var(--brand); border-radius: var(--radius);
   padding: 24px 28px;
 }
-.mac-install h3 { margin: 0 0 14px; font-size: 1.15rem; }
-.mac-install ol { margin: 0; padding-left: 1.25rem; display: grid; gap: 12px; }
-.mac-install li { color: var(--muted); line-height: 1.6; padding-left: 4px; }
-.mac-install li::marker { color: var(--brand); font-weight: 700; }
-.mac-install b { color: var(--text); font-weight: 600; }
-.mac-install i { color: var(--text); font-style: italic; }
-.mac-install code {
+.os-install h3 { margin: 0 0 14px; font-size: 1.15rem; }
+.os-install ol { margin: 0; padding-left: 1.25rem; display: grid; gap: 12px; }
+.os-install li { color: var(--muted); line-height: 1.6; padding-left: 4px; }
+.os-install li::marker { color: var(--brand); font-weight: 700; }
+.os-install b { color: var(--text); font-weight: 600; }
+.os-install i { color: var(--text); font-style: italic; }
+.os-install code {
   font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
   font-size: .82rem; color: var(--accent);
   background: var(--bg); border: 1px solid var(--border);
   border-radius: 6px; padding: 1px 6px; overflow-wrap: anywhere;
 }
-.mac-install-tip {
+.os-install-tip {
   margin: 16px 0 0; padding-top: 14px; border-top: 1px solid var(--border);
   color: var(--muted); font-size: .88rem; line-height: 1.6;
 }

@@ -1,6 +1,6 @@
 # bubbletranslate.app
 
-The website for **BubbleTranslate**, a desktop app for macOS and Linux that
+The website for **BubbleTranslate**, a desktop app for macOS, Windows and Linux that
 shows the translation of text you select in a small bubble at your cursor.
 
 Hold **Shift** while selecting and the bubble appears; select without it and

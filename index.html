@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BubbleTranslate — Translate anything without leaving your desktop</title>
-  <meta name="description" content="BubbleTranslate is a lightweight desktop app for macOS and Linux. Select text in any app and a bubble appears at your cursor with the translation. 10 free translations a day; go unlimited with Pro from $2/month.">
+  <meta name="description" content="BubbleTranslate is a lightweight desktop app for macOS, Windows and Linux. Select text in any app and a bubble appears at your cursor with the translation. 10 free translations a day; go unlimited with Pro from $2/month.">
   <meta name="theme-color" content="#0b1020">
   <meta property="og:title" content="BubbleTranslate — Translate anything without leaving your desktop">
-  <meta property="og:description" content="A desktop app for macOS and Linux. Select text in any app and a bubble appears at your cursor with the translation. 10 free a day, Pro from $2/month.">
+  <meta property="og:description" content="A desktop app for macOS, Windows and Linux. Select text in any app and a bubble appears at your cursor with the translation. 10 free a day, Pro from $2/month.">
   <meta property="og:type" content="website">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -48,7 +48,7 @@
     <section class="hero">
       <div class="container hero-grid">
         <div>
-          <span class="pill" data-i18n="hero.pill">🫧 Desktop app for macOS &amp; Linux · 10 free translations a day</span>
+          <span class="pill" data-i18n="hero.pill">🫧 Desktop app for macOS, Windows &amp; Linux · 10 free translations a day</span>
           <h1 data-i18n="hero.h1">Translate anything <span class="grad">without leaving your desktop.</span></h1>
           <p class="lead" data-i18n="hero.lead">No interruption while reading anymore. Stop copy-pasting text into Google Translate. <b>Hold Shift, select text</b>, and read the translation right where you are.</p>
           <div class="hero-actions">
@@ -250,18 +250,17 @@
             </div>
           </div>
           <div class="dl-card" data-os="windows">
-            <span class="soon-badge" data-i18n="dl.win.badge">Coming soon</span>
             <div class="os"><img src="/logos/windows.png" alt="" aria-hidden="true" width="44" height="44" loading="lazy" decoding="async"></div>
             <h3>Windows</h3>
-            <p data-i18n="dl.win.desc">It is coming soon.</p>
-            <span class="btn btn-soon" aria-disabled="true" data-i18n="dl.win.btn">Coming soon</span>
-            <div class="install-note" data-i18n="dl.win.note">
-              Want to hear when it lands? Watch the project on
-              <a href="https://github.com/pelamx/bubbleTranslate" style="color:var(--brand);" target="_blank" rel="noopener">GitHub</a>.
+            <p data-i18n="dl.win.desc">x86-64 · Windows 10 &amp; 11 · runs on ARM too · 17&nbsp;MB</p>
+            <a class="btn btn-primary" href="https://github.com/pelamx/bubbleTranslate/raw/main/bubbleTranslate.exe" download data-i18n="dl.win.btn">Download EXE</a>
+            <div class="install-note">
+              <span data-i18n="dl.win.run">Nothing to install. Put it wherever you keep programs and double-click it.</span>
+              <span data-i18n="dl.win.note2">It isn't code-signed, so SmartScreen stops the first launch: <b>More info</b> › <b>Run anyway</b>, once per machine.</span>
             </div>
           </div>
         </div>
-        <div class="mac-install" id="mac-install">
+        <div class="os-install" id="mac-install">
           <h3 data-i18n="mac.install.h3">Installing on macOS — the first run</h3>
           <ol>
             <li data-i18n="mac.install.1">Open the DMG and drag <b>bubbleTranslate.app</b> into <b>Applications</b>. Install it there — not run from the DMG or Downloads.</li>
@@ -270,7 +269,18 @@
             <li data-i18n="mac.install.4"><b>Quit and relaunch.</b> The Accessibility permission only takes effect on a fresh start, so quit bubbleTranslate (the globe in the menu bar → Quit) and open it again. Until you do, the window says <b>"Not watching for selections."</b></li>
             <li data-i18n="mac.install.5">Done. Hold <b>Shift</b> and select text anywhere, and the bubble appears at your cursor.</li>
           </ol>
-          <p class="mac-install-tip" data-i18n="mac.install.tip">Still "Not watching" after relaunching? Remove bubbleTranslate from the Accessibility list (select it, click −), run <code>xattr -dr com.apple.quarantine /Applications/bubbleTranslate.app</code>, then add it back, switch it on, and relaunch. A leftover entry from an older build can silently block the new one.</p>
+          <p class="os-install-tip" data-i18n="mac.install.tip">Still "Not watching" after relaunching? Remove bubbleTranslate from the Accessibility list (select it, click −), run <code>xattr -dr com.apple.quarantine /Applications/bubbleTranslate.app</code>, then add it back, switch it on, and relaunch. A leftover entry from an older build can silently block the new one.</p>
+        </div>
+        <div class="os-install" id="windows-install">
+          <h3 data-i18n="win.install.h3">Installing on Windows — the first run</h3>
+          <ol>
+            <li data-i18n="win.install.1">Put <b>bubbleTranslate.exe</b> wherever you keep programs and double-click it. There is no installer and nothing to unpack — it is one file, and it writes its settings to <code>%APPDATA%\bubbleTranslate</code> the first time it runs.</li>
+            <li data-i18n="win.install.2">Windows says <b>"Windows protected your PC"</b>. That is SmartScreen reacting to a file it has not seen signed, not to anything the app does. Click <b>More info</b>, then <b>Run anyway</b> — once per machine, not once per launch.</li>
+            <li data-i18n="win.install.3">No permission to grant: Windows lets it read what you select straight away, so it starts watching the moment it opens.</li>
+            <li data-i18n="win.install.4">Find the globe. Windows 11 hides every new tray icon behind the <b>^</b> arrow next to the clock — drag it out onto the taskbar to keep it there. That icon reopens the window, and it is how you quit.</li>
+            <li data-i18n="win.install.5">Done. Hold <b>Shift</b> and select text anywhere, and the bubble appears at your cursor.</li>
+          </ol>
+          <p class="os-install-tip" data-i18n="win.install.tip">Nothing appears in one particular app? If that window is running as administrator, Windows hides it from every program that isn't — including this one — and there is no permission that changes it. Everywhere else, check that you are holding the key: Shift by default, and the window's Behaviour section is where you change it.</p>
         </div>
         <p class="download-foot" data-i18n="dl.foot">
           Source, build instructions, and full docs live on
@@ -287,12 +297,12 @@
           <p data-i18n="faq.head.p">Everything worth knowing before you install.</p>
         </div>
         <div class="faq">
-          <details open><summary data-i18n="faq.q1">Is BubbleTranslate free?</summary><p data-i18n="faq.a1">Yes. You get 10 translations a day for free, on macOS and Linux, with no account or sign-up. If you need more, Pro removes the daily limit for $2/month or $20/year.</p></details>
+          <details open><summary data-i18n="faq.q1">Is BubbleTranslate free?</summary><p data-i18n="faq.a1">Yes. You get 10 translations a day for free, on macOS, Windows and Linux, with no account or sign-up. If you need more, Pro removes the daily limit for $2/month or $20/year.</p></details>
           <details><summary data-i18n="faq.q2">What do I get with Pro?</summary><p data-i18n="faq.a2">Unlimited translations on up to three machines, for $2/month or $20/year (the yearly plan is two months free). One licence key covers all your machines, and it supports the app's ongoing development.</p></details>
           <details><summary data-i18n="faq.q3">How do I pay for Pro?</summary><p data-i18n="faq.a3">Monthly or yearly. Billing goes through Paddle, the merchant of record, so you are charged in your own currency with any local tax included. You can cancel anytime.</p></details>
-          <details><summary data-i18n="faq.q4">Which systems does it run on?</summary><p data-i18n="faq.a4">macOS and Linux. There's no Windows build yet. On Linux you need glibc 2.43 or newer for the prebuilt binary; on an older distribution, build from source.</p></details>
+          <details><summary data-i18n="faq.q4">Which systems does it run on?</summary><p data-i18n="faq.a4">macOS, Windows and Linux. The Windows build is one .exe that needs nothing installed and runs on Windows 10 and 11, including ARM machines. On Linux you need glibc 2.43 or newer for the prebuilt binary; on an older distribution, build from source.</p></details>
           <details><summary data-i18n="faq.q5">Does it need an internet connection?</summary><p data-i18n="faq.a5">Yes. Translations come from online providers, tried in turn until one answers. Only the text you select is sent, and only to translate it.</p></details>
-          <details><summary data-i18n="faq.q6">What permission does it need?</summary><p data-i18n="faq.a6">On macOS, Accessibility — that's how the app sees what you've selected. It's the only permission it asks for. On Linux nothing extra is required on most X11 and Wayland sessions.</p></details>
+          <details><summary data-i18n="faq.q6">What permission does it need?</summary><p data-i18n="faq.a6">On macOS, Accessibility — that's how the app sees what you've selected. It's the only permission it asks for. On Windows and on most X11 and Wayland sessions, nothing extra is required.</p></details>
           <details><summary data-i18n="faq.q7">Does it translate everything I select?</summary><p data-i18n="faq.a7">No — only selections you make with a key held down. Shift by default, so extending a selection and translating it are one gesture. You can switch the key to Ctrl, Alt or Super, or set it to translate every selection like before. Copying and ordinary highlighting are left alone.</p></details>
         </div>
       </div>

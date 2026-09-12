@@ -20,7 +20,7 @@ if (y) y.textContent = new Date().getFullYear();
 const I18N = {
   en: {
     'meta.title': 'BubbleTranslate — Translate anything without leaving your desktop',
-    'meta.desc': 'BubbleTranslate is a lightweight desktop app for macOS and Linux. Select text in any app and a bubble appears at your cursor with the translation. 10 free translations a day; go unlimited with Pro from $2/month.',
+    'meta.desc': 'BubbleTranslate is a lightweight desktop app for macOS, Windows and Linux. Select text in any app and a bubble appears at your cursor with the translation. 10 free translations a day; go unlimited with Pro from $2/month.',
 
     // -- /pricing -----------------------------------------------------------
     'pricing.meta.title': 'Pricing — BubbleTranslate',
@@ -54,7 +54,7 @@ const I18N = {
     'nav.contact': 'Contact',
     'nav.cta': 'Get the app',
 
-    'hero.pill': '🫧 Desktop app for macOS &amp; Linux · 10 free translations a day',
+    'hero.pill': '🫧 Desktop app for macOS, Windows &amp; Linux · 10 free translations a day',
     'hero.h1': 'Translate anything <span class="grad">without leaving your desktop.</span>',
     'hero.lead': 'No interruption while reading anymore. Stop copy-pasting text into Google Translate. <b>Hold Shift, select text</b>, and read the translation right where you are.',
     'hero.dlfree': '↓ Download free',
@@ -149,26 +149,33 @@ const I18N = {
     'dl.linux.btn': 'Download binary',
     'dl.linux.run': 'Make it executable and run it:',
     'dl.linux.note2': 'On an older distro, or GNOME Wayland, build from source instead.',
-    'dl.win.badge': 'Coming soon',
-    'dl.win.desc': 'It is coming soon.',
-    'dl.win.btn': 'Coming soon',
-    'dl.win.note': 'Want to hear when it lands? Watch the project on <a href="https://github.com/pelamx/bubbleTranslate" style="color:var(--brand);" target="_blank" rel="noopener">GitHub</a>.',
+    'dl.win.desc': 'x86-64 · Windows 10 &amp; 11 · runs on ARM too · 17&nbsp;MB',
+    'dl.win.btn': 'Download EXE',
+    'dl.win.run': 'Nothing to install. Put it wherever you keep programs and double-click it.',
+    'dl.win.note2': 'It isn\'t code-signed, so SmartScreen stops the first launch: <b>More info</b> › <b>Run anyway</b>, once per machine.',
+    'win.install.h3': 'Installing on Windows — the first run',
+    'win.install.1': 'Put <b>bubbleTranslate.exe</b> wherever you keep programs and double-click it. There is no installer and nothing to unpack — it is one file, and it writes its settings to <code>%APPDATA%\\bubbleTranslate</code> the first time it runs.',
+    'win.install.2': 'Windows says <b>"Windows protected your PC"</b>. That is SmartScreen reacting to a file it has not seen signed, not to anything the app does. Click <b>More info</b>, then <b>Run anyway</b> — once per machine, not once per launch.',
+    'win.install.3': 'No permission to grant: Windows lets it read what you select straight away, so it starts watching the moment it opens.',
+    'win.install.4': 'Find the globe. Windows 11 hides every new tray icon behind the <b>^</b> arrow next to the clock — drag it out onto the taskbar to keep it there. That icon reopens the window, and it is how you quit.',
+    'win.install.5': 'Done. Hold <b>Shift</b> and select text anywhere, and the bubble appears at your cursor.',
+    'win.install.tip': 'Nothing appears in one particular app? If that window is running as administrator, Windows hides it from every program that isn\'t — including this one — and there is no permission that changes it. Everywhere else, check that you are holding the key: Shift by default, and the window\'s Behaviour section is where you change it.',
     'dl.foot': 'Source, build instructions, and full docs live on <a href="https://github.com/pelamx/bubbleTranslate" style="color:var(--brand);" target="_blank" rel="noopener">GitHub</a>.',
 
     'faq.head.h2': 'Frequently asked questions',
     'faq.head.p': 'Everything worth knowing before you install.',
     'faq.q1': 'Is BubbleTranslate free?',
-    'faq.a1': 'Yes. You get 10 translations a day for free, on macOS and Linux, with no account or sign-up. If you need more, Pro removes the daily limit for $2/month or $20/year.',
+    'faq.a1': 'Yes. You get 10 translations a day for free, on macOS, Windows and Linux, with no account or sign-up. If you need more, Pro removes the daily limit for $2/month or $20/year.',
     'faq.q2': 'What do I get with Pro?',
     'faq.a2': 'Unlimited translations on up to three machines, for $2/month or $20/year (the yearly plan is two months free). One licence key covers all your machines, and it supports the app\'s ongoing development.',
     'faq.q3': 'How do I pay for Pro?',
     'faq.a3': 'Monthly or yearly. Billing goes through Paddle, the merchant of record, so you are charged in your own currency with any local tax included. You can cancel anytime.',
     'faq.q4': 'Which systems does it run on?',
-    'faq.a4': 'macOS and Linux. There\'s no Windows build yet. On Linux you need glibc 2.43 or newer for the prebuilt binary; on an older distribution, build from source.',
+    'faq.a4': 'macOS, Windows and Linux. The Windows build is one .exe that needs nothing installed and runs on Windows 10 and 11, including ARM machines. On Linux you need glibc 2.43 or newer for the prebuilt binary; on an older distribution, build from source.',
     'faq.q5': 'Does it need an internet connection?',
     'faq.a5': 'Yes. Translations come from online providers, tried in turn until one answers. Only the text you select is sent, and only to translate it.',
     'faq.q6': 'What permission does it need?',
-    'faq.a6': 'On macOS, Accessibility — that\'s how the app sees what you\'ve selected. It\'s the only permission it asks for. On Linux nothing extra is required on most X11 and Wayland sessions.',
+    'faq.a6': 'On macOS, Accessibility — that\'s how the app sees what you\'ve selected. It\'s the only permission it asks for. On Windows and on most X11 and Wayland sessions, nothing extra is required.',
     'faq.q7': 'Does it translate everything I select?',
     'faq.a7': 'No — only selections you make with a key held down. Shift by default, so extending a selection and translating it are one gesture. You can switch the key to Ctrl, Alt or Super, or set it to translate every selection like before. Copying and ordinary highlighting are left alone.',
 
@@ -183,7 +190,7 @@ const I18N = {
 
   tr: {
     'meta.title': 'BubbleTranslate — Masaüstünüzden ayrılmadan seçtiğiniz metni çevirin',
-    'meta.desc': 'BubbleTranslate, macOS ve Linux için hafif bir masaüstü uygulamasıdır. Herhangi bir uygulamada metin seçin; imlecinizin yanında çevirisiyle bir baloncuk belirir. Günde 10 ücretsiz çeviri; sınırsız için Pro aylık $2\'den başlar.',
+    'meta.desc': 'BubbleTranslate, macOS, Windows ve Linux için hafif bir masaüstü uygulamasıdır. Herhangi bir uygulamada metin seçin; imlecinizin yanında çevirisiyle bir baloncuk belirir. Günde 10 ücretsiz çeviri; sınırsız için Pro aylık $2\'den başlar.',
 
     // -- /pricing -----------------------------------------------------------
     'pricing.meta.title': 'Fiyatlandırma — BubbleTranslate',
@@ -217,7 +224,7 @@ const I18N = {
     'nav.contact': 'İletişim',
     'nav.cta': 'Uygulamayı al',
 
-    'hero.pill': '🫧 macOS &amp; Linux için masaüstü uygulaması · günde 10 ücretsiz çeviri',
+    'hero.pill': '🫧 macOS, Windows ve Linux için masaüstü uygulaması · günde 10 ücretsiz çeviri',
     'hero.h1': '<span class="grad">Masaüstünüzden ayrılmadan</span> seçtiğiniz metnin çevirisini yapın.',
     'hero.lead': 'Okurken artık copy/paste dikkatinizi dağıtmayacak. Metinleri Google Translate\'e kopyalayıp yapıştırmayı bırakın. <b>Shift\'i basılı tutun, metni seçin</b> ve çeviriyi tam olduğunuz yerde okuyun.',
     'hero.dlfree': '↓ Ücretsiz indir',
@@ -312,26 +319,33 @@ const I18N = {
     'dl.linux.btn': 'İkili dosyayı indir',
     'dl.linux.run': 'Çalıştırılabilir yapın ve çalıştırın:',
     'dl.linux.note2': 'Daha eski bir dağıtımda veya GNOME Wayland\'da bunun yerine kaynaktan derleyin.',
-    'dl.win.badge': 'Yakında',
-    'dl.win.desc': 'Yakında geliyor.',
-    'dl.win.btn': 'Yakında',
-    'dl.win.note': 'Çıktığında haber almak ister misiniz? Projeyi <a href="https://github.com/pelamx/bubbleTranslate" style="color:var(--brand);" target="_blank" rel="noopener">GitHub</a>\'da takip edin.',
+    'dl.win.desc': 'x86-64 · Windows 10 ve 11 · ARM\'da da çalışır · 17&nbsp;MB',
+    'dl.win.btn': 'EXE indir',
+    'dl.win.run': 'Kurulum yok. Programlarınızı tuttuğunuz yere koyup çift tıklayın.',
+    'dl.win.note2': 'Dosya imzalı değil; SmartScreen ilk açılışı durdurur: <b>Ek bilgi</b> › <b>Yine de çalıştır</b>, makine başına bir kez.',
+    'win.install.h3': 'Windows\'ta kurulum — ilk çalıştırma',
+    'win.install.1': '<b>bubbleTranslate.exe</b>\'yi programlarınızı tuttuğunuz yere koyup çift tıklayın. Kurulum sihirbazı yok, açılacak arşiv yok — tek bir dosya; ayarlarını ilk çalıştırmada <code>%APPDATA%\\bubbleTranslate</code> içine yazar.',
+    'win.install.2': 'Windows <b>"Bilgisayarınız korundu"</b> der. Bu, SmartScreen\'in imzalı görmediği bir dosyaya tepkisidir — uygulamanın yaptığı bir şey değil. <b>Ek bilgi</b>\'ye, sonra <b>Yine de çalıştır</b>\'a tıklayın; her açılışta değil, makine başına bir kez.',
+    'win.install.3': 'Verilecek izin yok: Windows seçtiğinizi okumasına doğrudan izin verir, uygulama açıldığı anda izlemeye başlar.',
+    'win.install.4': 'Küreyi bulun. Windows 11 her yeni bildirim simgesini saatin yanındaki <b>^</b> okunun arkasına gizler — görev çubuğuna sürükleyip orada tutun. Pencereyi o simge geri açar, çıkış da oradan yapılır.',
+    'win.install.5': 'Bitti. Herhangi bir yerde <b>Shift</b>\'e basılı tutup metni seçin; baloncuk imlecinizin yanında belirir.',
+    'win.install.tip': 'Belirli bir uygulamada hiçbir şey çıkmıyor mu? O pencere yönetici olarak çalışıyorsa Windows onu, yönetici olmayan her programdan — bu uygulama dahil — gizler ve bunu değiştiren bir izin yoktur. Diğer yerlerde tuşa basılı tuttuğunuzdan emin olun: varsayılan Shift\'tir, pencerenin Behaviour bölümünden değiştirilir.',
     'dl.foot': 'Kaynak kod, derleme talimatları ve tüm belgeler <a href="https://github.com/pelamx/bubbleTranslate" style="color:var(--brand);" target="_blank" rel="noopener">GitHub</a>\'da.',
 
     'faq.head.h2': 'Sıkça sorulan sorular',
     'faq.head.p': 'Kurmadan önce bilmeye değer her şey.',
     'faq.q1': 'BubbleTranslate ücretsiz mi?',
-    'faq.a1': 'Evet. macOS ve Linux\'ta, hesap veya kayıt olmadan günde 10 ücretsiz çeviri alırsınız. Daha fazlası gerekirse Pro, günlük sınırı $2/ay veya $20/yıl karşılığında kaldırır.',
+    'faq.a1': 'Evet. macOS, Windows ve Linux\'ta, hesap veya kayıt olmadan günde 10 ücretsiz çeviri alırsınız. Daha fazlası gerekirse Pro, günlük sınırı $2/ay veya $20/yıl karşılığında kaldırır.',
     'faq.q2': 'Pro ile ne elde ederim?',
     'faq.a2': 'En fazla üç makinede sınırsız çeviri, $2/ay veya $20/yıl karşılığında (yıllık planda iki ay bedava). Tek lisans anahtarı tüm makinelerinizi kapsar ve uygulamanın sürekli gelişimini destekler.',
     'faq.q3': 'Pro için nasıl ödeme yaparım?',
     'faq.a3': 'Aylık veya yıllık. Ödeme, kayıtlı satıcı Paddle üzerinden alınır; kendi para biriminizde ve yerel vergi dahil ücretlendirilirsiniz. İstediğiniz zaman iptal edebilirsiniz.',
     'faq.q4': 'Hangi sistemlerde çalışır?',
-    'faq.a4': 'macOS ve Linux. Henüz Windows sürümü yok. Linux\'ta hazır ikili dosya için glibc 2.43 veya üstü gerekir; daha eski bir dağıtımda kaynaktan derleyin.',
+    'faq.a4': 'macOS, Windows ve Linux. Windows sürümü hiçbir şey kurmayı gerektirmeyen tek bir .exe dosyasıdır ve ARM makineler dahil Windows 10 ile 11\'de çalışır. Linux\'ta hazır ikili dosya için glibc 2.43 veya üstü gerekir; daha eski bir dağıtımda kaynaktan derleyin.',
     'faq.q5': 'İnternet bağlantısı gerekir mi?',
     'faq.a5': 'Evet. Çeviriler çevrimiçi sağlayıcılardan gelir; biri yanıt verene kadar sırayla denenir. Yalnızca seçtiğiniz metin, yalnızca çevirmek için gönderilir.',
     'faq.q6': 'Hangi izne ihtiyacı var?',
-    'faq.a6': 'macOS\'ta Erişilebilirlik — uygulama seçtiğinizi böyle görür. İstediği tek izin budur. Linux\'ta çoğu X11 ve Wayland oturumunda ek bir şey gerekmez.',
+    'faq.a6': 'macOS\'ta Erişilebilirlik — uygulama seçtiğinizi böyle görür. İstediği tek izin budur. Windows\'ta ve çoğu X11 ile Wayland oturumunda ek bir şey gerekmez.',
     'faq.q7': 'Seçtiğim her şeyi çevirir mi?',
     'faq.a7': 'Hayır — yalnızca bir tuş basılıyken yaptığınız seçimleri. Varsayılan Shift\'tir; böylece seçimi genişletmek ve çevirmek tek harekettir. Tuşu Ctrl, Alt veya Super yapabilir ya da eskisi gibi her seçimi çevirtebilirsiniz. Kopyalama ve sıradan işaretlemeye dokunulmaz.',
 
@@ -346,7 +360,7 @@ const I18N = {
 
   es: {
     'meta.title': 'BubbleTranslate — Traduce lo que sea sin salir de tu escritorio',
-    'meta.desc': 'BubbleTranslate es una ligera app de escritorio para macOS y Linux. Selecciona texto en cualquier app y aparece una burbuja junto al cursor con la traducción. 10 traducciones gratis al día; pásate a ilimitado con Pro desde $2/mes.',
+    'meta.desc': 'BubbleTranslate es una ligera app de escritorio para macOS, Windows y Linux. Selecciona texto en cualquier app y aparece una burbuja junto al cursor con la traducción. 10 traducciones gratis al día; pásate a ilimitado con Pro desde $2/mes.',
 
     // -- /pricing -----------------------------------------------------------
     'pricing.meta.title': 'Precios — BubbleTranslate',
@@ -380,7 +394,7 @@ const I18N = {
     'nav.contact': 'Contacto',
     'nav.cta': 'Descargar la app',
 
-    'hero.pill': '🫧 App de escritorio para macOS y Linux · 10 traducciones gratis al día',
+    'hero.pill': '🫧 App de escritorio para macOS, Windows y Linux · 10 traducciones gratis al día',
     'hero.h1': 'Traduce lo que sea <span class="grad">sin salir de tu escritorio.</span>',
     'hero.lead': 'Se acabaron las interrupciones mientras lees. Deja de copiar y pegar texto en Google Translate. <b>Mantén pulsada la tecla Shift y selecciona el texto</b> para leer la traducción justo donde estás.',
     'hero.dlfree': '↓ Descargar gratis',
@@ -475,26 +489,33 @@ const I18N = {
     'dl.linux.btn': 'Descargar binario',
     'dl.linux.run': 'Hazlo ejecutable y ejecútalo:',
     'dl.linux.note2': 'En una distro más antigua, o GNOME Wayland, compílalo desde el código fuente.',
-    'dl.win.badge': 'Próximamente',
-    'dl.win.desc': 'Llegará pronto.',
-    'dl.win.btn': 'Próximamente',
-    'dl.win.note': '¿Quieres enterarte cuando salga? Sigue el proyecto en <a href="https://github.com/pelamx/bubbleTranslate" style="color:var(--brand);" target="_blank" rel="noopener">GitHub</a>.',
+    'dl.win.desc': 'x86-64 · Windows 10 y 11 · también en ARM · 17&nbsp;MB',
+    'dl.win.btn': 'Descargar EXE',
+    'dl.win.run': 'No hay nada que instalar. Ponlo donde guardes tus programas y haz doble clic.',
+    'dl.win.note2': 'No está firmado, así que SmartScreen detiene el primer arranque: <b>Más información</b> › <b>Ejecutar de todas formas</b>, una vez por equipo.',
+    'win.install.h3': 'Instalación en Windows — el primer arranque',
+    'win.install.1': 'Pon <b>bubbleTranslate.exe</b> donde guardes tus programas y haz doble clic. No hay instalador ni nada que descomprimir — es un solo archivo, y escribe su configuración en <code>%APPDATA%\\bubbleTranslate</code> la primera vez que se ejecuta.',
+    'win.install.2': 'Windows dice <b>"Windows protegió su PC"</b>. Es SmartScreen reaccionando a un archivo que no ha visto firmado, no a algo que haga la app. Pulsa <b>Más información</b> y luego <b>Ejecutar de todas formas</b> — una vez por equipo, no en cada arranque.',
+    'win.install.3': 'No hay permiso que conceder: Windows le deja leer lo que seleccionas desde el principio, así que empieza a vigilar en cuanto se abre.',
+    'win.install.4': 'Busca el globo. Windows 11 esconde cada icono nuevo de la bandeja tras la flecha <b>^</b> junto al reloj — arrástralo a la barra de tareas para tenerlo a la vista. Ese icono vuelve a abrir la ventana, y es como se sale de la app.',
+    'win.install.5': 'Listo. Mantén <b>Shift</b> y selecciona texto en cualquier parte, y la burbuja aparece junto al cursor.',
+    'win.install.tip': '¿No aparece nada en una app concreta? Si esa ventana se ejecuta como administrador, Windows la oculta a todo programa que no lo sea — incluido este — y no hay permiso que lo cambie. En el resto, comprueba que mantienes la tecla: Shift por defecto, y se cambia en la sección Behaviour de la ventana.',
     'dl.foot': 'El código fuente, las instrucciones de compilación y toda la documentación están en <a href="https://github.com/pelamx/bubbleTranslate" style="color:var(--brand);" target="_blank" rel="noopener">GitHub</a>.',
 
     'faq.head.h2': 'Preguntas frecuentes',
     'faq.head.p': 'Todo lo que conviene saber antes de instalar.',
     'faq.q1': '¿BubbleTranslate es gratis?',
-    'faq.a1': 'Sí. Obtienes 10 traducciones al día gratis, en macOS y Linux, sin cuenta ni registro. Si necesitas más, Pro elimina el límite diario por $2/mes o $20/año.',
+    'faq.a1': 'Sí. Obtienes 10 traducciones al día gratis, en macOS, Windows y Linux, sin cuenta ni registro. Si necesitas más, Pro elimina el límite diario por $2/mes o $20/año.',
     'faq.q2': '¿Qué obtengo con Pro?',
     'faq.a2': 'Traducciones ilimitadas en hasta tres equipos, por $2/mes o $20/año (el plan anual regala dos meses). Una sola clave de licencia cubre todos tus equipos y apoya el desarrollo continuo de la app.',
     'faq.q3': '¿Cómo pago Pro?',
     'faq.a3': 'Mensual o anual. El cobro se realiza a través de Paddle, el comercio registrado, así que se te cobra en tu propia moneda con los impuestos locales incluidos. Puedes cancelar cuando quieras.',
     'faq.q4': '¿En qué sistemas funciona?',
-    'faq.a4': 'macOS y Linux. Aún no hay versión para Windows. En Linux necesitas glibc 2.43 o superior para el binario precompilado; en una distribución más antigua, compílalo desde el código fuente.',
+    'faq.a4': 'macOS, Windows y Linux. La versión de Windows es un único .exe que no requiere instalar nada y funciona en Windows 10 y 11, incluidos los equipos ARM. En Linux necesitas glibc 2.43 o superior para el binario precompilado; en una distribución más antigua, compílalo desde el código fuente.',
     'faq.q5': '¿Necesita conexión a internet?',
     'faq.a5': 'Sí. Las traducciones vienen de proveedores en línea, probados por turnos hasta que uno responde. Solo se envía el texto que seleccionas, y solo para traducirlo.',
     'faq.q6': '¿Qué permiso necesita?',
-    'faq.a6': 'En macOS, Accesibilidad: así ve la app lo que has seleccionado. Es el único permiso que pide. En Linux no hace falta nada extra en la mayoría de sesiones X11 y Wayland.',
+    'faq.a6': 'En macOS, Accesibilidad: así ve la app lo que has seleccionado. Es el único permiso que pide. En Windows y en la mayoría de sesiones X11 y Wayland no hace falta nada extra.',
     'faq.q7': '¿Traduce todo lo que selecciono?',
     'faq.a7': 'No: solo las selecciones que haces con una tecla pulsada. Shift por defecto, así que extender una selección y traducirla son un mismo gesto. Puedes cambiar la tecla a Ctrl, Alt o Super, o hacer que traduzca cada selección como antes. Copiar y resaltar de forma normal quedan intactos.',
 
@@ -567,17 +588,18 @@ if (langSwitch) {
 }
 
 // ---- OS detection + platform-aware download routing ----
-// One place that maps an OS to its download. Add the Windows file here when
-// it's ready and the whole site starts offering it automatically.
+// One place that maps an OS to its download, so a file that lands here is
+// offered by the whole site at once — the hero button, the pricing CTA and the
+// card all read it.
 // Only the metered build (10 free translations a day, then Pro) is ever
-// offered. Both files are the plain-named metered builds on the app repo's main
-// branch. The macOS DMG is arm64 only, so an Intel Mac gets a download it
-// cannot run — worth a universal build before that matters. Windows has no
-// build yet and stays "coming soon" (file: null) until one exists.
+// offered. All three are the plain-named metered builds on the app repo's main
+// branch. The Windows build is x86-64 and runs under emulation on an ARM
+// machine, so there is one file for both; `file: null` is what puts an OS back
+// to "coming soon".
 const DOWNLOADS = {
   mac:     { file: 'https://github.com/pelamx/bubbleTranslate/raw/main/bubbleTranslate.dmg',       label: 'macOS' },
   linux:   { file: 'https://github.com/pelamx/bubbleTranslate/raw/main/bubbleTranslate-linux-x86_64', label: 'Linux' },
-  windows: { file: null,                                                                          label: 'Windows' }
+  windows: { file: 'https://github.com/pelamx/bubbleTranslate/raw/main/bubbleTranslate.exe',       label: 'Windows' }
 };
 
 function detectOS() {
