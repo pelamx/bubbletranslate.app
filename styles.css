@@ -113,6 +113,14 @@ section { padding: 72px 0; }
 .section-head p { color: var(--muted); font-size: 1.05rem; margin: 0; }
 
 .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+/* Four benefits across, each led by what it does for the reader rather than
+   what the feature is called. Two-up before it gets cramped. */
+.grid-4 { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 22px; }
+@media (max-width: 1000px) { .grid-4 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.card .kicker {
+  margin: 0 0 6px; font-size: .72rem; font-weight: 700; letter-spacing: .08em;
+  text-transform: uppercase; color: var(--brand);
+}
 .card {
   background: var(--card); border: 1px solid var(--border); border-radius: var(--radius);
   padding: 26px; transition: transform .18s ease, border-color .18s;
@@ -189,7 +197,7 @@ footer.site { border-top: 1px solid var(--border); padding: 40px 0; color: var(-
   .hero { padding: 40px 0 40px; }
   .hero-grid { grid-template-columns: 1fr; gap: 32px; }
   .hero p.lead { max-width: none; }
-  .grid-3, .steps, .dl-grid { grid-template-columns: 1fr; }
+  .grid-3, .grid-4, .steps, .dl-grid { grid-template-columns: 1fr; }
   section { padding: 56px 0; }
   .steps { row-gap: 34px; }
   .nav-links { display: none; }
