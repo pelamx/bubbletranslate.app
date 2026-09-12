@@ -122,11 +122,25 @@ section { padding: 72px 0; }
 
 /* Download */
 .download { background: linear-gradient(180deg, transparent, rgba(124,92,255,.06)); }
-.dl-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+/* `minmax(0, 1fr)`, not `1fr`. A bare `1fr` floors each column at its
+   min-content width, and the `chmod`/`xattr` lines inside the install notes
+   do not wrap -- so the two cards with commands in them grew, and the
+   Windows card was squeezed into what was left. */
+.dl-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; }
 .dl-card { text-align: center; background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 34px 22px; }
-.dl-card .os { font-size: 2.4rem; margin-bottom: 10px; }
+/* A fixed square for the mark, so the three logos occupy the same space.
+   Their aspect ratios differ a lot -- the Apple is tall, Tux is wide -- so
+   they are fitted inside one box rather than given one height, which is what
+   makes them look the same size rather than merely the same tall. */
+.dl-card .os {
+  height: 56px; margin-bottom: 12px;
+  display: flex; align-items: center; justify-content: center;
+}
+.dl-card .os img { max-width: 72px; max-height: 56px; object-fit: contain; }
 .dl-card h3 { margin: 0 0 4px; }
-.dl-card p { color: var(--muted); margin: 0 0 18px; font-size: .9rem; }
+/* Two lines' worth whether the text needs them or not, so the three download
+   buttons sit on one line instead of stepping down with the longest blurb. */
+.dl-card p { color: var(--muted); margin: 0 0 18px; font-size: .9rem; min-height: 3.3em; }
 
 /* FAQ */
 .faq { max-width: 760px; margin: 0 auto; display: grid; gap: 12px; }
@@ -173,7 +187,10 @@ footer.site { border-top: 1px solid var(--border); padding: 40px 0; color: var(-
 .install-note code, .src-text em {
   font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
 }
-.install-note pre code { color: var(--accent); font-size: .82rem; }
+/* Now that the columns are equal, the commands are wider than the card and
+   used to be cut off mid-word with the scroll the only way to see the rest.
+   Wrapping keeps them readable, and `anywhere` lets a long path break. */
+.install-note pre code { color: var(--accent); font-size: .82rem; white-space: pre-wrap; overflow-wrap: anywhere; }
 .src-text em { color: var(--text); font-style: normal; }
 
 /* Pricing */
