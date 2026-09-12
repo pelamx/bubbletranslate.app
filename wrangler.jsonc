@@ -8,7 +8,11 @@
   "name": "bubbletranslate-site",
   "compatibility_date": "2025-09-01",
   "assets": {
-    "directory": "./"
+    "directory": "./",
+    // Without this a path that matches no file answers 404 with an empty body,
+    // and the styled 404.html in this directory is never served -- which is
+    // what was happening: the page existed and nobody could reach it.
+    "not_found_handling": "404-page"
   },
   "routes": [
     { "pattern": "bubbletranslate.app/*", "zone_name": "bubbletranslate.app" },
