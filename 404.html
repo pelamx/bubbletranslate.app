@@ -18,5 +18,11 @@
       </div>
     </div>
   </section>
+  <!-- Cloudflare Web Analytics. Cookieless: it sets nothing in the browser and
+       builds no identifier, which is what lets privacy.html say the site counts
+       visits without profiling anyone. The token is not a secret -- it names the
+       site to Cloudflare and is visible in the page source by design. -->
+  <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js"
+          data-cf-beacon='{"token": "fbd9a0fba77646e9b0022152d65460a8"}'></script>
 </body>
 </html>
