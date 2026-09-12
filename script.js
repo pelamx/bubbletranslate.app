@@ -63,7 +63,6 @@ const I18N = {
     'video.caption': '▶ A real screen recording — select text, read the bubble.',
 
     'feat.head.h2': 'New experience in translation, no interruption while reading foreign docs and readings.',
-    'feat.head.p': 'The window is somewhere to visit, not somewhere to live. Hold Shift and select, and the app answers; the rest of the time it stays out of the way.',
     'feat.1.h3': 'Works in every app',
     'feat.1.p': 'Select text in a PDF, a terminal, a browser, or an editor. If you can highlight it, BubbleTranslate can read it.',
     'feat.2.h3': 'Bubble at your cursor',
@@ -220,7 +219,6 @@ const I18N = {
     'video.caption': '▶ Gerçek bir ekran kaydı — metni seçin, baloncuğu okuyun.',
 
     'feat.head.h2': 'Çeviride yeni bir deneyim — yabancı belgeleri okurken kesinti yok.',
-    'feat.head.p': 'Pencere, yaşanacak değil ziyaret edilecek bir yer. Shift\'e basılı tutup seçin, uygulama yanıtlasın; geri kalan zamanda yoldan çekilir.',
     'feat.1.h3': 'Her uygulamada çalışır',
     'feat.1.p': 'Bir PDF\'te, terminalde, tarayıcıda veya editörde metin seçin. Seçebiliyorsanız, BubbleTranslate okuyabilir.',
     'feat.2.h3': 'İmlecinizde baloncuk',
@@ -377,7 +375,6 @@ const I18N = {
     'video.caption': '▶ Una grabación de pantalla real: selecciona texto, lee la burbuja.',
 
     'feat.head.h2': 'Una nueva experiencia en traducción, sin interrupciones al leer documentos extranjeros.',
-    'feat.head.p': 'La ventana es un lugar para visitar, no para vivir. Mantén Shift y selecciona, y la app responde; el resto del tiempo se mantiene al margen.',
     'feat.1.h3': 'Funciona en cualquier app',
     'feat.1.p': 'Selecciona texto en un PDF, una terminal, un navegador o un editor. Si puedes resaltarlo, BubbleTranslate puede leerlo.',
     'feat.2.h3': 'Burbuja en el cursor',
