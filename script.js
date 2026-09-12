@@ -19,7 +19,7 @@ if (y) y.textContent = new Date().getFullYear();
 // ============================================================
 const I18N = {
   en: {
-    'meta.title': 'BubbleTranslate — Select text anywhere, read the translation in a bubble',
+    'meta.title': 'BubbleTranslate — Translate anything without leaving your screen',
     'meta.desc': 'BubbleTranslate is a lightweight desktop app for macOS and Linux. Select text in any app and a bubble appears at your cursor with the translation. 10 free translations a day; go unlimited with Pro from $2/month.',
 
     // -- /pricing -----------------------------------------------------------
@@ -55,8 +55,8 @@ const I18N = {
     'nav.cta': 'Get the app',
 
     'hero.pill': '🫧 For macOS &amp; Linux · 10 free translations a day',
-    'hero.h1': 'Select text anywhere. Read the translation <span class="grad">in a bubble.</span>',
-    'hero.lead': 'BubbleTranslate is a small desktop app that translates what you select. <b>Hold Shift while you select</b> text in a PDF, a terminal, a browser, or an editor, and a bubble appears right at your cursor with the translation. Select without Shift and nothing happens, so copying and pasting is never interrupted. <b>It detects the language for you</b> — you never say what you\'re reading — and translates into the language you chose.',
+    'hero.h1': 'Translate anything <span class="grad">without leaving your screen.</span>',
+    'hero.lead': 'No interruption while reading anymore. Stop copy-pasting text into Google Translate. <b>Hold Shift, select text</b>, and read the translation right where you are.',
     'hero.dlfree': '↓ Download free',
     'hero.see': 'See how it works',
     'hero.note': 'Free · 10 translations a day · Pro from $2/month for unlimited',
@@ -155,7 +155,7 @@ const I18N = {
   },
 
   tr: {
-    'meta.title': 'BubbleTranslate — Her yerde metin seçin, çeviriyi baloncukta okuyun',
+    'meta.title': 'BubbleTranslate — Her şeyi çevirin, ekranınızdan ayrılmadan',
     'meta.desc': 'BubbleTranslate, macOS ve Linux için hafif bir masaüstü uygulamasıdır. Herhangi bir uygulamada metin seçin; imlecinizin yanında çevirisiyle bir baloncuk belirir. Günde 10 ücretsiz çeviri; sınırsız için Pro aylık $2\'den başlar.',
 
     // -- /pricing -----------------------------------------------------------
@@ -191,8 +191,8 @@ const I18N = {
     'nav.cta': 'Uygulamayı al',
 
     'hero.pill': '🫧 macOS &amp; Linux için · günde 10 ücretsiz çeviri',
-    'hero.h1': 'Her yerde metin seçin. Çeviriyi <span class="grad">bir baloncukta</span> okuyun.',
-    'hero.lead': 'BubbleTranslate, seçtiğiniz metni çeviren küçük bir masaüstü uygulamasıdır. Bir PDF\'te, terminalde, tarayıcıda veya editörde <b>Shift\'i basılı tutarak</b> metni seçin; imlecinizin yanında çevirisiyle bir baloncuk belirir. Shift\'siz seçtiğinizde hiçbir şey olmaz, böylece kopyala-yapıştır hiç bölünmez. <b>Dili sizin için algılar</b> — ne okuduğunuzu asla söylemezsiniz — ve seçtiğiniz dile çevirir.',
+    'hero.h1': 'Her şeyi çevirin, <span class="grad">ekranınızdan ayrılmadan.</span>',
+    'hero.lead': 'Okurken artık hiçbir şey bölünmüyor. Metinleri Google Translate\'e kopyalayıp yapıştırmayı bırakın. <b>Shift\'i basılı tutun, metni seçin</b> ve çeviriyi tam olduğunuz yerde okuyun.',
     'hero.dlfree': '↓ Ücretsiz indir',
     'hero.see': 'Nasıl çalıştığını gör',
     'hero.note': 'Ücretsiz · günde 10 çeviri · sınırsız için Pro aylık $2\'den',
@@ -291,7 +291,7 @@ const I18N = {
   },
 
   es: {
-    'meta.title': 'BubbleTranslate — Selecciona texto donde sea, lee la traducción en una burbuja',
+    'meta.title': 'BubbleTranslate — Traduce lo que sea sin salir de tu pantalla',
     'meta.desc': 'BubbleTranslate es una ligera app de escritorio para macOS y Linux. Selecciona texto en cualquier app y aparece una burbuja junto al cursor con la traducción. 10 traducciones gratis al día; pásate a ilimitado con Pro desde $2/mes.',
 
     // -- /pricing -----------------------------------------------------------
@@ -327,8 +327,8 @@ const I18N = {
     'nav.cta': 'Descargar la app',
 
     'hero.pill': '🫧 Para macOS y Linux · 10 traducciones gratis al día',
-    'hero.h1': 'Selecciona texto donde sea. Lee la traducción <span class="grad">en una burbuja.</span>',
-    'hero.lead': 'BubbleTranslate es una pequeña app de escritorio que traduce lo que seleccionas. <b>Mantén pulsada la tecla Shift mientras seleccionas</b> texto en un PDF, una terminal, un navegador o un editor, y aparece una burbuja justo junto al cursor con la traducción. Si seleccionas sin Shift no pasa nada, así que copiar y pegar nunca se interrumpe. <b>Detecta el idioma por ti</b> — nunca dices qué estás leyendo — y traduce al idioma que elijas.',
+    'hero.h1': 'Traduce lo que sea <span class="grad">sin salir de tu pantalla.</span>',
+    'hero.lead': 'Se acabaron las interrupciones mientras lees. Deja de copiar y pegar texto en Google Translate. <b>Mantén pulsada la tecla Shift y selecciona el texto</b> para leer la traducción justo donde estás.',
     'hero.dlfree': '↓ Descargar gratis',
     'hero.see': 'Mira cómo funciona',
     'hero.note': 'Gratis · 10 traducciones al día · Pro desde $2/mes para ilimitado',
