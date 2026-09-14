@@ -19,7 +19,7 @@ if (y) y.textContent = new Date().getFullYear();
 // ============================================================
 const I18N = {
   en: {
-    'meta.title': 'BubbleTranslate — Translate anything without leaving your desktop',
+    'meta.title': 'BubbleTranslate — Translate all selectable text without leaving your desktop',
     'meta.desc': 'BubbleTranslate is a lightweight desktop app for macOS, Windows and Linux. Select text in any app and a bubble appears at your cursor with the translation. 10 free translations a day; go unlimited with Pro from $2/month.',
 
     // -- /pricing -----------------------------------------------------------
@@ -30,7 +30,7 @@ const I18N = {
     'pricing.counts.h3': 'What counts as a translation',
     'pricing.counts.p': 'Only a translation you asked for and actually got back. Re-selecting text you already translated today is free, a failed request costs nothing, and switching the target language on a result you have already seen does not charge you twice. The count resets at your own midnight, not at UTC.',
     'pricing.region.h3': 'How you pay',
-    'pricing.region.p': 'Checkout is handled by Paddle, which acts as the merchant of record. It prices the transaction in your own currency and adds any local tax, so the amount shown at checkout is the amount you pay. Pro is a subscription you can cancel at any time.',
+    'pricing.region.p': 'Checkout is handled by Paddle, which acts as the merchant of record. It prices the transaction in your own currency. Taxes, if applicable, are calculated and shown by Paddle at checkout, so the amount shown there is the amount you pay. Pro is a subscription you can cancel at any time.',
     'pricing.faq.h2': 'Before you buy',
     'pricing.faq.q1': 'What happens when I run out?',
     'pricing.faq.a1': 'The bubble tells you the allowance is spent and offers Pro. Nothing else changes, and the count comes back at midnight.',
@@ -169,7 +169,7 @@ const I18N = {
     'faq.q2': 'What do I get with Pro?',
     'faq.a2': 'Unlimited translations on up to three machines, for $2/month or $20/year (the yearly plan is two months free). One licence key covers all your machines, and it supports the app\'s ongoing development.',
     'faq.q3': 'How do I pay for Pro?',
-    'faq.a3': 'Monthly or yearly. Billing goes through Paddle, the merchant of record, so you are charged in your own currency with any local tax included. You can cancel anytime.',
+    'faq.a3': 'Monthly or yearly. Billing goes through Paddle, the merchant of record, so you are charged in your own currency. Taxes, if applicable, are calculated and shown by Paddle at checkout. You can cancel anytime.',
     'faq.q4': 'Which systems does it run on?',
     'faq.a4': 'macOS, Windows and Linux. The Windows build is one .exe that needs nothing installed and runs on Windows 10 and 11, including ARM machines. On Linux you need glibc 2.43 or newer for the prebuilt binary; on an older distribution, build from source.',
     'faq.q5': 'Does it need an internet connection?',
@@ -200,7 +200,7 @@ const I18N = {
     'pricing.counts.h3': 'Ne çeviri sayılır',
     'pricing.counts.p': 'Yalnızca sizin istediğiniz ve gerçekten dönen bir çeviri. Bugün zaten çevirdiğiniz bir metni yeniden seçmek ücretsizdir, başarısız istek hiçbir şeye mal olmaz, gördüğünüz bir sonucun hedef dilini değiştirmek de iki kez saymaz. Sayaç UTC\'de değil, sizin gece yarınızda sıfırlanır.',
     'pricing.region.h3': 'Ödeme nasıl yapılır',
-    'pricing.region.p': 'Ödeme, kayıtlı satıcı olarak hareket eden Paddle üzerinden alınır. İşlemi kendi para biriminizde fiyatlandırır ve yerel vergiyi ekler; ödeme ekranında gördüğünüz tutar ödediğiniz tutardır. Pro, istediğiniz zaman iptal edebileceğiniz bir aboneliktir.',
+    'pricing.region.p': 'Ödeme, kayıtlı satıcı olarak hareket eden Paddle üzerinden alınır. İşlemi kendi para biriminizde fiyatlandırır. Varsa vergiler, ödeme sırasında Paddle tarafından hesaplanır ve gösterilir; ödeme ekranında gördüğünüz tutar ödediğiniz tutardır. Pro, istediğiniz zaman iptal edebileceğiniz bir aboneliktir.',
     'pricing.faq.h2': 'Satın almadan önce',
     'pricing.faq.q1': 'Hakkım bittiğinde ne olur?',
     'pricing.faq.a1': 'Baloncuk hakkın bittiğini söyler ve Pro\'yu önerir. Başka hiçbir şey değişmez, sayaç gece yarısı geri gelir.',
@@ -339,7 +339,7 @@ const I18N = {
     'faq.q2': 'Pro ile ne elde ederim?',
     'faq.a2': 'En fazla üç makinede sınırsız çeviri, $2/ay veya $20/yıl karşılığında (yıllık planda iki ay bedava). Tek lisans anahtarı tüm makinelerinizi kapsar ve uygulamanın sürekli gelişimini destekler.',
     'faq.q3': 'Pro için nasıl ödeme yaparım?',
-    'faq.a3': 'Aylık veya yıllık. Ödeme, kayıtlı satıcı Paddle üzerinden alınır; kendi para biriminizde ve yerel vergi dahil ücretlendirilirsiniz. İstediğiniz zaman iptal edebilirsiniz.',
+    'faq.a3': 'Aylık veya yıllık. Ödeme, kayıtlı satıcı Paddle üzerinden alınır; kendi para biriminizde ücretlendirilirsiniz. Varsa vergiler, ödeme sırasında Paddle tarafından hesaplanır ve gösterilir. İstediğiniz zaman iptal edebilirsiniz.',
     'faq.q4': 'Hangi sistemlerde çalışır?',
     'faq.a4': 'macOS, Windows ve Linux. Windows sürümü hiçbir şey kurmayı gerektirmeyen tek bir .exe dosyasıdır ve ARM makineler dahil Windows 10 ile 11\'de çalışır. Linux\'ta hazır ikili dosya için glibc 2.43 veya üstü gerekir; daha eski bir dağıtımda kaynaktan derleyin.',
     'faq.q5': 'İnternet bağlantısı gerekir mi?',
@@ -359,7 +359,7 @@ const I18N = {
   },
 
   es: {
-    'meta.title': 'BubbleTranslate — Traduce lo que sea sin salir de tu escritorio',
+    'meta.title': 'BubbleTranslate — Traduce cualquier texto seleccionable sin salir de tu escritorio',
     'meta.desc': 'BubbleTranslate es una ligera app de escritorio para macOS, Windows y Linux. Selecciona texto en cualquier app y aparece una burbuja junto al cursor con la traducción. 10 traducciones gratis al día; pásate a ilimitado con Pro desde $2/mes.',
 
     // -- /pricing -----------------------------------------------------------
@@ -370,7 +370,7 @@ const I18N = {
     'pricing.counts.h3': 'Qué cuenta como traducción',
     'pricing.counts.p': 'Solo una traducción que pediste y que realmente llegó. Volver a seleccionar un texto que ya tradujiste hoy es gratis, una petición fallida no cuesta nada, y cambiar el idioma de destino de un resultado que ya viste no se cobra dos veces. El contador se reinicia a tu medianoche, no a la de UTC.',
     'pricing.region.h3': 'Cómo se paga',
-    'pricing.region.p': 'El pago lo gestiona Paddle, que actúa como comercio registrado. Cobra la transacción en tu propia moneda y añade los impuestos locales, así que el importe que ves en el checkout es el que pagas. Pro es una suscripción que puedes cancelar cuando quieras.',
+    'pricing.region.p': 'El pago lo gestiona Paddle, que actúa como comercio registrado. Cobra la transacción en tu propia moneda. Los impuestos, si corresponden, los calcula y muestra Paddle en el checkout, así que el importe que ves ahí es el que pagas. Pro es una suscripción que puedes cancelar cuando quieras.',
     'pricing.faq.h2': 'Antes de comprar',
     'pricing.faq.q1': '¿Qué pasa cuando se me acaban?',
     'pricing.faq.a1': 'La burbuja te dice que se agotó el margen y te ofrece Pro. Nada más cambia, y el contador vuelve a medianoche.',
@@ -509,7 +509,7 @@ const I18N = {
     'faq.q2': '¿Qué obtengo con Pro?',
     'faq.a2': 'Traducciones ilimitadas en hasta tres equipos, por $2/mes o $20/año (el plan anual regala dos meses). Una sola clave de licencia cubre todos tus equipos y apoya el desarrollo continuo de la app.',
     'faq.q3': '¿Cómo pago Pro?',
-    'faq.a3': 'Mensual o anual. El cobro se realiza a través de Paddle, el comercio registrado, así que se te cobra en tu propia moneda con los impuestos locales incluidos. Puedes cancelar cuando quieras.',
+    'faq.a3': 'Mensual o anual. El cobro se realiza a través de Paddle, el comercio registrado, así que se te cobra en tu propia moneda. Los impuestos, si corresponden, los calcula y muestra Paddle en el checkout. Puedes cancelar cuando quieras.',
     'faq.q4': '¿En qué sistemas funciona?',
     'faq.a4': 'macOS, Windows y Linux. La versión de Windows es un único .exe que no requiere instalar nada y funciona en Windows 10 y 11, incluidos los equipos ARM. En Linux necesitas glibc 2.43 o superior para el binario precompilado; en una distribución más antigua, compílalo desde el código fuente.',
     'faq.q5': '¿Necesita conexión a internet?',
