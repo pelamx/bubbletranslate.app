@@ -55,7 +55,7 @@ const I18N = {
     'nav.cta': 'Get the app',
 
     'hero.pill': '🫧 Desktop app for macOS, Windows &amp; Linux · 10 free translations a day',
-    'hero.h1': 'Translate anything <span class="grad">without leaving your desktop.</span>',
+    'hero.h1': 'Translate all selectable text <span class="grad">without leaving your desktop.</span>',
     'hero.lead': 'No interruption while reading anymore. Stop copy-pasting text into Google Translate. <b>Hold Shift, select text</b>, and read the translation right where you are.',
     'hero.dlfree': '↓ Download free',
     'hero.see': 'See how it works',
@@ -395,7 +395,7 @@ const I18N = {
     'nav.cta': 'Descargar la app',
 
     'hero.pill': '🫧 App de escritorio para macOS, Windows y Linux · 10 traducciones gratis al día',
-    'hero.h1': 'Traduce lo que sea <span class="grad">sin salir de tu escritorio.</span>',
+    'hero.h1': 'Traduce cualquier texto seleccionable <span class="grad">sin salir de tu escritorio.</span>',
     'hero.lead': 'Se acabaron las interrupciones mientras lees. Deja de copiar y pegar texto en Google Translate. <b>Mantén pulsada la tecla Shift y selecciona el texto</b> para leer la traducción justo donde estás.',
     'hero.dlfree': '↓ Descargar gratis',
     'hero.see': 'Mira cómo funciona',
