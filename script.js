@@ -90,7 +90,7 @@ const I18N = {
     'lang.note': 'Those are one click away in the bubble. Need another? Any language code the providers accept works too — just set it in the config.',
 
     'how.head.h2': 'Set it once, then Shift to translate',
-    'how.head.p': 'Choose your language once. After that, hold a key while you select — plain selections are left alone.',
+    'how.head.p': 'Choose your language once. After that, hold SHIFT key while highlighting the text. That is all for translation which is immediate.',
     'how.1.h3': 'Hold Shift and select',
     'how.1.p': 'Hold Shift and select text in any app. The bubble appears only for a selection made with the key down, so everyday selecting and copying stay untouched.',
     'how.2.h3': 'Read the bubble',
@@ -260,7 +260,7 @@ const I18N = {
     'lang.note': 'Bunlar baloncukta tek tıkla seçilebilir. Başka mı lazım? Sağlayıcıların kabul ettiği herhangi bir dil kodu da çalışır — sadece ayar dosyasına yazın.',
 
     'how.head.h2': 'Bir kez ayarlayın, sonra Shift ile çevirin',
-    'how.head.p': 'Dilinizi bir kez seçin. Sonrasında seçim yaparken bir tuşu basılı tutun — tuşsuz seçimlere dokunulmaz.',
+    'how.head.p': 'Dilinizi bir kez seçin. Sonrasında metni seçerken SHIFT tuşunu basılı tutun. Çeviri için tek yapmanız gereken bu; çeviri anında gelir.',
     'how.1.h3': 'Shift\'e basılı tutup seçin',
     'how.1.p': 'Shift\'e basılı tutup herhangi bir uygulamada metni seçin. Baloncuk yalnızca tuş basılıyken yapılan seçim için belirir; gündelik seçme ve kopyalama olduğu gibi kalır.',
     'how.2.h3': 'Baloncuğu okuyun',
@@ -430,7 +430,7 @@ const I18N = {
     'lang.note': 'Están a un clic en la burbuja. ¿Necesitas otro? También funciona cualquier código de idioma que acepten los proveedores: solo ponlo en la configuración.',
 
     'how.head.h2': 'Configúralo una vez y traduce con Shift',
-    'how.head.p': 'Elige tu idioma una vez. Después, mantén una tecla mientras seleccionas — las selecciones normales se dejan en paz.',
+    'how.head.p': 'Elige tu idioma una vez. Después, mantén pulsada la tecla SHIFT mientras resaltas el texto. Eso es todo para traducir; la traducción es inmediata.',
     'how.1.h3': 'Mantén Shift y selecciona',
     'how.1.p': 'Mantén Shift y selecciona texto en cualquier app. La burbuja aparece solo para una selección hecha con la tecla pulsada, así que seleccionar y copiar a diario quedan intactos.',
     'how.2.h3': 'Lee la burbuja',
