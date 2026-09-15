@@ -1,33 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google tag (gtag.js), with Consent Mode v2: everything denied until the visitor allows it (consent.js). -->
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('consent', 'default', {
-      ad_storage: 'denied',
-      ad_user_data: 'denied',
-      ad_personalization: 'denied',
-      analytics_storage: 'denied',
-      wait_for_update: 500
-    });
-    try {
-      if (/(?:^|; )bt_consent=granted(?:;|$)/.test(document.cookie) ||
-          localStorage.getItem('bt-consent') === 'granted') {
-        gtag('consent', 'update', {
-          ad_storage: 'granted',
-          ad_user_data: 'granted',
-          ad_personalization: 'granted',
-          analytics_storage: 'granted'
-        });
-      }
-    } catch (e) {}
-    gtag('set', 'ads_data_redaction', true);
-    gtag('js', new Date());
-    gtag('config', 'AW-18451580938');
-  </script>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18451580938"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Privacy Policy — BubbleTranslate</title>
@@ -82,7 +55,6 @@
     application for macOS, Windows and Linux.</p>
     <p>We are the data controller for the personal data described here. You can reach us at
     <a href="mailto:support@bubbletranslate.app">support@bubbletranslate.app</a> about anything in this
-    <a href="#" data-consent-open data-i18n="nav.cookies">Cookie settings</a>
     document.</p>
 
     <h2 id="text-you-translate">2. The text you translate</h2>
@@ -202,20 +174,11 @@
     if you write to support. We do not send marketing email and there is no mailing list to be added to.</p>
 
     <h2 id="website">7. This website</h2>
-    <p>We advertise BubbleTranslate on Google Ads, and this site carries the Google tag so we can tell
-    whether an ad led to a visit or a download. That tag is off until you say otherwise: until you
-    choose <strong>Allow</strong> in the cookie banner, Google's consent mode tells it to set no
-    advertising or analytics cookies and to send only cookieless, anonymous pings with no ad identifiers.
-    If you allow it, Google (Google Ireland Ltd. in the EEA and UK) may set cookies to measure ad
-    conversions, and processes that data under
-    <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">its own privacy policy</a>.
-    Our ground for this is your <strong>consent</strong>, which you can withdraw at any time from the
-    <a href="#" data-consent-open>Cookie settings</a> link at the foot of every page. Your choice is
-    kept in a small cookie, <code>bt_consent</code>, on bubbletranslate.app and its subdomains, so the
-    page you land on after buying Pro respects it too. That page reports the purchase to Google Ads —
-    the plan's list price and an order reference, never your email, name or card details — and only
-    sets advertising cookies if you allowed them.</p>
-    <p>Separately, the site measures its own traffic,
+    <p>This site carries no advertising tag and sets no advertising cookies. We do not advertise
+    BubbleTranslate anywhere, so there is nothing here to measure an ad against, nothing to ask your
+    consent for, and no cookie banner to dismiss. The page you land on after buying Pro is the same:
+    it reports the purchase to no one.</p>
+    <p>The site measures its own traffic,
     using <a href="https://www.cloudflare.com/web-analytics/" target="_blank" rel="noopener">Cloudflare
     Web Analytics</a>, which is why we can say how many people read a page without knowing who any of
     them are.</p>
@@ -244,7 +207,6 @@
       person or a licence, and can be switched off.</li>
       <li><strong>Legal obligation</strong> for records our payment providers and tax rules require us to
       keep.</li>
-      <li><strong>Consent</strong> for the Google Ads measurement described in section 7.</li>
     </ul>
 
     <h2 id="retention">9. How long we keep it</h2>
@@ -300,6 +262,5 @@
   </footer>
 
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
-  <script src="/consent.js?v=20260916b"></script>
 </body>
 </html>
