@@ -13,7 +13,8 @@
       wait_for_update: 500
     });
     try {
-      if (localStorage.getItem('bt-consent') === 'granted') {
+      if (/(?:^|; )bt_consent=granted(?:;|$)/.test(document.cookie) ||
+          localStorage.getItem('bt-consent') === 'granted') {
         gtag('consent', 'update', {
           ad_storage: 'granted',
           ad_user_data: 'granted',
@@ -167,6 +168,6 @@
   </footer>
 
   <script src="script.js?v=20260916a"></script>
-  <script src="/consent.js?v=20260916a"></script>
+  <script src="/consent.js?v=20260916b"></script>
 </body>
 </html>

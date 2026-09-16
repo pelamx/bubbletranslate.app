@@ -2,8 +2,11 @@
 //  Consent banner for the Google tag (Consent Mode v2).
 //  The <head> of every page sets all consent to "denied" before
 //  gtag.js loads, and replays a stored "granted". This file only
-//  asks the question and records the answer in localStorage
-//  under `bt-consent` ("granted" | "denied").
+//  asks the question and records the answer as the cookie
+//  `bt_consent` ("granted" | "denied") on the parent domain, so the
+//  purchase page on api.bubbletranslate.app sees the same choice.
+//  Choices made before the cookie existed are still read from
+//  localStorage (`bt-consent`).
 //  Self-contained: the legal pages do not load script.js.
 // ============================================================
 (function () {
@@ -24,7 +27,16 @@
     return TEXT[l] ? l : 'en';
   }
 
+  function stored() {
+    var m = document.cookie.match(/(?:^|; )bt_consent=(granted|denied)(?:;|$)/);
+    if (m) return m[1];
+    try { return localStorage.getItem(KEY); } catch (e) { return null; }
+  }
+
   function set(value) {
+    var domain = /(^|\.)bubbletranslate\.app$/.test(location.hostname) ? '; Domain=bubbletranslate.app' : '';
+    document.cookie = 'bt_consent=' + value + domain + '; Path=/; Max-Age=31536000; SameSite=Lax' +
+      (location.protocol === 'https:' ? '; Secure' : '');
     try { localStorage.setItem(KEY, value); } catch (e) {}
     if (typeof gtag === 'function') {
       gtag('consent', 'update', {
@@ -57,9 +69,8 @@
     document.body.appendChild(el);
   }
 
-  var stored = null;
-  try { stored = localStorage.getItem(KEY); } catch (e) {}
-  if (stored !== 'granted' && stored !== 'denied') show();
+  var choice = stored();
+  if (choice !== 'granted' && choice !== 'denied') show();
 
   // Any element with data-consent-open reopens the banner (footer link).
   document.addEventListener('click', function (e) {
