@@ -1,6 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Google tag (gtag.js), with Consent Mode v2: everything denied until the visitor allows it (consent.js). -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('consent', 'default', {
+      ad_storage: 'denied',
+      ad_user_data: 'denied',
+      ad_personalization: 'denied',
+      analytics_storage: 'denied',
+      wait_for_update: 500
+    });
+    try {
+      if (localStorage.getItem('bt-consent') === 'granted') {
+        gtag('consent', 'update', {
+          ad_storage: 'granted',
+          ad_user_data: 'granted',
+          ad_personalization: 'granted',
+          analytics_storage: 'granted'
+        });
+      }
+    } catch (e) {}
+    gtag('set', 'ads_data_redaction', true);
+    gtag('js', new Date());
+    gtag('config', 'AW-18451580938');
+  </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18451580938"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Refund &amp; Cancellation Policy — BubbleTranslate</title>
@@ -11,7 +37,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20260912b">
+  <link rel="stylesheet" href="styles.css?v=20260916a">
 </head>
 <body>
   <header class="site">
@@ -81,6 +107,7 @@
     We do not take back time you have bought.</p>
     <p>To cancel, open the app's Account tab and follow the link to the account page, or write to
     <a href="mailto:support@bubbletranslate.app">support@bubbletranslate.app</a> and we will do it for
+    <a href="#" data-consent-open data-i18n="nav.cookies">Cookie settings</a>
     you.</p>
 
     <h2 id="how-to-ask">4. How to ask for a refund</h2>
@@ -123,5 +150,6 @@
   </footer>
 
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="/consent.js?v=20260916a"></script>
 </body>
 </html>

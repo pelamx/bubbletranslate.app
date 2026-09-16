@@ -1,6 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Google tag (gtag.js), with Consent Mode v2: everything denied until the visitor allows it (consent.js). -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('consent', 'default', {
+      ad_storage: 'denied',
+      ad_user_data: 'denied',
+      ad_personalization: 'denied',
+      analytics_storage: 'denied',
+      wait_for_update: 500
+    });
+    try {
+      if (localStorage.getItem('bt-consent') === 'granted') {
+        gtag('consent', 'update', {
+          ad_storage: 'granted',
+          ad_user_data: 'granted',
+          ad_personalization: 'granted',
+          analytics_storage: 'granted'
+        });
+      }
+    } catch (e) {}
+    gtag('set', 'ads_data_redaction', true);
+    gtag('js', new Date());
+    gtag('config', 'AW-18451580938');
+  </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18451580938"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Privacy Policy — BubbleTranslate</title>
@@ -11,7 +37,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20260912b">
+  <link rel="stylesheet" href="styles.css?v=20260916a">
 </head>
 <body>
   <header class="site">
@@ -53,6 +79,7 @@
     application for macOS, Windows and Linux.</p>
     <p>We are the data controller for the personal data described here. You can reach us at
     <a href="mailto:support@bubbletranslate.app">support@bubbletranslate.app</a> about anything in this
+    <a href="#" data-consent-open data-i18n="nav.cookies">Cookie settings</a>
     document.</p>
 
     <h2 id="text-you-translate">2. The text you translate</h2>
@@ -141,7 +168,17 @@
     if you write to support. We do not send marketing email and there is no mailing list to be added to.</p>
 
     <h2 id="website">7. This website</h2>
-    <p>This site sets no cookies and carries no advertising. It does measure its own traffic,
+    <p>We advertise BubbleTranslate on Google Ads, and this site carries the Google tag so we can tell
+    whether an ad led to a visit or a download. That tag is off until you say otherwise: until you
+    choose <strong>Allow</strong> in the cookie banner, Google's consent mode tells it to set no
+    advertising or analytics cookies and to send only cookieless, anonymous pings with no ad identifiers.
+    If you allow it, Google (Google Ireland Ltd. in the EEA and UK) may set cookies to measure ad
+    conversions, and processes that data under
+    <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">its own privacy policy</a>.
+    Our ground for this is your <strong>consent</strong>, which you can withdraw at any time from the
+    <a href="#" data-consent-open>Cookie settings</a> link at the foot of every page. Your choice is
+    stored in your browser's local storage.</p>
+    <p>Separately, the site measures its own traffic,
     using <a href="https://www.cloudflare.com/web-analytics/" target="_blank" rel="noopener">Cloudflare
     Web Analytics</a>, which is why we can say how many people read a page without knowing who any of
     them are.</p>
@@ -150,9 +187,8 @@
     on a second visit or on any other site. What it records is the page, the site that linked you to it,
     and — from your IP address, which it does not keep — a country, a browser and a device type. The
     figures are counts of visits, never a profile of a visitor.</p>
-    <p>It stores one value in your browser's local storage: which of the three site languages you last
-    chose, so the page opens in it next time. That value never leaves your browser and is not personal
-    data in any useful sense. Clearing your browser's site data removes it.</p>
+    <p>It also stores which of the three site languages you last chose, so the page opens in it next
+    time. That value and your cookie choice never leave your browser. Clearing your browser's site data removes it.</p>
     <p>The site is served through Cloudflare, and loads its typeface from Google Fonts. Both receive your
     IP address as an unavoidable part of delivering a web page, and handle it under their own policies.</p>
 
@@ -167,6 +203,7 @@
       of machines it was sold for.</li>
       <li><strong>Legal obligation</strong> for records our payment providers and tax rules require us to
       keep.</li>
+      <li><strong>Consent</strong> for the Google Ads measurement described in section 7.</li>
     </ul>
 
     <h2 id="retention">9. How long we keep it</h2>
@@ -221,5 +258,6 @@
   </footer>
 
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="/consent.js?v=20260916a"></script>
 </body>
 </html>

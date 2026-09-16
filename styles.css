@@ -540,3 +540,20 @@ img, video { max-width: 100%; height: auto; }
 @media (min-width: 900px) {
   .grid-3.pricing-faq { grid-template-columns: repeat(2, 1fr); }
 }
+
+/* Consent banner (consent.js) */
+.consent {
+  position: fixed; left: 16px; right: 16px; bottom: 16px; z-index: 100;
+  max-width: 720px; margin: 0 auto; padding: 16px 20px;
+  display: flex; align-items: center; gap: 16px; flex-wrap: wrap;
+  background: var(--card); border: 1px solid var(--border); border-radius: var(--radius);
+  box-shadow: var(--shadow); color: var(--text); font-size: 14px;
+}
+.consent p { margin: 0; flex: 1 1 320px; }
+.consent a { color: var(--brand); text-decoration: underline; }
+.consent-actions { display: flex; gap: 8px; flex: 0 0 auto; }
+.consent .btn { padding: 8px 16px; }
+@media (max-width: 520px) {
+  .consent-actions { flex: 1 1 100%; }
+  .consent-actions .btn { flex: 1; justify-content: center; }
+}
