@@ -62,15 +62,17 @@
   <main class="legal">
     <div class="legal-head">
       <h1>Privacy Policy</h1>
-      <p class="updated">Last updated: 8 September 2026</p>
+      <p class="updated">Last updated: 16 September 2026</p>
     </div>
 
 
     <div class="summary">
       <p><strong>The short version.</strong> BubbleTranslate has no accounts and no sign-up. The text you
       select is sent from your computer straight to the translation service you have chosen, and never
-      passes through our servers. Our licence service exists only to check that a paid licence is valid.
-      It is never on the path of a translation, and it never sees a word you translate.</p>
+      passes through our servers. Our licence service checks that a paid licence is valid, and receives one
+      anonymous ping a day that tells us an installation of the app is in use, so we know how many people
+      are using it. You can turn that ping off. The service is never on the path of a translation, and it
+      never sees a word you translate.</p>
       <p>This summary is here to be useful, not to replace what follows.</p>
     </div>
 
@@ -134,7 +136,8 @@
     <h2 id="licence-service">4. What the licence service receives</h2>
     <p>If you buy Pro, the app talks to our licence service at <b>api.bubbletranslate.app</b>. It does so
     when you activate a licence, when it renews the local token roughly once a month, and when you remove
-    a licence from a machine. At no other time, and never to translate anything.</p>
+    a licence from a machine. Apart from the daily usage ping in section 4a, at no other time, and never to
+    translate anything.</p>
     <p>Those requests carry:</p>
     <ul>
       <li><strong>Your licence key</strong>, on activation.</li>
@@ -155,6 +158,36 @@
     <p>We store a hash of your licence key rather than the key itself, which is why a lost key has to be
     replaced rather than looked up. That is a deliberate trade: a copy of our database is not a list of
     working licences.</p>
+
+    <h2 id="usage-ping">4a. The daily usage ping</h2>
+    <p><strong>What it is for.</strong> We use it for one thing: to count how many installations of
+    BubbleTranslate are alive, meaning actually being used, on free and on Pro. Downloads do not tell us
+    that. Many downloaded copies are never opened, and a copy that is used every day looks exactly like one
+    that was deleted. The free version never talks to us otherwise, so without this ping we could not know
+    whether anyone uses it at all. The numbers tell us whether the app is worth maintaining, which operating
+    systems to prioritise, and how many people still run an old version.</p>
+    <p><strong>What it is not for.</strong> It is not used to identify you, to profile you, for advertising,
+    or to decide anything about your installation. It does not affect your daily allowance or your licence.
+    We look at it only as totals, such as "installations active this week" or "free installations on
+    Linux".</p>
+    <p><strong>When it is sent.</strong> Once when the app starts, then once every 24 hours while it keeps
+    running, to <b>api.bubbletranslate.app</b>.</p>
+    <p><strong>What it contains</strong>, and nothing else:</p>
+    <ul>
+      <li><strong>An installation identifier.</strong> It is made like the device identifier in section 4,
+      then hashed again with a different salt. It cannot be turned back into your hardware ID, and it cannot
+      be matched to a licence or to the device identifier stored against one.</li>
+      <li><strong>Your operating system name</strong> ("linux", "macos" or "windows").</li>
+      <li><strong>The app version.</strong></li>
+      <li><strong>Whether the installation is on the free plan or Pro.</strong></li>
+    </ul>
+    <p>It never contains the text you translate, your languages, your settings, your licence key or your
+    email address. We store one row per installation: those four values, plus when the installation was first
+    and last seen. Like any request to a web server, it arrives with an IP address. We do not store that
+    address with the row.</p>
+    <p><strong>How to turn it off.</strong> Open the app's <code>config.toml</code> and set
+    <code>usage_ping = false</code>. Once the app has read that setting, no more pings are sent. If you want
+    the row we already hold deleted, email us, as described in section 11.</p>
 
     <h2 id="payments">5. Payments</h2>
     <p>We do not see or store your card details. Payment is handled entirely by
@@ -205,6 +238,10 @@
       <li><strong>Legitimate interests</strong> for keeping the operating system and app version against a
       seat, which is what makes a support conversation possible, and for limiting a licence to the number
       of machines it was sold for.</li>
+      <li><strong>Legitimate interests</strong> for the daily usage ping in section 4a. Knowing how many
+      installations are in use is what lets us decide whether and how to keep developing the app, and the
+      ping is built to need as little as possible for that. It carries no content, cannot be matched to a
+      person or a licence, and can be switched off.</li>
       <li><strong>Legal obligation</strong> for records our payment providers and tax rules require us to
       keep.</li>
       <li><strong>Consent</strong> for the Google Ads measurement described in section 7.</li>
@@ -213,7 +250,8 @@
     <h2 id="retention">9. How long we keep it</h2>
     <p>Licence records are kept for as long as the licence exists and afterwards for as long as tax and
     accounting rules require us to hold records of the sale. Seat rows are deleted when you remove a
-    licence from that machine. Support email is kept for as long as it is useful to answer follow-up
+    licence from that machine. Usage-ping rows are deleted automatically once an installation has not
+    pinged for 13 months. Support email is kept for as long as it is useful to answer follow-up
     questions, and then deleted.</p>
 
     <h2 id="sharing">10. Who else sees it</h2>
