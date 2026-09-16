@@ -51,12 +51,14 @@ current.
 
 ## Deploying
 
-The apex domain `bubbletranslate.app` sits behind Cloudflare. Confirm in the
-Cloudflare dashboard which Pages project (or Worker) that hostname is bound to
-before publishing, because more than one origin has served this site:
+`bubbletranslate.app` and `www.bubbletranslate.app` are routes on the
+**`bubbletranslate-site`** Worker (Workers Static Assets), configured in
+`wrangler.jsonc`. Deploy with:
 
-- **Cloudflare Pages** — `npx wrangler pages deploy . --project-name <project>`
-- **GitHub Pages** — pushing to the `github-pages` remote
-  (`pelamx/pelamx.github.io`) publishes at https://pelamx.github.io/
+```sh
+npx wrangler deploy
+```
 
-`git remote -v` lists both. `origin` is this repo.
+It uploads the working tree, so commit or stash unfinished edits first. The
+`bubbletranslate` Pages project and GitHub Pages are old origins: deploying
+there leaves the live site unchanged.
