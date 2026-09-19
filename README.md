@@ -25,6 +25,28 @@ App source and full docs: https://github.com/pelamx/bubbleTranslate
 | `favicon.svg` | Site icon / logo |
 | `404.html` | Custom not-found page |
 | `.nojekyll` | Serve files as-is (skip Jekyll) |
+| `robots.txt` | Allows all, points at the sitemap |
+| `sitemap.xml` | All indexable URLs, with `hreflang` alternates for the localized pages |
+| `_headers` | Security headers (HSTS, nosniff, Referrer-Policy, X-Frame-Options, `frame-ancestors`, Permissions-Policy), served by the Worker from the assets dir |
+| `tr/`, `es/` | **Generated** Turkish and Spanish copies of `index.html` and `pricing.html` — do not edit by hand (see below) |
+| `scripts/build-i18n.py` | Regenerates `tr/` and `es/` from the English pages + `script.js` |
+
+### Localized pages (`/tr/`, `/es/`)
+
+The English `index.html` and `pricing.html` plus the `I18N` tables in
+`script.js` are the single source of truth. The `/tr/` and `/es/` pages are
+generated from them so crawlers (and no-JS visitors) get real, indexable
+Turkish and Spanish URLs with `hreflang` alternates and a localized
+`<title>`/description. The language switcher navigates between `/`, `/tr/` and
+`/es/` rather than swapping text in place, so the URL, `<link rel=canonical>`
+and rendered content always agree.
+
+After any copy change to `index.html`, `pricing.html` or the `I18N` tables,
+regenerate the localized pages (needs `node` on the PATH):
+
+```bash
+python3 scripts/build-i18n.py
+```
 
 The three legal pages are a payment-provider requirement: Paddle verifies that
 a live site links to terms, a privacy policy and a refund policy before it will
@@ -43,11 +65,15 @@ the extensionless form.
 
 ## Downloads
 
-The download buttons point at the app repo's `main` branch
-(`github.com/pelamx/bubbleTranslate/raw/main/...`), not at anything in this
-repo. A new release is therefore published by committing the built binary
-there — nothing here needs to change, and nothing here can make an old binary
-current.
+The download buttons and the `DOWNLOADS` map in `script.js` point at a
+**versioned GitHub Release** on the app repo
+(`github.com/pelamx/bubbleTranslate/releases/download/v0.2.0/...`), not at
+anything in this repo. Each release ships the three binaries plus a
+`SHA256SUMS.txt` so a download can be verified. Because the URL is pinned to a
+tag, publishing a new version means creating the new release **and** bumping
+these URLs here (and the matching `url` fields in the app repo's
+`latest.json`) to the new tag. The old `raw/main` binaries are left in place,
+so nothing that still points at them breaks.
 
 ## Deploying
 

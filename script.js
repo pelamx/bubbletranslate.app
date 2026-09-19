@@ -537,12 +537,24 @@ function t(key) {
   return (table[key] != null) ? table[key] : (I18N.en[key] != null ? I18N.en[key] : key);
 }
 
+// The URL path is the source of truth for language: /tr/... and /es/... are
+// the localized subtrees, everything else is English at the root. This keeps
+// what a crawler indexes, what <link rel=canonical>/hreflang claim, and what
+// the page renders in agreement.
+function langFromPath() {
+  const m = location.pathname.match(/^\/(tr|es)(\/|$)/);
+  return m ? m[1] : 'en';
+}
+function pathForLang(lang) {
+  let rest = location.pathname.replace(/^\/(tr|es)(?=\/|$)/, '');
+  if (rest === '') rest = '/';
+  const prefix = (lang === 'en') ? '' : '/' + lang;
+  let p = prefix + rest;
+  if (p === '') p = '/';
+  return p + location.search + location.hash;
+}
 function pickInitialLang() {
-  let stored = null;
-  try { stored = localStorage.getItem('bt-lang'); } catch (e) {}
-  if (stored && SUPPORTED_LANGS.includes(stored)) return stored;
-  const nav = (navigator.language || 'en').slice(0, 2).toLowerCase();
-  return SUPPORTED_LANGS.includes(nav) ? nav : 'en';
+  return langFromPath();
 }
 
 function applyLang(lang) {
@@ -583,7 +595,13 @@ function applyLang(lang) {
 const langSwitch = document.getElementById('langSwitch');
 if (langSwitch) {
   langSwitch.querySelectorAll('button').forEach(b => {
-    b.addEventListener('click', () => applyLang(b.getAttribute('data-lang')));
+    b.addEventListener('click', () => {
+      const lang = b.getAttribute('data-lang');
+      try { localStorage.setItem('bt-lang', lang); } catch (e) {}
+      const here = location.pathname + location.search + location.hash;
+      const dest = pathForLang(lang);
+      if (dest !== here) location.assign(dest);
+    });
   });
 }
 
@@ -597,9 +615,9 @@ if (langSwitch) {
 // machine, so there is one file for both; `file: null` is what puts an OS back
 // to "coming soon".
 const DOWNLOADS = {
-  mac:     { file: 'https://github.com/pelamx/bubbleTranslate/raw/main/bubbleTranslate.dmg',       label: 'macOS' },
-  linux:   { file: 'https://github.com/pelamx/bubbleTranslate/raw/main/bubbleTranslate-linux-x86_64', label: 'Linux' },
-  windows: { file: 'https://github.com/pelamx/bubbleTranslate/raw/main/bubbleTranslate.exe',       label: 'Windows' }
+  mac:     { file: 'https://github.com/pelamx/bubbleTranslate/releases/download/v0.2.0/bubbleTranslate.dmg',       label: 'macOS' },
+  linux:   { file: 'https://github.com/pelamx/bubbleTranslate/releases/download/v0.2.0/bubbleTranslate-linux-x86_64', label: 'Linux' },
+  windows: { file: 'https://github.com/pelamx/bubbleTranslate/releases/download/v0.2.0/bubbleTranslate.exe',       label: 'Windows' }
 };
 
 function detectOS() {
@@ -675,6 +693,18 @@ if (match) {
   tag.id = 'detectedTag';
   match.insertBefore(tag, match.firstChild);
 }
+
+// First visit to an English page from a tr/es browser: send the visitor to the
+// localized version once. An explicit language choice is remembered and stops
+// this, and Googlebot (en) is never redirected, so it does not affect indexing.
+(function maybeRedirect() {
+  if (langFromPath() !== 'en') return;
+  let stored = null;
+  try { stored = localStorage.getItem('bt-lang'); } catch (e) {}
+  if (stored) return;
+  const nav = (navigator.language || 'en').slice(0, 2).toLowerCase();
+  if (nav === 'tr' || nav === 'es') location.replace(pathForLang(nav));
+})();
 
 // Translate everything, set the active language, and label the OS buttons.
 applyLang(pickInitialLang());

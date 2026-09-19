@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BubbleTranslate — Masaüstünüzden ayrılmadan seçtiğiniz metni çevirin</title>
+  <meta name="description" content="BubbleTranslate, macOS, Windows ve Linux için hafif bir masaüstü uygulamasıdır. Herhangi bir uygulamada metin seçin; imlecinizin yanında çevirisiyle bir baloncuk belirir. Günde 10 ücretsiz çeviri; sınırsız için Pro aylık $2'den başlar.">
+  <meta name="theme-color" content="#0b1020">
+  <meta property="og:title" content="BubbleTranslate — Masaüstünüzden ayrılmadan seçtiğiniz metni çevirin">
+  <meta property="og:description" content="BubbleTranslate, macOS, Windows ve Linux için hafif bir masaüstü uygulamasıdır. Herhangi bir uygulamada metin seçin; imlecinizin yanında çevirisiyle bir baloncuk belirir. Günde 10 ücretsiz çeviri; sınırsız için Pro aylık $2'den başlar.">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css?v=20260916a">
+  <link rel="canonical" href="https://bubbletranslate.app/tr/">
+  <link rel="alternate" hreflang="en" href="https://bubbletranslate.app/">
+  <link rel="alternate" hreflang="tr" href="https://bubbletranslate.app/tr/">
+  <link rel="alternate" hreflang="es" href="https://bubbletranslate.app/es/">
+  <link rel="alternate" hreflang="x-default" href="https://bubbletranslate.app/">
+  <meta property="og:url" content="https://bubbletranslate.app/tr/">
+  <meta property="og:site_name" content="BubbleTranslate">
+  <meta property="og:locale" content="en">
+  <meta property="og:image" content="https://bubbletranslate.app/downloads/video/poster.jpg">
+  <meta property="og:image:alt" content="BubbleTranslate showing a translation bubble at the cursor">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@bubbletr4nslate">
+  <meta name="twitter:creator" content="@bubbletr4nslate">
+  <meta name="twitter:image" content="https://bubbletranslate.app/downloads/video/poster.jpg">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "BubbleTranslate",
+    "applicationCategory": "UtilitiesApplication",
+    "operatingSystem": "macOS, Windows, Linux",
+    "url": "https://bubbletranslate.app/",
+    "downloadUrl": "https://bubbletranslate.app/#download",
+    "softwareHelp": "https://github.com/pelamx/bubbleTranslate",
+    "description": "Select text in any app and a bubble appears at your cursor with the translation. 10 free translations a day; go unlimited with Pro.",
+    "offers": [
+      { "@type": "Offer", "price": "0", "priceCurrency": "USD", "name": "Free" },
+      { "@type": "Offer", "price": "2", "priceCurrency": "USD", "name": "Pro (monthly)" },
+      { "@type": "Offer", "price": "20", "priceCurrency": "USD", "name": "Pro (yearly)" }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="site">
+    <div class="container nav">
+      <a class="brand" href="#top">
+        <img class="logo" src="/favicon.svg" alt="BubbleTranslate logo">
+        BubbleTranslate
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#features" data-i18n="nav.features">Özellikler</a>
+        <a href="#languages" data-i18n="nav.languages">Diller</a>
+        <a href="#how" data-i18n="nav.how">Nasıl çalışır</a>
+        <a href="pricing.html" data-i18n="nav.pricing">Fiyatlar</a>
+        <a href="#download" data-i18n="nav.download">İndir</a>
+        <a href="#faq" data-i18n="nav.faq">SSS</a>
+      </nav>
+      <div class="nav-cta">
+        <div class="lang-switch" id="langSwitch" role="group" aria-label="Language">
+          <span class="lang-globe" aria-hidden="true">🌐</span>
+          <button type="button" data-lang="en">EN</button>
+          <button type="button" data-lang="tr">TR</button>
+          <button type="button" data-lang="es">ES</button>
+        </div>
+        <a class="btn btn-primary" href="#download" data-i18n="nav.cta">Uygulamayı al</a>
+        <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="pill" data-i18n="hero.pill">🫧 macOS, Windows ve Linux için masaüstü uygulaması · günde 10 ücretsiz çeviri</span>
+          <h1 data-i18n="hero.h1"><span class="grad">Masaüstünüzden ayrılmadan</span> seçtiğiniz metnin çevirisini yapın.</h1>
+          <p class="lead" data-i18n="hero.lead">Okurken artık copy/paste dikkatinizi dağıtmayacak. Metinleri Google Translate'e kopyalayıp yapıştırmayı bırakın. <b>Shift'i basılı tutun, metni seçin</b> ve çeviriyi tam olduğunuz yerde okuyun.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" id="heroDownload" href="#download" data-i18n="hero.dlfree">↓ Ücretsiz indir</a>
+            <a class="btn btn-ghost" href="#how" data-i18n="hero.see">Nasıl çalıştığını gör</a>
+          </div>
+          <p class="hero-note" data-i18n="hero.note">Ücretsiz · günde 10 çeviri · sınırsız için Pro aylık $2'den</p>
+        </div>
+        <div class="mockup">
+          <div class="video-frame">
+            <div class="window-bar"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span></div>
+            <video
+              class="demo-video"
+              controls
+              autoplay
+              muted
+              loop
+              playsinline
+              preload="metadata"
+              poster="/downloads/video/poster.jpg">
+              <source src="/downloads/video/bubbleTranslate-demo.mp4" type="video/mp4">
+              Your browser can't play this video.
+              <a href="/downloads/video/bubbleTranslate-demo.mp4">Download the demo instead.</a>
+            </video>
+          </div>
+          <p class="video-caption" data-i18n="video.caption">▶ Gerçek bir ekran kaydı — metni seçin, baloncuğu okuyun.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Privacy, said once directly under the hero. The detail section is most
+         of a page away, and a reader deciding whether to download a thing that
+         watches their selections is deciding it here, not down there. -->
+    <section class="trust">
+      <div class="container">
+        <a class="trust-row" href="#privacy">
+          <span class="trust-lead" data-i18n="trust.lead">🔒 Tasarımı gereği gizli</span>
+          <span data-i18n="trust.1">Çeviri geçmişi tutulmaz</span>
+          <span data-i18n="trust.2">Lisans sunucusu metninizi hiç görmez</span>
+          <span data-i18n="trust.3">Yalnızca seçtiğiniz metin gönderilir</span>
+          <span class="trust-more" data-i18n="trust.more">Nasıl çalışıyor →</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features">
+      <div class="container">
+        <div class="section-head">
+          <h2 data-i18n="feat.head.h2">Çeviride yeni bir deneyim — yabancı belgeleri okurken kesinti yok.</h2>
+        </div>
+        <div class="grid-4">
+          <div class="card"><div class="icon">⚡</div><p class="kicker" data-i18n="feat.1.kicker">Anında</p><h3 data-i18n="feat.1.h3">Çeviri imlecinizin yanında</h3><p data-i18n="feat.1.p">Metin seçebildiğiniz her yerde belirir — yeni pencere yok, bağlam değiştirmek yok.</p></div>
+          <div class="card"><div class="icon">✨</div><p class="kicker" data-i18n="feat.2.kicker">Zahmetsiz</p><h3 data-i18n="feat.2.h3">Otomatik dil algılama</h3><p data-i18n="feat.2.p">Ne okuduğunuzu BubbleTranslate'e söylemeniz hiç gerekmez.</p></div>
+          <div class="card"><div class="icon">🔀</div><p class="kicker" data-i18n="feat.3.kicker">Güvenilir</p><h3 data-i18n="feat.3.h3">Otomatik sağlayıcı yedeği</h3><p data-i18n="feat.3.p">Bir sağlayıcı yanıt vermezse BubbleTranslate bir diğerini dener.</p></div>
+          <div class="card"><div class="icon">⚙️</div><p class="kicker" data-i18n="feat.4.kicker">Esnek</p><h3 data-i18n="feat.4.h3">Kendinize göre ayarlayın</h3><p data-i18n="feat.4.p">Hedef dil, kısayol tuşu, yazı boyutu ve kaybolma süresi.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Languages -->
+    <section id="languages">
+      <div class="container">
+        <div class="section-head">
+          <span class="detect-badge" data-i18n="lang.badge">✨ Otomatik dil algılama</span>
+          <h2 data-i18n="lang.h2">Kaynak dili asla siz seçmezsiniz</h2>
+          <p data-i18n="lang.p">BubbleTranslate ne okuduğunuzu kendisi anlar. Herhangi bir dilde metin seçin; algılar ve çeviriyi seçtiğiniz dilde gösterir. Baloncuk, neyi algıladığını bile söyler — örneğin <b>Japonca&nbsp;→&nbsp;İngilizce</b>.</p>
+        </div>
+
+        <div class="lang-panel">
+          <h3 class="lang-title" data-i18n="lang.title">Şu <span class="lang-count">17 dilden</span> herhangi birine çevirin</h3>
+          <div class="lang-chips">
+            <span class="lang-chip">🇬🇧 English</span>
+            <span class="lang-chip">🇹🇷 Türkçe</span>
+            <span class="lang-chip">🇩🇪 Deutsch</span>
+            <span class="lang-chip">🇫🇷 Français</span>
+            <span class="lang-chip">🇪🇸 Español</span>
+            <span class="lang-chip">🇮🇹 Italiano</span>
+            <span class="lang-chip">🇵🇹 Português</span>
+            <span class="lang-chip">🇳🇱 Nederlands</span>
+            <span class="lang-chip">🇵🇱 Polski</span>
+            <span class="lang-chip">🇷🇺 Русский</span>
+            <span class="lang-chip">🇺🇦 Українська</span>
+            <span class="lang-chip">🇸🇦 العربية</span>
+            <span class="lang-chip">🇮🇷 فارسی</span>
+            <span class="lang-chip">🇮🇳 हिन्दी</span>
+            <span class="lang-chip">🇨🇳 中文</span>
+            <span class="lang-chip">🇯🇵 日本語</span>
+            <span class="lang-chip">🇰🇷 한국어</span>
+          </div>
+          <p class="lang-note" data-i18n="lang.note">Bunlar baloncukta tek tıkla seçilebilir. Başka mı lazım? Sağlayıcıların kabul ettiği herhangi bir dil kodu da çalışır — sadece ayar dosyasına yazın.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section id="how" style="background: var(--bg-soft);">
+      <div class="container">
+        <div class="section-head">
+          <h2 data-i18n="how.head.h2">Bir kez ayarlayın, sonra Shift ile çevirin</h2>
+          <p data-i18n="how.head.p">Dilinizi bir kez seçin. Sonrasında metni seçerken SHIFT tuşunu basılı tutun. Çeviri için tek yapmanız gereken bu; çeviri anında gelir.</p>
+        </div>
+        <div class="steps">
+          <div class="step"><h3 data-i18n="how.1.h3">Shift'e basılı tutup seçin</h3><p data-i18n="how.1.p">Shift'e basılı tutup herhangi bir uygulamada metni seçin. Baloncuk yalnızca tuş basılıyken yapılan seçim için belirir; gündelik seçme ve kopyalama olduğu gibi kalır.</p></div>
+          <div class="step"><h3 data-i18n="how.2.h3">Baloncuğu okuyun</h3><p data-i18n="how.2.p">İmlecinizde çeviriyle küçük bir baloncuk belirir ve birkaç saniye sonra sessizce gizlenir.</p></div>
+          <div class="step"><h3 data-i18n="how.3.h3">Çalışmaya devam edin</h3><p data-i18n="how.3.p">Menü çubuğunda veya tepside kalır ve tuş basılıyken seçtiğiniz bir sonraki şeyi çevirir. Hedef dili baloncuğun ⚙ menüsünden değiştirin.</p></div>
+        </div>
+        <div class="how-note">
+          <h3 data-i18n="how.note.h3">Başka bir tuş mu?</h3>
+          <p data-i18n="how.note.p">Shift varsayılandır çünkü onu basılı tutmak zaten seçimi genişletir — böylece çeviri tek bir hareket olarak kalır. Uygulamanın ayarlarından <b>Ctrl</b>, <b>Alt</b> veya <b>Super</b>'e (macOS'ta ⌘) geçebilir ya da <b>Her seçim</b>'i seçerek eskisi gibi her şeyi çevirtebilirsiniz. Bazı Linux Wayland oturumlarında tuş algılanamaz; orada uygulama her seçimi çevirir ve bunu belirtir.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Privacy -->
+    <section id="privacy">
+      <div class="container">
+        <div class="section-head">
+          <h2 data-i18n="priv.head.h2">Tasarımı gereği gizli</h2>
+          <p data-i18n="priv.head.p">Makinenizden çıkan tek şey seçtiğiniz metindir — o da yalnızca siz seçtiğinizde.</p>
+        </div>
+        <div class="grid-3">
+          <div class="card"><div class="icon">🗂️</div><h3 data-i18n="priv.1.h3">Çeviri geçmişi tutulmaz</h3><p data-i18n="priv.1.p">BubbleTranslate çeviri geçmişinizi saklamaz. Son çeviriler listesi yalnızca o oturum boyunca bellekte durur ve uygulamadan çıktığınızda kaybolur.</p></div>
+          <div class="card"><div class="icon">🔒</div><h3 data-i18n="priv.2.h3">Lisans sunucusu metninizi görmez</h3><p data-i18n="priv.2.p">Lisans sunucusu ne çevirdiğinizi asla görmez. Yalnızca lisans anahtarınızı ve bir cihaz kimliğini alır, başka hiçbir şey almaz.</p></div>
+          <div class="card"><div class="icon">✂️</div><h3 data-i18n="priv.3.h3">Yalnızca seçtiğiniz metin gönderilir</h3><p data-i18n="priv.3.p">Çeviri sağlayıcısına yalnızca seçtiğiniz metin ve çevrilecek dil gönderilir.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing">
+      <div class="container">
+        <div class="section-head">
+          <h2 data-i18n="price.head.h2">Basit fiyatlandırma</h2>
+          <p data-i18n="price.head.p">Günde 10 çeviriyle ücretsiz başlayın. Daha fazlası gerektiğinde sınırsıza geçin.</p>
+        </div>
+        <div class="pricing">
+          <div class="price-card">
+            <h3 data-i18n="price.free.h3">Ücretsiz</h3>
+            <div class="price"><span class="amount">$0</span><span class="per" data-i18n="price.free.per">sonsuza dek</span></div>
+            <p class="price-tag" data-i18n="price.free.tag">Günlük, hafif okumalar için.</p>
+            <ul class="plan-list">
+              <li data-i18n="price.free.1">✓ <b>Günde 10 çeviri</b></li>
+              <li data-i18n="price.free.2">✓ Metin seçebildiğiniz her yerde çalışır</li>
+              <li data-i18n="price.free.3">✓ Otomatik sağlayıcı geçişi</li>
+              <li data-i18n="price.free.4">✓ İmlecinizde baloncuk, menü çubuğu / tepsi</li>
+              <li data-i18n="price.free.5">✓ Hesap yok, kayıt yok</li>
+            </ul>
+            <a class="btn btn-ghost plan-cta" href="#download" data-i18n="price.free.cta">↓ Ücretsiz indir</a>
+          </div>
+
+          <div class="price-card featured">
+            <div class="ribbon" data-i18n="price.pro.ribbon">En popüler</div>
+            <h3 data-i18n="price.pro.h3">Pro</h3>
+            <div class="price"><span class="amount">$2</span><span class="per" data-i18n="price.pro.per">/ ay</span></div>
+            <p class="price-tag" data-i18n="price.pro.tag">veya <b>$20 / yıl</b> — iki ay bedava.</p>
+            <ul class="plan-list">
+              <li data-i18n="price.pro.1">✓ <b>Sınırsız çeviri</b></li>
+              <li data-i18n="price.pro.2">✓ Ücretsizdeki her şey</li>
+              <li data-i18n="price.pro.3">✓ En fazla <b>3 makinede</b> kullanın</li>
+              <li data-i18n="price.pro.4">✓ Tek lisans anahtarı, tekrar satın alma yok</li>
+              <li data-i18n="price.pro.5">✓ Uygulamanın gelişimini destekler</li>
+            </ul>
+            <a class="btn btn-primary plan-cta" id="proBuy" href="https://api.bubbletranslate.app/buy?src=home" data-i18n="price.pro.cta">Pro'ya geç</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Download -->
+    <section id="download" class="download">
+      <div class="container">
+        <div class="section-head">
+          <h2 data-i18n="dl.head.h2">BubbleTranslate'i indirin</h2>
+          <p data-i18n="dl.head.p">Kurulumu ücretsiz, günde 10 çeviriyle. Sınırsız için istediğiniz zaman Pro'ya geçin.</p>
+        </div>
+        <div class="dl-grid">
+          <div class="dl-card" data-os="mac">
+            <div class="os"><img src="/logos/apple.png" alt="" aria-hidden="true" width="44" height="44" loading="lazy" decoding="async"></div>
+            <h3>macOS</h3>
+            <p data-i18n="dl.mac.desc">Universal · Apple Silicon ve Intel · macOS 11 veya üzeri · 15&nbsp;MB</p>
+            <a class="btn btn-primary" href="https://github.com/pelamx/bubbleTranslate/releases/download/v0.2.0/bubbleTranslate.dmg" download data-i18n="dl.mac.btn">DMG indir</a>
+            <div class="install-note">
+              <span data-i18n="dl.mac.run">DMG'yi açın ve uygulamayı Applications klasörüne sürükleyin.</span>
+              <pre><code>xattr -dr com.apple.quarantine /Applications/bubbleTranslate.app</code></pre>
+              <span data-i18n="dl.mac.note2">Uygulama ad-hoc imzalı olduğu için macOS ilk açılışı engeller. Yukarıdaki komutu bir kez çalıştırın veya Sistem Ayarları › Gizlilik ve Güvenlik bölümünden <b>Yine de Aç</b>'ı seçin.</span>
+            </div>
+          </div>
+          <div class="dl-card" data-os="linux">
+            <div class="os"><img src="/logos/linux.png" alt="" aria-hidden="true" width="44" height="44" loading="lazy" decoding="async"></div>
+            <h3>Linux</h3>
+            <p data-i18n="dl.linux.desc">x86-64 çalıştırılabilir dosya · glibc 2.43+ gerekir · 20&nbsp;MB</p>
+            <a class="btn btn-primary" href="https://github.com/pelamx/bubbleTranslate/releases/download/v0.2.0/bubbleTranslate-linux-x86_64" download data-i18n="dl.linux.btn">İkili dosyayı indir</a>
+            <div class="install-note">
+              <span data-i18n="dl.linux.run">Çalıştırılabilir yapın ve çalıştırın:</span>
+              <pre><code>chmod +x bubbleTranslate-linux-x86_64
+./bubbleTranslate-linux-x86_64</code></pre>
+              <span data-i18n="dl.linux.note2">Daha eski bir dağıtımda veya GNOME Wayland'da bunun yerine kaynaktan derleyin.</span>
+            </div>
+          </div>
+          <div class="dl-card" data-os="windows">
+            <div class="os"><img src="/logos/windows.png" alt="" aria-hidden="true" width="44" height="44" loading="lazy" decoding="async"></div>
+            <h3>Windows</h3>
+            <p data-i18n="dl.win.desc">x86-64 · Windows 10 ve 11 · ARM'da da çalışır · 17&nbsp;MB</p>
+            <a class="btn btn-primary" href="https://github.com/pelamx/bubbleTranslate/releases/download/v0.2.0/bubbleTranslate.exe" download data-i18n="dl.win.btn">EXE indir</a>
+            <div class="install-note">
+              <span data-i18n="dl.win.run">Kurulum yok. Programlarınızı tuttuğunuz yere koyup çift tıklayın.</span>
+              <span data-i18n="dl.win.note2">Dosya imzalı değil; SmartScreen ilk açılışı durdurur: <b>Ek bilgi</b> › <b>Yine de çalıştır</b>, makine başına bir kez.</span>
+            </div>
+          </div>
+        </div>
+        <div class="os-install" id="mac-install">
+          <h3 data-i18n="mac.install.h3">macOS'ta kurulum — ilk çalıştırma</h3>
+          <ol>
+            <li data-i18n="mac.install.1">DMG'yi açın ve <b>bubbleTranslate.app</b>'i <b>Applications</b> klasörüne sürükleyin. Uygulamayı oradan çalıştırın — DMG'den veya İndirilenler'den değil.</li>
+            <li data-i18n="mac.install.2">Bir kez açın. macOS uygulamayı <b>"doğrulayamadı"</b> der — bu, Apple tarafından notarize edilmemiş bir uygulamaya Gatekeeper'ın tepkisidir, uygulamanın yaptığı bir şey değil. Kapatın, <b>Sistem Ayarları › Gizlilik ve Güvenlik</b>'i açın, Güvenlik bölümüne inin ve <b>Yine de Aç</b>'a tıklayın.</li>
+            <li data-i18n="mac.install.3"><b>Erişilebilirlik</b> izni verin: <b>Sistem Ayarları › Gizlilik ve Güvenlik › Erişilebilirlik</b> ve <b>bubbleTranslate</b>'i açın. Uygulama seçtiğinizi böyle okur — Yine de Aç'tan <i>farklı</i> bir izindir.</li>
+            <li data-i18n="mac.install.4"><b>Çıkın ve yeniden açın.</b> Erişilebilirlik izni yalnızca temiz bir başlangıçta etkinleşir; bu yüzden bubbleTranslate'ten çıkın (menü çubuğundaki küre → Quit) ve tekrar açın. Bunu yapana kadar pencere <b>"Not watching for selections"</b> (seçimler izlenmiyor) yazar.</li>
+            <li data-i18n="mac.install.5">Bitti. Herhangi bir yerde <b>Shift</b>'e basılı tutup metni seçin; baloncuk imlecinizin yanında belirir.</li>
+          </ol>
+          <p class="os-install-tip" data-i18n="mac.install.tip">Yeniden açtıktan sonra hâlâ "Not watching" mı diyor? bubbleTranslate'i Erişilebilirlik listesinden kaldırın (seçip − tıklayın), <code>xattr -dr com.apple.quarantine /Applications/bubbleTranslate.app</code> komutunu çalıştırın, sonra tekrar ekleyip açın ve yeniden başlatın. Eski bir sürümden kalan kayıt yenisini sessizce engelleyebilir.</p>
+        </div>
+        <div class="os-install" id="windows-install">
+          <h3 data-i18n="win.install.h3">Windows'ta kurulum — ilk çalıştırma</h3>
+          <ol>
+            <li data-i18n="win.install.1"><b>bubbleTranslate.exe</b>'yi programlarınızı tuttuğunuz yere koyup çift tıklayın. Kurulum sihirbazı yok, açılacak arşiv yok — tek bir dosya; ayarlarını ilk çalıştırmada <code>%APPDATA%\bubbleTranslate</code> içine yazar.</li>
+            <li data-i18n="win.install.2">Windows <b>"Bilgisayarınız korundu"</b> der. Bu, SmartScreen'in imzalı görmediği bir dosyaya tepkisidir — uygulamanın yaptığı bir şey değil. <b>Ek bilgi</b>'ye, sonra <b>Yine de çalıştır</b>'a tıklayın; her açılışta değil, makine başına bir kez.</li>
+            <li data-i18n="win.install.3">Verilecek izin yok: Windows seçtiğinizi okumasına doğrudan izin verir, uygulama açıldığı anda izlemeye başlar.</li>
+            <li data-i18n="win.install.4">Küreyi bulun. Windows 11 her yeni bildirim simgesini saatin yanındaki <b>^</b> okunun arkasına gizler — görev çubuğuna sürükleyip orada tutun. Pencereyi o simge geri açar, çıkış da oradan yapılır.</li>
+            <li data-i18n="win.install.5">Bitti. Herhangi bir yerde <b>Shift</b>'e basılı tutup metni seçin; baloncuk imlecinizin yanında belirir.</li>
+          </ol>
+          <p class="os-install-tip" data-i18n="win.install.tip">Belirli bir uygulamada hiçbir şey çıkmıyor mu? O pencere yönetici olarak çalışıyorsa Windows onu, yönetici olmayan her programdan — bu uygulama dahil — gizler ve bunu değiştiren bir izin yoktur. Diğer yerlerde tuşa basılı tuttuğunuzdan emin olun: varsayılan Shift'tir, pencerenin Behaviour bölümünden değiştirilir.</p>
+        </div>
+        <p class="download-foot" data-i18n="dl.foot">Kaynak kod, derleme talimatları ve tüm belgeler <a href="https://github.com/pelamx/bubbleTranslate" style="color:var(--brand);" target="_blank" rel="noopener">GitHub</a>'da.</p>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+      <div class="container">
+        <div class="section-head">
+          <h2 data-i18n="faq.head.h2">Sıkça sorulan sorular</h2>
+          <p data-i18n="faq.head.p">Kurmadan önce bilmeye değer her şey.</p>
+        </div>
+        <div class="faq">
+          <details open><summary data-i18n="faq.q1">BubbleTranslate ücretsiz mi?</summary><p data-i18n="faq.a1">Evet. macOS, Windows ve Linux'ta, hesap veya kayıt olmadan günde 10 ücretsiz çeviri alırsınız. Daha fazlası gerekirse Pro, günlük sınırı $2/ay veya $20/yıl karşılığında kaldırır.</p></details>
+          <details><summary data-i18n="faq.q2">Pro ile ne elde ederim?</summary><p data-i18n="faq.a2">En fazla üç makinede sınırsız çeviri, $2/ay veya $20/yıl karşılığında (yıllık planda iki ay bedava). Tek lisans anahtarı tüm makinelerinizi kapsar ve uygulamanın sürekli gelişimini destekler.</p></details>
+          <details><summary data-i18n="faq.q3">Pro için nasıl ödeme yaparım?</summary><p data-i18n="faq.a3">Aylık veya yıllık. Ödeme, kayıtlı satıcı Paddle üzerinden alınır; kendi para biriminizde ücretlendirilirsiniz. Varsa vergiler, ödeme sırasında Paddle tarafından hesaplanır ve gösterilir. İstediğiniz zaman iptal edebilirsiniz.</p></details>
+          <details><summary data-i18n="faq.q4">Hangi sistemlerde çalışır?</summary><p data-i18n="faq.a4">macOS, Windows ve Linux. Windows sürümü hiçbir şey kurmayı gerektirmeyen tek bir .exe dosyasıdır ve ARM makineler dahil Windows 10 ile 11'de çalışır. Linux'ta hazır ikili dosya için glibc 2.43 veya üstü gerekir; daha eski bir dağıtımda kaynaktan derleyin.</p></details>
+          <details><summary data-i18n="faq.q5">İnternet bağlantısı gerekir mi?</summary><p data-i18n="faq.a5">Evet. Çeviriler çevrimiçi sağlayıcılardan gelir; biri yanıt verene kadar sırayla denenir. Yalnızca seçtiğiniz metin, yalnızca çevirmek için gönderilir.</p></details>
+          <details><summary data-i18n="faq.q6">Hangi izne ihtiyacı var?</summary><p data-i18n="faq.a6">macOS'ta Erişilebilirlik — uygulama seçtiğinizi böyle görür. İstediği tek izin budur. Windows'ta ve çoğu X11 ile Wayland oturumunda ek bir şey gerekmez.</p></details>
+          <details><summary data-i18n="faq.q7">Seçtiğim her şeyi çevirir mi?</summary><p data-i18n="faq.a7">Hayır — yalnızca bir tuş basılıyken yaptığınız seçimleri. Varsayılan Shift'tir; böylece seçimi genişletmek ve çevirmek tek harekettir. Tuşu Ctrl, Alt veya Super yapabilir ya da eskisi gibi her seçimi çevirtebilirsiniz. Kopyalama ve sıradan işaretlemeye dokunulmaz.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA band -->
+    <section>
+      <div class="container">
+        <div class="cta-band">
+          <h2 data-i18n="cta.h2">İşinizi bırakmadan dünyayı okuyun</h2>
+          <p data-i18n="cta.p">BubbleTranslate'i ücretsiz indirin ve seçebildiğiniz her şeyi çevirin.</p>
+          <a class="btn btn-primary" href="#download" data-i18n="cta.btn">↓ BubbleTranslate'i ücretsiz al</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site">
+    <div class="container foot-grid">
+      <div class="brand"><img class="logo" src="/favicon.svg" alt=""> BubbleTranslate</div>
+      <nav class="foot-links">
+        <a href="#features" data-i18n="nav.features">Özellikler</a>
+        <a href="#pricing" data-i18n="nav.pricing">Fiyatlar</a>
+        <a href="#download" data-i18n="nav.download">İndir</a>
+        <a href="#faq" data-i18n="nav.faq">SSS</a>
+        <a href="/terms" data-i18n="nav.terms">Şartlar</a>
+        <a href="/privacy" data-i18n="nav.privacy">Gizlilik</a>
+        <a href="/refunds" data-i18n="nav.refunds">İadeler</a>
+        <a href="mailto:support@bubbletranslate.app" data-i18n="nav.contact">İletişim</a>
+        <a href="https://github.com/pelamx/bubbleTranslate" target="_blank" rel="noopener">GitHub</a>
+      </nav>
+      <div>© <span id="year"></span> BubbleTranslate</div>
+    </div>
+  </footer>
+
+  <script src="/script.js?v=20260916a"></script>
+</body>
+</html>
