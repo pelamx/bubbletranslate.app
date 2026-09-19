@@ -80,6 +80,7 @@ header.site {
 }
 .demo-video { display: block; width: 100%; height: auto; background: #000; }
 .video-caption { margin: 12px 2px 0; color: var(--muted); font-size: .85rem; text-align: center; }
+.theme-preview { max-width: 760px; margin: 0 auto; }
 .src-text { color: var(--muted); font-size: .95rem; }
 .bubble {
   position: relative; align-self: start;

@@ -61,6 +61,9 @@ const I18N = {
     'hero.see': 'See how it works',
     'hero.note': 'Free · 10 translations a day · Pro from $2/month for unlimited',
     'video.caption': '▶ A real screen recording — select text, read the bubble.',
+    'themes.head.h2': 'Make it yours with themes',
+    'themes.head.p': 'Choose a look that matches your desktop. The bubble and the app follow the theme you pick.',
+    'themes.caption': '▶ Switching themes in the app.',
 
     'trust.lead': '🔒 Private by design',
     'trust.1': 'No translation history',
@@ -231,6 +234,9 @@ const I18N = {
     'hero.see': 'Nasıl çalıştığını gör',
     'hero.note': 'Ücretsiz · günde 10 çeviri · sınırsız için Pro aylık $2\'den',
     'video.caption': '▶ Gerçek bir ekran kaydı — metni seçin, baloncuğu okuyun.',
+    'themes.head.h2': 'Temalarla kendinize göre ayarlayın',
+    'themes.head.p': 'Masaüstünüze uyan bir görünüm seçin. Baloncuk ve uygulama, seçtiğiniz temayı izler.',
+    'themes.caption': '▶ Uygulamada tema değiştirme.',
 
     'trust.lead': '🔒 Tasarımı gereği gizli',
     'trust.1': 'Çeviri geçmişi tutulmaz',
@@ -401,6 +407,9 @@ const I18N = {
     'hero.see': 'Mira cómo funciona',
     'hero.note': 'Gratis · 10 traducciones al día · Pro desde $2/mes para ilimitado',
     'video.caption': '▶ Una grabación de pantalla real: selecciona texto, lee la burbuja.',
+    'themes.head.h2': 'Adáptalo con temas',
+    'themes.head.p': 'Elige un aspecto que combine con tu escritorio. La burbuja y la app siguen el tema que elijas.',
+    'themes.caption': '▶ Cambiando de tema en la app.',
 
     'trust.lead': '🔒 Privado por diseño',
     'trust.1': 'Sin historial de traducciones',
