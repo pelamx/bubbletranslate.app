@@ -68,12 +68,17 @@ the extensionless form.
 The download buttons and the `DOWNLOADS` map in `script.js` point at a
 **versioned GitHub Release** on the app repo
 (`github.com/pelamx/bubbleTranslate/releases/download/v0.2.2/...`), not at
-anything in this repo. Each release ships the three binaries plus a
-`SHA256SUMS.txt` so a download can be verified. Because the URL is pinned to a
-tag, publishing a new version means creating the new release **and** bumping
-these URLs here (and the matching `url` fields in the app repo's
-`latest.json`) to the new tag. The old `raw/main` binaries are left in place,
-so nothing that still points at them breaks.
+anything in this repo. Each release ships the three binaries — Windows as
+`bubbleTranslate-windows-x64.zip`, because a browser discards a bare unsigned
+`.exe` as an uncommon download — plus a `SHA256SUMS.txt` so a download can be
+verified. Because the URL is pinned to a tag, publishing a new version means
+creating the new release **and** bumping these URLs here (and the matching
+`url` fields in the app repo's `latest.json`) to the new tag.
+
+The binaries are no longer committed to the app repo, so the `raw/main` URLs
+these buttons used before now 404. Anything still pointing at one — an old
+bookmark, a post, a cached page — has to be repointed at the release asset;
+there is nothing left at the old address to fall back to.
 
 ## Deploying
 
