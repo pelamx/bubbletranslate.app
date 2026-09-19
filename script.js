@@ -152,12 +152,12 @@ const I18N = {
     'dl.linux.btn': 'Download binary',
     'dl.linux.run': 'Make it executable and run it:',
     'dl.linux.note2': 'On an older distro, or GNOME Wayland, build from source instead.',
-    'dl.win.desc': 'x86-64 · Windows 10 &amp; 11 · runs on ARM too · 17&nbsp;MB',
-    'dl.win.btn': 'Download EXE',
-    'dl.win.run': 'Nothing to install. Put it wherever you keep programs and double-click it.',
+    'dl.win.desc': 'x86-64 · Windows 10 &amp; 11 · runs on ARM too · 7&nbsp;MB',
+    'dl.win.btn': 'Download ZIP',
+    'dl.win.run': 'Unzip it, put bubbleTranslate.exe wherever you keep programs and double-click it. Nothing to install.',
     'dl.win.note2': 'It isn\'t code-signed, so SmartScreen stops the first launch: <b>More info</b> › <b>Run anyway</b>, once per machine.',
     'win.install.h3': 'Installing on Windows — the first run',
-    'win.install.1': 'Put <b>bubbleTranslate.exe</b> wherever you keep programs and double-click it. There is no installer and nothing to unpack — it is one file, and it writes its settings to <code>%APPDATA%\\bubbleTranslate</code> the first time it runs.',
+    'win.install.1': 'Unzip the download, then put <b>bubbleTranslate.exe</b> wherever you keep programs and double-click it. There is no installer — the zip holds one file, and it writes its settings to <code>%APPDATA%\\bubbleTranslate</code> the first time it runs.',
     'win.install.2': 'Windows says <b>"Windows protected your PC"</b>. That is SmartScreen reacting to a file it has not seen signed, not to anything the app does. Click <b>More info</b>, then <b>Run anyway</b> — once per machine, not once per launch.',
     'win.install.3': 'No permission to grant: Windows lets it read what you select straight away, so it starts watching the moment it opens.',
     'win.install.4': 'Find the globe. Windows 11 hides every new tray icon behind the <b>^</b> arrow next to the clock — drag it out onto the taskbar to keep it there. That icon reopens the window, and it is how you quit.',
@@ -325,12 +325,12 @@ const I18N = {
     'dl.linux.btn': 'İkili dosyayı indir',
     'dl.linux.run': 'Çalıştırılabilir yapın ve çalıştırın:',
     'dl.linux.note2': 'Daha eski bir dağıtımda veya GNOME Wayland\'da bunun yerine kaynaktan derleyin.',
-    'dl.win.desc': 'x86-64 · Windows 10 ve 11 · ARM\'da da çalışır · 17&nbsp;MB',
-    'dl.win.btn': 'EXE indir',
-    'dl.win.run': 'Kurulum yok. Programlarınızı tuttuğunuz yere koyup çift tıklayın.',
+    'dl.win.desc': 'x86-64 · Windows 10 ve 11 · ARM\'da da çalışır · 7&nbsp;MB',
+    'dl.win.btn': 'ZIP indir',
+    'dl.win.run': 'Zip\'i açın, bubbleTranslate.exe\'yi programlarınızı tuttuğunuz yere koyup çift tıklayın. Kurulum yok.',
     'dl.win.note2': 'Dosya imzalı değil; SmartScreen ilk açılışı durdurur: <b>Ek bilgi</b> › <b>Yine de çalıştır</b>, makine başına bir kez.',
     'win.install.h3': 'Windows\'ta kurulum — ilk çalıştırma',
-    'win.install.1': '<b>bubbleTranslate.exe</b>\'yi programlarınızı tuttuğunuz yere koyup çift tıklayın. Kurulum sihirbazı yok, açılacak arşiv yok — tek bir dosya; ayarlarını ilk çalıştırmada <code>%APPDATA%\\bubbleTranslate</code> içine yazar.',
+    'win.install.1': 'İndirdiğiniz zip\'i açın, <b>bubbleTranslate.exe</b>\'yi programlarınızı tuttuğunuz yere koyup çift tıklayın. Kurulum sihirbazı yok — zip\'in içinde tek bir dosya var; ayarlarını ilk çalıştırmada <code>%APPDATA%\\bubbleTranslate</code> içine yazar.',
     'win.install.2': 'Windows <b>"Bilgisayarınız korundu"</b> der. Bu, SmartScreen\'in imzalı görmediği bir dosyaya tepkisidir — uygulamanın yaptığı bir şey değil. <b>Ek bilgi</b>\'ye, sonra <b>Yine de çalıştır</b>\'a tıklayın; her açılışta değil, makine başına bir kez.',
     'win.install.3': 'Verilecek izin yok: Windows seçtiğinizi okumasına doğrudan izin verir, uygulama açıldığı anda izlemeye başlar.',
     'win.install.4': 'Küreyi bulun. Windows 11 her yeni bildirim simgesini saatin yanındaki <b>^</b> okunun arkasına gizler — görev çubuğuna sürükleyip orada tutun. Pencereyi o simge geri açar, çıkış da oradan yapılır.',
@@ -498,12 +498,12 @@ const I18N = {
     'dl.linux.btn': 'Descargar binario',
     'dl.linux.run': 'Hazlo ejecutable y ejecútalo:',
     'dl.linux.note2': 'En una distro más antigua, o GNOME Wayland, compílalo desde el código fuente.',
-    'dl.win.desc': 'x86-64 · Windows 10 y 11 · también en ARM · 17&nbsp;MB',
-    'dl.win.btn': 'Descargar EXE',
-    'dl.win.run': 'No hay nada que instalar. Ponlo donde guardes tus programas y haz doble clic.',
+    'dl.win.desc': 'x86-64 · Windows 10 y 11 · también en ARM · 7&nbsp;MB',
+    'dl.win.btn': 'Descargar ZIP',
+    'dl.win.run': 'Descomprime el zip, pon bubbleTranslate.exe donde guardes tus programas y haz doble clic. No hay nada que instalar.',
     'dl.win.note2': 'No está firmado, así que SmartScreen detiene el primer arranque: <b>Más información</b> › <b>Ejecutar de todas formas</b>, una vez por equipo.',
     'win.install.h3': 'Instalación en Windows — el primer arranque',
-    'win.install.1': 'Pon <b>bubbleTranslate.exe</b> donde guardes tus programas y haz doble clic. No hay instalador ni nada que descomprimir — es un solo archivo, y escribe su configuración en <code>%APPDATA%\\bubbleTranslate</code> la primera vez que se ejecuta.',
+    'win.install.1': 'Descomprime la descarga, luego pon <b>bubbleTranslate.exe</b> donde guardes tus programas y haz doble clic. No hay instalador — el zip contiene un solo archivo, y escribe su configuración en <code>%APPDATA%\\bubbleTranslate</code> la primera vez que se ejecuta.',
     'win.install.2': 'Windows dice <b>"Windows protegió su PC"</b>. Es SmartScreen reaccionando a un archivo que no ha visto firmado, no a algo que haga la app. Pulsa <b>Más información</b> y luego <b>Ejecutar de todas formas</b> — una vez por equipo, no en cada arranque.',
     'win.install.3': 'No hay permiso que conceder: Windows le deja leer lo que seleccionas desde el principio, así que empieza a vigilar en cuanto se abre.',
     'win.install.4': 'Busca el globo. Windows 11 esconde cada icono nuevo de la bandeja tras la flecha <b>^</b> junto al reloj — arrástralo a la barra de tareas para tenerlo a la vista. Ese icono vuelve a abrir la ventana, y es como se sale de la app.',
@@ -624,9 +624,9 @@ if (langSwitch) {
 // machine, so there is one file for both; `file: null` is what puts an OS back
 // to "coming soon".
 const DOWNLOADS = {
-  mac:     { file: 'https://github.com/pelamx/bubbleTranslate/releases/download/v0.2.0/bubbleTranslate.dmg',       label: 'macOS' },
-  linux:   { file: 'https://github.com/pelamx/bubbleTranslate/releases/download/v0.2.0/bubbleTranslate-linux-x86_64', label: 'Linux' },
-  windows: { file: 'https://github.com/pelamx/bubbleTranslate/releases/download/v0.2.0/bubbleTranslate.exe',       label: 'Windows' }
+  mac:     { file: 'https://github.com/pelamx/bubbleTranslate/releases/download/v0.2.2/bubbleTranslate.dmg',       label: 'macOS' },
+  linux:   { file: 'https://github.com/pelamx/bubbleTranslate/releases/download/v0.2.2/bubbleTranslate-linux-x86_64', label: 'Linux' },
+  windows: { file: 'https://github.com/pelamx/bubbleTranslate/releases/download/v0.2.2/bubbleTranslate-windows-x64.zip',       label: 'Windows' }
 };
 
 function detectOS() {

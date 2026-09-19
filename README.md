@@ -67,7 +67,7 @@ the extensionless form.
 
 The download buttons and the `DOWNLOADS` map in `script.js` point at a
 **versioned GitHub Release** on the app repo
-(`github.com/pelamx/bubbleTranslate/releases/download/v0.2.0/...`), not at
+(`github.com/pelamx/bubbleTranslate/releases/download/v0.2.2/...`), not at
 anything in this repo. Each release ships the three binaries plus a
 `SHA256SUMS.txt` so a download can be verified. Because the URL is pinned to a
 tag, publishing a new version means creating the new release **and** bumping
