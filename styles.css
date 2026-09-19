@@ -190,8 +190,11 @@ details p { margin: 0 0 16px; color: var(--muted); }
 /* Footer */
 footer.site { border-top: 1px solid var(--border); padding: 40px 0; color: var(--muted); }
 .foot-grid { display: flex; justify-content: space-between; align-items: center; gap: 20px; flex-wrap: wrap; }
-.foot-links { display: flex; gap: 22px; flex-wrap: wrap; }
+.foot-links { display: flex; gap: 22px; flex-wrap: wrap; align-items: center; }
 .foot-links a:hover { color: var(--text); }
+.foot-social { display: inline-flex; align-items: center; line-height: 0; }
+.foot-social svg { display: block; }
+.foot-social:hover { color: #1da1f2; }
 
 @media (max-width: 860px) {
   .hero { padding: 40px 0 40px; }
