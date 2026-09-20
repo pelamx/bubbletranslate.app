@@ -43,10 +43,16 @@ header.site {
   border-bottom: 1px solid var(--border);
 }
 .nav { display: flex; align-items: center; justify-content: space-between; height: 68px; }
-.brand { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 1.15rem; }
-.brand .logo { width: 34px; height: 34px; }
-.nav-links { display: flex; align-items: center; gap: 26px; }
-.nav-links a { color: var(--muted); font-weight: 500; }
+.brand { display: flex; align-items: center; gap: 9px; font-weight: 800; font-size: 1.05rem; }
+.brand .logo { width: 30px; height: 30px; }
+/* Seven links, a language switch and a button share one row, and the longest
+   set is Spanish. Adding Privacy pushed it to 1076px of a 1120px container --
+   flush against the button, with nothing left for a narrower window. Smaller
+   type and a tighter gap bring the row down to about 1090px at 14.4px, which
+   is as small as this type should go; the rest is handled by collapsing to the
+   menu button early, below. */
+.nav-links { display: flex; align-items: center; gap: 14px; }
+.nav-links a { color: var(--muted); font-weight: 500; font-size: .9rem; white-space: nowrap; }
 .nav-links a:hover { color: var(--text); }
 .nav-cta { display: flex; gap: 10px; align-items: center; }
 .menu-btn { display: none; background: none; border: 0; color: var(--text); font-size: 1.6rem; cursor: pointer; }
@@ -197,6 +203,31 @@ footer.site { border-top: 1px solid var(--border); padding: 40px 0; color: var(-
 .foot-social svg { display: block; }
 .foot-social:hover { color: #1da1f2; }
 
+/* The header row -- brand, seven links, the language switch and the button --
+   is the first thing to run out of width, and it does so while every other
+   section is still comfortable, so it collapses on its own schedule rather
+   than with the rest of the layout at 860px. The number is chosen so that the
+   links are only ever shown at the container's full 1120px, where the row has
+   room to spare; anything narrower gets ☰ instead of a crowded row. */
+@media (max-width: 1180px) {
+  .nav-links { display: none; }
+  .menu-btn { display: block; }
+  .nav-links.open {
+    display: flex; position: absolute; top: 68px; left: 0; right: 0;
+    flex-direction: column; align-items: stretch; gap: 2px;
+    background: var(--bg-soft); padding: 12px 0;
+    border-bottom: 1px solid var(--border);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, .35);
+  }
+  /* Full-bleed panel, but the text still lines up with the page's gutter, and
+     each row is a row rather than a word with a lot of space around it. */
+  .nav-links.open a {
+    padding: 11px max(22px, calc((100vw - var(--maxw)) / 2 + 22px));
+    font-size: 1rem;
+  }
+  .nav-links.open a:hover { background: rgba(255, 255, 255, .04); color: var(--text); }
+}
+
 @media (max-width: 860px) {
   .hero { padding: 40px 0 40px; }
   .hero-grid { grid-template-columns: 1fr; gap: 32px; }
@@ -204,9 +235,6 @@ footer.site { border-top: 1px solid var(--border); padding: 40px 0; color: var(-
   .grid-3, .grid-4, .steps, .dl-grid { grid-template-columns: 1fr; }
   section { padding: 56px 0; }
   .steps { row-gap: 34px; }
-  .nav-links { display: none; }
-  .menu-btn { display: block; }
-  .nav-links.open { display: flex; position: absolute; top: 68px; left: 0; right: 0; flex-direction: column; background: var(--bg-soft); padding: 20px; border-bottom: 1px solid var(--border); }
 }
 
 /* Install notes under download cards */
@@ -392,7 +420,7 @@ img, video { max-width: 100%; height: auto; }
 .lang-switch button {
   border: 0; background: transparent; cursor: pointer;
   color: var(--muted); font: inherit; font-weight: 600; font-size: .78rem;
-  letter-spacing: .4px; padding: 6px 12px; border-radius: 8px;
+  letter-spacing: .4px; padding: 6px 9px; border-radius: 8px;
   transition: color .15s ease, background .15s ease, box-shadow .15s ease;
 }
 .lang-switch button:hover { color: var(--text); background: rgba(255, 255, 255, .05); }
