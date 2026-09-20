@@ -19,12 +19,12 @@ if (y) y.textContent = new Date().getFullYear();
 // ============================================================
 const I18N = {
   en: {
-    'meta.title': 'BubbleTranslate — Translate all selectable text without leaving your desktop',
-    'meta.desc': 'BubbleTranslate is a lightweight desktop app for macOS, Windows and Linux. Select text in any app and a bubble appears at your cursor with the translation. 10 free translations a day; go unlimited with Pro from $2/month.',
+    'meta.title': 'bubbleTranslate — Translate all selectable text without leaving your desktop',
+    'meta.desc': 'bubbleTranslate is a lightweight desktop app for macOS, Windows and Linux. Select text in any app and a bubble appears at your cursor with the translation. 10 free translations a day; go unlimited with Pro from $2/month.',
 
     // -- /pricing -----------------------------------------------------------
-    'pricing.meta.title': 'Pricing — BubbleTranslate',
-    'pricing.meta.desc': 'BubbleTranslate is free for 10 translations a day. Pro removes the daily limit for $2 a month or $20 a year, on up to three machines.',
+    'pricing.meta.title': 'Pricing — bubbleTranslate',
+    'pricing.meta.desc': 'bubbleTranslate is free for 10 translations a day. Pro removes the daily limit for $2 a month or $20 a year, on up to three machines.',
     'pricing.h1': 'Free to use. Pro when ten a day is not enough.',
     'pricing.sub': 'Every feature is in the free version. Pro changes exactly one thing: it removes the daily limit.',
     'pricing.counts.h3': 'What counts as a translation',
@@ -71,7 +71,7 @@ const I18N = {
     'trust.3': 'Only your selection is sent',
     'trust.more': 'How it works →',
     'what.h2': 'It is not a translator. It is a way to stop interrupting yourself.',
-    'what.p': 'BubbleTranslate is a productivity tool for people who work on a desktop or laptop all day. The translation is not the point — keeping your place is.',
+    'what.p': 'bubbleTranslate is a productivity tool for people who work on a desktop or laptop all day. The translation is not the point — keeping your place is.',
     'what.1.h3': 'Works wherever you can select text',
     'what.1.p': 'Documents, PDFs, browsers, chat, code, even menus. It reads the selection at the operating system level, so no app has to support it and nothing else is needed.',
     'what.2.h3': 'Nothing else to open',
@@ -86,17 +86,17 @@ const I18N = {
     'feat.1.p': 'It appears wherever you can select text — no new windows, no context switching.',
     'feat.2.kicker': 'Effortless',
     'feat.2.h3': 'Automatic language detection',
-    'feat.2.p': 'You never need to tell BubbleTranslate what language you\'re reading.',
+    'feat.2.p': 'You never need to tell bubbleTranslate what language you\'re reading.',
     'feat.3.kicker': 'Reliable',
     'feat.3.h3': 'Automatic provider fallback',
-    'feat.3.p': 'If one provider is unavailable, BubbleTranslate tries another.',
+    'feat.3.p': 'If one provider is unavailable, bubbleTranslate tries another.',
     'feat.4.kicker': 'Flexible',
     'feat.4.h3': 'Make it yours',
     'feat.4.p': 'Target language, shortcut, text size and auto-hide timing.',
 
     'lang.badge': '✨ Automatic language detection',
     'lang.h2': 'You never pick the source language',
-    'lang.p': 'BubbleTranslate figures out what you\'re reading on its own. Select text in any language and it detects it, then shows the translation in the language you chose. The bubble even tells you what it detected — like <b>Japanese&nbsp;→&nbsp;English</b>.',
+    'lang.p': 'bubbleTranslate figures out what you\'re reading on its own. Select text in any language and it detects it, then shows the translation in the language you chose. The bubble even tells you what it detected — like <b>Japanese&nbsp;→&nbsp;English</b>.',
     'lang.title': 'Translate into any of these <span class="lang-count">17 languages</span>',
     'lang.note': 'Those are one click away in the bubble. Need another? Any language code the providers accept works too — just set it in the config.',
 
@@ -115,7 +115,7 @@ const I18N = {
     'priv.head.h2': 'Private by design',
     'priv.head.p': 'The text you select is the only thing that ever leaves your machine — and only when you select it.',
     'priv.1.h3': 'No translation history',
-    'priv.1.p': 'BubbleTranslate doesn\u2019t store your translation history. The recent list lives in memory for the session and is gone when you quit.',
+    'priv.1.p': 'bubbleTranslate doesn\u2019t store your translation history. The recent list lives in memory for the session and is gone when you quit.',
     'priv.2.h3': 'The licence server never sees your text',
     'priv.2.p': 'Your licence server never sees what you translate. It receives your licence key and a device id, and nothing else.',
     'priv.3.h3': 'Only your selection is sent',
@@ -149,7 +149,7 @@ const I18N = {
     'price.pro.5': '✓ Supports the app\'s development',
     'price.pro.cta': 'Upgrade to Pro',
 
-    'dl.head.h2': 'Download BubbleTranslate',
+    'dl.head.h2': 'Download bubbleTranslate',
     'dl.head.p': 'Free to install, with 10 translations a day. Upgrade to Pro anytime for unlimited.',
     'dl.mac.desc': 'Universal · Apple Silicon &amp; Intel · macOS 11 or later · 15&nbsp;MB',
     'dl.mac.btn': 'Download DMG',
@@ -181,7 +181,7 @@ const I18N = {
 
     'faq.head.h2': 'Frequently asked questions',
     'faq.head.p': 'Everything worth knowing before you install.',
-    'faq.q1': 'Is BubbleTranslate free?',
+    'faq.q1': 'Is bubbleTranslate free?',
     'faq.a1': 'Yes. You get 10 translations a day for free, on macOS, Windows and Linux, with no account or sign-up. If you need more, Pro removes the daily limit for $2/month or $20/year.',
     'faq.q2': 'What do I get with Pro?',
     'faq.a2': 'Unlimited translations on up to three machines, for $2/month or $20/year (the yearly plan is two months free). One licence key covers all your machines, and it supports the app\'s ongoing development.',
@@ -197,8 +197,8 @@ const I18N = {
     'faq.a7': 'No — only selections you make with a key held down. Shift by default, so extending a selection and translating it are one gesture. You can switch the key to Ctrl, Alt or Super, or set it to translate every selection like before. Copying and ordinary highlighting are left alone.',
 
     'cta.h2': 'Read the world without leaving your work',
-    'cta.p': 'Download BubbleTranslate free and translate anything you can select.',
-    'cta.btn': '↓ Get BubbleTranslate free',
+    'cta.p': 'Download bubbleTranslate free and translate anything you can select.',
+    'cta.btn': '↓ Get bubbleTranslate free',
 
     'js.downloadFor': '↓ Download for {os}',
     'js.osSoon': '{os} — coming soon',
@@ -206,12 +206,12 @@ const I18N = {
   },
 
   tr: {
-    'meta.title': 'BubbleTranslate — Masaüstünüzden ayrılmadan seçtiğiniz metni çevirin',
-    'meta.desc': 'BubbleTranslate, macOS, Windows ve Linux için hafif bir masaüstü uygulamasıdır. Herhangi bir uygulamada metin seçin; imlecinizin yanında çevirisiyle bir baloncuk belirir. Günde 10 ücretsiz çeviri; sınırsız için Pro aylık $2\'den başlar.',
+    'meta.title': 'bubbleTranslate — Masaüstünüzden ayrılmadan seçtiğiniz metni çevirin',
+    'meta.desc': 'bubbleTranslate, macOS, Windows ve Linux için hafif bir masaüstü uygulamasıdır. Herhangi bir uygulamada metin seçin; imlecinizin yanında çevirisiyle bir baloncuk belirir. Günde 10 ücretsiz çeviri; sınırsız için Pro aylık $2\'den başlar.',
 
     // -- /pricing -----------------------------------------------------------
-    'pricing.meta.title': 'Fiyatlandırma — BubbleTranslate',
-    'pricing.meta.desc': 'BubbleTranslate günde 10 çeviriye kadar ücretsiz. Pro, günlük sınırı kaldırır: ayda 2 dolar veya yılda 20 dolar, üç makineye kadar.',
+    'pricing.meta.title': 'Fiyatlandırma — bubbleTranslate',
+    'pricing.meta.desc': 'bubbleTranslate günde 10 çeviriye kadar ücretsiz. Pro, günlük sınırı kaldırır: ayda 2 dolar veya yılda 20 dolar, üç makineye kadar.',
     'pricing.h1': 'Kullanması ücretsiz. Günde on yetmediğinde Pro var.',
     'pricing.sub': 'Bütün özellikler ücretsiz sürümde. Pro tek bir şeyi değiştirir: günlük sınırı kaldırır.',
     'pricing.counts.h3': 'Ne çeviri sayılır',
@@ -258,7 +258,7 @@ const I18N = {
     'trust.3': 'Yalnızca seçtiğiniz metin gönderilir',
     'trust.more': 'Nasıl çalışıyor →',
     'what.h2': 'Bu bir çeviri aracı değil. Kendinizi bölmemenin bir yolu.',
-    'what.p': 'BubbleTranslate, gün boyu masaüstü ya da dizüstünde çalışanlar için bir üretkenlik aracı. Mesele çeviri değil, kaldığınız yeri kaybetmemek.',
+    'what.p': 'bubbleTranslate, gün boyu masaüstü ya da dizüstünde çalışanlar için bir üretkenlik aracı. Mesele çeviri değil, kaldığınız yeri kaybetmemek.',
     'what.1.h3': 'Metin seçebildiğiniz her yerde çalışır',
     'what.1.p': 'Belgeler, PDF’ler, tarayıcılar, sohbet, kod, hatta menüler. Seçimi işletim sistemi düzeyinde okur; hiçbir uygulamanın bunu desteklemesi gerekmez, başka bir araca da ihtiyaç yoktur.',
     'what.2.h3': 'Açılacak başka bir şey yok',
@@ -273,17 +273,17 @@ const I18N = {
     'feat.1.p': 'Metin seçebildiğiniz her yerde belirir — yeni pencere yok, bağlam değiştirmek yok.',
     'feat.2.kicker': 'Zahmetsiz',
     'feat.2.h3': 'Otomatik dil algılama',
-    'feat.2.p': 'Ne okuduğunuzu BubbleTranslate\'e söylemeniz hiç gerekmez.',
+    'feat.2.p': 'Ne okuduğunuzu bubbleTranslate\'e söylemeniz hiç gerekmez.',
     'feat.3.kicker': 'Güvenilir',
     'feat.3.h3': 'Otomatik sağlayıcı yedeği',
-    'feat.3.p': 'Bir sağlayıcı yanıt vermezse BubbleTranslate bir diğerini dener.',
+    'feat.3.p': 'Bir sağlayıcı yanıt vermezse bubbleTranslate bir diğerini dener.',
     'feat.4.kicker': 'Esnek',
     'feat.4.h3': 'Kendinize göre ayarlayın',
     'feat.4.p': 'Hedef dil, kısayol tuşu, yazı boyutu ve kaybolma süresi.',
 
     'lang.badge': '✨ Otomatik dil algılama',
     'lang.h2': 'Kaynak dili asla siz seçmezsiniz',
-    'lang.p': 'BubbleTranslate ne okuduğunuzu kendisi anlar. Herhangi bir dilde metin seçin; algılar ve çeviriyi seçtiğiniz dilde gösterir. Baloncuk, neyi algıladığını bile söyler — örneğin <b>Japonca&nbsp;→&nbsp;İngilizce</b>.',
+    'lang.p': 'bubbleTranslate ne okuduğunuzu kendisi anlar. Herhangi bir dilde metin seçin; algılar ve çeviriyi seçtiğiniz dilde gösterir. Baloncuk, neyi algıladığını bile söyler — örneğin <b>Japonca&nbsp;→&nbsp;İngilizce</b>.',
     'lang.title': 'Şu <span class="lang-count">17 dilden</span> herhangi birine çevirin',
     'lang.note': 'Bunlar baloncukta tek tıkla seçilebilir. Başka mı lazım? Sağlayıcıların kabul ettiği herhangi bir dil kodu da çalışır — sadece ayar dosyasına yazın.',
 
@@ -302,7 +302,7 @@ const I18N = {
     'priv.head.h2': 'Tasarımı gereği gizli',
     'priv.head.p': 'Makinenizden çıkan tek şey seçtiğiniz metindir — o da yalnızca siz seçtiğinizde.',
     'priv.1.h3': 'Çeviri geçmişi tutulmaz',
-    'priv.1.p': 'BubbleTranslate çeviri geçmişinizi saklamaz. Son çeviriler listesi yalnızca o oturum boyunca bellekte durur ve uygulamadan çıktığınızda kaybolur.',
+    'priv.1.p': 'bubbleTranslate çeviri geçmişinizi saklamaz. Son çeviriler listesi yalnızca o oturum boyunca bellekte durur ve uygulamadan çıktığınızda kaybolur.',
     'priv.2.h3': 'Lisans sunucusu metninizi görmez',
     'priv.2.p': 'Lisans sunucusu ne çevirdiğinizi asla görmez. Yalnızca lisans anahtarınızı ve bir cihaz kimliğini alır, başka hiçbir şey almaz.',
     'priv.3.h3': 'Yalnızca seçtiğiniz metin gönderilir',
@@ -336,7 +336,7 @@ const I18N = {
     'price.pro.5': '✓ Uygulamanın gelişimini destekler',
     'price.pro.cta': 'Pro\'ya geç',
 
-    'dl.head.h2': 'BubbleTranslate\'i indirin',
+    'dl.head.h2': 'bubbleTranslate\'i indirin',
     'dl.head.p': 'Kurulumu ücretsiz, günde 10 çeviriyle. Sınırsız için istediğiniz zaman Pro\'ya geçin.',
     'dl.mac.desc': 'Universal · Apple Silicon ve Intel · macOS 11 veya üzeri · 15&nbsp;MB',
     'dl.mac.btn': 'DMG indir',
@@ -368,7 +368,7 @@ const I18N = {
 
     'faq.head.h2': 'Sıkça sorulan sorular',
     'faq.head.p': 'Kurmadan önce bilmeye değer her şey.',
-    'faq.q1': 'BubbleTranslate ücretsiz mi?',
+    'faq.q1': 'bubbleTranslate ücretsiz mi?',
     'faq.a1': 'Evet. macOS, Windows ve Linux\'ta, hesap veya kayıt olmadan günde 10 ücretsiz çeviri alırsınız. Daha fazlası gerekirse Pro, günlük sınırı $2/ay veya $20/yıl karşılığında kaldırır.',
     'faq.q2': 'Pro ile ne elde ederim?',
     'faq.a2': 'En fazla üç makinede sınırsız çeviri, $2/ay veya $20/yıl karşılığında (yıllık planda iki ay bedava). Tek lisans anahtarı tüm makinelerinizi kapsar ve uygulamanın sürekli gelişimini destekler.',
@@ -384,8 +384,8 @@ const I18N = {
     'faq.a7': 'Hayır — yalnızca bir tuş basılıyken yaptığınız seçimleri. Varsayılan Shift\'tir; böylece seçimi genişletmek ve çevirmek tek harekettir. Tuşu Ctrl, Alt veya Super yapabilir ya da eskisi gibi her seçimi çevirtebilirsiniz. Kopyalama ve sıradan işaretlemeye dokunulmaz.',
 
     'cta.h2': 'İşinizi bırakmadan dünyayı okuyun',
-    'cta.p': 'BubbleTranslate\'i ücretsiz indirin ve seçebildiğiniz her şeyi çevirin.',
-    'cta.btn': '↓ BubbleTranslate\'i ücretsiz al',
+    'cta.p': 'bubbleTranslate\'i ücretsiz indirin ve seçebildiğiniz her şeyi çevirin.',
+    'cta.btn': '↓ bubbleTranslate\'i ücretsiz al',
 
     'js.downloadFor': '↓ {os} için indir',
     'js.osSoon': '{os} — yakında',
@@ -393,12 +393,12 @@ const I18N = {
   },
 
   es: {
-    'meta.title': 'BubbleTranslate — Traduce cualquier texto seleccionable sin salir de tu escritorio',
-    'meta.desc': 'BubbleTranslate es una ligera app de escritorio para macOS, Windows y Linux. Selecciona texto en cualquier app y aparece una burbuja junto al cursor con la traducción. 10 traducciones gratis al día; pásate a ilimitado con Pro desde $2/mes.',
+    'meta.title': 'bubbleTranslate — Traduce cualquier texto seleccionable sin salir de tu escritorio',
+    'meta.desc': 'bubbleTranslate es una ligera app de escritorio para macOS, Windows y Linux. Selecciona texto en cualquier app y aparece una burbuja junto al cursor con la traducción. 10 traducciones gratis al día; pásate a ilimitado con Pro desde $2/mes.',
 
     // -- /pricing -----------------------------------------------------------
-    'pricing.meta.title': 'Precios — BubbleTranslate',
-    'pricing.meta.desc': 'BubbleTranslate es gratis con 10 traducciones al día. Pro quita el límite diario por 2 $ al mes o 20 $ al año, en hasta tres equipos.',
+    'pricing.meta.title': 'Precios — bubbleTranslate',
+    'pricing.meta.desc': 'bubbleTranslate es gratis con 10 traducciones al día. Pro quita el límite diario por 2 $ al mes o 20 $ al año, en hasta tres equipos.',
     'pricing.h1': 'Gratis para usar. Pro cuando diez al día no bastan.',
     'pricing.sub': 'Todas las funciones están en la versión gratuita. Pro cambia exactamente una cosa: quita el límite diario.',
     'pricing.counts.h3': 'Qué cuenta como traducción',
@@ -445,7 +445,7 @@ const I18N = {
     'trust.3': 'Solo se envía lo que seleccionas',
     'trust.more': 'Cómo funciona →',
     'what.h2': 'No es un traductor. Es una forma de no interrumpirte.',
-    'what.p': 'BubbleTranslate es una herramienta de productividad para quienes trabajan todo el día en un ordenador de escritorio o portátil. La traducción no es lo importante: no perder el hilo sí lo es.',
+    'what.p': 'bubbleTranslate es una herramienta de productividad para quienes trabajan todo el día en un ordenador de escritorio o portátil. La traducción no es lo importante: no perder el hilo sí lo es.',
     'what.1.h3': 'Funciona donde puedas seleccionar texto',
     'what.1.p': 'Documentos, PDF, navegadores, chat, código e incluso menús. Lee la selección a nivel del sistema operativo, así que ninguna aplicación tiene que admitirlo y no hace falta nada más.',
     'what.2.h3': 'Nada más que abrir',
@@ -460,17 +460,17 @@ const I18N = {
     'feat.1.p': 'Aparece allí donde puedas seleccionar texto: sin ventanas nuevas, sin cambiar de contexto.',
     'feat.2.kicker': 'Sin esfuerzo',
     'feat.2.h3': 'Detección automática del idioma',
-    'feat.2.p': 'Nunca tienes que decirle a BubbleTranslate qué estás leyendo.',
+    'feat.2.p': 'Nunca tienes que decirle a bubbleTranslate qué estás leyendo.',
     'feat.3.kicker': 'Fiable',
     'feat.3.h3': 'Proveedor de respaldo automático',
-    'feat.3.p': 'Si un proveedor no está disponible, BubbleTranslate prueba con otro.',
+    'feat.3.p': 'Si un proveedor no está disponible, bubbleTranslate prueba con otro.',
     'feat.4.kicker': 'Flexible',
     'feat.4.h3': 'Hazla tuya',
     'feat.4.p': 'Idioma de destino, atajo, tamaño del texto y tiempo de ocultación.',
 
     'lang.badge': '✨ Detección automática de idioma',
     'lang.h2': 'Nunca eliges el idioma de origen',
-    'lang.p': 'BubbleTranslate descubre por sí solo qué estás leyendo. Selecciona texto en cualquier idioma y lo detecta, luego muestra la traducción en el idioma que elijas. La burbuja hasta te dice qué detectó — por ejemplo <b>Japonés&nbsp;→&nbsp;Inglés</b>.',
+    'lang.p': 'bubbleTranslate descubre por sí solo qué estás leyendo. Selecciona texto en cualquier idioma y lo detecta, luego muestra la traducción en el idioma que elijas. La burbuja hasta te dice qué detectó — por ejemplo <b>Japonés&nbsp;→&nbsp;Inglés</b>.',
     'lang.title': 'Traduce a cualquiera de estos <span class="lang-count">17 idiomas</span>',
     'lang.note': 'Están a un clic en la burbuja. ¿Necesitas otro? También funciona cualquier código de idioma que acepten los proveedores: solo ponlo en la configuración.',
 
@@ -489,7 +489,7 @@ const I18N = {
     'priv.head.h2': 'Privado por diseño',
     'priv.head.p': 'El texto que seleccionas es lo único que sale de tu equipo — y solo cuando lo seleccionas.',
     'priv.1.h3': 'Sin historial de traducciones',
-    'priv.1.p': 'BubbleTranslate no guarda tu historial de traducciones. La lista de recientes vive en memoria durante la sesión y desaparece al cerrar la app.',
+    'priv.1.p': 'bubbleTranslate no guarda tu historial de traducciones. La lista de recientes vive en memoria durante la sesión y desaparece al cerrar la app.',
     'priv.2.h3': 'El servidor de licencias nunca ve tu texto',
     'priv.2.p': 'Tu servidor de licencias nunca ve lo que traduces. Recibe tu clave de licencia y un identificador de dispositivo, y nada más.',
     'priv.3.h3': 'Solo se envía tu selección',
@@ -523,7 +523,7 @@ const I18N = {
     'price.pro.5': '✓ Apoya el desarrollo de la app',
     'price.pro.cta': 'Pásate a Pro',
 
-    'dl.head.h2': 'Descarga BubbleTranslate',
+    'dl.head.h2': 'Descarga bubbleTranslate',
     'dl.head.p': 'Instalación gratuita, con 10 traducciones al día. Pásate a Pro cuando quieras para ilimitado.',
     'dl.mac.desc': 'Universal · Apple Silicon e Intel · macOS 11 o posterior · 15&nbsp;MB',
     'dl.mac.btn': 'Descargar DMG',
@@ -555,7 +555,7 @@ const I18N = {
 
     'faq.head.h2': 'Preguntas frecuentes',
     'faq.head.p': 'Todo lo que conviene saber antes de instalar.',
-    'faq.q1': '¿BubbleTranslate es gratis?',
+    'faq.q1': '¿bubbleTranslate es gratis?',
     'faq.a1': 'Sí. Obtienes 10 traducciones al día gratis, en macOS, Windows y Linux, sin cuenta ni registro. Si necesitas más, Pro elimina el límite diario por $2/mes o $20/año.',
     'faq.q2': '¿Qué obtengo con Pro?',
     'faq.a2': 'Traducciones ilimitadas en hasta tres equipos, por $2/mes o $20/año (el plan anual regala dos meses). Una sola clave de licencia cubre todos tus equipos y apoya el desarrollo continuo de la app.',
@@ -571,8 +571,8 @@ const I18N = {
     'faq.a7': 'No: solo las selecciones que haces con una tecla pulsada. Shift por defecto, así que extender una selección y traducirla son un mismo gesto. Puedes cambiar la tecla a Ctrl, Alt o Super, o hacer que traduzca cada selección como antes. Copiar y resaltar de forma normal quedan intactos.',
 
     'cta.h2': 'Lee el mundo sin dejar tu trabajo',
-    'cta.p': 'Descarga BubbleTranslate gratis y traduce todo lo que puedas seleccionar.',
-    'cta.btn': '↓ Consigue BubbleTranslate gratis',
+    'cta.p': 'Descarga bubbleTranslate gratis y traduce todo lo que puedas seleccionar.',
+    'cta.btn': '↓ Consigue bubbleTranslate gratis',
 
     'js.downloadFor': '↓ Descargar para {os}',
     'js.osSoon': '{os} — próximamente',
