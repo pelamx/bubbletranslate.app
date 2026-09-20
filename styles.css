@@ -544,3 +544,26 @@ img, video { max-width: 100%; height: auto; }
 @media (min-width: 900px) {
   .grid-3.pricing-faq { grid-template-columns: repeat(2, 1fr); }
 }
+
+/* The two privacy claims that are architecture rather than policy: there is no
+   account to create and no database to be breached. Set apart from the three
+   cards above it, because a promise the design keeps reads differently from
+   one the wording makes -- and the footnote is there so the one thing we do
+   learn, a purchase, is not left to be discovered later. */
+.priv-arch {
+  margin-top: 22px; padding: 28px;
+  border: 1px solid var(--border); border-radius: var(--radius);
+  background: linear-gradient(180deg, rgba(79,140,255,.10), rgba(124,92,255,.06)), var(--bg-soft);
+}
+.priv-arch-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 26px; }
+@media (max-width: 760px) { .priv-arch-grid { grid-template-columns: 1fr; } }
+.priv-arch .tag {
+  display: block; margin: 0 0 10px; font-size: .72rem; font-weight: 700;
+  letter-spacing: .08em; text-transform: uppercase; color: var(--accent);
+}
+.priv-arch h3 { margin: 0 0 8px; font-size: 1.15rem; }
+.priv-arch p { margin: 0; color: var(--muted); }
+.priv-arch-foot {
+  margin-top: 22px; padding-top: 18px; border-top: 1px solid var(--border);
+  color: var(--muted); font-size: .95rem;
+}
