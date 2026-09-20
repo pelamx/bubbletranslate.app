@@ -441,7 +441,7 @@ const I18N = {
 
     'trust.lead': '🔒 Privado por diseño',
     'trust.1': 'Sin historial de traducciones',
-    'trust.2': 'El servidor de licencias nunca ve tu texto',
+    'trust.2': 'El servidor nunca ve tu texto',
     'trust.3': 'Solo se envía lo que seleccionas',
     'trust.more': 'Cómo funciona →',
     'what.h2': 'No es un traductor. Es una forma de no interrumpirte.',
