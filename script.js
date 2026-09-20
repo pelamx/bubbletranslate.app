@@ -70,6 +70,14 @@ const I18N = {
     'trust.2': 'The licence server never sees your text',
     'trust.3': 'Only your selection is sent',
     'trust.more': 'How it works →',
+    'what.h2': 'It is not a translator. It is a way to stop interrupting yourself.',
+    'what.p': 'BubbleTranslate is a productivity tool for people who work on a desktop or laptop all day. The translation is not the point — keeping your place is.',
+    'what.1.h3': 'Works wherever you can select text',
+    'what.1.p': 'Documents, PDFs, browsers, chat, code, even menus. It reads the selection at the operating system level, so no app has to support it and nothing else is needed.',
+    'what.2.h3': 'Nothing else to open',
+    'what.2.p': 'No extension, no second window, no site to paste into. You do not change pages and you do not leave what you were doing.',
+    'what.3.h3': 'Instant, right at your cursor',
+    'what.3.p': 'Hold Shift and select. The bubble is already there, next to the pointer, and gone again when you move on.',
 
     'feat.head.h2': 'New experience in translation, no interruption while reading foreign docs and readings.',
 
@@ -243,6 +251,14 @@ const I18N = {
     'trust.2': 'Lisans sunucusu metninizi hiç görmez',
     'trust.3': 'Yalnızca seçtiğiniz metin gönderilir',
     'trust.more': 'Nasıl çalışıyor →',
+    'what.h2': 'Bu bir çeviri aracı değil. Kendinizi bölmemenin bir yolu.',
+    'what.p': 'BubbleTranslate, gün boyu masaüstü ya da dizüstünde çalışanlar için bir üretkenlik aracı. Mesele çeviri değil, kaldığınız yeri kaybetmemek.',
+    'what.1.h3': 'Metin seçebildiğiniz her yerde çalışır',
+    'what.1.p': 'Belgeler, PDF’ler, tarayıcılar, sohbet, kod, hatta menüler. Seçimi işletim sistemi düzeyinde okur; hiçbir uygulamanın bunu desteklemesi gerekmez, başka bir araca da ihtiyaç yoktur.',
+    'what.2.h3': 'Açılacak başka bir şey yok',
+    'what.2.p': 'Eklenti yok, ikinci pencere yok, metni yapıştıracağınız bir site yok. Sayfa değiştirmezsiniz, yaptığınız işi bırakmazsınız.',
+    'what.3.h3': 'Anında, tam imlecinizin yanında',
+    'what.3.p': 'Shift’i basılı tutup seçin. Baloncuk imlecin yanında çoktan oradadır; siz devam edince kaybolur.',
 
     'feat.head.h2': 'Çeviride yeni bir deneyim — yabancı belgeleri okurken kesinti yok.',
 
@@ -416,6 +432,14 @@ const I18N = {
     'trust.2': 'El servidor de licencias nunca ve tu texto',
     'trust.3': 'Solo se envía lo que seleccionas',
     'trust.more': 'Cómo funciona →',
+    'what.h2': 'No es un traductor. Es una forma de no interrumpirte.',
+    'what.p': 'BubbleTranslate es una herramienta de productividad para quienes trabajan todo el día en un ordenador de escritorio o portátil. La traducción no es lo importante: no perder el hilo sí lo es.',
+    'what.1.h3': 'Funciona donde puedas seleccionar texto',
+    'what.1.p': 'Documentos, PDF, navegadores, chat, código e incluso menús. Lee la selección a nivel del sistema operativo, así que ninguna aplicación tiene que admitirlo y no hace falta nada más.',
+    'what.2.h3': 'Nada más que abrir',
+    'what.2.p': 'Sin extensión, sin una segunda ventana, sin un sitio donde pegar el texto. No cambias de página ni dejas lo que estabas haciendo.',
+    'what.3.h3': 'Al instante, junto al cursor',
+    'what.3.p': 'Mantén Shift y selecciona. La burbuja ya está ahí, junto al puntero, y desaparece cuando sigues adelante.',
 
     'feat.head.h2': 'Una nueva experiencia en traducción, sin interrupciones al leer documentos extranjeros.',
 
