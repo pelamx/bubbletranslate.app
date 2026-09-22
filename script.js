@@ -196,6 +196,8 @@ const I18N = {
     'faq.a6': 'On macOS, Accessibility — that\'s how the app sees what you\'ve selected. It\'s the only permission it asks for. On Windows and on most X11 and Wayland sessions, nothing extra is required.',
     'faq.q7': 'Does it translate everything I select?',
     'faq.a7': 'No — only selections you make with a key held down. Shift by default, so extending a selection and translating it are one gesture. You can switch the key to Ctrl, Alt or Super, or set it to translate every selection like before. Copying and ordinary highlighting are left alone.',
+    'faq.q8': 'How do I report a bug or suggest something?',
+    'faq.a8': 'From inside the app. Open the bubbleTranslate window and use <b>Send feedback</b>: something broken, something missing, or something that annoyed you. It goes out from your own mail — your mail app, Gmail or Outlook — and it is read by the person who wrote the app.',
 
     'cta.h2': 'Read the world without leaving your work',
     'cta.p': 'Download bubbleTranslate free and translate anything you can select.',
@@ -384,6 +386,8 @@ const I18N = {
     'faq.a6': 'macOS\'ta Erişilebilirlik — uygulama seçtiğinizi böyle görür. İstediği tek izin budur. Windows\'ta ve çoğu X11 ile Wayland oturumunda ek bir şey gerekmez.',
     'faq.q7': 'Seçtiğim her şeyi çevirir mi?',
     'faq.a7': 'Hayır — yalnızca bir tuş basılıyken yaptığınız seçimleri. Varsayılan Shift\'tir; böylece seçimi genişletmek ve çevirmek tek harekettir. Tuşu Ctrl, Alt veya Super yapabilir ya da eskisi gibi her seçimi çevirtebilirsiniz. Kopyalama ve sıradan işaretlemeye dokunulmaz.',
+    'faq.q8': 'Hata bildirmek ya da öneri yapmak istiyorum, nasıl?',
+    'faq.a8': 'Doğrudan uygulamanın içinden. bubbleTranslate penceresini açıp <b>Geri bildirim gönder</b> bölümünü kullanın: bozuk, eksik ya da sizi rahatsız eden bir şey. Mesaj kendi e-postanızdan gider — posta uygulamanız, Gmail ya da Outlook — ve uygulamayı yazan kişi okur.',
 
     'cta.h2': 'İşinizi bırakmadan dünyayı okuyun',
     'cta.p': 'bubbleTranslate\'i ücretsiz indirin ve seçebildiğiniz her şeyi çevirin.',
@@ -572,6 +576,8 @@ const I18N = {
     'faq.a6': 'En macOS, Accesibilidad: así ve la app lo que has seleccionado. Es el único permiso que pide. En Windows y en la mayoría de sesiones X11 y Wayland no hace falta nada extra.',
     'faq.q7': '¿Traduce todo lo que selecciono?',
     'faq.a7': 'No: solo las selecciones que haces con una tecla pulsada. Shift por defecto, así que extender una selección y traducirla son un mismo gesto. Puedes cambiar la tecla a Ctrl, Alt o Super, o hacer que traduzca cada selección como antes. Copiar y resaltar de forma normal quedan intactos.',
+    'faq.q8': '¿Cómo informo de un fallo o sugiero algo?',
+    'faq.a8': 'Desde la propia app. Abre la ventana de bubbleTranslate y usa <b>Enviar comentarios</b>: algo roto, algo que falta o algo que te molestó. Sale desde tu propio correo — tu app de correo, Gmail u Outlook — y lo lee quien escribió la app.',
 
     'cta.h2': 'Lee el mundo sin dejar tu trabajo',
     'cta.p': 'Descarga bubbleTranslate gratis y traduce todo lo que puedas seleccionar.',
