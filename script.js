@@ -65,6 +65,7 @@ const I18N = {
     'themes.head.p': 'Choose a look that matches your desktop. The bubble and the app follow the theme you pick.',
     'themes.caption': '▶ Switching themes in the app.',
 
+    'trust.free': '✨ Freemium · No ads, ever',
     'trust.lead': '🔒 Private by design',
     'trust.1': 'No translation history',
     'trust.2': 'The licence server never sees your text',
@@ -252,6 +253,7 @@ const I18N = {
     'themes.head.p': 'Masaüstünüze uyan bir görünüm seçin. Baloncuk ve uygulama, seçtiğiniz temayı izler.',
     'themes.caption': '▶ Uygulamada tema değiştirme.',
 
+    'trust.free': '✨ Freemium · Asla reklam yok',
     'trust.lead': '🔒 Tasarımı gereği gizli',
     'trust.1': 'Çeviri geçmişi tutulmaz',
     'trust.2': 'Lisans sunucusu metninizi hiç görmez',
@@ -439,6 +441,7 @@ const I18N = {
     'themes.head.p': 'Elige un aspecto que combine con tu escritorio. La burbuja y la app siguen el tema que elijas.',
     'themes.caption': '▶ Cambiando de tema en la app.',
 
+    'trust.free': '✨ Freemium · Sin anuncios, nunca',
     'trust.lead': '🔒 Privado por diseño',
     'trust.1': 'Sin historial de traducciones',
     'trust.2': 'El servidor nunca ve tu texto',
