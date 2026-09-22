@@ -94,6 +94,9 @@ const I18N = {
     'feat.4.kicker': 'Flexible',
     'feat.4.h3': 'Make it yours',
     'feat.4.p': 'Target language, shortcut, text size and auto-hide timing.',
+    'feat.5.kicker': 'Direct line',
+    'feat.5.h3': 'Reach the developer directly',
+    'feat.5.p': 'Something broken, something missing, or something that annoyed you? Use <b>Send feedback</b> in the app. It goes from your own mail and is read by the person who wrote bubbleTranslate — no ticket queue, no bot.',
 
     'lang.badge': '✨ Automatic language detection',
     'lang.h2': 'You never pick the source language',
@@ -284,6 +287,9 @@ const I18N = {
     'feat.4.kicker': 'Esnek',
     'feat.4.h3': 'Kendinize göre ayarlayın',
     'feat.4.p': 'Hedef dil, kısayol tuşu, yazı boyutu ve kaybolma süresi.',
+    'feat.5.kicker': 'Doğrudan iletişim',
+    'feat.5.h3': 'Geliştiriciye doğrudan ulaşın',
+    'feat.5.p': 'Bozuk, eksik ya da sizi rahatsız eden bir şey mi var? Uygulamadaki <b>Geri bildirim gönder</b> bölümünü kullanın. Mesaj kendi e-postanızdan gider ve bubbleTranslate\'i yazan kişi okur — bilet sırası yok, bot yok.',
 
     'lang.badge': '✨ Otomatik dil algılama',
     'lang.h2': 'Kaynak dili asla siz seçmezsiniz',
@@ -474,6 +480,9 @@ const I18N = {
     'feat.4.kicker': 'Flexible',
     'feat.4.h3': 'Hazla tuya',
     'feat.4.p': 'Idioma de destino, atajo, tamaño del texto y tiempo de ocultación.',
+    'feat.5.kicker': 'Línea directa',
+    'feat.5.h3': 'Habla directamente con el desarrollador',
+    'feat.5.p': '¿Algo roto, algo que falta o algo que te molestó? Usa <b>Enviar comentarios</b> en la app. Sale desde tu propio correo y lo lee quien escribió bubbleTranslate — sin colas de tickets, sin bots.',
 
     'lang.badge': '✨ Detección automática de idioma',
     'lang.h2': 'Nunca eliges el idioma de origen',
