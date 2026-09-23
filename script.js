@@ -685,8 +685,8 @@ if (langSwitch) {
 // to "coming soon".
 const DOWNLOADS = {
   mac:     { file: 'https://github.com/pelamx/bubbleTranslate/releases/latest/download/bubbleTranslate.dmg',       label: 'macOS' },
-  linux:   { file: 'https://github.com/pelamx/bubbleTranslate/releases/latest/download/bubbleTranslate-linux-x86_64', label: 'Linux' },
-  windows: { file: 'https://github.com/pelamx/bubbleTranslate/releases/latest/download/bubbleTranslate-windows-x64.zip',       label: 'Windows' }
+  linux:   { file: 'https://github.com/bubbleTranslate/downloads/releases/latest/download/bubbleTranslate-linux-x86_64', label: 'Linux' },
+  windows: { file: 'https://github.com/bubbleTranslate/downloads/releases/latest/download/bubbleTranslate-windows-x64.zip',       label: 'Windows' }
 };
 
 function detectOS() {
