@@ -689,6 +689,46 @@ const DOWNLOADS = {
   windows: { file: 'https://github.com/bubbleTranslate/downloads/releases/latest/download/bubbleTranslate-windows-x64.zip',       label: 'Windows' }
 };
 
+// Which version each download is, read from the same latest.json installed
+// copies check for updates. The platforms are released separately, so each
+// button takes its own version and its own exact file from it; the
+// /releases/latest/ links above are only the fallback for when it cannot be
+// read, and then the buttons simply show no version.
+const MANIFEST_URL = 'https://raw.githubusercontent.com/bubbleTranslate/downloads/main/latest.json';
+const MANIFEST_KEY = { mac: 'macos', linux: 'linux', windows: 'windows' };
+
+function applyManifest(manifest) {
+  Object.keys(DOWNLOADS).forEach(key => {
+    const entry = manifest && manifest[MANIFEST_KEY[key]];
+    if (!entry || !/^\d+\.\d+\.\d+$/.test(entry.version || '')) return;
+    if (!/^https:\/\/github\.com\/bubbleTranslate\/downloads\//.test(entry.url || '')) return;
+    DOWNLOADS[key].file = entry.url;
+    DOWNLOADS[key].version = entry.version;
+    const card = document.querySelector('.dl-card[data-os="' + key + '"]');
+    if (card) {
+      const btn = card.querySelector('a.btn');
+      if (btn) btn.setAttribute('href', entry.url);
+    }
+    document.querySelectorAll('.dl-ver[data-ver="' + key + '"]').forEach(tag => {
+      tag.textContent = 'v' + entry.version;
+      tag.hidden = false;
+    });
+  });
+  // The hero button was pointed at this visitor's file before the manifest
+  // arrived; point it at the exact one, and put the version in its label.
+  const hero = document.getElementById('heroDownload');
+  const mine = DOWNLOADS[os];
+  if (hero && mine && mine.file && hero.getAttribute('href') !== '#download') {
+    hero.setAttribute('href', mine.file);
+  }
+  refreshPlatformLabels();
+}
+
+fetch(MANIFEST_URL, { cache: 'no-cache' })
+  .then(r => (r.ok ? r.json() : null))
+  .then(applyManifest)
+  .catch(() => {});
+
 function detectOS() {
   const uaData = navigator.userAgentData;
   const plat = ((uaData && uaData.platform) || navigator.platform || '').toLowerCase();
@@ -730,7 +770,8 @@ function refreshPlatformLabels() {
   document.querySelectorAll('[data-platform-btn]').forEach(btn => {
     const info = DOWNLOADS[os];
     if (info && info.file) {
-      btn.textContent = t('js.downloadFor').replace('{os}', info.label);
+      btn.textContent = t('js.downloadFor').replace('{os}', info.label) +
+        (info.version ? ' · v' + info.version : '');
     } else if (info) {
       btn.textContent = t('js.osSoon').replace('{os}', info.label);
     }

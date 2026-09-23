@@ -30,9 +30,14 @@ is in the repository is what is served.
   language switcher rewrites the page from that table, so a key present in the
   HTML but missing from the table leaves the English text behind when someone
   switches language.
-- Download links point at `/releases/latest/download/…`, which GitHub resolves
-  to the current release. They carry no version number, so releasing is what
-  moves them — never edit a version into them.
+- Downloads come from `bubbleTranslate/downloads`. On load, `script.js` reads
+  `latest.json` there — the same file installed copies check for updates — and
+  points each button at its platform's exact file, with the version shown
+  beside it. The platforms are released separately, so this is what keeps the
+  Mac button on the Mac release when Linux is newer. The `/releases/latest/…`
+  links in the HTML are only the fallback for when that file cannot be read.
+  Never type a version into the pages: releasing updates `latest.json`, and
+  that is what moves the site.
 
 Deploy with `npx wrangler deploy`. The site is a Workers Static Assets worker
 with `bubbletranslate.app/*` routed to it; deploying anywhere else leaves the

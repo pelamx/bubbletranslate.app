@@ -176,6 +176,7 @@ section { padding: 72px 0; }
 .dl-card .os { height: 48px; margin-bottom: 10px; display: flex; align-items: center; justify-content: center; }
 .dl-card .os img { width: 44px; height: 44px; object-fit: contain; display: block; }
 .dl-card h3 { margin: 0 0 4px; }
+.dl-ver { font-size: .72rem; font-weight: 600; color: var(--brand); background: rgba(79,140,255,.12); border-radius: 999px; padding: 2px 8px; vertical-align: middle; margin-left: 4px; }
 /* Two lines' worth whether the text needs them or not. Without it the
    Windows blurb, which is one line, lifts its button above the other two. */
 .dl-card p { color: var(--muted); margin: 0 0 18px; font-size: .9rem; min-height: 3.3em; }
