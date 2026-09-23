@@ -684,9 +684,9 @@ if (langSwitch) {
 // machine, so there is one file for both; `file: null` is what puts an OS back
 // to "coming soon".
 const DOWNLOADS = {
-  mac:     { file: 'https://github.com/pelamx/bubbleTranslate/releases/latest/download/bubbleTranslate.dmg',       label: 'macOS' },
+  mac:     { file: 'https://github.com/bubbleTranslate/downloads/releases/latest/download/bubbleTranslate.dmg',       label: 'macOS' },
   linux:   { file: 'https://github.com/bubbleTranslate/downloads/releases/latest/download/bubbleTranslate-linux-x86_64', label: 'Linux' },
-  windows: { file: 'https://github.com/pelamx/bubbleTranslate/releases/download/v0.2.6/bubbleTranslate-windows-x64.zip',       label: 'Windows' }
+  windows: { file: 'https://github.com/bubbleTranslate/downloads/releases/latest/download/bubbleTranslate-windows-x64.zip',       label: 'Windows' }
 };
 
 function detectOS() {
