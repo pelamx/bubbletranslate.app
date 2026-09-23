@@ -38,6 +38,12 @@ is in the repository is what is served.
   links in the HTML are only the fallback for when that file cannot be read.
   Never type a version into the pages: releasing updates `latest.json`, and
   that is what moves the site.
+- **Every download button shows the version it downloads. This is a rule.**
+  The hero button, the three download cards, and any download button added
+  later — on every page, in every language. Someone downloading has to be able
+  to see which version they are getting. A new button is wired to
+  `DOWNLOADS[…].version` from `latest.json` like the existing ones, never given
+  a typed version.
 
 Deploy with `npx wrangler deploy`. The site is a Workers Static Assets worker
 with `bubbletranslate.app/*` routed to it; deploying anywhere else leaves the
