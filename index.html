@@ -362,13 +362,20 @@
           <div class="dl-card" data-os="linux">
             <div class="os"><img src="/logos/linux.png" alt="" aria-hidden="true" width="44" height="44" loading="lazy" decoding="async"></div>
             <h3>Linux <span class="dl-ver" data-ver="linux" hidden></span></h3>
-            <p data-i18n="dl.linux.desc">x86-64 executable · needs glibc 2.43+ · 20&nbsp;MB</p>
+            <p data-i18n="dl.linux.desc">x86-64 executable · any distribution with glibc 2.28+ — Ubuntu 20.04, Debian 10, Fedora, Arch and newer · 16&nbsp;MB</p>
             <a class="btn btn-primary" href="https://github.com/bubbleTranslate/downloads/releases/latest" download data-i18n="dl.linux.btn">Download binary</a>
             <div class="install-note">
               <span data-i18n="dl.linux.run">Make it executable and run it:</span>
               <pre><code>chmod +x bubbleTranslate-linux-x86_64
 ./bubbleTranslate-linux-x86_64</code></pre>
-              <span data-i18n="dl.linux.note2">On an older distro, or GNOME Wayland, build from source instead.</span>
+              <span data-i18n="dl.linux.ocr">To read text off the screen with <b>Ctrl+Shift+E</b>, install Tesseract once, with a pack for each language you read <i>from</i> (eng, tur, deu, spa…):</span>
+              <pre><code># Ubuntu / Debian
+sudo apt install tesseract-ocr tesseract-ocr-eng
+# Fedora
+sudo dnf install tesseract tesseract-langpack-eng
+# Arch
+sudo pacman -S tesseract tesseract-data-eng</code></pre>
+              <span data-i18n="dl.linux.note2">Installed once, it stays through every update, and translating selected text needs none of it. Works on X11, Hyprland, sway, GNOME and KDE — on GNOME and KDE your desktop may ask once whether bubbleTranslate may take screenshots.</span>
             </div>
           </div>
           <div class="dl-card" data-os="windows">
@@ -422,7 +429,7 @@
           <details open><summary data-i18n="faq.q1">Is bubbleTranslate free?</summary><p data-i18n="faq.a1">Yes. You get 10 translations a day for free, on macOS, Windows and Linux, with no account or sign-up. If you need more, Pro removes the daily limit for $2/month or $20/year.</p></details>
           <details><summary data-i18n="faq.q2">What do I get with Pro?</summary><p data-i18n="faq.a2">Unlimited translations on up to three machines, for $2/month or $20/year (the yearly plan is two months free). One licence key covers all your machines, and it supports the app's ongoing development.</p></details>
           <details><summary data-i18n="faq.q3">How do I pay for Pro?</summary><p data-i18n="faq.a3">Monthly or yearly. Billing goes through Paddle, the merchant of record, so you are charged in your own currency. Taxes, if applicable, are calculated and shown by Paddle at checkout. You can cancel anytime.</p></details>
-          <details><summary data-i18n="faq.q4">Which systems does it run on?</summary><p data-i18n="faq.a4">macOS, Windows and Linux. The Windows build is one .exe that needs nothing installed and runs on Windows 10 and 11, including ARM machines. On Linux you need glibc 2.43 or newer for the prebuilt binary; on an older distribution, build from source.</p></details>
+          <details><summary data-i18n="faq.q4">Which systems does it run on?</summary><p data-i18n="faq.a4">macOS, Windows and Linux. The Windows build is one .exe that needs nothing installed and runs on Windows 10 and 11, including ARM machines. On Linux the download runs on any distribution with glibc 2.28 or newer — Ubuntu 20.04, Debian 10, Fedora, Arch and everything since; reading text off the screen also needs Tesseract, installed once.</p></details>
           <details><summary data-i18n="faq.q5">Does it need an internet connection?</summary><p data-i18n="faq.a5">Yes. Translations come from online providers, tried in turn until one answers. Only the text you select is sent, and only to translate it.</p></details>
           <details><summary data-i18n="faq.q6">What permission does it need?</summary><p data-i18n="faq.a6">On macOS, Accessibility — that's how the app sees what you've selected. It's the only permission it asks for. On Windows and on most X11 and Wayland sessions, nothing extra is required.</p></details>
           <details><summary data-i18n="faq.q7">Does it translate everything I select?</summary><p data-i18n="faq.a7">No — only selections you make with a key held down. Shift by default, so extending a selection and translating it are one gesture. You can switch the key to Ctrl, Alt or Super, or set it to translate every selection like before. Copying and ordinary highlighting are left alone.</p></details>
