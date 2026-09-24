@@ -631,3 +631,18 @@ img, video { max-width: 100%; height: auto; }
 .how-ocr .video-frame {
   margin-top: 1.1rem;
 }
+
+/* The link from the download card down to the full first-run steps. macOS
+   blocks this app's first launch on every machine, so the way past it has to
+   be one click away from the download button, not something to scroll for. */
+.install-more {
+  display: inline-block;
+  margin-top: 6px;
+  color: var(--brand);
+  font-size: .85rem;
+  text-decoration: none;
+}
+
+.install-more:hover {
+  text-decoration: underline;
+}

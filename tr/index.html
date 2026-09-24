@@ -371,8 +371,10 @@
             <a class="btn btn-primary" href="https://github.com/bubbleTranslate/downloads/releases/latest" download data-i18n="dl.mac.btn">DMG indir</a>
             <div class="install-note">
               <span data-i18n="dl.mac.run">DMG'yi açın ve uygulamayı Applications klasörüne sürükleyin.</span>
+              <span data-i18n="dl.mac.block">macOS ilk açılışı <b>kesinlikle</b> reddeder ve uygulamayı "doğrulayamadı" der — her Mac'te, her seferinde, çünkü Apple onu notarize etmedi. <b>System Settings › Privacy &amp; Security</b>'yi aç, Security'ye kadar in ve <b>Open Anyway</b>'e tıkla. Yalnızca bir kez.</span>
+              <span data-i18n="dl.mac.cmdlead">Terminal'i tercih ediyorsan, o tıklamalar yerine tek satır:</span>
               <pre><code>xattr -dr com.apple.quarantine /Applications/bubbleTranslate.app</code></pre>
-              <span data-i18n="dl.mac.note2">Uygulama ad-hoc imzalı olduğu için macOS ilk açılışı engeller. Yukarıdaki komutu bir kez çalıştırın veya Sistem Ayarları › Gizlilik ve Güvenlik bölümünden <b>Yine de Aç</b>'ı seçin.</span>
+              <a class="install-more" href="#mac-install" data-i18n="dl.mac.more">Erişilebilirlik izni dahil bütün adımlar →</a>
             </div>
           </div>
           <div class="dl-card" data-os="linux">

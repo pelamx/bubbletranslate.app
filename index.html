@@ -371,8 +371,10 @@
             <a class="btn btn-primary" href="https://github.com/bubbleTranslate/downloads/releases/latest" download data-i18n="dl.mac.btn">Download DMG</a>
             <div class="install-note">
               <span data-i18n="dl.mac.run">Open the DMG and drag the app into Applications.</span>
+              <span data-i18n="dl.mac.block">macOS <b>will</b> refuse the first launch and say it "could not verify" the app — every Mac, every time, because Apple has not notarized it. Open <b>System Settings › Privacy &amp; Security</b>, scroll to Security and click <b>Open Anyway</b>. Once only.</span>
+              <span data-i18n="dl.mac.cmdlead">Or, if you prefer the Terminal, one line instead of those clicks:</span>
               <pre><code>xattr -dr com.apple.quarantine /Applications/bubbleTranslate.app</code></pre>
-              <span data-i18n="dl.mac.note2">The app is ad-hoc signed, so macOS blocks the first launch. Run that once, or use <b>Open Anyway</b> in System Settings › Privacy &amp; Security.</span>
+              <a class="install-more" href="#mac-install" data-i18n="dl.mac.more">Full steps, including the Accessibility permission →</a>
             </div>
           </div>
           <div class="dl-card" data-os="linux">
