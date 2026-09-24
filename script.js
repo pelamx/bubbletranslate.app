@@ -681,16 +681,21 @@ if (langSwitch) {
 // machine, so there is one file for both; `file: null` is what puts an OS back
 // to "coming soon".
 const DOWNLOADS = {
-  mac:     { file: 'https://github.com/bubbleTranslate/downloads/releases/latest/download/bubbleTranslate.dmg',       label: 'macOS' },
-  linux:   { file: 'https://github.com/bubbleTranslate/downloads/releases/latest/download/bubbleTranslate-linux-x86_64', label: 'Linux' },
-  windows: { file: 'https://github.com/bubbleTranslate/downloads/releases/latest/download/bubbleTranslate-windows-x64.zip',       label: 'Windows' }
+  mac:     { file: 'https://github.com/bubbleTranslate/downloads/releases/latest',       label: 'macOS' },
+  linux:   { file: 'https://github.com/bubbleTranslate/downloads/releases/latest', label: 'Linux' },
+  windows: { file: 'https://github.com/bubbleTranslate/downloads/releases/latest',       label: 'Windows' }
 };
 
 // Which version each download is, read from the same latest.json installed
 // copies check for updates. The platforms are released separately, so each
-// button takes its own version and its own exact file from it; the
-// /releases/latest/ links above are only the fallback for when it cannot be
-// read, and then the buttons simply show no version.
+// button takes its own version and its own exact file from it.
+//
+// The links above are only the fallback for when that cannot be read, and they
+// point at the releases page rather than at a file. Naming a file there would
+// mean naming it inside whichever release is newest -- and since the platforms
+// go out one at a time, the newest release is usually the one release that
+// does not carry your platform's file, so the fallback would answer 404
+// exactly when it was needed. A page listing every download cannot.
 const MANIFEST_URL = 'https://raw.githubusercontent.com/bubbleTranslate/downloads/main/latest.json';
 const MANIFEST_KEY = { mac: 'macos', linux: 'linux', windows: 'windows' };
 
