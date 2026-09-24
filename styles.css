@@ -661,8 +661,20 @@ img, video { max-width: 100%; height: auto; }
   border-radius: inherit;
 }
 
+/* Inside the privacy section, under the three cards: one more thing the app
+   does with what is on your screen, answered in the place people are already
+   asking what it does with it. */
 .how-ocr {
-  margin-top: 2.6rem;
+  margin-top: 2.2rem;
+}
+
+.how-ocr-head h3 {
+  margin: 0 0 .4rem;
+}
+
+.how-ocr-head p {
+  margin: 0;
+  color: var(--muted);
 }
 
 .how-ocr .video-frame {
