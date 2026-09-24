@@ -129,6 +129,29 @@
       </div>
     </section>
 
+    <!-- The gesture for text that cannot be selected. Directly under the
+         privacy row because it is the one feature that reads the screen, and
+         somebody who has just been told what this app does with their data is
+         owed that straight away rather than nine sections later. -->
+    <section id="ocr">
+      <div class="container">
+        <div class="section-head">
+          <h2 data-i18n="how.ocr.h3">Can't select it? Draw a box around it instead.</h2>
+          <p data-i18n="how.ocr.p">A screenshot somebody sent you, a scanned page, a still from a video, a game, a remote desktop — text that is there on the screen but belongs to no text field, so there has never been anything to select. Press <b>⌘⇧E</b> on a Mac, <b>Ctrl+Shift+E</b> on Windows and Linux, drag a rectangle over it, and the translation appears under the box. Escape cancels.</p>
+        </div>
+        <div class="how-ocr">
+          <div class="video-frame">
+            <button type="button" class="video-facade" data-youtube="96MzyKrMaaY"
+                    aria-label="Play the demo" data-i18n-aria="how.ocr.play">
+              <img src="downloads/video/ocr-poster.jpg" alt="" width="1280" height="720" loading="lazy" decoding="async">
+              <span class="video-play" aria-hidden="true">▶</span>
+            </button>
+          </div>
+          <p class="video-caption" data-i18n="how.ocr.caption">▶ Reading text out of a picture. The video loads from YouTube only when you press play.</p>
+        </div>
+      </div>
+    </section>
+
     <!-- What this is, said plainly and early. People arrive assuming "another
          translator" and price it against a free website; the thing being sold
          is the interruption that does not happen. Positioned right after the
@@ -258,20 +281,6 @@
           <div class="card"><div class="icon">🗂️</div><h3 data-i18n="priv.1.h3">No translation history</h3><p data-i18n="priv.1.p">bubbleTranslate doesn’t store your translation history. The recent list lives in memory for the session and is gone when you quit.</p></div>
           <div class="card"><div class="icon">🔒</div><h3 data-i18n="priv.2.h3">The licence server never sees your text</h3><p data-i18n="priv.2.p">Your licence server never sees what you translate. It receives your licence key and a device id, and nothing else.</p></div>
           <div class="card"><div class="icon">✂️</div><h3 data-i18n="priv.3.h3">Only your selection is sent</h3><p data-i18n="priv.3.p">Only the selected text is sent to the translation provider, together with the language to translate into.</p></div>
-        </div>
-        <div class="how-ocr-head">
-          <h3 data-i18n="how.ocr.h3">Can't select it? Draw a box around it instead.</h3>
-          <p data-i18n="how.ocr.p">A screenshot somebody sent you, a scanned page, a still from a video, a game, a remote desktop — text that is there on the screen but belongs to no text field, so there has never been anything to select. Press <b>⌘⇧E</b> on a Mac, <b>Ctrl+Shift+E</b> on Windows and Linux, drag a rectangle over it, and the translation appears under the box. Escape cancels.</p>
-        </div>
-        <div class="how-ocr">
-          <div class="video-frame">
-            <button type="button" class="video-facade" data-youtube="96MzyKrMaaY"
-                    aria-label="Play the demo" data-i18n-aria="how.ocr.play">
-              <img src="downloads/video/ocr-poster.jpg" alt="" width="1280" height="720" loading="lazy" decoding="async">
-              <span class="video-play" aria-hidden="true">▶</span>
-            </button>
-          </div>
-          <p class="video-caption" data-i18n="how.ocr.caption">▶ Reading text out of a picture. The video loads from YouTube only when you press play.</p>
         </div>
         <div class="priv-arch">
           <span class="tag" data-i18n="priv.arch.tag">By design, not by promise</span>

@@ -129,6 +129,29 @@
       </div>
     </section>
 
+    <!-- The gesture for text that cannot be selected. Directly under the
+         privacy row because it is the one feature that reads the screen, and
+         somebody who has just been told what this app does with their data is
+         owed that straight away rather than nine sections later. -->
+    <section id="ocr">
+      <div class="container">
+        <div class="section-head">
+          <h2 data-i18n="how.ocr.h3">Seçemiyor musun? Etrafına bir kutu çiz.</h2>
+          <p data-i18n="how.ocr.p">Birinin gönderdiği ekran görüntüsü, taranmış bir sayfa, videodan bir kare, bir oyun, uzak masaüstü — ekranda duran ama hiçbir metin alanına ait olmayan yazı, yani seçilecek bir şeyin hiç olmadığı durum. Mac’te <b>⌘⇧E</b>, Windows ve Linux’ta <b>Ctrl+Shift+E</b> tuşlarına bas, üzerine bir dikdörtgen çiz; çeviri kutunun altında çıkar. Escape iptal eder.</p>
+        </div>
+        <div class="how-ocr">
+          <div class="video-frame">
+            <button type="button" class="video-facade" data-youtube="96MzyKrMaaY"
+                    aria-label="Demoyu oynat" data-i18n-aria="how.ocr.play">
+              <img src="downloads/video/ocr-poster.jpg" alt="" width="1280" height="720" loading="lazy" decoding="async">
+              <span class="video-play" aria-hidden="true">▶</span>
+            </button>
+          </div>
+          <p class="video-caption" data-i18n="how.ocr.caption">▶ Bir resimden yazı okunuyor. Video, YouTube’dan yalnızca oynata bastığında yükleniyor.</p>
+        </div>
+      </div>
+    </section>
+
     <!-- What this is, said plainly and early. People arrive assuming "another
          translator" and price it against a free website; the thing being sold
          is the interruption that does not happen. Positioned right after the
@@ -258,20 +281,6 @@
           <div class="card"><div class="icon">🗂️</div><h3 data-i18n="priv.1.h3">Çeviri geçmişi tutulmaz</h3><p data-i18n="priv.1.p">bubbleTranslate çeviri geçmişinizi saklamaz. Son çeviriler listesi yalnızca o oturum boyunca bellekte durur ve uygulamadan çıktığınızda kaybolur.</p></div>
           <div class="card"><div class="icon">🔒</div><h3 data-i18n="priv.2.h3">Lisans sunucusu metninizi görmez</h3><p data-i18n="priv.2.p">Lisans sunucusu ne çevirdiğinizi asla görmez. Yalnızca lisans anahtarınızı ve bir cihaz kimliğini alır, başka hiçbir şey almaz.</p></div>
           <div class="card"><div class="icon">✂️</div><h3 data-i18n="priv.3.h3">Yalnızca seçtiğiniz metin gönderilir</h3><p data-i18n="priv.3.p">Çeviri sağlayıcısına yalnızca seçtiğiniz metin ve çevrilecek dil gönderilir.</p></div>
-        </div>
-        <div class="how-ocr-head">
-          <h3 data-i18n="how.ocr.h3">Seçemiyor musun? Etrafına bir kutu çiz.</h3>
-          <p data-i18n="how.ocr.p">Birinin gönderdiği ekran görüntüsü, taranmış bir sayfa, videodan bir kare, bir oyun, uzak masaüstü — ekranda duran ama hiçbir metin alanına ait olmayan yazı, yani seçilecek bir şeyin hiç olmadığı durum. Mac’te <b>⌘⇧E</b>, Windows ve Linux’ta <b>Ctrl+Shift+E</b> tuşlarına bas, üzerine bir dikdörtgen çiz; çeviri kutunun altında çıkar. Escape iptal eder.</p>
-        </div>
-        <div class="how-ocr">
-          <div class="video-frame">
-            <button type="button" class="video-facade" data-youtube="96MzyKrMaaY"
-                    aria-label="Demoyu oynat" data-i18n-aria="how.ocr.play">
-              <img src="downloads/video/ocr-poster.jpg" alt="" width="1280" height="720" loading="lazy" decoding="async">
-              <span class="video-play" aria-hidden="true">▶</span>
-            </button>
-          </div>
-          <p class="video-caption" data-i18n="how.ocr.caption">▶ Bir resimden yazı okunuyor. Video, YouTube’dan yalnızca oynata bastığında yükleniyor.</p>
         </div>
         <div class="priv-arch">
           <span class="tag" data-i18n="priv.arch.tag">Söz değil, tasarım</span>
