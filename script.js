@@ -312,7 +312,7 @@ const I18N = {
     'lang.title': 'Şu <span class="lang-count">17 dilden</span> herhangi birine çevirin',
     'lang.note': 'Bunlar baloncukta tek tıkla seçilebilir. Başka mı lazım? Sağlayıcıların kabul ettiği herhangi bir dil kodu da çalışır — sadece ayar dosyasına yazın.',
 
-    'how.head.h2': 'Bir kez ayarlayın, sonra Shift ile çevirin',
+    'how.head.h2': 'İki yol: ya seçin, ya etrafına bir kutu çizin',
     'how.head.p': 'Dilinizi bir kez seçin. Sonrasında metni seçerken SHIFT tuşunu basılı tutun. Çeviri için tek yapmanız gereken bu; çeviri anında gelir.',
     'how.1.h3': 'Shift\'e basılı tutup seçin',
     'how.1.p': 'Shift\'e basılı tutup herhangi bir uygulamada metni seçin. Baloncuk yalnızca tuş basılıyken yapılan seçim için belirir; gündelik seçme ve kopyalama olduğu gibi kalır.',
