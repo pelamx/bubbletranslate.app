@@ -115,7 +115,7 @@ const I18N = {
     'how.3.p': 'It stays in the menu bar or tray and translates the next thing you select with the key held. Change the target language from the bubble\'s ⚙ menu.',
     'how.ocr.h3': "Can't select it? Draw a box around it instead.",
     'how.ocr.p': 'A screenshot somebody sent you, a scanned page, a still from a video, a game, a remote desktop — text that is there on the screen but belongs to no text field, so there has never been anything to select. Press <b>⌘⇧E</b> on a Mac, <b>Ctrl+Shift+E</b> on Windows and Linux, drag a rectangle over it, and the translation appears under the box. Escape cancels.',
-    'how.ocr.caption': '▶ Reading text out of a picture. The video loads from YouTube only when you press play.',
+    'how.ocr.caption': '▶ Reading text out of a picture, in the app.',
     'how.ocr.play': 'Play the demo',
     'how.note.h3': 'Prefer a different key?',
     'how.note.p': 'Shift is the default because holding it already extends a selection, so translating stays one gesture. You can switch to <b>Ctrl</b>, <b>Alt</b> or <b>Super</b> (⌘ on macOS) in the app\'s settings — or choose <b>Any selection</b> to translate everything, the way it worked before. On some Linux Wayland sessions the key can\'t be detected; there the app translates every selection and says so.',
@@ -314,7 +314,7 @@ const I18N = {
     'how.3.p': 'Menü çubuğunda veya tepside kalır ve tuş basılıyken seçtiğiniz bir sonraki şeyi çevirir. Hedef dili baloncuğun ⚙ menüsünden değiştirin.',
     'how.ocr.h3': 'Seçemiyor musun? Etrafına bir kutu çiz.',
     'how.ocr.p': 'Birinin gönderdiği ekran görüntüsü, taranmış bir sayfa, videodan bir kare, bir oyun, uzak masaüstü — ekranda duran ama hiçbir metin alanına ait olmayan yazı, yani seçilecek bir şeyin hiç olmadığı durum. Mac’te <b>⌘⇧E</b>, Windows ve Linux’ta <b>Ctrl+Shift+E</b> tuşlarına bas, üzerine bir dikdörtgen çiz; çeviri kutunun altında çıkar. Escape iptal eder.',
-    'how.ocr.caption': '▶ Bir resimden yazı okunuyor. Video, YouTube’dan yalnızca oynata bastığında yükleniyor.',
+    'how.ocr.caption': '▶ Bir resimden yazı okunuyor, uygulamanın içinde.',
     'how.ocr.play': 'Demoyu oynat',
     'how.note.h3': 'Başka bir tuş mu?',
     'how.note.p': 'Shift varsayılandır çünkü onu basılı tutmak zaten seçimi genişletir — böylece çeviri tek bir hareket olarak kalır. Uygulamanın ayarlarından <b>Ctrl</b>, <b>Alt</b> veya <b>Super</b>\'e (macOS\'ta ⌘) geçebilir ya da <b>Her seçim</b>\'i seçerek eskisi gibi her şeyi çevirtebilirsiniz. Bazı Linux Wayland oturumlarında tuş algılanamaz; orada uygulama her seçimi çevirir ve bunu belirtir.',
@@ -513,7 +513,7 @@ const I18N = {
     'how.3.p': 'Se queda en la barra de menú o la bandeja y traduce lo siguiente que selecciones con la tecla pulsada. Cambia el idioma de destino desde el menú ⚙ de la burbuja.',
     'how.ocr.h3': '¿No puedes seleccionarlo? Dibuja un recuadro.',
     'how.ocr.p': 'Una captura que te enviaron, una página escaneada, un fotograma de un vídeo, un juego, un escritorio remoto — texto que está en la pantalla pero no pertenece a ningún campo de texto, así que nunca hubo nada que seleccionar. Pulsa <b>⌘⇧E</b> en un Mac, <b>Ctrl+Shift+E</b> en Windows y Linux, arrastra un rectángulo encima y la traducción aparece debajo del recuadro. Escape cancela.',
-    'how.ocr.caption': '▶ Leyendo texto de una imagen. El vídeo se carga desde YouTube solo cuando pulsas reproducir.',
+    'how.ocr.caption': '▶ Leyendo texto de una imagen, en la app.',
     'how.ocr.play': 'Reproducir la demo',
     'how.note.h3': '¿Prefieres otra tecla?',
     'how.note.p': 'Shift es la opción por defecto porque mantenerla ya extiende una selección, así que traducir sigue siendo un solo gesto. Puedes cambiar a <b>Ctrl</b>, <b>Alt</b> o <b>Super</b> (⌘ en macOS) en los ajustes de la app, o elegir <b>Cualquier selección</b> para traducir todo, como antes. En algunas sesiones Wayland de Linux la tecla no se puede detectar; ahí la app traduce cada selección y lo indica.',
@@ -862,25 +862,3 @@ if (langSwitch) {
     b.addEventListener('click', refreshDetectedTag);
   });
 }
-
-// The demo video, loaded only once somebody asks for it.
-//
-// An ordinary YouTube embed contacts Google on page load for every visitor,
-// watched or not. This page tells people that the text they select is the only
-// thing that ever leaves their machine, so it would be a poor place to make a
-// request none of them asked for. What ships is a still of the video; pressing
-// it swaps in the player, and that is the first moment anything reaches
-// YouTube. nocookie is the lighter of the two hosts once it does.
-document.querySelectorAll('.video-facade').forEach(facade => {
-  facade.addEventListener('click', () => {
-    const id = facade.getAttribute('data-youtube');
-    if (!id || !/^[A-Za-z0-9_-]{6,20}$/.test(id)) return;
-    const frame = document.createElement('iframe');
-    frame.src = 'https://www.youtube-nocookie.com/embed/' + id + '?autoplay=1&rel=0';
-    frame.title = facade.getAttribute('aria-label') || 'Demo';
-    frame.allow = 'accelerometer; autoplay; encrypted-media; picture-in-picture';
-    frame.allowFullscreen = true;
-    frame.referrerPolicy = 'strict-origin-when-cross-origin';
-    facade.replaceWith(frame);
-  }, { once: true });
-});

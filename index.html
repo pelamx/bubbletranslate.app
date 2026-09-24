@@ -141,13 +141,20 @@
         </div>
         <div class="how-ocr">
           <div class="video-frame">
-            <button type="button" class="video-facade" data-youtube="bUZu3ES3jRM"
-                    aria-label="Play the demo" data-i18n-aria="how.ocr.play">
-              <img src="downloads/video/ocr-poster.jpg" alt="" width="1280" height="720" loading="lazy" decoding="async">
-              <span class="video-play" aria-hidden="true">▶</span>
-            </button>
+            <video
+              class="demo-video"
+              controls
+              muted
+              loop
+              playsinline
+              preload="metadata"
+              poster="downloads/video/ocr-poster.jpg">
+              <source src="downloads/video/ocr-demo.mp4" type="video/mp4">
+              Your browser can't play this video.
+              <a href="downloads/video/ocr-demo.mp4">Download the demo instead.</a>
+            </video>
           </div>
-          <p class="video-caption" data-i18n="how.ocr.caption">▶ Reading text out of a picture. The video loads from YouTube only when you press play.</p>
+          <p class="video-caption" data-i18n="how.ocr.caption">▶ Reading text out of a picture, in the app.</p>
         </div>
       </div>
     </section>

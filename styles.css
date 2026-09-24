@@ -611,55 +611,6 @@ img, video { max-width: 100%; height: auto; }
   color: var(--muted); font-size: .95rem;
 }
 
-/* The demo video is not embedded until it is asked for.
-   A YouTube iframe reaches Google the moment the page loads, whether or not
-   anybody watches -- which would sit badly next to a section promising that
-   the only thing leaving your machine is the text you selected. So what ships
-   is a picture of the video, and the iframe replaces it on the first click. */
-.video-facade {
-  display: block;
-  position: relative;
-  width: 100%;
-  padding: 0;
-  border: 0;
-  background: none;
-  cursor: pointer;
-  line-height: 0;
-}
-
-.video-facade img {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: inherit;
-}
-
-.video-facade .video-play {
-  position: absolute;
-  inset: 0;
-  display: grid;
-  place-items: center;
-  font-size: 2.4rem;
-  line-height: 1;
-  color: #fff;
-  text-shadow: 0 2px 18px rgba(0, 0, 0, .65);
-  background: rgba(0, 0, 0, .18);
-  border-radius: inherit;
-  transition: background .18s ease;
-}
-
-.video-facade:hover .video-play,
-.video-facade:focus-visible .video-play {
-  background: rgba(0, 0, 0, .34);
-}
-
-.video-frame iframe {
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  border: 0;
-  display: block;
-  border-radius: inherit;
-}
 
 /* Inside the privacy section, under the three cards: one more thing the app
    does with what is on your screen, answered in the place people are already
