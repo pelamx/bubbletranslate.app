@@ -76,6 +76,8 @@ const I18N = {
     'what.1.p': 'Documents, PDFs, browsers, chat, code, even menus. It reads the selection at the operating system level, so no app has to support it and nothing else is needed.',
     'what.2.h3': 'Nothing else to open',
     'what.2.p': 'No extension, no second window, no site to paste into. You do not change pages and you do not leave what you were doing.',
+    'what.4.h3': 'And when there is nothing to select',
+    'what.4.p': 'A screenshot, a scanned page, a video still, a game — the words are a picture, so no app has one to hand over. Press <b>⌘⇧E</b> on macOS, <b>Ctrl+Shift+E</b> on Windows and Linux, drag a box over them, and the translation appears under it. Reading happens on your own machine.',
     'what.3.h3': 'Instant, right at your cursor',
     'what.3.p': 'Hold Shift and select. The bubble is already there, next to the pointer, and gone again when you move on.',
 
@@ -273,6 +275,8 @@ const I18N = {
     'what.2.h3': 'Açılacak başka bir şey yok',
     'what.2.p': 'Eklenti yok, ikinci pencere yok, metni yapıştıracağınız bir site yok. Sayfa değiştirmezsiniz, yaptığınız işi bırakmazsınız.',
     'what.3.h3': 'Anında, tam imlecinizin yanında',
+    'what.4.h3': 'Seçilecek bir şey olmadığında',
+    'what.4.p': 'Ekran görüntüsü, taranmış sayfa, video karesi, oyun — yazı bir resim olduğu için hiçbir uygulamanın vereceği bir şey yok. macOS’ta <b>⌘⇧E</b>, Windows ve Linux’ta <b>Ctrl+Shift+E</b> tuşlarına bas, üstüne bir kutu çiz; çeviri kutunun altında çıkar. Okuma kendi makinende yapılır.',
     'what.3.p': 'Shift’i basılı tutup seçin. Baloncuk imlecin yanında çoktan oradadır; siz devam edince kaybolur.',
 
     'feat.head.h2': 'Çeviride yeni bir deneyim — yabancı belgeleri okurken kesinti yok.',
@@ -469,6 +473,8 @@ const I18N = {
     'what.2.h3': 'Nada más que abrir',
     'what.2.p': 'Sin extensión, sin una segunda ventana, sin un sitio donde pegar el texto. No cambias de página ni dejas lo que estabas haciendo.',
     'what.3.h3': 'Al instante, junto al cursor',
+    'what.4.h3': 'Y cuando no hay nada que seleccionar',
+    'what.4.p': 'Una captura, una página escaneada, un fotograma, un juego — las palabras son una imagen, así que ninguna app tiene nada que entregar. Pulsa <b>⌘⇧E</b> en macOS o <b>Ctrl+Shift+E</b> en Windows y Linux, arrastra un recuadro encima y la traducción aparece debajo. La lectura ocurre en tu propia máquina.',
     'what.3.p': 'Mantén Shift y selecciona. La burbuja ya está ahí, junto al puntero, y desaparece cuando sigues adelante.',
 
     'feat.head.h2': 'Una nueva experiencia en traducción, sin interrupciones al leer documentos extranjeros.',
