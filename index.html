@@ -370,12 +370,21 @@
             <h3>macOS <span class="dl-ver" data-ver="mac" hidden></span></h3>
             <p data-i18n="dl.mac.desc">Universal · Apple Silicon &amp; Intel · macOS 11 or later · 15&nbsp;MB</p>
             <a class="btn btn-primary" href="https://github.com/pelamx/downloads/releases/latest" download data-i18n="dl.mac.btn">Download DMG</a>
+            <div class="after-download" id="mac-after" hidden>
+              <p class="after-h" data-i18n="dl.mac.after.h">Downloaded. macOS will refuse to open it — here is the way through.</p>
+              <ol>
+                <li data-i18n="dl.mac.after.1">Open the DMG and drag <b>bubbleTranslate</b> into <b>Applications</b>.</li>
+                <li data-i18n="dl.mac.after.2">Double-click it. macOS says it <b>“cannot be opened”</b>. That is expected on every Mac: the app is not notarized by Apple. Open <b>System Settings › Privacy &amp; Security</b>, scroll down to Security, and click <b>Open Anyway</b>. Once, ever.</li>
+                <li data-i18n="dl.mac.after.3">Then switch <b>bubbleTranslate</b> on under <b>Privacy &amp; Security › Accessibility</b> and reopen it. That is how it reads what you select.</li>
+              </ol>
+            </div>
             <div class="install-note">
               <span data-i18n="dl.mac.run">Open the DMG and drag the app into Applications.</span>
               <span data-i18n="dl.mac.block">macOS <b>will</b> refuse the first launch and say it "could not verify" the app — every Mac, every time, because Apple has not notarized it. Open <b>System Settings › Privacy &amp; Security</b>, scroll to Security and click <b>Open Anyway</b>. Once only.</span>
               <span data-i18n="dl.mac.cmdlead">Or, if you prefer the Terminal, one line instead of those clicks:</span>
               <pre><code>xattr -dr com.apple.quarantine /Applications/bubbleTranslate.app</code></pre>
-              <a class="install-more" href="#mac-install" data-i18n="dl.mac.more">Full steps, including the Accessibility permission →</a>
+              <span data-i18n="dl.mac.ocr"><b>⌘⇧E</b> reads text off the screen — a screenshot, a scanned page, a video still. The first press opens <b>Screen Recording</b> in System Settings so you can switch bubbleTranslate on; quit and reopen the app afterwards and the shortcut works from then on.</span>
+              <a class="install-more" href="#mac-install" data-i18n="dl.mac.more">Full steps, including both permissions →</a>
             </div>
           </div>
           <div class="dl-card" data-os="linux">
@@ -402,9 +411,18 @@ sudo pacman -S tesseract tesseract-data-eng</code></pre>
             <h3>Windows <span class="dl-ver" data-ver="windows" hidden></span></h3>
             <p data-i18n="dl.win.desc">x86-64 · Windows 10 &amp; 11 · runs on ARM too · 7&nbsp;MB</p>
             <a class="btn btn-primary" href="https://github.com/pelamx/downloads/releases/latest" download data-i18n="dl.win.btn">Download ZIP</a>
+            <div class="after-download" id="win-after" hidden>
+              <p class="after-h" data-i18n="dl.win.after.h">Downloaded. Windows will refuse to open it — here is the way through.</p>
+              <ol>
+                <li data-i18n="dl.win.after.1">Unzip it and put <b>bubbleTranslate.exe</b> wherever you keep programs, then double-click it. There is nothing to install.</li>
+                <li data-i18n="dl.win.after.2">Windows says <b>“Windows protected your PC”</b>. That is SmartScreen reacting to a file it has not seen signed, not to anything the app does. Click <b>More info</b>, then <b>Run anyway</b> — once per machine, not once per launch.</li>
+                <li data-i18n="dl.win.after.3">Nothing to grant: it starts watching straight away. Windows 11 hides every new tray icon behind the <b>^</b> arrow next to the clock — drag the globe out onto the taskbar to keep it there.</li>
+              </ol>
+            </div>
             <div class="install-note">
               <span data-i18n="dl.win.run">Unzip it, put bubbleTranslate.exe wherever you keep programs and double-click it. Nothing to install.</span>
               <span data-i18n="dl.win.note2">It isn't code-signed, so SmartScreen stops the first launch: <b>More info</b> › <b>Run anyway</b>, once per machine.</span>
+              <a class="install-more" href="#windows-install" data-i18n="dl.win.more">Full steps for the first run →</a>
             </div>
           </div>
         </div>
@@ -416,6 +434,7 @@ sudo pacman -S tesseract tesseract-data-eng</code></pre>
             <li data-i18n="mac.install.3">Grant <b>Accessibility</b>: <b>System Settings › Privacy &amp; Security › Accessibility</b>, and switch <b>bubbleTranslate</b> on. This is how it reads what you select — a <i>different</i> permission from Open Anyway.</li>
             <li data-i18n="mac.install.4"><b>Quit and relaunch.</b> The Accessibility permission only takes effect on a fresh start, so quit bubbleTranslate (the globe in the menu bar → Quit) and open it again. Until you do, the window says <b>"Not watching for selections."</b></li>
             <li data-i18n="mac.install.5">Done. Hold <b>Shift</b> and select text anywhere, and the bubble appears at your cursor.</li>
+            <li data-i18n="mac.install.6"><b>Reading text from a picture — only if you want it.</b> <b>⌘⇧E</b> reads a region of the screen: a photo, a video still, a scanned page. The first time you press it, macOS opens <b>System Settings › Privacy &amp; Security › Screen Recording</b> with bubbleTranslate already in the list — switch it on, then quit and reopen the app. Like Accessibility, this permission only takes effect on a fresh launch, and until it is on the shortcut does nothing at all.</li>
           </ol>
           <p class="os-install-tip" data-i18n="mac.install.tip">Still "Not watching" after relaunching? Remove bubbleTranslate from the Accessibility list (select it, click −), run <code>xattr -dr com.apple.quarantine /Applications/bubbleTranslate.app</code>, then add it back, switch it on, and relaunch. A leftover entry from an older build can silently block the new one.</p>
         </div>
@@ -450,7 +469,7 @@ sudo pacman -S tesseract tesseract-data-eng</code></pre>
           <details><summary data-i18n="faq.q3">How do I pay for Pro?</summary><p data-i18n="faq.a3">Monthly or yearly. Billing goes through Paddle, the merchant of record, so you are charged in your own currency. Taxes, if applicable, are calculated and shown by Paddle at checkout. You can cancel anytime.</p></details>
           <details><summary data-i18n="faq.q4">Which systems does it run on?</summary><p data-i18n="faq.a4">macOS, Windows and Linux. The Windows build is one .exe that needs nothing installed and runs on Windows 10 and 11, including ARM machines. On Linux the download runs on any distribution with glibc 2.28 or newer — Ubuntu 20.04, Debian 10, Fedora, Arch and everything since; reading text off the screen works out of the box, and reads properly — accents and every alphabet — with Tesseract installed.</p></details>
           <details><summary data-i18n="faq.q5">Does it need an internet connection?</summary><p data-i18n="faq.a5">Yes. Translations come from online providers, tried in turn until one answers. Only the text you select is sent, and only to translate it.</p></details>
-          <details><summary data-i18n="faq.q6">What permission does it need?</summary><p data-i18n="faq.a6">On macOS, Accessibility — that's how the app sees what you've selected. It's the only permission it asks for. On Windows and on most X11 and Wayland sessions, nothing extra is required.</p></details>
+          <details><summary data-i18n="faq.q6">What permission does it need?</summary><p data-i18n="faq.a6">On macOS, Accessibility — that's how the app sees what you've selected, and it is asked for the first time you run it. Reading a region of the screen needs a second one, Screen Recording, and that is only asked for the first time you press the shortcut; if you never use it you are never asked. On Windows and on most X11 and Wayland sessions, selecting needs nothing extra; reading the screen uses what the system already provides.</p></details>
           <details><summary data-i18n="faq.q7">Does it translate everything I select?</summary><p data-i18n="faq.a7">No — only selections you make with a key held down. Shift by default, so extending a selection and translating it are one gesture. You can switch the key to Ctrl, Alt or Super, or set it to translate every selection like before. Copying and ordinary highlighting are left alone.</p></details>
           <details><summary data-i18n="faq.q8">How do I report a bug or suggest something?</summary><p data-i18n="faq.a8">From inside the app. Open the bubbleTranslate window and use <b>Send feedback</b>: something broken, something missing, or something that annoyed you. It goes out from your own mail — your mail app, Gmail or Outlook — and it is read by the person who wrote the app.</p></details>
         </div>

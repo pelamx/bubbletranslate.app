@@ -370,12 +370,21 @@
             <h3>macOS <span class="dl-ver" data-ver="mac" hidden></span></h3>
             <p data-i18n="dl.mac.desc">Universal · Apple Silicon ve Intel · macOS 11 veya üzeri · 15&nbsp;MB</p>
             <a class="btn btn-primary" href="https://github.com/pelamx/downloads/releases/latest" download data-i18n="dl.mac.btn">DMG indir</a>
+            <div class="after-download" id="mac-after" hidden>
+              <p class="after-h" data-i18n="dl.mac.after.h">İndirildi. macOS açmayı reddedecek — geçiş yolu şu.</p>
+              <ol>
+                <li data-i18n="dl.mac.after.1">DMG’yi açın ve <b>bubbleTranslate</b>’i <b>Applications</b> klasörüne sürükleyin.</li>
+                <li data-i18n="dl.mac.after.2">Çift tıklayın. macOS <b>“açılamıyor”</b> diyecek. Bu her Mac’te böyle: uygulama Apple tarafından notarize edilmedi. <b>Sistem Ayarları › Gizlilik ve Güvenlik</b>’i açın, aşağıdaki Güvenlik bölümüne inin ve <b>Yine de Aç</b>’a tıklayın. Bir kez, sadece bir kez.</li>
+                <li data-i18n="dl.mac.after.3">Sonra <b>Gizlilik ve Güvenlik › Erişilebilirlik</b> altında <b>bubbleTranslate</b>’i açın ve uygulamayı yeniden başlatın. Seçtiğinizi böyle okuyor.</li>
+              </ol>
+            </div>
             <div class="install-note">
               <span data-i18n="dl.mac.run">DMG'yi açın ve uygulamayı Applications klasörüne sürükleyin.</span>
               <span data-i18n="dl.mac.block">macOS ilk açılışı <b>kesinlikle</b> reddeder ve uygulamayı "doğrulayamadı" der — her Mac'te, her seferinde, çünkü Apple onu notarize etmedi. <b>System Settings › Privacy &amp; Security</b>'yi aç, Security'ye kadar in ve <b>Open Anyway</b>'e tıkla. Yalnızca bir kez.</span>
               <span data-i18n="dl.mac.cmdlead">Terminal'i tercih ediyorsan, o tıklamalar yerine tek satır:</span>
               <pre><code>xattr -dr com.apple.quarantine /Applications/bubbleTranslate.app</code></pre>
-              <a class="install-more" href="#mac-install" data-i18n="dl.mac.more">Erişilebilirlik izni dahil bütün adımlar →</a>
+              <span data-i18n="dl.mac.ocr"><b>⌘⇧E</b> ekrandaki metni okur — ekran görüntüsü, taranmış sayfa, video karesi. İlk basışta Sistem Ayarları'nda <b>Ekran Kaydı</b> açılır, bubbleTranslate'i orada etkinleştirin; sonra uygulamadan çıkıp yeniden açın, kısayol o andan itibaren çalışır.</span>
+              <a class="install-more" href="#mac-install" data-i18n="dl.mac.more">Bütün adımlar, iki izin dahil →</a>
             </div>
           </div>
           <div class="dl-card" data-os="linux">
@@ -402,9 +411,18 @@ sudo pacman -S tesseract tesseract-data-tur</code></pre>
             <h3>Windows <span class="dl-ver" data-ver="windows" hidden></span></h3>
             <p data-i18n="dl.win.desc">x86-64 · Windows 10 ve 11 · ARM'da da çalışır · 7&nbsp;MB</p>
             <a class="btn btn-primary" href="https://github.com/pelamx/downloads/releases/latest" download data-i18n="dl.win.btn">ZIP indir</a>
+            <div class="after-download" id="win-after" hidden>
+              <p class="after-h" data-i18n="dl.win.after.h">İndirildi. Windows açmayı reddedecek — geçiş yolu şu.</p>
+              <ol>
+                <li data-i18n="dl.win.after.1">Zip’i açın, <b>bubbleTranslate.exe</b>’yi programlarınızı tuttuğunuz yere koyun ve çift tıklayın. Kurulacak bir şey yok.</li>
+                <li data-i18n="dl.win.after.2">Windows <b>“Windows protected your PC”</b> diyecek. Bu, imzalı görmediği bir dosyaya SmartScreen’in tepkisidir, uygulamanın yaptığı bir şey değil. <b>More info</b>, sonra <b>Run anyway</b>’e tıklayın — makine başına bir kez, her açılışta değil.</li>
+                <li data-i18n="dl.win.after.3">Verilecek izin yok: hemen izlemeye başlar. Windows 11 yeni tepsi simgelerini saatin yanındaki <b>^</b> okunun arkasına gizler — küreyi görev çubuğuna sürükleyin ki orada kalsın.</li>
+              </ol>
+            </div>
             <div class="install-note">
               <span data-i18n="dl.win.run">Zip'i açın, bubbleTranslate.exe'yi programlarınızı tuttuğunuz yere koyup çift tıklayın. Kurulum yok.</span>
               <span data-i18n="dl.win.note2">Dosya imzalı değil; SmartScreen ilk açılışı durdurur: <b>Ek bilgi</b> › <b>Yine de çalıştır</b>, makine başına bir kez.</span>
+              <a class="install-more" href="#windows-install" data-i18n="dl.win.more">İlk çalıştırmanın bütün adımları →</a>
             </div>
           </div>
         </div>
@@ -416,6 +434,7 @@ sudo pacman -S tesseract tesseract-data-tur</code></pre>
             <li data-i18n="mac.install.3"><b>Erişilebilirlik</b> izni verin: <b>Sistem Ayarları › Gizlilik ve Güvenlik › Erişilebilirlik</b> ve <b>bubbleTranslate</b>'i açın. Uygulama seçtiğinizi böyle okur — Yine de Aç'tan <i>farklı</i> bir izindir.</li>
             <li data-i18n="mac.install.4"><b>Çıkın ve yeniden açın.</b> Erişilebilirlik izni yalnızca temiz bir başlangıçta etkinleşir; bu yüzden bubbleTranslate'ten çıkın (menü çubuğundaki küre → Quit) ve tekrar açın. Bunu yapana kadar pencere <b>"Not watching for selections"</b> (seçimler izlenmiyor) yazar.</li>
             <li data-i18n="mac.install.5">Bitti. Herhangi bir yerde <b>Shift</b>'e basılı tutup metni seçin; baloncuk imlecinizin yanında belirir.</li>
+            <li data-i18n="mac.install.6"><b>Resimdeki metni okumak — isterseniz.</b> <b>⌘⇧E</b> ekrandan bir alanı okur: bir fotoğraf, video karesi, taranmış sayfa. İlk bastığınızda macOS <b>Sistem Ayarları › Gizlilik ve Güvenlik › Ekran Kaydı</b>'nı, bubbleTranslate listede hazır şekilde açar — anahtarı açın, sonra uygulamadan çıkıp yeniden açın. Erişilebilirlik gibi bu izin de yalnızca temiz bir başlangıçta etkinleşir; açılmadan önce kısayol hiçbir şey yapmaz.</li>
           </ol>
           <p class="os-install-tip" data-i18n="mac.install.tip">Yeniden açtıktan sonra hâlâ "Not watching" mı diyor? bubbleTranslate'i Erişilebilirlik listesinden kaldırın (seçip − tıklayın), <code>xattr -dr com.apple.quarantine /Applications/bubbleTranslate.app</code> komutunu çalıştırın, sonra tekrar ekleyip açın ve yeniden başlatın. Eski bir sürümden kalan kayıt yenisini sessizce engelleyebilir.</p>
         </div>
@@ -447,7 +466,7 @@ sudo pacman -S tesseract tesseract-data-tur</code></pre>
           <details><summary data-i18n="faq.q3">Pro için nasıl ödeme yaparım?</summary><p data-i18n="faq.a3">Aylık veya yıllık. Ödeme, kayıtlı satıcı Paddle üzerinden alınır; kendi para biriminizde ücretlendirilirsiniz. Varsa vergiler, ödeme sırasında Paddle tarafından hesaplanır ve gösterilir. İstediğiniz zaman iptal edebilirsiniz.</p></details>
           <details><summary data-i18n="faq.q4">Hangi sistemlerde çalışır?</summary><p data-i18n="faq.a4">macOS, Windows ve Linux. Windows sürümü hiçbir şey kurmayı gerektirmeyen tek bir .exe dosyasıdır ve ARM makineler dahil Windows 10 ile 11'de çalışır. Linux'ta indirilen dosya glibc 2.28 veya üstü olan her dağıtımda çalışır — Ubuntu 20.04, Debian 10, Fedora, Arch ve sonrası; ekrandaki yazıyı okumak kurulum gerektirmez; aksanlı harfleri ve tüm alfabeleri düzgün okuması için Tesseract kurulur.</p></details>
           <details><summary data-i18n="faq.q5">İnternet bağlantısı gerekir mi?</summary><p data-i18n="faq.a5">Evet. Çeviriler çevrimiçi sağlayıcılardan gelir; biri yanıt verene kadar sırayla denenir. Yalnızca seçtiğiniz metin, yalnızca çevirmek için gönderilir.</p></details>
-          <details><summary data-i18n="faq.q6">Hangi izne ihtiyacı var?</summary><p data-i18n="faq.a6">macOS'ta Erişilebilirlik — uygulama seçtiğinizi böyle görür. İstediği tek izin budur. Windows'ta ve çoğu X11 ile Wayland oturumunda ek bir şey gerekmez.</p></details>
+          <details><summary data-i18n="faq.q6">Hangi izne ihtiyacı var?</summary><p data-i18n="faq.a6">macOS'ta Erişilebilirlik — uygulama seçtiğinizi böyle görür ve bu izin ilk çalıştırdığınızda istenir. Ekrandan bir alan okumak için ikinci bir izin gerekir, Ekran Kaydı, ve o yalnızca kısayola ilk bastığınızda istenir; hiç kullanmazsanız hiç sorulmaz. Windows'ta ve çoğu X11 ile Wayland oturumunda seçim için ek bir şey gerekmez; ekranı okumak sistemin zaten sunduğunu kullanır.</p></details>
           <details><summary data-i18n="faq.q7">Seçtiğim her şeyi çevirir mi?</summary><p data-i18n="faq.a7">Hayır — yalnızca bir tuş basılıyken yaptığınız seçimleri. Varsayılan Shift'tir; böylece seçimi genişletmek ve çevirmek tek harekettir. Tuşu Ctrl, Alt veya Super yapabilir ya da eskisi gibi her seçimi çevirtebilirsiniz. Kopyalama ve sıradan işaretlemeye dokunulmaz.</p></details>
           <details><summary data-i18n="faq.q8">Hata bildirmek ya da öneri yapmak istiyorum, nasıl?</summary><p data-i18n="faq.a8">Doğrudan uygulamanın içinden. bubbleTranslate penceresini açıp <b>Geri bildirim gönder</b> bölümünü kullanın: bozuk, eksik ya da sizi rahatsız eden bir şey. Mesaj kendi e-postanızdan gider — posta uygulamanız, Gmail ya da Outlook — ve uygulamayı yazan kişi okur.</p></details>
         </div>

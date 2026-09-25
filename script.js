@@ -173,13 +173,19 @@ const I18N = {
     'dl.mac.run': 'Open the DMG and drag the app into Applications.',
     'dl.mac.block': 'macOS <b>will</b> refuse the first launch and say it "could not verify" the app — every Mac, every time, because Apple has not notarized it. Open <b>System Settings › Privacy &amp; Security</b>, scroll to Security and click <b>Open Anyway</b>. Once only.',
     'dl.mac.cmdlead': 'Or, if you prefer the Terminal, one line instead of those clicks:',
-    'dl.mac.more': 'Full steps, including the Accessibility permission →',
+    'dl.mac.ocr': '<b>⌘⇧E</b> reads text off the screen — a screenshot, a scanned page, a video still. The first press opens <b>Screen Recording</b> in System Settings so you can switch bubbleTranslate on; quit and reopen the app afterwards and the shortcut works from then on.',
+    'dl.mac.after.h': 'Downloaded. macOS will refuse to open it — here is the way through.',
+    'dl.mac.after.1': 'Open the DMG and drag <b>bubbleTranslate</b> into <b>Applications</b>.',
+    'dl.mac.after.2': 'Double-click it. macOS says it <b>“cannot be opened”</b>. That is expected on every Mac: the app is not notarized by Apple. Open <b>System Settings › Privacy &amp; Security</b>, scroll down to Security, and click <b>Open Anyway</b>. Once, ever.',
+    'dl.mac.after.3': 'Then switch <b>bubbleTranslate</b> on under <b>Privacy &amp; Security › Accessibility</b> and reopen it. That is how it reads what you select.',
+    'dl.mac.more': 'Full steps, including both permissions →',
     'mac.install.h3': 'Installing on macOS — the first run',
     'mac.install.1': 'Open the DMG and drag <b>bubbleTranslate.app</b> into <b>Applications</b>. Install it there — not run from the DMG or Downloads.',
     'mac.install.2': 'Launch it once. macOS says it <b>"could not verify"</b> the app — that\'s Gatekeeper reacting to an app Apple hasn\'t notarized, not anything the app does. Dismiss it, open <b>System Settings › Privacy &amp; Security</b>, scroll to Security, and click <b>Open Anyway</b>.',
     'mac.install.3': 'Grant <b>Accessibility</b>: <b>System Settings › Privacy &amp; Security › Accessibility</b>, and switch <b>bubbleTranslate</b> on. This is how it reads what you select — a <i>different</i> permission from Open Anyway.',
     'mac.install.4': '<b>Quit and relaunch.</b> The Accessibility permission only takes effect on a fresh start, so quit bubbleTranslate (the globe in the menu bar → Quit) and open it again. Until you do, the window says <b>"Not watching for selections."</b>',
     'mac.install.5': 'Done. Hold <b>Shift</b> and select text anywhere, and the bubble appears at your cursor.',
+    'mac.install.6': '<b>Reading text from a picture — only if you want it.</b> <b>⌘⇧E</b> reads a region of the screen: a photo, a video still, a scanned page. The first time you press it, macOS opens <b>System Settings › Privacy &amp; Security › Screen Recording</b> with bubbleTranslate already in the list — switch it on, then quit and reopen the app. Like Accessibility, this permission only takes effect on a fresh launch, and until it is on the shortcut does nothing at all.',
     'mac.install.tip': 'Still "Not watching" after relaunching? Remove bubbleTranslate from the Accessibility list (select it, click −), run <code>xattr -dr com.apple.quarantine /Applications/bubbleTranslate.app</code>, then add it back, switch it on, and relaunch. A leftover entry from an older build can silently block the new one.',
     'dl.linux.desc': 'x86-64 executable · any distribution with glibc 2.28+ — Ubuntu 20.04, Debian 10, Fedora, Arch and newer · 16&nbsp;MB',
     'dl.linux.btn': 'Download binary',
@@ -190,6 +196,11 @@ const I18N = {
     'dl.win.btn': 'Download ZIP',
     'dl.win.run': 'Unzip it, put bubbleTranslate.exe wherever you keep programs and double-click it. Nothing to install.',
     'dl.win.note2': 'It isn\'t code-signed, so SmartScreen stops the first launch: <b>More info</b> › <b>Run anyway</b>, once per machine.',
+    'dl.win.after.h': 'Downloaded. Windows will refuse to open it — here is the way through.',
+    'dl.win.after.1': 'Unzip it and put <b>bubbleTranslate.exe</b> wherever you keep programs, then double-click it. There is nothing to install.',
+    'dl.win.after.2': 'Windows says <b>“Windows protected your PC”</b>. That is SmartScreen reacting to a file it has not seen signed, not to anything the app does. Click <b>More info</b>, then <b>Run anyway</b> — once per machine, not once per launch.',
+    'dl.win.after.3': 'Nothing to grant: it starts watching straight away. Windows 11 hides every new tray icon behind the <b>^</b> arrow next to the clock — drag the globe out onto the taskbar to keep it there.',
+    'dl.win.more': 'Full steps for the first run →',
     'win.install.h3': 'Installing on Windows — the first run',
     'win.install.1': 'Unzip the download, then put <b>bubbleTranslate.exe</b> wherever you keep programs and double-click it. There is no installer — the zip holds one file, and it writes its settings to <code>%APPDATA%\\bubbleTranslate</code> the first time it runs.',
     'win.install.2': 'Windows says <b>"Windows protected your PC"</b>. That is SmartScreen reacting to a file it has not seen signed, not to anything the app does. Click <b>More info</b>, then <b>Run anyway</b> — once per machine, not once per launch.',
@@ -382,13 +393,19 @@ const I18N = {
     'dl.mac.run': 'DMG\'yi açın ve uygulamayı Applications klasörüne sürükleyin.',
     'dl.mac.block': 'macOS ilk açılışı <b>kesinlikle</b> reddeder ve uygulamayı "doğrulayamadı" der — her Mac’te, her seferinde, çünkü Apple onu notarize etmedi. <b>System Settings › Privacy &amp; Security</b>’yi aç, Security’ye kadar in ve <b>Open Anyway</b>’e tıkla. Yalnızca bir kez.',
     'dl.mac.cmdlead': 'Terminal’i tercih ediyorsan, o tıklamalar yerine tek satır:',
-    'dl.mac.more': 'Erişilebilirlik izni dahil bütün adımlar →',
+    'dl.mac.ocr': '<b>⌘⇧E</b> ekrandaki metni okur — ekran görüntüsü, taranmış sayfa, video karesi. İlk basışta Sistem Ayarları\'nda <b>Ekran Kaydı</b> açılır, bubbleTranslate\'i orada etkinleştirin; sonra uygulamadan çıkıp yeniden açın, kısayol o andan itibaren çalışır.',
+    'dl.mac.after.h': 'İndirildi. macOS açmayı reddedecek — geçiş yolu şu.',
+    'dl.mac.after.1': 'DMG’yi açın ve <b>bubbleTranslate</b>’i <b>Applications</b> klasörüne sürükleyin.',
+    'dl.mac.after.2': 'Çift tıklayın. macOS <b>“açılamıyor”</b> diyecek. Bu her Mac’te böyle: uygulama Apple tarafından notarize edilmedi. <b>Sistem Ayarları › Gizlilik ve Güvenlik</b>’i açın, aşağıdaki Güvenlik bölümüne inin ve <b>Yine de Aç</b>’a tıklayın. Bir kez, sadece bir kez.',
+    'dl.mac.after.3': 'Sonra <b>Gizlilik ve Güvenlik › Erişilebilirlik</b> altında <b>bubbleTranslate</b>’i açın ve uygulamayı yeniden başlatın. Seçtiğinizi böyle okuyor.',
+    'dl.mac.more': 'Bütün adımlar, iki izin dahil →',
     'mac.install.h3': 'macOS\'ta kurulum — ilk çalıştırma',
     'mac.install.1': 'DMG\'yi açın ve <b>bubbleTranslate.app</b>\'i <b>Applications</b> klasörüne sürükleyin. Uygulamayı oradan çalıştırın — DMG\'den veya İndirilenler\'den değil.',
     'mac.install.2': 'Bir kez açın. macOS uygulamayı <b>"doğrulayamadı"</b> der — bu, Apple tarafından notarize edilmemiş bir uygulamaya Gatekeeper\'ın tepkisidir, uygulamanın yaptığı bir şey değil. Kapatın, <b>Sistem Ayarları › Gizlilik ve Güvenlik</b>\'i açın, Güvenlik bölümüne inin ve <b>Yine de Aç</b>\'a tıklayın.',
     'mac.install.3': '<b>Erişilebilirlik</b> izni verin: <b>Sistem Ayarları › Gizlilik ve Güvenlik › Erişilebilirlik</b> ve <b>bubbleTranslate</b>\'i açın. Uygulama seçtiğinizi böyle okur — Yine de Aç\'tan <i>farklı</i> bir izindir.',
     'mac.install.4': '<b>Çıkın ve yeniden açın.</b> Erişilebilirlik izni yalnızca temiz bir başlangıçta etkinleşir; bu yüzden bubbleTranslate\'ten çıkın (menü çubuğundaki küre → Quit) ve tekrar açın. Bunu yapana kadar pencere <b>"Not watching for selections"</b> (seçimler izlenmiyor) yazar.',
     'mac.install.5': 'Bitti. Herhangi bir yerde <b>Shift</b>\'e basılı tutup metni seçin; baloncuk imlecinizin yanında belirir.',
+    'mac.install.6': '<b>Resimdeki metni okumak — isterseniz.</b> <b>⌘⇧E</b> ekrandan bir alanı okur: bir fotoğraf, video karesi, taranmış sayfa. İlk bastığınızda macOS <b>Sistem Ayarları › Gizlilik ve Güvenlik › Ekran Kaydı</b>\'nı, bubbleTranslate listede hazır şekilde açar — anahtarı açın, sonra uygulamadan çıkıp yeniden açın. Erişilebilirlik gibi bu izin de yalnızca temiz bir başlangıçta etkinleşir; açılmadan önce kısayol hiçbir şey yapmaz.',
     'mac.install.tip': 'Yeniden açtıktan sonra hâlâ "Not watching" mı diyor? bubbleTranslate\'i Erişilebilirlik listesinden kaldırın (seçip − tıklayın), <code>xattr -dr com.apple.quarantine /Applications/bubbleTranslate.app</code> komutunu çalıştırın, sonra tekrar ekleyip açın ve yeniden başlatın. Eski bir sürümden kalan kayıt yenisini sessizce engelleyebilir.',
     'dl.linux.desc': 'x86-64 çalıştırılabilir dosya · glibc 2.28+ olan her dağıtım — Ubuntu 20.04, Debian 10, Fedora, Arch ve sonrası · 16&nbsp;MB',
     'dl.linux.btn': 'İkili dosyayı indir',
@@ -399,6 +416,11 @@ const I18N = {
     'dl.win.btn': 'ZIP indir',
     'dl.win.run': 'Zip\'i açın, bubbleTranslate.exe\'yi programlarınızı tuttuğunuz yere koyup çift tıklayın. Kurulum yok.',
     'dl.win.note2': 'Dosya imzalı değil; SmartScreen ilk açılışı durdurur: <b>Ek bilgi</b> › <b>Yine de çalıştır</b>, makine başına bir kez.',
+    'dl.win.after.h': 'İndirildi. Windows açmayı reddedecek — geçiş yolu şu.',
+    'dl.win.after.1': 'Zip’i açın, <b>bubbleTranslate.exe</b>’yi programlarınızı tuttuğunuz yere koyun ve çift tıklayın. Kurulacak bir şey yok.',
+    'dl.win.after.2': 'Windows <b>“Windows protected your PC”</b> diyecek. Bu, imzalı görmediği bir dosyaya SmartScreen’in tepkisidir, uygulamanın yaptığı bir şey değil. <b>More info</b>, sonra <b>Run anyway</b>’e tıklayın — makine başına bir kez, her açılışta değil.',
+    'dl.win.after.3': 'Verilecek izin yok: hemen izlemeye başlar. Windows 11 yeni tepsi simgelerini saatin yanındaki <b>^</b> okunun arkasına gizler — küreyi görev çubuğuna sürükleyin ki orada kalsın.',
+    'dl.win.more': 'İlk çalıştırmanın bütün adımları →',
     'win.install.h3': 'Windows\'ta kurulum — ilk çalıştırma',
     'win.install.1': 'İndirdiğiniz zip\'i açın, <b>bubbleTranslate.exe</b>\'yi programlarınızı tuttuğunuz yere koyup çift tıklayın. Kurulum sihirbazı yok — zip\'in içinde tek bir dosya var; ayarlarını ilk çalıştırmada <code>%APPDATA%\\bubbleTranslate</code> içine yazar.',
     'win.install.2': 'Windows <b>"Bilgisayarınız korundu"</b> der. Bu, SmartScreen\'in imzalı görmediği bir dosyaya tepkisidir — uygulamanın yaptığı bir şey değil. <b>Ek bilgi</b>\'ye, sonra <b>Yine de çalıştır</b>\'a tıklayın; her açılışta değil, makine başına bir kez.',
@@ -591,13 +613,19 @@ const I18N = {
     'dl.mac.run': 'Abre el DMG y arrastra la app a Aplicaciones.',
     'dl.mac.block': 'macOS <b>rechazará</b> el primer arranque y dirá que no pudo verificar la app — en todos los Mac, siempre, porque Apple no la ha notarizado. Abre <b>System Settings › Privacy &amp; Security</b>, baja hasta Security y pulsa <b>Open Anyway</b>. Solo una vez.',
     'dl.mac.cmdlead': 'O, si prefieres el Terminal, una línea en lugar de esos clics:',
-    'dl.mac.more': 'Todos los pasos, incluido el permiso de Accesibilidad →',
+    'dl.mac.ocr': '<b>⌘⇧E</b> lee el texto de la pantalla: una captura, una página escaneada, un fotograma. La primera pulsación abre <b>Grabación de pantalla</b> en Ajustes del Sistema para que actives bubbleTranslate; cierra y vuelve a abrir la app y el atajo ya funciona.',
+    'dl.mac.after.h': 'Descargado. macOS se negará a abrirlo: así se pasa.',
+    'dl.mac.after.1': 'Abre el DMG y arrastra <b>bubbleTranslate</b> a <b>Aplicaciones</b>.',
+    'dl.mac.after.2': 'Haz doble clic. macOS dirá que <b>“no se puede abrir”</b>. Es lo normal en todos los Mac: la app no está notarizada por Apple. Abre <b>Ajustes del Sistema › Privacidad y seguridad</b>, baja hasta Seguridad y pulsa <b>Abrir de todos modos</b>. Una sola vez.',
+    'dl.mac.after.3': 'Después activa <b>bubbleTranslate</b> en <b>Privacidad y seguridad › Accesibilidad</b> y vuelve a abrirla. Así lee lo que seleccionas.',
+    'dl.mac.more': 'Todos los pasos, con los dos permisos →',
     'mac.install.h3': 'Instalación en macOS — el primer arranque',
     'mac.install.1': 'Abre el DMG y arrastra <b>bubbleTranslate.app</b> a <b>Aplicaciones</b>. Instálala ahí, no la ejecutes desde el DMG o Descargas.',
     'mac.install.2': 'Ábrela una vez. macOS dice que <b>"no pudo verificar"</b> la app — es Gatekeeper reaccionando a una app que Apple no ha notarizado, no algo que la app haga. Descártalo, abre <b>Ajustes del Sistema › Privacidad y seguridad</b>, baja hasta Seguridad y pulsa <b>Abrir de todos modos</b>.',
     'mac.install.3': 'Concede <b>Accesibilidad</b>: <b>Ajustes del Sistema › Privacidad y seguridad › Accesibilidad</b>, y activa <b>bubbleTranslate</b>. Así lee lo que seleccionas — un permiso <i>distinto</i> de Abrir de todos modos.',
     'mac.install.4': '<b>Cierra y vuelve a abrir.</b> El permiso de Accesibilidad solo surte efecto tras un arranque nuevo; cierra bubbleTranslate (el globo en la barra de menú → Quit) y ábrela de nuevo. Hasta que lo hagas, la ventana dice <b>"Not watching for selections."</b>',
     'mac.install.5': 'Listo. Mantén <b>Shift</b> y selecciona texto en cualquier parte, y la burbuja aparece junto al cursor.',
+    'mac.install.6': '<b>Leer texto de una imagen — solo si lo quieres.</b> <b>⌘⇧E</b> lee una zona de la pantalla: una foto, un fotograma, una página escaneada. La primera vez que lo pulsas, macOS abre <b>Ajustes del Sistema › Privacidad y seguridad › Grabación de pantalla</b> con bubbleTranslate ya en la lista: actívala y luego cierra y vuelve a abrir la app. Igual que Accesibilidad, este permiso solo surte efecto en un arranque nuevo, y hasta entonces el atajo no hace nada.',
     'mac.install.tip': '¿Sigue en "Not watching" tras reabrir? Quita bubbleTranslate de la lista de Accesibilidad (selecciónala y pulsa −), ejecuta <code>xattr -dr com.apple.quarantine /Applications/bubbleTranslate.app</code>, vuelve a añadirla, actívala y reiníciala. Una entrada residual de una versión anterior puede bloquear la nueva sin avisar.',
     'dl.linux.desc': 'ejecutable x86-64 · cualquier distribución con glibc 2.28+ — Ubuntu 20.04, Debian 10, Fedora, Arch y posteriores · 16&nbsp;MB',
     'dl.linux.btn': 'Descargar binario',
@@ -608,6 +636,11 @@ const I18N = {
     'dl.win.btn': 'Descargar ZIP',
     'dl.win.run': 'Descomprime el zip, pon bubbleTranslate.exe donde guardes tus programas y haz doble clic. No hay nada que instalar.',
     'dl.win.note2': 'No está firmado, así que SmartScreen detiene el primer arranque: <b>Más información</b> › <b>Ejecutar de todas formas</b>, una vez por equipo.',
+    'dl.win.after.h': 'Descargado. Windows se negará a abrirlo: así se pasa.',
+    'dl.win.after.1': 'Descomprímelo, pon <b>bubbleTranslate.exe</b> donde guardes tus programas y haz doble clic. No hay nada que instalar.',
+    'dl.win.after.2': 'Windows dirá <b>“Windows protected your PC”</b>. Es SmartScreen reaccionando a un archivo que no ha visto firmado, no a nada que haga la app. Pulsa <b>More info</b> y luego <b>Run anyway</b>: una vez por equipo, no en cada arranque.',
+    'dl.win.after.3': 'No hay permiso que conceder: empieza a vigilar de inmediato. Windows 11 esconde los iconos nuevos de la bandeja detrás de la flecha <b>^</b> junto al reloj; arrastra el globo a la barra de tareas para que se quede.',
+    'dl.win.more': 'Todos los pasos del primer arranque →',
     'win.install.h3': 'Instalación en Windows — el primer arranque',
     'win.install.1': 'Descomprime la descarga, luego pon <b>bubbleTranslate.exe</b> donde guardes tus programas y haz doble clic. No hay instalador — el zip contiene un solo archivo, y escribe su configuración en <code>%APPDATA%\\bubbleTranslate</code> la primera vez que se ejecuta.',
     'win.install.2': 'Windows dice <b>"Windows protegió su PC"</b>. Es SmartScreen reaccionando a un archivo que no ha visto firmado, no a algo que haga la app. Pulsa <b>Más información</b> y luego <b>Ejecutar de todas formas</b> — una vez por equipo, no en cada arranque.',
@@ -892,3 +925,44 @@ if (langSwitch) {
     b.addEventListener('click', refreshDetectedTag);
   });
 }
+
+// Neither download is signed, so the first launch is refused on both systems --
+// Gatekeeper says the app "cannot be opened", SmartScreen says "Windows
+// protected your PC". The way through each is already written beside the button
+// and in the install guide below it, but someone who has decided to download
+// reads the button, not the paragraph next to it. They then meet a dialog whose
+// honest reading is that the download is broken.
+//
+// So the steps are revealed on the click that starts the download. Revealed
+// rather than always shown, because before the download they are noise and the
+// cards have to stay readable. Linux needs none of this: there is nothing to
+// clear there, only chmod +x.
+(function revealFirstRunSteps() {
+  [['mac', 'mac-after'], ['windows', 'win-after']].forEach(pair => {
+    const key = pair[0];
+    const panel = document.getElementById(pair[1]);
+    if (!panel) return;
+
+    const show = () => {
+      const wasHidden = panel.hidden;
+      panel.hidden = false;
+      // Only scroll when the panel is not already on screen: the card's own
+      // button sits right above it, and yanking the page for someone already
+      // looking at it would be worse than doing nothing. The hero button is
+      // most of a page away, which is the case this is for.
+      if (!wasHidden) return;
+      const box = panel.getBoundingClientRect();
+      if (box.top < 0 || box.bottom > window.innerHeight) {
+        panel.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+    };
+
+    const card = document.querySelector('.dl-card[data-os="' + key + '"] a.btn');
+    if (card) card.addEventListener('click', show);
+
+    // The hero button downloads whatever this visitor's own system needs, so it
+    // leads to this download only on that system.
+    const hero = document.getElementById('heroDownload');
+    if (hero && os === key) hero.addEventListener('click', show);
+  });
+})();
