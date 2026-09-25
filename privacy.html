@@ -52,7 +52,7 @@
   <main class="legal">
     <div class="legal-head">
       <h1>Privacy Policy</h1>
-      <p class="updated">Last updated: 23 September 2026</p>
+      <p class="updated">Last updated: 25 September 2026</p>
     </div>
 
 
@@ -151,8 +151,9 @@
     working licences.</p>
 
     <h2 id="usage-ping">4a. The daily usage ping</h2>
-    <p><strong>What it is for.</strong> We use it for one thing: to count how many installations of
-    bubbleTranslate are alive, meaning actually being used, on free and on Pro. Downloads do not tell us
+    <p><strong>What it is for.</strong> Mainly to count how many installations of bubbleTranslate are
+    alive, meaning actually being used, on free and on Pro — and, alongside that, in which countries, and
+    how often the free allowance turns out to be too small. Downloads do not tell us
     that. Many downloaded copies are never opened, and a copy that is used every day looks exactly like one
     that was deleted. The free version never talks to us otherwise, so without this ping we could not know
     whether anyone uses it at all. The numbers tell us whether the app is worth maintaining, which operating
@@ -162,7 +163,9 @@
     We look at it only as totals, such as "installations active this week" or "free installations on
     Linux".</p>
     <p><strong>When it is sent.</strong> Once when the app starts, then once every 24 hours while it keeps
-    running, to <b>api.bubbletranslate.app</b>.</p>
+    running, to <b>api.bubbletranslate.app</b>. On the free plan, one more is sent on a day the ten free
+    translations run out, the first time they do; it carries the same values as below and says only that
+    the allowance ran out.</p>
     <p><strong>What it contains</strong>, and nothing else:</p>
     <ul>
       <li><strong>An installation identifier.</strong> It is made like the device identifier in section 4,
@@ -171,11 +174,19 @@
       <li><strong>Your operating system name</strong> ("linux", "macos" or "windows").</li>
       <li><strong>The app version.</strong></li>
       <li><strong>Whether the installation is on the free plan or Pro.</strong></li>
+      <li><strong>How the translation services answered today</strong>: for each service the app uses
+      (Google, MyMemory, DeepL, Claude), how many translations it returned and how many it failed. Counts
+      only, never what was translated. We add these up across all installations without the
+      installation identifier, to notice when a service stops working for everyone.</li>
+      <li><strong>On the extra ping only: that the free allowance ran out today.</strong></li>
     </ul>
     <p>It never contains the text you translate, your languages, your settings, your licence key or your
-    email address. We store one row per installation: those four values, plus when the installation was first
-    and last seen. Like any request to a web server, it arrives with an IP address. We do not store that
-    address with the row.</p>
+    email address. We store one row per installation: the identifier, operating system, version and plan,
+    when the installation was first and last seen, and — if the allowance ever ran out — when that first
+    happened and on how many days. Like any request to a web server, it arrives with an IP address. We do
+    not store that address. Our host, Cloudflare, works out from it which country the request came from, and
+    we keep that country as a two-letter code (for example "TR") with the row, to know where the app is
+    used. It says nothing more precise than the country.</p>
     <p><strong>How to turn it off.</strong> Open the app's <code>config.toml</code> and set
     <code>usage_ping = false</code>. Once the app has read that setting, no more pings are sent. If you want
     the row we already hold deleted, email us, as described in section 11.</p>
