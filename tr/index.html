@@ -396,6 +396,8 @@
               <span data-i18n="dl.linux.run">Çalıştırılabilir yapın ve çalıştırın:</span>
               <pre><code>chmod +x bubbleTranslate-linux-x86_64
 ./bubbleTranslate-linux-x86_64</code></pre>
+              <details class="install-details">
+              <summary data-i18n="dl.linux.ocr.sum">Ekrandaki yazıyı okuma (Ctrl+Shift+E)</summary>
               <span data-i18n="dl.linux.ocr"><b>Ctrl+Shift+E</b> ekrandaki yazıyı kurulum gerektirmeden okur: dahili okuyucu ilk kullanımda indirilir (12&nbsp;MB). Ancak yalnızca aksansız harfleri tanır — ç, ğ, ş, é, ü düz c, g, s, e, u olarak okunur; Kiril, Arapça ya da Çince hiç okunmaz, ve harfi eksik bir kelime başka bir kelime gibi çevrilebilir. <b>Düzgün okuması için Tesseract'ı kurun</b>; okuduğunuz her dil için bir dil paketiyle (tur, eng, deu, spa…). Kurulduğunda okumayı o yapar:</span>
               <pre><code># Ubuntu / Debian
 sudo apt install tesseract-ocr tesseract-ocr-tur
@@ -404,6 +406,7 @@ sudo dnf install tesseract tesseract-langpack-tur
 # Arch
 sudo pacman -S tesseract tesseract-data-tur</code></pre>
               <span data-i18n="dl.linux.note2">Bir kez kurulur, her güncellemede yerinde kalır; seçili metni çevirmek için hiçbiri gerekmez. X11, Hyprland, sway, GNOME ve KDE'de çalışır — GNOME ve KDE'de masaüstünüz bir kez bubbleTranslate'in ekran görüntüsü almasına izin verip vermeyeceğinizi sorabilir.</span>
+              </details>
             </div>
           </div>
           <div class="dl-card" data-os="windows">

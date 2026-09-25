@@ -163,11 +163,11 @@ section { padding: 72px 0; }
 .dl-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; align-items: stretch; }
 /* The three cards hold different amounts of text -- macOS carries a code
    block and two notes, Windows carries one line -- so they are made to fill
-   the row's height rather than each taking its own, and the install note is
-   pushed to the bottom so the three frames line up instead of ending
-   wherever their text happens to stop. */
+   the row's height, so the three frames line up. The install note follows
+   the button directly: pushing it to the bottom left a tall empty gap under
+   the button of every card shorter than the longest one. */
 .dl-card { text-align: center; background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 34px 22px; display: flex; flex-direction: column; min-width: 0; }
-.dl-card .install-note { margin-top: auto; }
+.dl-card .install-note { margin-top: 16px; }
 /* The three OS logos arrive with different aspect ratios and different
    amounts of built-in padding, so each is normalised to its own 160x160
    transparent canvas before it gets here. `contain` then draws them at one
@@ -661,3 +661,15 @@ img, video { max-width: 100%; height: auto; }
 .after-download li { margin: 0 0 7px; }
 .after-download li:last-child { margin-bottom: 0; }
 .after-download b { color: var(--text); font-weight: 600; }
+
+/* The optional half of an install note -- Linux's screen reader and its
+   Tesseract commands -- folded away, so it stops setting the height of all
+   three cards. Undoes the FAQ's card look that bare `details` gets. */
+.install-note details.install-details {
+  background: none; border: 0; border-radius: 0; padding: 0; margin-top: 12px;
+}
+.install-note details.install-details summary {
+  padding: 4px 0; font-weight: 600; color: var(--brand); font-size: .85rem;
+}
+.install-note details.install-details summary::after { font-size: 1.1rem; }
+.install-note details.install-details[open] summary { margin-bottom: 6px; }

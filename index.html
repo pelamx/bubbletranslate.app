@@ -396,6 +396,8 @@
               <span data-i18n="dl.linux.run">Make it executable and run it:</span>
               <pre><code>chmod +x bubbleTranslate-linux-x86_64
 ./bubbleTranslate-linux-x86_64</code></pre>
+              <details class="install-details">
+              <summary data-i18n="dl.linux.ocr.sum">Reading text off the screen (Ctrl+Shift+E)</summary>
               <span data-i18n="dl.linux.ocr"><b>Ctrl+Shift+E</b> reads text off the screen out of the box: a built-in reader is downloaded the first time you use it (12&nbsp;MB). It only knows letters without accents, though — ç, ğ, ş, é, ü come out as plain c, g, s, e, u, and Cyrillic, Arabic or Chinese is not read at all, so a word missing its letters can translate as a different one. <b>For it to read properly, install Tesseract</b>, with a pack for each language you read <i>from</i> (eng, tur, deu, spa…); once it is there, it does the reading instead:</span>
               <pre><code># Ubuntu / Debian
 sudo apt install tesseract-ocr tesseract-ocr-eng
@@ -404,6 +406,7 @@ sudo dnf install tesseract tesseract-langpack-eng
 # Arch
 sudo pacman -S tesseract tesseract-data-eng</code></pre>
               <span data-i18n="dl.linux.note2">Installed once, it stays through every update, and translating selected text needs none of it. Works on X11, Hyprland, sway, GNOME and KDE — on GNOME and KDE your desktop may ask once whether bubbleTranslate may take screenshots.</span>
+              </details>
             </div>
           </div>
           <div class="dl-card" data-os="windows">
