@@ -30,7 +30,7 @@ is in the repository is what is served.
   language switcher rewrites the page from that table, so a key present in the
   HTML but missing from the table leaves the English text behind when someone
   switches language.
-- Downloads come from `bubbleTranslate/downloads`. On load, `script.js` reads
+- Downloads come from `pelamx/downloads`. On load, `script.js` reads
   `latest.json` there — the same file installed copies check for updates — and
   points each button at its platform's exact file, with the version shown
   beside it. The platforms are released separately, so this is what keeps the

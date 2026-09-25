@@ -740,9 +740,9 @@ if (langSwitch) {
 // machine, so there is one file for both; `file: null` is what puts an OS back
 // to "coming soon".
 const DOWNLOADS = {
-  mac:     { file: 'https://github.com/bubbleTranslate/downloads/releases/latest',       label: 'macOS' },
-  linux:   { file: 'https://github.com/bubbleTranslate/downloads/releases/latest', label: 'Linux' },
-  windows: { file: 'https://github.com/bubbleTranslate/downloads/releases/latest',       label: 'Windows' }
+  mac:     { file: 'https://github.com/pelamx/downloads/releases/latest',       label: 'macOS' },
+  linux:   { file: 'https://github.com/pelamx/downloads/releases/latest', label: 'Linux' },
+  windows: { file: 'https://github.com/pelamx/downloads/releases/latest',       label: 'Windows' }
 };
 
 // Which version each download is, read from the same latest.json installed
@@ -755,14 +755,14 @@ const DOWNLOADS = {
 // go out one at a time, the newest release is usually the one release that
 // does not carry your platform's file, so the fallback would answer 404
 // exactly when it was needed. A page listing every download cannot.
-const MANIFEST_URL = 'https://raw.githubusercontent.com/bubbleTranslate/downloads/main/latest.json';
+const MANIFEST_URL = 'https://raw.githubusercontent.com/pelamx/downloads/main/latest.json';
 const MANIFEST_KEY = { mac: 'macos', linux: 'linux', windows: 'windows' };
 
 function applyManifest(manifest) {
   Object.keys(DOWNLOADS).forEach(key => {
     const entry = manifest && manifest[MANIFEST_KEY[key]];
     if (!entry || !/^\d+\.\d+\.\d+$/.test(entry.version || '')) return;
-    if (!/^https:\/\/github\.com\/bubbleTranslate\/downloads\//.test(entry.url || '')) return;
+    if (!/^https:\/\/github\.com\/pelamx\/downloads\//.test(entry.url || '')) return;
     DOWNLOADS[key].file = entry.url;
     DOWNLOADS[key].version = entry.version;
     const card = document.querySelector('.dl-card[data-os="' + key + '"]');
