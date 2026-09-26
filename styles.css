@@ -56,6 +56,9 @@ header.site {
 .nav-links a:hover { color: var(--text); }
 .nav-cta { display: flex; gap: 10px; align-items: center; }
 .menu-btn { display: none; background: none; border: 0; color: var(--text); font-size: 1.6rem; cursor: pointer; }
+/* A link that only the collapsed menu shows. The full row has no room left for
+   it in Spanish, and the footer carries it there instead. */
+.nav-links .nav-mobile-only { display: none; }
 
 /* Hero */
 .hero { padding: 84px 0 60px; }
@@ -227,6 +230,7 @@ footer.site { border-top: 1px solid var(--border); padding: 40px 0; color: var(-
     font-size: 1rem;
   }
   .nav-links.open a:hover { background: rgba(255, 255, 255, .04); color: var(--text); }
+  .nav-links.open .nav-mobile-only { display: block; }
 }
 
 @media (max-width: 860px) {
