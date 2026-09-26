@@ -673,3 +673,7 @@ img, video { max-width: 100%; height: auto; }
 }
 .install-note details.install-details summary::after { font-size: 1.1rem; }
 .install-note details.install-details[open] summary { margin-bottom: 6px; }
+
+/* The blog borrows the legal pages' heading, but its posts are cards rendered
+   by the embed, which want more width than prose does. */
+.legal.blog { max-width: 1000px; }
