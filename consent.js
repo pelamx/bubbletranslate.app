@@ -130,14 +130,63 @@
     }
   });
 
-  var choice = stored();
-  if (choice !== 'granted' && choice !== 'denied') show();
+  // -- Google's own message, where it is the one that asks --------------------
+  // AdSense shows Google's European regulations message (a TCF consent
+  // platform) to visitors in the EEA, the UK and Switzerland. There, asking a
+  // second time would put two banners on the page, so this one stays hidden
+  // and takes its answer from Google's: consent to store information on the
+  // device (TCF purpose 1) and for Google as a vendor (id 755). Everywhere
+  // else the TCF API says GDPR does not apply, and this banner asks.
+  var GOOGLE_VENDOR = 755;
+  var googleAsks = false;
 
-  // Any element with data-consent-open reopens the banner (footer link).
+  function fromTcf(tc) {
+    if (!tc || !tc.gdprApplies) return;
+    if (tc.eventStatus !== 'tcloaded' && tc.eventStatus !== 'useractioncomplete') return;
+    var ok = tc.purpose && tc.purpose.consents && tc.purpose.consents[1] &&
+             tc.vendor && tc.vendor.consents && tc.vendor.consents[GOOGLE_VENDOR];
+    set(ok ? 'granted' : 'denied');
+  }
+
+  function decide() {
+    var choice = stored();
+    if (googleAsks || choice === 'granted' || choice === 'denied') return;
+    show();
+  }
+
+  // gtag.js and AdSense load the TCF API asynchronously, so give it a moment
+  // to appear before deciding who asks. Without it -- blocked, or slow -- this
+  // banner asks, which is the safe side.
+  var waited = 0;
+  (function waitForTcf() {
+    if (typeof window.__tcfapi === 'function') {
+      window.__tcfapi('addEventListener', 2, function (tc, ok) {
+        if (!ok || !tc) return decide();
+        if (tc.gdprApplies) {
+          googleAsks = true;
+          var mine = document.getElementById('consentBanner');
+          if (mine) mine.remove();
+          fromTcf(tc);
+        } else {
+          decide();
+        }
+      });
+      return;
+    }
+    if ((waited += 100) >= 2000) return decide();
+    setTimeout(waitForTcf, 100);
+  })();
+
+  // Any element with data-consent-open reopens the banner (footer link) --
+  // Google's, where Google's is the one that asked.
   document.addEventListener('click', function (e) {
     var a = e.target.closest && e.target.closest('[data-consent-open]');
     if (!a) return;
     e.preventDefault();
-    show();
+    if (googleAsks && window.googlefc && typeof window.googlefc.showRevocationMessage === 'function') {
+      window.googlefc.showRevocationMessage();
+    } else {
+      show();
+    }
   });
 })();
