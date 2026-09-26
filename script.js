@@ -53,6 +53,7 @@ const I18N = {
     'nav.privacy': 'Privacy',
     'nav.refunds': 'Refunds',
     'nav.contact': 'Contact',
+    'nav.cookies': 'Cookie settings',
     'nav.cta': 'Get the app',
 
     'hero.pill': '🫧 Desktop app for macOS, Windows &amp; Linux · 10 free translations a day',
@@ -275,6 +276,7 @@ const I18N = {
     'nav.privacy': 'Gizlilik',
     'nav.refunds': 'İadeler',
     'nav.contact': 'İletişim',
+    'nav.cookies': 'Çerez ayarları',
     'nav.cta': 'Uygulamayı al',
 
     'hero.pill': '🫧 macOS, Windows ve Linux için masaüstü uygulaması · günde 10 ücretsiz çeviri',
@@ -497,6 +499,7 @@ const I18N = {
     'nav.privacy': 'Privacidad',
     'nav.refunds': 'Reembolsos',
     'nav.contact': 'Contacto',
+    'nav.cookies': 'Configuración de cookies',
     'nav.cta': 'Descargar la app',
 
     'hero.pill': '🫧 App de escritorio para macOS, Windows y Linux · 10 traducciones gratis al día',
