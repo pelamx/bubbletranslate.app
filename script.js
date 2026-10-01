@@ -54,6 +54,7 @@ const I18N = {
     'nav.refunds': 'Refunds',
     'nav.contact': 'Contact',
     'nav.cookies': 'Cookie settings',
+    'foot.rights': 'All rights reserved.',
     'nav.cta': 'Get the app',
 
     'hero.pill': '🫧 Desktop app for macOS, Windows &amp; Linux · 10 free translations a day',
@@ -211,7 +212,7 @@ const I18N = {
     'win.install.4': 'Find the globe. Windows 11 hides every new tray icon behind the <b>^</b> arrow next to the clock — drag it out onto the taskbar to keep it there. That icon reopens the window, and it is how you quit.',
     'win.install.5': 'Done. Hold <b>Shift</b> and select text anywhere, and the bubble appears at your cursor.',
     'win.install.tip': 'Nothing appears in one particular app? If that window is running as administrator, Windows hides it from every program that isn\'t — including this one — and there is no permission that changes it. Everywhere else, check that you are holding the key: Shift by default, and the window\'s Behaviour section is where you change it.',
-    'dl.foot': 'Source, build instructions, and full docs live on <a href="https://github.com/pelamx/bubbleTranslate" style="color:var(--brand);" target="_blank" rel="noopener">GitHub</a>.',
+    'dl.foot': 'Source, build instructions, and full docs live on <a href="https://github.com/pelamx/bubbleTranslate" style="color:var(--brand);" target="_blank" rel="noopener">GitHub</a>. All rights reserved — the code is public for transparency, not for reuse.',
 
     'faq.head.h2': 'Frequently asked questions',
     'faq.head.p': 'Everything worth knowing before you install.',
@@ -277,6 +278,7 @@ const I18N = {
     'nav.refunds': 'İadeler',
     'nav.contact': 'İletişim',
     'nav.cookies': 'Çerez ayarları',
+    'foot.rights': 'Tüm hakları saklıdır.',
     'nav.cta': 'Uygulamayı al',
 
     'hero.pill': '🫧 macOS, Windows ve Linux için masaüstü uygulaması · günde 10 ücretsiz çeviri',
@@ -434,7 +436,7 @@ const I18N = {
     'win.install.4': 'Küreyi bulun. Windows 11 her yeni bildirim simgesini saatin yanındaki <b>^</b> okunun arkasına gizler — görev çubuğuna sürükleyip orada tutun. Pencereyi o simge geri açar, çıkış da oradan yapılır.',
     'win.install.5': 'Bitti. Herhangi bir yerde <b>Shift</b>\'e basılı tutup metni seçin; baloncuk imlecinizin yanında belirir.',
     'win.install.tip': 'Belirli bir uygulamada hiçbir şey çıkmıyor mu? O pencere yönetici olarak çalışıyorsa Windows onu, yönetici olmayan her programdan — bu uygulama dahil — gizler ve bunu değiştiren bir izin yoktur. Diğer yerlerde tuşa basılı tuttuğunuzdan emin olun: varsayılan Shift\'tir, pencerenin Behaviour bölümünden değiştirilir.',
-    'dl.foot': 'Kaynak kod, derleme talimatları ve tüm belgeler <a href="https://github.com/pelamx/bubbleTranslate" style="color:var(--brand);" target="_blank" rel="noopener">GitHub</a>\'da.',
+    'dl.foot': 'Kaynak kod, derleme talimatları ve tüm belgeler <a href="https://github.com/pelamx/bubbleTranslate" style="color:var(--brand);" target="_blank" rel="noopener">GitHub</a>\'da. Tüm hakları saklıdır; kod yalnızca şeffaflık için açık.',
 
     'faq.head.h2': 'Sıkça sorulan sorular',
     'faq.head.p': 'Kurmadan önce bilmeye değer her şey.',
@@ -500,6 +502,7 @@ const I18N = {
     'nav.refunds': 'Reembolsos',
     'nav.contact': 'Contacto',
     'nav.cookies': 'Configuración de cookies',
+    'foot.rights': 'Todos los derechos reservados.',
     'nav.cta': 'Descargar la app',
 
     'hero.pill': '🫧 App de escritorio para macOS, Windows y Linux · 10 traducciones gratis al día',
@@ -657,7 +660,7 @@ const I18N = {
     'win.install.4': 'Busca el globo. Windows 11 esconde cada icono nuevo de la bandeja tras la flecha <b>^</b> junto al reloj — arrástralo a la barra de tareas para tenerlo a la vista. Ese icono vuelve a abrir la ventana, y es como se sale de la app.',
     'win.install.5': 'Listo. Mantén <b>Shift</b> y selecciona texto en cualquier parte, y la burbuja aparece junto al cursor.',
     'win.install.tip': '¿No aparece nada en una app concreta? Si esa ventana se ejecuta como administrador, Windows la oculta a todo programa que no lo sea — incluido este — y no hay permiso que lo cambie. En el resto, comprueba que mantienes la tecla: Shift por defecto, y se cambia en la sección Behaviour de la ventana.',
-    'dl.foot': 'El código fuente, las instrucciones de compilación y toda la documentación están en <a href="https://github.com/pelamx/bubbleTranslate" style="color:var(--brand);" target="_blank" rel="noopener">GitHub</a>.',
+    'dl.foot': 'El código fuente, las instrucciones de compilación y toda la documentación están en <a href="https://github.com/pelamx/bubbleTranslate" style="color:var(--brand);" target="_blank" rel="noopener">GitHub</a>. Todos los derechos reservados; el código es público solo por transparencia.',
 
     'faq.head.h2': 'Preguntas frecuentes',
     'faq.head.p': 'Todo lo que conviene saber antes de instalar.',
