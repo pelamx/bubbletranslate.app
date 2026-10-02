@@ -978,3 +978,52 @@ if (langSwitch) {
     if (hero && os === key) hero.addEventListener('click', show);
   });
 })();
+
+// Where this visitor came from, sent with each press of a download button so
+// the licence service can tell which links bring people who actually install.
+// The download itself still goes straight to GitHub; the report is a beacon
+// that nothing waits on, and nothing is stored in the browser to make it.
+//
+// The source is, in order: the `utm_source` or `ref` of this page's address;
+// the same on the page before it on this site, for someone who landed on the
+// pricing page and came here to download; the site that sent them; 'direct'.
+function trafficSource() {
+  const tagOf = (href) => {
+    try {
+      const q = new URL(href).searchParams;
+      return q.get('utm_source') || q.get('ref') || '';
+    } catch (e) { return ''; }
+  };
+  const here = tagOf(location.href);
+  if (here) return here;
+  let from = null;
+  try { from = document.referrer ? new URL(document.referrer) : null; } catch (e) {}
+  if (!from) return 'direct';
+  if (from.host === location.host) return tagOf(from.href) || 'direct';
+  return from.hostname;
+}
+
+const DOWNLOAD_BEACON = 'https://api.bubbletranslate.app/v1/download';
+
+function reportDownload(key) {
+  const platform = MANIFEST_KEY[key];
+  if (!platform || !navigator.sendBeacon) return;
+  try {
+    navigator.sendBeacon(DOWNLOAD_BEACON, JSON.stringify({ os: platform, src: trafficSource() }));
+  } catch (e) {}
+}
+
+(function countDownloads() {
+  Object.keys(DOWNLOADS).forEach(key => {
+    const btn = document.querySelector('.dl-card[data-os="' + key + '"] a.btn');
+    if (btn) btn.addEventListener('click', () => reportDownload(key));
+  });
+  // The hero button is a download only when it was pointed at this visitor's
+  // file; on a system with no build it scrolls to the cards instead.
+  const hero = document.getElementById('heroDownload');
+  if (hero) {
+    hero.addEventListener('click', () => {
+      if (/^https:\/\/github\.com\//.test(hero.getAttribute('href') || '')) reportDownload(os);
+    });
+  }
+})();
