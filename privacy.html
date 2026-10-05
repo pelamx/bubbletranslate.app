@@ -79,7 +79,7 @@
   <main class="legal">
     <div class="legal-head">
       <h1>Privacy Policy</h1>
-      <p class="updated">Last updated: 2 October 2026</p>
+      <p class="updated">Last updated: 6 October 2026</p>
     </div>
 
 
@@ -193,6 +193,9 @@
     running, to <b>api.bubbletranslate.app</b>. On the free plan, one more is sent on a day the ten free
     translations run out, the first time they do; it carries the same values as below and says only that
     the allowance ran out.</p>
+    <p>Between those, while the app is open, it sends a much smaller "still open" message every five
+    minutes. It contains the installation identifier described below and nothing else — not even the
+    operating system or version. We use it only to count how many copies are open at the moment.</p>
     <p><strong>What it contains</strong>, and nothing else:</p>
     <ul>
       <li><strong>An installation identifier.</strong> It is made like the device identifier in section 4,
@@ -209,7 +212,7 @@
     </ul>
     <p>It never contains the text you translate, your languages, your settings, your licence key or your
     email address. We store one row per installation: the identifier, operating system, version and plan,
-    when the installation was first and last seen, and — if the allowance ever ran out — when that first
+    when the installation was first and last seen, when it last said it was still open, and — if the allowance ever ran out — when that first
     happened and on how many days. Like any request to a web server, it arrives with an IP address. We do
     not store that address. Our host, Cloudflare, works out from it which country the request came from, and
     we keep that country as a two-letter code (for example "TR") with the row, to know where the app is
