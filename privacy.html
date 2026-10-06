@@ -85,11 +85,12 @@
 
     <div class="summary">
       <p><strong>The short version.</strong> bubbleTranslate has no accounts and no sign-up. The text you
-      select is sent from your computer straight to the translation service you have chosen, and never
-      passes through our servers. Our licence service checks that a paid licence is valid, and receives one
+      select is sent from your computer straight to the translation service you have chosen. The one
+      exception is a backup: when Google and MyMemory have both failed, the text passes through our server
+      on its way to DeepL, and is not kept. Our licence service checks that a paid licence is valid, and receives one
       anonymous ping a day that tells us an installation of the app is in use, so we know how many people
-      are using it. You can turn that ping off. The service is never on the path of a translation, and it
-      never sees a word you translate.</p>
+      are using it. You can turn that ping off. Apart from that DeepL backup, the service is never on the path
+      of a translation.</p>
       <p>This website, unlike the app, shows ads from Google AdSense, which may use cookies. Section 7a
       explains what that involves and how to switch personalised ads off.</p>
       <p>This summary is here to be useful, not to replace what follows.</p>
@@ -108,6 +109,12 @@
     <p>When you select text and the bubble appears, the app sends that text <strong>directly from your
     computer</strong> to whichever translation provider is next in your configured chain. It does not
     travel through any server of ours, and we neither receive nor store it.</p>
+    <p>There is one exception. If Google and MyMemory have both failed for a selection and you have not
+    entered a DeepL key of your own, the app sends that text to our server, which passes it to DeepL using
+    our DeepL key and returns the translation. The text is not stored or logged; all our server keeps is
+    how many such translations, and how many characters, each anonymous installation used that day, for
+    up to a week, so the backup can be shared fairly. If you have your own DeepL key, the text goes
+    straight to DeepL as before.</p>
     <p>The providers the app can use are Google Translate, MyMemory and DeepL. Which of them is used, and
     in what order, is a setting you control in the app. Each provider handles the text under its own
     privacy policy, and we would encourage you to read the one that applies to the provider you rely on:</p>
