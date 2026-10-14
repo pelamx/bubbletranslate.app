@@ -399,18 +399,16 @@
             <p data-i18n="dl.mac.desc">Universal · Apple Silicon e Intel · macOS 11 o posterior · 15&nbsp;MB</p>
             <a class="btn btn-primary" href="https://github.com/pelamx/downloads/releases/latest" download data-i18n="dl.mac.btn">Descargar DMG</a>
             <div class="after-download" id="mac-after" hidden>
-              <p class="after-h" data-i18n="dl.mac.after.h">Descargado. macOS se negará a abrirlo: así se pasa.</p>
+              <p class="after-h" data-i18n="dl.mac.after.h">Descargado. Dos pasos y ya funciona.</p>
               <ol>
                 <li data-i18n="dl.mac.after.1">Abre el DMG y arrastra <b>bubbleTranslate</b> a <b>Aplicaciones</b>.</li>
-                <li data-i18n="dl.mac.after.2">Haz doble clic. macOS dirá que <b>“no se puede abrir”</b>. Es lo normal en todos los Mac: la app no está notarizada por Apple. Abre <b>Ajustes del Sistema › Privacidad y seguridad</b>, baja hasta Seguridad y pulsa <b>Abrir de todos modos</b>. Una sola vez.</li>
+                <li data-i18n="dl.mac.after.2">Ábrela desde Aplicaciones. macOS pregunta una vez si quieres abrir una app descargada de internet: pulsa <b>Abrir</b>. La app está notarizada por Apple, así que esa es la única pregunta.</li>
                 <li data-i18n="dl.mac.after.3">Después activa <b>bubbleTranslate</b> en <b>Privacidad y seguridad › Accesibilidad</b> y vuelve a abrirla. Así lee lo que seleccionas.</li>
               </ol>
             </div>
             <div class="install-note">
               <span data-i18n="dl.mac.run">Abre el DMG y arrastra la app a Aplicaciones.</span>
-              <span data-i18n="dl.mac.block">macOS <b>rechazará</b> el primer arranque y dirá que no pudo verificar la app — en todos los Mac, siempre, porque Apple no la ha notarizado. Abre <b>System Settings › Privacy &amp; Security</b>, baja hasta Security y pulsa <b>Open Anyway</b>. Solo una vez.</span>
-              <span data-i18n="dl.mac.cmdlead">O, si prefieres el Terminal, una línea en lugar de esos clics:</span>
-              <pre><code>xattr -dr com.apple.quarantine /Applications/bubbleTranslate.app</code></pre>
+              <span data-i18n="dl.mac.block">Firmada y notarizada por Apple, así que se abre como cualquier otra app. macOS pregunta una vez si quieres abrir algo descargado de internet: pulsa <b>Abrir</b>. No hay nada que permitir en Privacidad y seguridad.</span>
               <span data-i18n="dl.mac.ocr"><b>⌘⇧E</b> lee el texto de la pantalla: una captura, una página escaneada, un fotograma. La primera pulsación abre <b>Grabación de pantalla</b> en Ajustes del Sistema para que actives bubbleTranslate; cierra y vuelve a abrir la app y el atajo ya funciona.</span>
               <a class="install-more" href="#mac-install" data-i18n="dl.mac.more">Todos los pasos, con los dos permisos →</a>
             </div>
@@ -463,13 +461,13 @@ sudo pacman -S tesseract tesseract-data-spa</code></pre>
           <h3 data-i18n="mac.install.h3">Instalación en macOS — el primer arranque</h3>
           <ol>
             <li data-i18n="mac.install.1">Abre el DMG y arrastra <b>bubbleTranslate.app</b> a <b>Aplicaciones</b>. Instálala ahí, no la ejecutes desde el DMG o Descargas.</li>
-            <li data-i18n="mac.install.2">Ábrela una vez. macOS dice que <b>"no pudo verificar"</b> la app — es Gatekeeper reaccionando a una app que Apple no ha notarizado, no algo que la app haga. Descártalo, abre <b>Ajustes del Sistema › Privacidad y seguridad</b>, baja hasta Seguridad y pulsa <b>Abrir de todos modos</b>.</li>
-            <li data-i18n="mac.install.3">Concede <b>Accesibilidad</b>: <b>Ajustes del Sistema › Privacidad y seguridad › Accesibilidad</b>, y activa <b>bubbleTranslate</b>. Así lee lo que seleccionas — un permiso <i>distinto</i> de Abrir de todos modos.</li>
+            <li data-i18n="mac.install.2">Ábrela desde Aplicaciones. macOS pregunta una vez si quieres abrir una app descargada de internet: pulsa <b>Abrir</b>. bubbleTranslate está firmada y notarizada por Apple, así que no hay ningún aviso que quitar ni nada que permitir en Privacidad y seguridad.</li>
+            <li data-i18n="mac.install.3">Concede <b>Accesibilidad</b>: <b>Ajustes del Sistema › Privacidad y seguridad › Accesibilidad</b>, y activa <b>bubbleTranslate</b>. Así lee lo que seleccionas.</li>
             <li data-i18n="mac.install.4"><b>Cierra y vuelve a abrir.</b> El permiso de Accesibilidad solo surte efecto tras un arranque nuevo; cierra bubbleTranslate (el globo en la barra de menú → Quit) y ábrela de nuevo. Hasta que lo hagas, la ventana dice <b>"Not watching for selections."</b></li>
             <li data-i18n="mac.install.5">Listo. Mantén <b>Shift</b> y selecciona texto en cualquier parte, y la burbuja aparece junto al cursor.</li>
             <li data-i18n="mac.install.6"><b>Leer texto de una imagen — solo si lo quieres.</b> <b>⌘⇧E</b> lee una zona de la pantalla: una foto, un fotograma, una página escaneada. La primera vez que lo pulsas, macOS abre <b>Ajustes del Sistema › Privacidad y seguridad › Grabación de pantalla</b> con bubbleTranslate ya en la lista: actívala y luego cierra y vuelve a abrir la app. Igual que Accesibilidad, este permiso solo surte efecto en un arranque nuevo, y hasta entonces el atajo no hace nada.</li>
           </ol>
-          <p class="os-install-tip" data-i18n="mac.install.tip">¿Sigue en "Not watching" tras reabrir? Quita bubbleTranslate de la lista de Accesibilidad (selecciónala y pulsa −), ejecuta <code>xattr -dr com.apple.quarantine /Applications/bubbleTranslate.app</code>, vuelve a añadirla, actívala y reiníciala. Una entrada residual de una versión anterior puede bloquear la nueva sin avisar.</p>
+          <p class="os-install-tip" data-i18n="mac.install.tip">¿Sigue en "Not watching" tras reabrir, o actualizas desde la 0.4.8 o anterior? Quita bubbleTranslate de la lista de Accesibilidad (selecciónala y pulsa −), vuelve a añadirla, actívala y reiníciala. Desde la 0.4.9 la app se firma de otra manera, y una entrada de una versión anterior puede parecer activada mientras bloquea la nueva sin avisar.</p>
         </div>
         <div class="os-install" id="windows-install">
           <h3 data-i18n="win.install.h3">Instalación en Windows — el primer arranque</h3>

@@ -159,14 +159,13 @@ section { padding: 72px 0; }
 /* Download */
 .download { background: linear-gradient(180deg, transparent, rgba(124,92,255,.06)); }
 /* minmax(0, 1fr), not 1fr: a bare `1fr` track is minmax(auto, 1fr), and that
-   `auto` floor is set by the widest thing that cannot wrap. The macOS card
-   carries `xattr -dr com.apple.quarantine /Applications/bubbleTranslate.app`
-   in a <pre>, which does not wrap, so it dragged its own column wide and left
-   Windows -- which has no code block at all -- squeezed into what was left.
+   `auto` floor is set by the widest thing that cannot wrap. The Linux card
+   carries its commands in a <pre>, which does not wrap, so it would drag its
+   own column wide and leave the others squeezed into what was left.
    Flooring the track at 0 lets the pre's own overflow-x do that job. */
 .dl-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; align-items: stretch; }
-/* The three cards hold different amounts of text -- macOS carries a code
-   block and two notes, Windows carries one line -- so they are made to fill
+/* The three cards hold different amounts of text -- Linux carries code
+   blocks, Windows one line -- so they are made to fill
    the row's height, so the three frames line up. The install note follows
    the button directly: pushing it to the bottom left a tall empty gap under
    the button of every card shorter than the longest one. */

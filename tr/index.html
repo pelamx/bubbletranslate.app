@@ -399,18 +399,16 @@
             <p data-i18n="dl.mac.desc">Universal · Apple Silicon ve Intel · macOS 11 veya üzeri · 15&nbsp;MB</p>
             <a class="btn btn-primary" href="https://github.com/pelamx/downloads/releases/latest" download data-i18n="dl.mac.btn">DMG indir</a>
             <div class="after-download" id="mac-after" hidden>
-              <p class="after-h" data-i18n="dl.mac.after.h">İndirildi. macOS açmayı reddedecek — geçiş yolu şu.</p>
+              <p class="after-h" data-i18n="dl.mac.after.h">İndirildi. İki adımda çalışıyor.</p>
               <ol>
                 <li data-i18n="dl.mac.after.1">DMG’yi açın ve <b>bubbleTranslate</b>’i <b>Applications</b> klasörüne sürükleyin.</li>
-                <li data-i18n="dl.mac.after.2">Çift tıklayın. macOS <b>“açılamıyor”</b> diyecek. Bu her Mac’te böyle: uygulama Apple tarafından notarize edilmedi. <b>Sistem Ayarları › Gizlilik ve Güvenlik</b>’i açın, aşağıdaki Güvenlik bölümüne inin ve <b>Yine de Aç</b>’a tıklayın. Bir kez, sadece bir kez.</li>
+                <li data-i18n="dl.mac.after.2">Applications’tan açın. macOS bir kez, internetten indirilen bir uygulamayı açmak isteyip istemediğinizi sorar — <b>Aç</b>’a tıklayın. Uygulama Apple tarafından notarize edildiği için tek soru bu.</li>
                 <li data-i18n="dl.mac.after.3">Sonra <b>Gizlilik ve Güvenlik › Erişilebilirlik</b> altında <b>bubbleTranslate</b>’i açın ve uygulamayı yeniden başlatın. Seçtiğinizi böyle okuyor.</li>
               </ol>
             </div>
             <div class="install-note">
               <span data-i18n="dl.mac.run">DMG'yi açın ve uygulamayı Applications klasörüne sürükleyin.</span>
-              <span data-i18n="dl.mac.block">macOS ilk açılışı <b>kesinlikle</b> reddeder ve uygulamayı "doğrulayamadı" der — her Mac'te, her seferinde, çünkü Apple onu notarize etmedi. <b>System Settings › Privacy &amp; Security</b>'yi aç, Security'ye kadar in ve <b>Open Anyway</b>'e tıkla. Yalnızca bir kez.</span>
-              <span data-i18n="dl.mac.cmdlead">Terminal'i tercih ediyorsan, o tıklamalar yerine tek satır:</span>
-              <pre><code>xattr -dr com.apple.quarantine /Applications/bubbleTranslate.app</code></pre>
+              <span data-i18n="dl.mac.block">Apple tarafından imzalanıp notarize edildi, yani her uygulama gibi açılır. macOS bir kez, internetten indirilen bir uygulamayı açmak isteyip istemediğinizi sorar — <b>Aç</b>’a tıklayın. Gizlilik ve Güvenlik’te onaylanacak bir şey yok.</span>
               <span data-i18n="dl.mac.ocr"><b>⌘⇧E</b> ekrandaki metni okur — ekran görüntüsü, taranmış sayfa, video karesi. İlk basışta Sistem Ayarları'nda <b>Ekran Kaydı</b> açılır, bubbleTranslate'i orada etkinleştirin; sonra uygulamadan çıkıp yeniden açın, kısayol o andan itibaren çalışır.</span>
               <a class="install-more" href="#mac-install" data-i18n="dl.mac.more">Bütün adımlar, iki izin dahil →</a>
             </div>
@@ -463,13 +461,13 @@ sudo pacman -S tesseract tesseract-data-tur</code></pre>
           <h3 data-i18n="mac.install.h3">macOS'ta kurulum — ilk çalıştırma</h3>
           <ol>
             <li data-i18n="mac.install.1">DMG'yi açın ve <b>bubbleTranslate.app</b>'i <b>Applications</b> klasörüne sürükleyin. Uygulamayı oradan çalıştırın — DMG'den veya İndirilenler'den değil.</li>
-            <li data-i18n="mac.install.2">Bir kez açın. macOS uygulamayı <b>"doğrulayamadı"</b> der — bu, Apple tarafından notarize edilmemiş bir uygulamaya Gatekeeper'ın tepkisidir, uygulamanın yaptığı bir şey değil. Kapatın, <b>Sistem Ayarları › Gizlilik ve Güvenlik</b>'i açın, Güvenlik bölümüne inin ve <b>Yine de Aç</b>'a tıklayın.</li>
-            <li data-i18n="mac.install.3"><b>Erişilebilirlik</b> izni verin: <b>Sistem Ayarları › Gizlilik ve Güvenlik › Erişilebilirlik</b> ve <b>bubbleTranslate</b>'i açın. Uygulama seçtiğinizi böyle okur — Yine de Aç'tan <i>farklı</i> bir izindir.</li>
+            <li data-i18n="mac.install.2">Applications’tan açın. macOS bir kez, internetten indirilen bir uygulamayı açmak isteyip istemediğinizi sorar — <b>Aç</b>’a tıklayın. bubbleTranslate Apple tarafından imzalanıp notarize edildiği için kaldırılacak bir uyarı ya da Gizlilik ve Güvenlik’te onaylanacak bir şey yok.</li>
+            <li data-i18n="mac.install.3"><b>Erişilebilirlik</b> izni verin: <b>Sistem Ayarları › Gizlilik ve Güvenlik › Erişilebilirlik</b> ve <b>bubbleTranslate</b>’i açın. Uygulama seçtiğinizi böyle okur.</li>
             <li data-i18n="mac.install.4"><b>Çıkın ve yeniden açın.</b> Erişilebilirlik izni yalnızca temiz bir başlangıçta etkinleşir; bu yüzden bubbleTranslate'ten çıkın (menü çubuğundaki küre → Quit) ve tekrar açın. Bunu yapana kadar pencere <b>"Not watching for selections"</b> (seçimler izlenmiyor) yazar.</li>
             <li data-i18n="mac.install.5">Bitti. Herhangi bir yerde <b>Shift</b>'e basılı tutup metni seçin; baloncuk imlecinizin yanında belirir.</li>
             <li data-i18n="mac.install.6"><b>Resimdeki metni okumak — isterseniz.</b> <b>⌘⇧E</b> ekrandan bir alanı okur: bir fotoğraf, video karesi, taranmış sayfa. İlk bastığınızda macOS <b>Sistem Ayarları › Gizlilik ve Güvenlik › Ekran Kaydı</b>'nı, bubbleTranslate listede hazır şekilde açar — anahtarı açın, sonra uygulamadan çıkıp yeniden açın. Erişilebilirlik gibi bu izin de yalnızca temiz bir başlangıçta etkinleşir; açılmadan önce kısayol hiçbir şey yapmaz.</li>
           </ol>
-          <p class="os-install-tip" data-i18n="mac.install.tip">Yeniden açtıktan sonra hâlâ "Not watching" mı diyor? bubbleTranslate'i Erişilebilirlik listesinden kaldırın (seçip − tıklayın), <code>xattr -dr com.apple.quarantine /Applications/bubbleTranslate.app</code> komutunu çalıştırın, sonra tekrar ekleyip açın ve yeniden başlatın. Eski bir sürümden kalan kayıt yenisini sessizce engelleyebilir.</p>
+          <p class="os-install-tip" data-i18n="mac.install.tip">Yeniden açtıktan sonra hâlâ "Not watching" mı diyor, ya da 0.4.8 veya daha eski bir sürümden mi güncelliyorsunuz? bubbleTranslate’i Erişilebilirlik listesinden kaldırın (seçip − tıklayın), sonra tekrar ekleyip açın ve yeniden başlatın. 0.4.9’dan beri uygulama farklı imzalanıyor; eski bir sürümden kalan kayıt açık görünürken yenisini sessizce engelleyebilir.</p>
         </div>
         <div class="os-install" id="windows-install">
           <h3 data-i18n="win.install.h3">Windows'ta kurulum — ilk çalıştırma</h3>

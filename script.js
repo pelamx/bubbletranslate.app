@@ -174,22 +174,21 @@ const I18N = {
     'dl.mac.desc': 'Universal · Apple Silicon &amp; Intel · macOS 11 or later · 15&nbsp;MB',
     'dl.mac.btn': 'Download DMG',
     'dl.mac.run': 'Open the DMG and drag the app into Applications.',
-    'dl.mac.block': 'macOS <b>will</b> refuse the first launch and say it "could not verify" the app — every Mac, every time, because Apple has not notarized it. Open <b>System Settings › Privacy &amp; Security</b>, scroll to Security and click <b>Open Anyway</b>. Once only.',
-    'dl.mac.cmdlead': 'Or, if you prefer the Terminal, one line instead of those clicks:',
+    'dl.mac.block': 'Signed and notarized by Apple, so it opens like any other app. macOS asks once whether to open something downloaded from the internet — click <b>Open</b>. There is nothing to allow in Privacy &amp; Security.',
     'dl.mac.ocr': '<b>⌘⇧E</b> reads text off the screen — a screenshot, a scanned page, a video still. The first press opens <b>Screen Recording</b> in System Settings so you can switch bubbleTranslate on; quit and reopen the app afterwards and the shortcut works from then on.',
-    'dl.mac.after.h': 'Downloaded. macOS will refuse to open it — here is the way through.',
+    'dl.mac.after.h': 'Downloaded. Two steps and it is running.',
     'dl.mac.after.1': 'Open the DMG and drag <b>bubbleTranslate</b> into <b>Applications</b>.',
-    'dl.mac.after.2': 'Double-click it. macOS says it <b>“cannot be opened”</b>. That is expected on every Mac: the app is not notarized by Apple. Open <b>System Settings › Privacy &amp; Security</b>, scroll down to Security, and click <b>Open Anyway</b>. Once, ever.',
+    'dl.mac.after.2': 'Open it from Applications. macOS asks once whether to open an app downloaded from the internet — click <b>Open</b>. The app is notarized by Apple, so that is the only question.',
     'dl.mac.after.3': 'Then switch <b>bubbleTranslate</b> on under <b>Privacy &amp; Security › Accessibility</b> and reopen it. That is how it reads what you select.',
     'dl.mac.more': 'Full steps, including both permissions →',
     'mac.install.h3': 'Installing on macOS — the first run',
     'mac.install.1': 'Open the DMG and drag <b>bubbleTranslate.app</b> into <b>Applications</b>. Install it there — not run from the DMG or Downloads.',
-    'mac.install.2': 'Launch it once. macOS says it <b>"could not verify"</b> the app — that\'s Gatekeeper reacting to an app Apple hasn\'t notarized, not anything the app does. Dismiss it, open <b>System Settings › Privacy &amp; Security</b>, scroll to Security, and click <b>Open Anyway</b>.',
-    'mac.install.3': 'Grant <b>Accessibility</b>: <b>System Settings › Privacy &amp; Security › Accessibility</b>, and switch <b>bubbleTranslate</b> on. This is how it reads what you select — a <i>different</i> permission from Open Anyway.',
+    'mac.install.2': 'Open it from Applications. macOS asks once whether you want to open an app downloaded from the internet — click <b>Open</b>. bubbleTranslate is signed and notarized by Apple, so there is no warning to clear and nothing to allow in Privacy &amp; Security.',
+    'mac.install.3': 'Grant <b>Accessibility</b>: <b>System Settings › Privacy &amp; Security › Accessibility</b>, and switch <b>bubbleTranslate</b> on. This is how it reads what you select.',
     'mac.install.4': '<b>Quit and relaunch.</b> The Accessibility permission only takes effect on a fresh start, so quit bubbleTranslate (the globe in the menu bar → Quit) and open it again. Until you do, the window says <b>"Not watching for selections."</b>',
     'mac.install.5': 'Done. Hold <b>Shift</b> and select text anywhere, and the bubble appears at your cursor.',
     'mac.install.6': '<b>Reading text from a picture — only if you want it.</b> <b>⌘⇧E</b> reads a region of the screen: a photo, a video still, a scanned page. The first time you press it, macOS opens <b>System Settings › Privacy &amp; Security › Screen Recording</b> with bubbleTranslate already in the list — switch it on, then quit and reopen the app. Like Accessibility, this permission only takes effect on a fresh launch, and until it is on the shortcut does nothing at all.',
-    'mac.install.tip': 'Still "Not watching" after relaunching? Remove bubbleTranslate from the Accessibility list (select it, click −), run <code>xattr -dr com.apple.quarantine /Applications/bubbleTranslate.app</code>, then add it back, switch it on, and relaunch. A leftover entry from an older build can silently block the new one.',
+    'mac.install.tip': 'Still "Not watching" after relaunching, or updating from 0.4.8 or older? Remove bubbleTranslate from the Accessibility list (select it, click −), then add it back, switch it on, and relaunch. Since 0.4.9 the app is signed differently, and an entry left by an older build can look switched on while silently blocking the new one.',
     'dl.linux.desc': 'x86-64 executable · any distribution with glibc 2.28+ — Ubuntu 20.04, Debian 10, Fedora, Arch and newer · 16&nbsp;MB',
     'dl.linux.btn': 'Download binary',
     'dl.linux.run': 'Make it executable and run it once. It installs itself and appears in your app menu:',
@@ -400,22 +399,21 @@ const I18N = {
     'dl.mac.desc': 'Universal · Apple Silicon ve Intel · macOS 11 veya üzeri · 15&nbsp;MB',
     'dl.mac.btn': 'DMG indir',
     'dl.mac.run': 'DMG\'yi açın ve uygulamayı Applications klasörüne sürükleyin.',
-    'dl.mac.block': 'macOS ilk açılışı <b>kesinlikle</b> reddeder ve uygulamayı "doğrulayamadı" der — her Mac’te, her seferinde, çünkü Apple onu notarize etmedi. <b>System Settings › Privacy &amp; Security</b>’yi aç, Security’ye kadar in ve <b>Open Anyway</b>’e tıkla. Yalnızca bir kez.',
-    'dl.mac.cmdlead': 'Terminal’i tercih ediyorsan, o tıklamalar yerine tek satır:',
+    'dl.mac.block': 'Apple tarafından imzalanıp notarize edildi, yani her uygulama gibi açılır. macOS bir kez, internetten indirilen bir uygulamayı açmak isteyip istemediğinizi sorar — <b>Aç</b>’a tıklayın. Gizlilik ve Güvenlik’te onaylanacak bir şey yok.',
     'dl.mac.ocr': '<b>⌘⇧E</b> ekrandaki metni okur — ekran görüntüsü, taranmış sayfa, video karesi. İlk basışta Sistem Ayarları\'nda <b>Ekran Kaydı</b> açılır, bubbleTranslate\'i orada etkinleştirin; sonra uygulamadan çıkıp yeniden açın, kısayol o andan itibaren çalışır.',
-    'dl.mac.after.h': 'İndirildi. macOS açmayı reddedecek — geçiş yolu şu.',
+    'dl.mac.after.h': 'İndirildi. İki adımda çalışıyor.',
     'dl.mac.after.1': 'DMG’yi açın ve <b>bubbleTranslate</b>’i <b>Applications</b> klasörüne sürükleyin.',
-    'dl.mac.after.2': 'Çift tıklayın. macOS <b>“açılamıyor”</b> diyecek. Bu her Mac’te böyle: uygulama Apple tarafından notarize edilmedi. <b>Sistem Ayarları › Gizlilik ve Güvenlik</b>’i açın, aşağıdaki Güvenlik bölümüne inin ve <b>Yine de Aç</b>’a tıklayın. Bir kez, sadece bir kez.',
+    'dl.mac.after.2': 'Applications’tan açın. macOS bir kez, internetten indirilen bir uygulamayı açmak isteyip istemediğinizi sorar — <b>Aç</b>’a tıklayın. Uygulama Apple tarafından notarize edildiği için tek soru bu.',
     'dl.mac.after.3': 'Sonra <b>Gizlilik ve Güvenlik › Erişilebilirlik</b> altında <b>bubbleTranslate</b>’i açın ve uygulamayı yeniden başlatın. Seçtiğinizi böyle okuyor.',
     'dl.mac.more': 'Bütün adımlar, iki izin dahil →',
     'mac.install.h3': 'macOS\'ta kurulum — ilk çalıştırma',
     'mac.install.1': 'DMG\'yi açın ve <b>bubbleTranslate.app</b>\'i <b>Applications</b> klasörüne sürükleyin. Uygulamayı oradan çalıştırın — DMG\'den veya İndirilenler\'den değil.',
-    'mac.install.2': 'Bir kez açın. macOS uygulamayı <b>"doğrulayamadı"</b> der — bu, Apple tarafından notarize edilmemiş bir uygulamaya Gatekeeper\'ın tepkisidir, uygulamanın yaptığı bir şey değil. Kapatın, <b>Sistem Ayarları › Gizlilik ve Güvenlik</b>\'i açın, Güvenlik bölümüne inin ve <b>Yine de Aç</b>\'a tıklayın.',
-    'mac.install.3': '<b>Erişilebilirlik</b> izni verin: <b>Sistem Ayarları › Gizlilik ve Güvenlik › Erişilebilirlik</b> ve <b>bubbleTranslate</b>\'i açın. Uygulama seçtiğinizi böyle okur — Yine de Aç\'tan <i>farklı</i> bir izindir.',
+    'mac.install.2': 'Applications’tan açın. macOS bir kez, internetten indirilen bir uygulamayı açmak isteyip istemediğinizi sorar — <b>Aç</b>’a tıklayın. bubbleTranslate Apple tarafından imzalanıp notarize edildiği için kaldırılacak bir uyarı ya da Gizlilik ve Güvenlik’te onaylanacak bir şey yok.',
+    'mac.install.3': '<b>Erişilebilirlik</b> izni verin: <b>Sistem Ayarları › Gizlilik ve Güvenlik › Erişilebilirlik</b> ve <b>bubbleTranslate</b>’i açın. Uygulama seçtiğinizi böyle okur.',
     'mac.install.4': '<b>Çıkın ve yeniden açın.</b> Erişilebilirlik izni yalnızca temiz bir başlangıçta etkinleşir; bu yüzden bubbleTranslate\'ten çıkın (menü çubuğundaki küre → Quit) ve tekrar açın. Bunu yapana kadar pencere <b>"Not watching for selections"</b> (seçimler izlenmiyor) yazar.',
     'mac.install.5': 'Bitti. Herhangi bir yerde <b>Shift</b>\'e basılı tutup metni seçin; baloncuk imlecinizin yanında belirir.',
     'mac.install.6': '<b>Resimdeki metni okumak — isterseniz.</b> <b>⌘⇧E</b> ekrandan bir alanı okur: bir fotoğraf, video karesi, taranmış sayfa. İlk bastığınızda macOS <b>Sistem Ayarları › Gizlilik ve Güvenlik › Ekran Kaydı</b>\'nı, bubbleTranslate listede hazır şekilde açar — anahtarı açın, sonra uygulamadan çıkıp yeniden açın. Erişilebilirlik gibi bu izin de yalnızca temiz bir başlangıçta etkinleşir; açılmadan önce kısayol hiçbir şey yapmaz.',
-    'mac.install.tip': 'Yeniden açtıktan sonra hâlâ "Not watching" mı diyor? bubbleTranslate\'i Erişilebilirlik listesinden kaldırın (seçip − tıklayın), <code>xattr -dr com.apple.quarantine /Applications/bubbleTranslate.app</code> komutunu çalıştırın, sonra tekrar ekleyip açın ve yeniden başlatın. Eski bir sürümden kalan kayıt yenisini sessizce engelleyebilir.',
+    'mac.install.tip': 'Yeniden açtıktan sonra hâlâ "Not watching" mı diyor, ya da 0.4.8 veya daha eski bir sürümden mi güncelliyorsunuz? bubbleTranslate’i Erişilebilirlik listesinden kaldırın (seçip − tıklayın), sonra tekrar ekleyip açın ve yeniden başlatın. 0.4.9’dan beri uygulama farklı imzalanıyor; eski bir sürümden kalan kayıt açık görünürken yenisini sessizce engelleyebilir.',
     'dl.linux.desc': 'x86-64 çalıştırılabilir dosya · glibc 2.28+ olan her dağıtım — Ubuntu 20.04, Debian 10, Fedora, Arch ve sonrası · 16&nbsp;MB',
     'dl.linux.btn': 'İkili dosyayı indir',
     'dl.linux.run': 'Çalıştırılabilir yapın ve bir kez çalıştırın. Kendini kurar ve uygulama menünüze eklenir:',
@@ -626,22 +624,21 @@ const I18N = {
     'dl.mac.desc': 'Universal · Apple Silicon e Intel · macOS 11 o posterior · 15&nbsp;MB',
     'dl.mac.btn': 'Descargar DMG',
     'dl.mac.run': 'Abre el DMG y arrastra la app a Aplicaciones.',
-    'dl.mac.block': 'macOS <b>rechazará</b> el primer arranque y dirá que no pudo verificar la app — en todos los Mac, siempre, porque Apple no la ha notarizado. Abre <b>System Settings › Privacy &amp; Security</b>, baja hasta Security y pulsa <b>Open Anyway</b>. Solo una vez.',
-    'dl.mac.cmdlead': 'O, si prefieres el Terminal, una línea en lugar de esos clics:',
+    'dl.mac.block': 'Firmada y notarizada por Apple, así que se abre como cualquier otra app. macOS pregunta una vez si quieres abrir algo descargado de internet: pulsa <b>Abrir</b>. No hay nada que permitir en Privacidad y seguridad.',
     'dl.mac.ocr': '<b>⌘⇧E</b> lee el texto de la pantalla: una captura, una página escaneada, un fotograma. La primera pulsación abre <b>Grabación de pantalla</b> en Ajustes del Sistema para que actives bubbleTranslate; cierra y vuelve a abrir la app y el atajo ya funciona.',
-    'dl.mac.after.h': 'Descargado. macOS se negará a abrirlo: así se pasa.',
+    'dl.mac.after.h': 'Descargado. Dos pasos y ya funciona.',
     'dl.mac.after.1': 'Abre el DMG y arrastra <b>bubbleTranslate</b> a <b>Aplicaciones</b>.',
-    'dl.mac.after.2': 'Haz doble clic. macOS dirá que <b>“no se puede abrir”</b>. Es lo normal en todos los Mac: la app no está notarizada por Apple. Abre <b>Ajustes del Sistema › Privacidad y seguridad</b>, baja hasta Seguridad y pulsa <b>Abrir de todos modos</b>. Una sola vez.',
+    'dl.mac.after.2': 'Ábrela desde Aplicaciones. macOS pregunta una vez si quieres abrir una app descargada de internet: pulsa <b>Abrir</b>. La app está notarizada por Apple, así que esa es la única pregunta.',
     'dl.mac.after.3': 'Después activa <b>bubbleTranslate</b> en <b>Privacidad y seguridad › Accesibilidad</b> y vuelve a abrirla. Así lee lo que seleccionas.',
     'dl.mac.more': 'Todos los pasos, con los dos permisos →',
     'mac.install.h3': 'Instalación en macOS — el primer arranque',
     'mac.install.1': 'Abre el DMG y arrastra <b>bubbleTranslate.app</b> a <b>Aplicaciones</b>. Instálala ahí, no la ejecutes desde el DMG o Descargas.',
-    'mac.install.2': 'Ábrela una vez. macOS dice que <b>"no pudo verificar"</b> la app — es Gatekeeper reaccionando a una app que Apple no ha notarizado, no algo que la app haga. Descártalo, abre <b>Ajustes del Sistema › Privacidad y seguridad</b>, baja hasta Seguridad y pulsa <b>Abrir de todos modos</b>.',
-    'mac.install.3': 'Concede <b>Accesibilidad</b>: <b>Ajustes del Sistema › Privacidad y seguridad › Accesibilidad</b>, y activa <b>bubbleTranslate</b>. Así lee lo que seleccionas — un permiso <i>distinto</i> de Abrir de todos modos.',
+    'mac.install.2': 'Ábrela desde Aplicaciones. macOS pregunta una vez si quieres abrir una app descargada de internet: pulsa <b>Abrir</b>. bubbleTranslate está firmada y notarizada por Apple, así que no hay ningún aviso que quitar ni nada que permitir en Privacidad y seguridad.',
+    'mac.install.3': 'Concede <b>Accesibilidad</b>: <b>Ajustes del Sistema › Privacidad y seguridad › Accesibilidad</b>, y activa <b>bubbleTranslate</b>. Así lee lo que seleccionas.',
     'mac.install.4': '<b>Cierra y vuelve a abrir.</b> El permiso de Accesibilidad solo surte efecto tras un arranque nuevo; cierra bubbleTranslate (el globo en la barra de menú → Quit) y ábrela de nuevo. Hasta que lo hagas, la ventana dice <b>"Not watching for selections."</b>',
     'mac.install.5': 'Listo. Mantén <b>Shift</b> y selecciona texto en cualquier parte, y la burbuja aparece junto al cursor.',
     'mac.install.6': '<b>Leer texto de una imagen — solo si lo quieres.</b> <b>⌘⇧E</b> lee una zona de la pantalla: una foto, un fotograma, una página escaneada. La primera vez que lo pulsas, macOS abre <b>Ajustes del Sistema › Privacidad y seguridad › Grabación de pantalla</b> con bubbleTranslate ya en la lista: actívala y luego cierra y vuelve a abrir la app. Igual que Accesibilidad, este permiso solo surte efecto en un arranque nuevo, y hasta entonces el atajo no hace nada.',
-    'mac.install.tip': '¿Sigue en "Not watching" tras reabrir? Quita bubbleTranslate de la lista de Accesibilidad (selecciónala y pulsa −), ejecuta <code>xattr -dr com.apple.quarantine /Applications/bubbleTranslate.app</code>, vuelve a añadirla, actívala y reiníciala. Una entrada residual de una versión anterior puede bloquear la nueva sin avisar.',
+    'mac.install.tip': '¿Sigue en "Not watching" tras reabrir, o actualizas desde la 0.4.8 o anterior? Quita bubbleTranslate de la lista de Accesibilidad (selecciónala y pulsa −), vuelve a añadirla, actívala y reiníciala. Desde la 0.4.9 la app se firma de otra manera, y una entrada de una versión anterior puede parecer activada mientras bloquea la nueva sin avisar.',
     'dl.linux.desc': 'ejecutable x86-64 · cualquier distribución con glibc 2.28+ — Ubuntu 20.04, Debian 10, Fedora, Arch y posteriores · 16&nbsp;MB',
     'dl.linux.btn': 'Descargar binario',
     'dl.linux.run': 'Hazlo ejecutable y ejecútalo una vez. Se instala solo y aparece en tu menú de aplicaciones:',
@@ -944,12 +941,12 @@ if (langSwitch) {
   });
 }
 
-// Neither download is signed, so the first launch is refused on both systems --
-// Gatekeeper says the app "cannot be opened", SmartScreen says "Windows
-// protected your PC". The way through each is already written beside the button
-// and in the install guide below it, but someone who has decided to download
-// reads the button, not the paragraph next to it. They then meet a dialog whose
-// honest reading is that the download is broken.
+// The first run asks something of the user on both systems. On Windows the
+// download is unsigned and SmartScreen says "Windows protected your PC"; on the
+// Mac, which is notarized since 0.4.9, the app still needs Accessibility before
+// it does anything. The steps are already written beside the button and in the
+// install guide below it, but someone who has decided to download reads the
+// button, not the paragraph next to it.
 //
 // So the steps are revealed on the click that starts the download. Revealed
 // rather than always shown, because before the download they are noise and the
