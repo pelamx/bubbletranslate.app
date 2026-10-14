@@ -8,6 +8,7 @@
   --brand: #4f8cff;
   --brand-2: #7c5cff;
   --accent: #23d5ab;
+  --red: #ff6b6b;
   --radius: 16px;
   --shadow: 0 20px 50px rgba(0,0,0,.35);
   --maxw: 1120px;
@@ -171,6 +172,15 @@ section { padding: 72px 0; }
    the button of every card shorter than the longest one. */
 .dl-card { text-align: center; background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 34px 22px; display: flex; flex-direction: column; min-width: 0; }
 .dl-card .install-note { margin-top: 16px; }
+/* The Store link sits under the zip button as the quieter second route: the
+   same app, installed and kept current by Windows rather than by hand. It is
+   deliberately not a .btn-primary -- applyManifest, the first-run steps and
+   the download beacon all key off that class, and none of the three is about
+   this link. No version badge either: latest.json has no Store line, and the
+   two channels sit apart while certification runs. */
+.dl-card .dl-store { margin-top: 10px; font-size: .9rem; justify-content: center; border-color: var(--red); color: var(--red); }
+.dl-card .dl-store:hover { background: rgba(255,107,107,.12); border-color: var(--red); }
+.dl-card .dl-store-note { color: var(--muted); font-size: .78rem; line-height: 1.5; margin-top: 8px; }
 /* The three OS logos arrive with different aspect ratios and different
    amounts of built-in padding, so each is normalised to its own 160x160
    transparent canvas before it gets here. `contain` then draws them at one

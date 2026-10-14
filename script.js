@@ -205,6 +205,8 @@ const I18N = {
     'dl.win.after.2': 'Windows says <b>“Windows protected your PC”</b>. That is SmartScreen reacting to a file it has not seen signed, not to anything the app does. Click <b>More info</b>, then <b>Run anyway</b> — once per machine, not once per launch.',
     'dl.win.after.3': 'Nothing to grant: it starts watching straight away. Windows 11 hides every new tray icon behind the <b>^</b> arrow next to the clock — drag the globe out onto the taskbar to keep it there.',
     'dl.win.more': 'Full steps for the first run →',
+    'dl.win.store': 'Get it from the Microsoft Store',
+    'dl.win.store.note': 'Installs and updates itself, and Windows raises no SmartScreen warning. The Store copy can sit a version behind while Microsoft reviews it.',
     'win.install.h3': 'Installing on Windows — the first run',
     'win.install.1': 'Unzip the download, then put <b>bubbleTranslate.exe</b> wherever you keep programs and double-click it. There is no installer — the zip holds one file, and it writes its settings to <code>%APPDATA%\\bubbleTranslate</code> the first time it runs.',
     'win.install.2': 'Windows says <b>"Windows protected your PC"</b>. That is SmartScreen reacting to a file it has not seen signed, not to anything the app does. Click <b>More info</b>, then <b>Run anyway</b> — once per machine, not once per launch.',
@@ -429,6 +431,8 @@ const I18N = {
     'dl.win.after.2': 'Windows <b>“Windows protected your PC”</b> diyecek. Bu, imzalı görmediği bir dosyaya SmartScreen’in tepkisidir, uygulamanın yaptığı bir şey değil. <b>More info</b>, sonra <b>Run anyway</b>’e tıklayın — makine başına bir kez, her açılışta değil.',
     'dl.win.after.3': 'Verilecek izin yok: hemen izlemeye başlar. Windows 11 yeni tepsi simgelerini saatin yanındaki <b>^</b> okunun arkasına gizler — küreyi görev çubuğuna sürükleyin ki orada kalsın.',
     'dl.win.more': 'İlk çalıştırmanın bütün adımları →',
+    'dl.win.store': 'Microsoft Store’dan edinin',
+    'dl.win.store.note': 'Kendi kendine kurulur ve güncellenir; Windows SmartScreen uyarısı göstermez. Microsoft incelemesini sürdürürken Store kopyası bir sürüm geride kalabilir.',
     'win.install.h3': 'Windows\'ta kurulum — ilk çalıştırma',
     'win.install.1': 'İndirdiğiniz zip\'i açın, <b>bubbleTranslate.exe</b>\'yi programlarınızı tuttuğunuz yere koyup çift tıklayın. Kurulum sihirbazı yok — zip\'in içinde tek bir dosya var; ayarlarını ilk çalıştırmada <code>%APPDATA%\\bubbleTranslate</code> içine yazar.',
     'win.install.2': 'Windows <b>"Bilgisayarınız korundu"</b> der. Bu, SmartScreen\'in imzalı görmediği bir dosyaya tepkisidir — uygulamanın yaptığı bir şey değil. <b>Ek bilgi</b>\'ye, sonra <b>Yine de çalıştır</b>\'a tıklayın; her açılışta değil, makine başına bir kez.',
@@ -653,6 +657,8 @@ const I18N = {
     'dl.win.after.2': 'Windows dirá <b>“Windows protected your PC”</b>. Es SmartScreen reaccionando a un archivo que no ha visto firmado, no a nada que haga la app. Pulsa <b>More info</b> y luego <b>Run anyway</b>: una vez por equipo, no en cada arranque.',
     'dl.win.after.3': 'No hay permiso que conceder: empieza a vigilar de inmediato. Windows 11 esconde los iconos nuevos de la bandeja detrás de la flecha <b>^</b> junto al reloj; arrastra el globo a la barra de tareas para que se quede.',
     'dl.win.more': 'Todos los pasos del primer arranque →',
+    'dl.win.store': 'Obtenerlo en Microsoft Store',
+    'dl.win.store.note': 'Se instala y se actualiza solo, y Windows no muestra ninguna advertencia de SmartScreen. La copia de la Store puede ir una versión por detrás mientras Microsoft la revisa.',
     'win.install.h3': 'Instalación en Windows — el primer arranque',
     'win.install.1': 'Descomprime la descarga, luego pon <b>bubbleTranslate.exe</b> donde guardes tus programas y haz doble clic. No hay instalador — el zip contiene un solo archivo, y escribe su configuración en <code>%APPDATA%\\bubbleTranslate</code> la primera vez que se ejecuta.',
     'win.install.2': 'Windows dice <b>"Windows protegió su PC"</b>. Es SmartScreen reaccionando a un archivo que no ha visto firmado, no a algo que haga la app. Pulsa <b>Más información</b> y luego <b>Ejecutar de todas formas</b> — una vez por equipo, no en cada arranque.',
@@ -812,7 +818,7 @@ function applyManifest(manifest) {
     DOWNLOADS[key].version = entry.version;
     const card = document.querySelector('.dl-card[data-os="' + key + '"]');
     if (card) {
-      const btn = card.querySelector('a.btn');
+      const btn = card.querySelector('a.btn-primary');
       if (btn) btn.setAttribute('href', entry.url);
     }
     document.querySelectorAll('.dl-ver[data-ver="' + key + '"]').forEach(tag => {
@@ -969,7 +975,7 @@ if (langSwitch) {
       }
     };
 
-    const card = document.querySelector('.dl-card[data-os="' + key + '"] a.btn');
+    const card = document.querySelector('.dl-card[data-os="' + key + '"] a.btn-primary');
     if (card) card.addEventListener('click', show);
 
     // The hero button downloads whatever this visitor's own system needs, so it
@@ -1015,7 +1021,7 @@ function reportDownload(key) {
 
 (function countDownloads() {
   Object.keys(DOWNLOADS).forEach(key => {
-    const btn = document.querySelector('.dl-card[data-os="' + key + '"] a.btn');
+    const btn = document.querySelector('.dl-card[data-os="' + key + '"] a.btn-primary');
     if (btn) btn.addEventListener('click', () => reportDownload(key));
   });
   // The hero button is a download only when it was pointed at this visitor's
