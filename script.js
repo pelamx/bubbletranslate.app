@@ -59,7 +59,7 @@ const I18N = {
 
     'hero.pill': '🫧 Desktop app for macOS, Windows &amp; Linux · 10 free translations a day',
     'hero.h1': 'Translate anything you can read <span class="grad">without leaving your desktop.</span>',
-    'hero.lead': 'No interruption while reading anymore. Stop copy-pasting text into Google Translate. <b>Hold Shift, select text</b>, and read the translation right where you are.',
+    'hero.lead': 'No interruption while reading anymore. Stop copy-pasting text into Google Translate. <b>Hold Alt (Option on a Mac) and select text or double-click a word</b>, and read the translation right where you are.',
     'hero.dlfree': '↓ Download free',
     'hero.see': 'See how it works',
     'hero.note': 'Free · 10 translations a day · Pro from $2/month for unlimited',
@@ -82,7 +82,7 @@ const I18N = {
     'what.4.h3': 'And when there is nothing to select',
     'what.4.p': 'A screenshot, a scanned page, a video still, a game — the words are a picture, so no app has one to hand over. Press <b>⌘⇧E</b> on macOS, <b>Ctrl+Shift+E</b> on Windows and Linux, drag a box over them, and the translation appears under it. Reading happens on your own machine.',
     'what.3.h3': 'Instant, right at your cursor',
-    'what.3.p': 'Hold Shift and select. The bubble is already there, next to the pointer, and gone again when you move on.',
+    'what.3.p': 'Hold Alt — Option on a Mac — and select, or double-click a word. The bubble is already there, next to the pointer, and gone again when you move on.',
 
     'feat.head.h2': 'New experience in translation, no interruption while reading foreign docs and readings.',
 
@@ -109,9 +109,9 @@ const I18N = {
     'lang.note': 'Those are one click away in the bubble. Need another? Any language code the providers accept works too — just set it in the config.',
 
     'how.head.h2': 'Two ways in: select it, or draw a box around it',
-    'how.head.p': 'Choose your language once. After that, hold SHIFT key while highlighting the text. That is all for translation which is immediate.',
-    'how.1.h3': 'Hold Shift and select',
-    'how.1.p': 'Hold Shift and select text in any app. The bubble appears only for a selection made with the key down, so everyday selecting and copying stay untouched.',
+    'how.head.p': 'Choose your language once. After that, hold Alt (Option on a Mac) while you select text or double-click a word. That is all, and the translation is immediate.',
+    'how.1.h3': 'Hold Alt and select',
+    'how.1.p': 'Hold Alt — Option on a Mac — and select text in any app, or double-click a single word. The bubble appears only for a selection made with the key down, so everyday selecting and copying stay untouched.',
     'how.2.h3': 'Read the bubble',
     'how.2.p': 'A small bubble pops up at your cursor with the translation, and quietly hides itself after a few seconds.',
     'how.3.h3': 'Keep working',
@@ -129,7 +129,7 @@ const I18N = {
     'how.pic.3.h3': 'Read the bubble',
     'how.pic.3.p': 'The words are read on your own computer, then translated. The bubble appears under the box, so it never covers what you were reading.',
     'how.note.h3': 'Prefer a different key?',
-    'how.note.p': 'Shift is the default because holding it already extends a selection, so translating stays one gesture. You can switch to <b>Ctrl</b>, <b>Alt</b> or <b>Super</b> (⌘ on macOS) in the app\'s settings — or choose <b>Any selection</b> to translate everything, the way it worked before. On some Linux Wayland sessions the key can\'t be detected; there the app translates every selection and says so.',
+    'how.note.p': 'Alt is the default because it leaves your selection alone: Shift also extends a selection, so a double-click with it held can grab everything from your last selection to the new word. Copies installed before Alt became the default keep Shift until you change it. You can switch to <b>Shift</b>, <b>Ctrl</b> or <b>Super</b> (⌘ on macOS) in the app\'s settings — or choose <b>Any selection</b> to translate everything. On some Linux Wayland sessions the key can\'t be detected; there the app translates every selection and says so.',
 
 
     'priv.head.h2': 'Private by design',
@@ -186,7 +186,7 @@ const I18N = {
     'mac.install.2': 'Open it from Applications. macOS asks once whether you want to open an app downloaded from the internet — click <b>Open</b>. bubbleTranslate is signed and notarized by Apple, so there is no warning to clear and nothing to allow in Privacy &amp; Security.',
     'mac.install.3': 'Grant <b>Accessibility</b>: <b>System Settings › Privacy &amp; Security › Accessibility</b>, and switch <b>bubbleTranslate</b> on. This is how it reads what you select.',
     'mac.install.4': '<b>Quit and relaunch.</b> The Accessibility permission only takes effect on a fresh start, so quit bubbleTranslate (the globe in the menu bar → Quit) and open it again. Until you do, the window says <b>"Not watching for selections."</b>',
-    'mac.install.5': 'Done. Hold <b>Shift</b> and select text anywhere, and the bubble appears at your cursor.',
+    'mac.install.5': 'Done. Hold <b>Option</b> and select text anywhere, or double-click a word, and the bubble appears at your cursor.',
     'mac.install.6': '<b>Reading text from a picture — only if you want it.</b> <b>⌘⇧E</b> reads a region of the screen: a photo, a video still, a scanned page. The first time you press it, macOS opens <b>System Settings › Privacy &amp; Security › Screen Recording</b> with bubbleTranslate already in the list — switch it on, then quit and reopen the app. Like Accessibility, this permission only takes effect on a fresh launch, and until it is on the shortcut does nothing at all.',
     'mac.install.tip': 'Still "Not watching" after relaunching, or updating from 0.4.8 or older? Remove bubbleTranslate from the Accessibility list (select it, click −), then add it back, switch it on, and relaunch. Since 0.4.9 the app is signed differently, and an entry left by an older build can look switched on while silently blocking the new one.',
     'dl.linux.desc': 'x86-64 executable · any distribution with glibc 2.28+ — Ubuntu 20.04, Debian 10, Fedora, Arch and newer · 16&nbsp;MB',
@@ -211,8 +211,8 @@ const I18N = {
     'win.install.2': 'Windows says <b>"Windows protected your PC"</b>. That is SmartScreen reacting to a file it has not seen signed, not to anything the app does. Click <b>More info</b>, then <b>Run anyway</b> — once per machine, not once per launch.',
     'win.install.3': 'No permission to grant: Windows lets it read what you select straight away, so it starts watching the moment it opens.',
     'win.install.4': 'Find the globe. Windows 11 hides every new tray icon behind the <b>^</b> arrow next to the clock — drag it out onto the taskbar to keep it there. That icon reopens the window, and it is how you quit.',
-    'win.install.5': 'Done. Hold <b>Shift</b> and select text anywhere, and the bubble appears at your cursor.',
-    'win.install.tip': 'Nothing appears in one particular app? If that window is running as administrator, Windows hides it from every program that isn\'t — including this one — and there is no permission that changes it. Everywhere else, check that you are holding the key: Shift by default, and the window\'s Behaviour section is where you change it.',
+    'win.install.5': 'Done. Hold <b>Alt</b> and select text anywhere, or double-click a word, and the bubble appears at your cursor.',
+    'win.install.tip': 'Nothing appears in one particular app? If that window is running as administrator, Windows hides it from every program that isn\'t — including this one — and there is no permission that changes it. Everywhere else, check that you are holding the key: Alt by default, and the window\'s Behaviour section is where you change it.',
     'dl.foot': 'Source, build instructions, and full docs live on <a href="https://github.com/pelamx/bubbleTranslate" style="color:var(--brand);" target="_blank" rel="noopener">GitHub</a>. All rights reserved — the code is public for transparency, not for reuse.',
 
     'faq.head.h2': 'Frequently asked questions',
@@ -230,7 +230,7 @@ const I18N = {
     'faq.q6': 'What permission does it need?',
     'faq.a6': 'On macOS, Accessibility — that\'s how the app sees what you\'ve selected, and it is asked for the first time you run it. Reading a region of the screen needs a second one, Screen Recording, and that is only asked for the first time you press the shortcut; if you never use it you are never asked. On Windows and on most X11 and Wayland sessions, selecting needs nothing extra; reading the screen uses what the system already provides.',
     'faq.q7': 'Does it translate everything I select?',
-    'faq.a7': 'No — only selections you make with a key held down. Shift by default, so extending a selection and translating it are one gesture. You can switch the key to Ctrl, Alt or Super, or set it to translate every selection like before. Copying and ordinary highlighting are left alone.',
+    'faq.a7': 'No — only selections you make with a key held down. Alt by default (Option on a Mac), because it leaves the selection exactly as you made it. You can switch the key to Shift, Ctrl or Super, or set it to translate every selection. Copying and ordinary highlighting are left alone.',
     'faq.q8': 'How do I report a bug or suggest something?',
     'faq.a8': 'From inside the app. Open the bubbleTranslate window and use <b>Send feedback</b>: something broken, something missing, or something that annoyed you. It goes out from your own mail — your mail app, Gmail or Outlook — and it is read by the person who wrote the app.',
 
@@ -284,7 +284,7 @@ const I18N = {
 
     'hero.pill': '🫧 macOS, Windows ve Linux için masaüstü uygulaması · günde 10 ücretsiz çeviri',
     'hero.h1': '<span class="grad">Masaüstünüzden ayrılmadan</span> okuduğunuz her şeyi çevirin.',
-    'hero.lead': 'Okurken artık copy/paste dikkatinizi dağıtmayacak. Metinleri Google Translate\'e kopyalayıp yapıştırmayı bırakın. <b>Shift\'i basılı tutun, metni seçin</b> ve çeviriyi tam olduğunuz yerde okuyun.',
+    'hero.lead': 'Okurken artık copy/paste dikkatinizi dağıtmayacak. Metinleri Google Translate\'e kopyalayıp yapıştırmayı bırakın. <b>Alt\'ı (Mac\'te Option) basılı tutup metni seçin ya da bir kelimeye çift tıklayın</b> ve çeviriyi tam olduğunuz yerde okuyun.',
     'hero.dlfree': '↓ Ücretsiz indir',
     'hero.see': 'Nasıl çalıştığını gör',
     'hero.note': 'Ücretsiz · günde 10 çeviri · sınırsız için Pro aylık $2\'den',
@@ -307,7 +307,7 @@ const I18N = {
     'what.3.h3': 'Anında, tam imlecinizin yanında',
     'what.4.h3': 'Seçilecek bir şey olmadığında',
     'what.4.p': 'Ekran görüntüsü, taranmış sayfa, video karesi, oyun — yazı bir resim olduğu için hiçbir uygulamanın vereceği bir şey yok. macOS’ta <b>⌘⇧E</b>, Windows ve Linux’ta <b>Ctrl+Shift+E</b> tuşlarına bas, üstüne bir kutu çiz; çeviri kutunun altında çıkar. Okuma kendi makinende yapılır.',
-    'what.3.p': 'Shift’i basılı tutup seçin. Baloncuk imlecin yanında çoktan oradadır; siz devam edince kaybolur.',
+    'what.3.p': 'Alt’ı (Mac’te Option) basılı tutup seçin ya da bir kelimeye çift tıklayın. Baloncuk imlecin yanında çoktan oradadır; siz devam edince kaybolur.',
 
     'feat.head.h2': 'Çeviride yeni bir deneyim — yabancı belgeleri okurken kesinti yok.',
 
@@ -334,9 +334,9 @@ const I18N = {
     'lang.note': 'Bunlar baloncukta tek tıkla seçilebilir. Başka mı lazım? Sağlayıcıların kabul ettiği herhangi bir dil kodu da çalışır — sadece ayar dosyasına yazın.',
 
     'how.head.h2': 'İki yol: ya seçin, ya etrafına bir kutu çizin',
-    'how.head.p': 'Dilinizi bir kez seçin. Sonrasında metni seçerken SHIFT tuşunu basılı tutun. Çeviri için tek yapmanız gereken bu; çeviri anında gelir.',
-    'how.1.h3': 'Shift\'e basılı tutup seçin',
-    'how.1.p': 'Shift\'e basılı tutup herhangi bir uygulamada metni seçin. Baloncuk yalnızca tuş basılıyken yapılan seçim için belirir; gündelik seçme ve kopyalama olduğu gibi kalır.',
+    'how.head.p': 'Dilinizi bir kez seçin. Sonrasında metni seçerken ya da bir kelimeye çift tıklarken Alt tuşunu (Mac\'te Option) basılı tutun. Çeviri için tek yapmanız gereken bu; çeviri anında gelir.',
+    'how.1.h3': 'Alt\'a basılı tutup seçin',
+    'how.1.p': 'Alt\'a (Mac\'te Option) basılı tutup herhangi bir uygulamada metni seçin ya da tek bir kelimeye çift tıklayın. Baloncuk yalnızca tuş basılıyken yapılan seçim için belirir; gündelik seçme ve kopyalama olduğu gibi kalır.',
     'how.2.h3': 'Baloncuğu okuyun',
     'how.2.p': 'İmlecinizde çeviriyle küçük bir baloncuk belirir ve birkaç saniye sonra sessizce gizlenir.',
     'how.3.h3': 'Çalışmaya devam edin',
@@ -354,7 +354,7 @@ const I18N = {
     'how.pic.3.h3': 'Balonu oku',
     'how.pic.3.p': 'Kelimeler kendi bilgisayarında okunur, sonra çevrilir. Balon kutunun altında çıkar, yani okuduğun şeyin üstünü kapatmaz.',
     'how.note.h3': 'Başka bir tuş mu?',
-    'how.note.p': 'Shift varsayılandır çünkü onu basılı tutmak zaten seçimi genişletir — böylece çeviri tek bir hareket olarak kalır. Uygulamanın ayarlarından <b>Ctrl</b>, <b>Alt</b> veya <b>Super</b>\'e (macOS\'ta ⌘) geçebilir ya da <b>Her seçim</b>\'i seçerek eskisi gibi her şeyi çevirtebilirsiniz. Bazı Linux Wayland oturumlarında tuş algılanamaz; orada uygulama her seçimi çevirir ve bunu belirtir.',
+    'how.note.p': 'Alt varsayılandır çünkü seçiminize dokunmaz: Shift seçimi de genişletir, bu yüzden Shift basılıyken çift tıklamak son seçiminizden yeni kelimeye kadar her şeyi alabilir. Alt varsayılan olmadan önce kurulan kopyalar siz değiştirene kadar Shift\'te kalır. Uygulamanın ayarlarından <b>Shift</b>, <b>Ctrl</b> veya <b>Super</b>\'e (macOS\'ta ⌘) geçebilir ya da <b>Her seçim</b>\'i seçerek her şeyi çevirtebilirsiniz. Bazı Linux Wayland oturumlarında tuş algılanamaz; orada uygulama her seçimi çevirir ve bunu belirtir.',
 
 
     'priv.head.h2': 'Tasarımı gereği gizli',
@@ -411,7 +411,7 @@ const I18N = {
     'mac.install.2': 'Applications’tan açın. macOS bir kez, internetten indirilen bir uygulamayı açmak isteyip istemediğinizi sorar — <b>Aç</b>’a tıklayın. bubbleTranslate Apple tarafından imzalanıp notarize edildiği için kaldırılacak bir uyarı ya da Gizlilik ve Güvenlik’te onaylanacak bir şey yok.',
     'mac.install.3': '<b>Erişilebilirlik</b> izni verin: <b>Sistem Ayarları › Gizlilik ve Güvenlik › Erişilebilirlik</b> ve <b>bubbleTranslate</b>’i açın. Uygulama seçtiğinizi böyle okur.',
     'mac.install.4': '<b>Çıkın ve yeniden açın.</b> Erişilebilirlik izni yalnızca temiz bir başlangıçta etkinleşir; bu yüzden bubbleTranslate\'ten çıkın (menü çubuğundaki küre → Quit) ve tekrar açın. Bunu yapana kadar pencere <b>"Not watching for selections"</b> (seçimler izlenmiyor) yazar.',
-    'mac.install.5': 'Bitti. Herhangi bir yerde <b>Shift</b>\'e basılı tutup metni seçin; baloncuk imlecinizin yanında belirir.',
+    'mac.install.5': 'Bitti. Herhangi bir yerde <b>Option</b>\'a basılı tutup metni seçin ya da bir kelimeye çift tıklayın; baloncuk imlecinizin yanında belirir.',
     'mac.install.6': '<b>Resimdeki metni okumak — isterseniz.</b> <b>⌘⇧E</b> ekrandan bir alanı okur: bir fotoğraf, video karesi, taranmış sayfa. İlk bastığınızda macOS <b>Sistem Ayarları › Gizlilik ve Güvenlik › Ekran Kaydı</b>\'nı, bubbleTranslate listede hazır şekilde açar — anahtarı açın, sonra uygulamadan çıkıp yeniden açın. Erişilebilirlik gibi bu izin de yalnızca temiz bir başlangıçta etkinleşir; açılmadan önce kısayol hiçbir şey yapmaz.',
     'mac.install.tip': 'Yeniden açtıktan sonra hâlâ "Not watching" mı diyor, ya da 0.4.8 veya daha eski bir sürümden mi güncelliyorsunuz? bubbleTranslate’i Erişilebilirlik listesinden kaldırın (seçip − tıklayın), sonra tekrar ekleyip açın ve yeniden başlatın. 0.4.9’dan beri uygulama farklı imzalanıyor; eski bir sürümden kalan kayıt açık görünürken yenisini sessizce engelleyebilir.',
     'dl.linux.desc': 'x86-64 çalıştırılabilir dosya · glibc 2.28+ olan her dağıtım — Ubuntu 20.04, Debian 10, Fedora, Arch ve sonrası · 16&nbsp;MB',
@@ -436,8 +436,8 @@ const I18N = {
     'win.install.2': 'Windows <b>"Bilgisayarınız korundu"</b> der. Bu, SmartScreen\'in imzalı görmediği bir dosyaya tepkisidir — uygulamanın yaptığı bir şey değil. <b>Ek bilgi</b>\'ye, sonra <b>Yine de çalıştır</b>\'a tıklayın; her açılışta değil, makine başına bir kez.',
     'win.install.3': 'Verilecek izin yok: Windows seçtiğinizi okumasına doğrudan izin verir, uygulama açıldığı anda izlemeye başlar.',
     'win.install.4': 'Küreyi bulun. Windows 11 her yeni bildirim simgesini saatin yanındaki <b>^</b> okunun arkasına gizler — görev çubuğuna sürükleyip orada tutun. Pencereyi o simge geri açar, çıkış da oradan yapılır.',
-    'win.install.5': 'Bitti. Herhangi bir yerde <b>Shift</b>\'e basılı tutup metni seçin; baloncuk imlecinizin yanında belirir.',
-    'win.install.tip': 'Belirli bir uygulamada hiçbir şey çıkmıyor mu? O pencere yönetici olarak çalışıyorsa Windows onu, yönetici olmayan her programdan — bu uygulama dahil — gizler ve bunu değiştiren bir izin yoktur. Diğer yerlerde tuşa basılı tuttuğunuzdan emin olun: varsayılan Shift\'tir, pencerenin Behaviour bölümünden değiştirilir.',
+    'win.install.5': 'Bitti. Herhangi bir yerde <b>Alt</b>\'a basılı tutup metni seçin ya da bir kelimeye çift tıklayın; baloncuk imlecinizin yanında belirir.',
+    'win.install.tip': 'Belirli bir uygulamada hiçbir şey çıkmıyor mu? O pencere yönetici olarak çalışıyorsa Windows onu, yönetici olmayan her programdan — bu uygulama dahil — gizler ve bunu değiştiren bir izin yoktur. Diğer yerlerde tuşa basılı tuttuğunuzdan emin olun: varsayılan Alt\'tır, pencerenin Behaviour bölümünden değiştirilir.',
     'dl.foot': 'Kaynak kod, derleme talimatları ve tüm belgeler <a href="https://github.com/pelamx/bubbleTranslate" style="color:var(--brand);" target="_blank" rel="noopener">GitHub</a>\'da. Tüm hakları saklıdır; kod yalnızca şeffaflık için açık.',
 
     'faq.head.h2': 'Sıkça sorulan sorular',
@@ -455,7 +455,7 @@ const I18N = {
     'faq.q6': 'Hangi izne ihtiyacı var?',
     'faq.a6': 'macOS\'ta Erişilebilirlik — uygulama seçtiğinizi böyle görür ve bu izin ilk çalıştırdığınızda istenir. Ekrandan bir alan okumak için ikinci bir izin gerekir, Ekran Kaydı, ve o yalnızca kısayola ilk bastığınızda istenir; hiç kullanmazsanız hiç sorulmaz. Windows\'ta ve çoğu X11 ile Wayland oturumunda seçim için ek bir şey gerekmez; ekranı okumak sistemin zaten sunduğunu kullanır.',
     'faq.q7': 'Seçtiğim her şeyi çevirir mi?',
-    'faq.a7': 'Hayır — yalnızca bir tuş basılıyken yaptığınız seçimleri. Varsayılan Shift\'tir; böylece seçimi genişletmek ve çevirmek tek harekettir. Tuşu Ctrl, Alt veya Super yapabilir ya da eskisi gibi her seçimi çevirtebilirsiniz. Kopyalama ve sıradan işaretlemeye dokunulmaz.',
+    'faq.a7': 'Hayır — yalnızca bir tuş basılıyken yaptığınız seçimleri. Varsayılan Alt\'tır (Mac\'te Option), çünkü seçimi tam yaptığınız gibi bırakır. Tuşu Shift, Ctrl veya Super yapabilir ya da her seçimi çevirtebilirsiniz. Kopyalama ve sıradan işaretlemeye dokunulmaz.',
     'faq.q8': 'Hata bildirmek ya da öneri yapmak istiyorum, nasıl?',
     'faq.a8': 'Doğrudan uygulamanın içinden. bubbleTranslate penceresini açıp <b>Geri bildirim gönder</b> bölümünü kullanın: bozuk, eksik ya da sizi rahatsız eden bir şey. Mesaj kendi e-postanızdan gider — posta uygulamanız, Gmail ya da Outlook — ve uygulamayı yazan kişi okur.',
 
@@ -509,7 +509,7 @@ const I18N = {
 
     'hero.pill': '🫧 App de escritorio para macOS, Windows y Linux · 10 traducciones gratis al día',
     'hero.h1': 'Traduce cualquier cosa que puedas leer <span class="grad">sin salir de tu escritorio.</span>',
-    'hero.lead': 'Se acabaron las interrupciones mientras lees. Deja de copiar y pegar texto en Google Translate. <b>Mantén pulsada la tecla Shift y selecciona el texto</b> para leer la traducción justo donde estás.',
+    'hero.lead': 'Se acabaron las interrupciones mientras lees. Deja de copiar y pegar texto en Google Translate. <b>Mantén pulsada la tecla Alt (Option en Mac) y selecciona el texto o haz doble clic en una palabra</b> para leer la traducción justo donde estás.',
     'hero.dlfree': '↓ Descargar gratis',
     'hero.see': 'Mira cómo funciona',
     'hero.note': 'Gratis · 10 traducciones al día · Pro desde $2/mes para ilimitado',
@@ -532,7 +532,7 @@ const I18N = {
     'what.3.h3': 'Al instante, junto al cursor',
     'what.4.h3': 'Y cuando no hay nada que seleccionar',
     'what.4.p': 'Una captura, una página escaneada, un fotograma, un juego — las palabras son una imagen, así que ninguna app tiene nada que entregar. Pulsa <b>⌘⇧E</b> en macOS o <b>Ctrl+Shift+E</b> en Windows y Linux, arrastra un recuadro encima y la traducción aparece debajo. La lectura ocurre en tu propia máquina.',
-    'what.3.p': 'Mantén Shift y selecciona. La burbuja ya está ahí, junto al puntero, y desaparece cuando sigues adelante.',
+    'what.3.p': 'Mantén Alt (Option en Mac) y selecciona, o haz doble clic en una palabra. La burbuja ya está ahí, junto al puntero, y desaparece cuando sigues adelante.',
 
     'feat.head.h2': 'Una nueva experiencia en traducción, sin interrupciones al leer documentos extranjeros.',
 
@@ -559,9 +559,9 @@ const I18N = {
     'lang.note': 'Están a un clic en la burbuja. ¿Necesitas otro? También funciona cualquier código de idioma que acepten los proveedores: solo ponlo en la configuración.',
 
     'how.head.h2': 'Dos caminos: selecciónalo, o dibuja un recuadro',
-    'how.head.p': 'Elige tu idioma una vez. Después, mantén pulsada la tecla SHIFT mientras resaltas el texto. Eso es todo para traducir; la traducción es inmediata.',
-    'how.1.h3': 'Mantén Shift y selecciona',
-    'how.1.p': 'Mantén Shift y selecciona texto en cualquier app. La burbuja aparece solo para una selección hecha con la tecla pulsada, así que seleccionar y copiar a diario quedan intactos.',
+    'how.head.p': 'Elige tu idioma una vez. Después, mantén pulsada la tecla Alt (Option en Mac) mientras seleccionas texto o haces doble clic en una palabra. Eso es todo para traducir; la traducción es inmediata.',
+    'how.1.h3': 'Mantén Alt y selecciona',
+    'how.1.p': 'Mantén Alt (Option en Mac) y selecciona texto en cualquier app, o haz doble clic en una sola palabra. La burbuja aparece solo para una selección hecha con la tecla pulsada, así que seleccionar y copiar a diario quedan intactos.',
     'how.2.h3': 'Lee la burbuja',
     'how.2.p': 'Aparece una pequeña burbuja junto al cursor con la traducción y se oculta sola tras unos segundos.',
     'how.3.h3': 'Sigue trabajando',
@@ -579,7 +579,7 @@ const I18N = {
     'how.pic.3.h3': 'Lee la burbuja',
     'how.pic.3.p': 'Las palabras se leen en tu propio ordenador y luego se traducen. La burbuja aparece debajo del recuadro, así que nunca tapa lo que estabas leyendo.',
     'how.note.h3': '¿Prefieres otra tecla?',
-    'how.note.p': 'Shift es la opción por defecto porque mantenerla ya extiende una selección, así que traducir sigue siendo un solo gesto. Puedes cambiar a <b>Ctrl</b>, <b>Alt</b> o <b>Super</b> (⌘ en macOS) en los ajustes de la app, o elegir <b>Cualquier selección</b> para traducir todo, como antes. En algunas sesiones Wayland de Linux la tecla no se puede detectar; ahí la app traduce cada selección y lo indica.',
+    'how.note.p': 'Alt es la opción por defecto porque no toca tu selección: Shift también extiende una selección, así que un doble clic con ella pulsada puede abarcar todo desde tu última selección hasta la nueva palabra. Las copias instaladas antes de que Alt fuera la opción por defecto siguen con Shift hasta que la cambies. Puedes cambiar a <b>Shift</b>, <b>Ctrl</b> o <b>Super</b> (⌘ en macOS) en los ajustes de la app, o elegir <b>Cualquier selección</b> para traducir todo. En algunas sesiones Wayland de Linux la tecla no se puede detectar; ahí la app traduce cada selección y lo indica.',
 
 
     'priv.head.h2': 'Privado por diseño',
@@ -636,7 +636,7 @@ const I18N = {
     'mac.install.2': 'Ábrela desde Aplicaciones. macOS pregunta una vez si quieres abrir una app descargada de internet: pulsa <b>Abrir</b>. bubbleTranslate está firmada y notarizada por Apple, así que no hay ningún aviso que quitar ni nada que permitir en Privacidad y seguridad.',
     'mac.install.3': 'Concede <b>Accesibilidad</b>: <b>Ajustes del Sistema › Privacidad y seguridad › Accesibilidad</b>, y activa <b>bubbleTranslate</b>. Así lee lo que seleccionas.',
     'mac.install.4': '<b>Cierra y vuelve a abrir.</b> El permiso de Accesibilidad solo surte efecto tras un arranque nuevo; cierra bubbleTranslate (el globo en la barra de menú → Quit) y ábrela de nuevo. Hasta que lo hagas, la ventana dice <b>"Not watching for selections."</b>',
-    'mac.install.5': 'Listo. Mantén <b>Shift</b> y selecciona texto en cualquier parte, y la burbuja aparece junto al cursor.',
+    'mac.install.5': 'Listo. Mantén <b>Option</b> y selecciona texto en cualquier parte, o haz doble clic en una palabra, y la burbuja aparece junto al cursor.',
     'mac.install.6': '<b>Leer texto de una imagen — solo si lo quieres.</b> <b>⌘⇧E</b> lee una zona de la pantalla: una foto, un fotograma, una página escaneada. La primera vez que lo pulsas, macOS abre <b>Ajustes del Sistema › Privacidad y seguridad › Grabación de pantalla</b> con bubbleTranslate ya en la lista: actívala y luego cierra y vuelve a abrir la app. Igual que Accesibilidad, este permiso solo surte efecto en un arranque nuevo, y hasta entonces el atajo no hace nada.',
     'mac.install.tip': '¿Sigue en "Not watching" tras reabrir, o actualizas desde la 0.4.8 o anterior? Quita bubbleTranslate de la lista de Accesibilidad (selecciónala y pulsa −), vuelve a añadirla, actívala y reiníciala. Desde la 0.4.9 la app se firma de otra manera, y una entrada de una versión anterior puede parecer activada mientras bloquea la nueva sin avisar.',
     'dl.linux.desc': 'ejecutable x86-64 · cualquier distribución con glibc 2.28+ — Ubuntu 20.04, Debian 10, Fedora, Arch y posteriores · 16&nbsp;MB',
@@ -661,8 +661,8 @@ const I18N = {
     'win.install.2': 'Windows dice <b>"Windows protegió su PC"</b>. Es SmartScreen reaccionando a un archivo que no ha visto firmado, no a algo que haga la app. Pulsa <b>Más información</b> y luego <b>Ejecutar de todas formas</b> — una vez por equipo, no en cada arranque.',
     'win.install.3': 'No hay permiso que conceder: Windows le deja leer lo que seleccionas desde el principio, así que empieza a vigilar en cuanto se abre.',
     'win.install.4': 'Busca el globo. Windows 11 esconde cada icono nuevo de la bandeja tras la flecha <b>^</b> junto al reloj — arrástralo a la barra de tareas para tenerlo a la vista. Ese icono vuelve a abrir la ventana, y es como se sale de la app.',
-    'win.install.5': 'Listo. Mantén <b>Shift</b> y selecciona texto en cualquier parte, y la burbuja aparece junto al cursor.',
-    'win.install.tip': '¿No aparece nada en una app concreta? Si esa ventana se ejecuta como administrador, Windows la oculta a todo programa que no lo sea — incluido este — y no hay permiso que lo cambie. En el resto, comprueba que mantienes la tecla: Shift por defecto, y se cambia en la sección Behaviour de la ventana.',
+    'win.install.5': 'Listo. Mantén <b>Alt</b> y selecciona texto en cualquier parte, o haz doble clic en una palabra, y la burbuja aparece junto al cursor.',
+    'win.install.tip': '¿No aparece nada en una app concreta? Si esa ventana se ejecuta como administrador, Windows la oculta a todo programa que no lo sea — incluido este — y no hay permiso que lo cambie. En el resto, comprueba que mantienes la tecla: Alt por defecto, y se cambia en la sección Behaviour de la ventana.',
     'dl.foot': 'El código fuente, las instrucciones de compilación y toda la documentación están en <a href="https://github.com/pelamx/bubbleTranslate" style="color:var(--brand);" target="_blank" rel="noopener">GitHub</a>. Todos los derechos reservados; el código es público solo por transparencia.',
 
     'faq.head.h2': 'Preguntas frecuentes',
@@ -680,7 +680,7 @@ const I18N = {
     'faq.q6': '¿Qué permiso necesita?',
     'faq.a6': 'En macOS, Accesibilidad: así ve la app lo que has seleccionado, y se pide la primera vez que la abres. Leer una zona de la pantalla necesita un segundo permiso, Grabación de pantalla, y solo se pide la primera vez que pulsas el atajo; si nunca lo usas, nunca te lo piden. En Windows y en la mayoría de sesiones X11 y Wayland, seleccionar no necesita nada más; leer la pantalla usa lo que el sistema ya ofrece.',
     'faq.q7': '¿Traduce todo lo que selecciono?',
-    'faq.a7': 'No: solo las selecciones que haces con una tecla pulsada. Shift por defecto, así que extender una selección y traducirla son un mismo gesto. Puedes cambiar la tecla a Ctrl, Alt o Super, o hacer que traduzca cada selección como antes. Copiar y resaltar de forma normal quedan intactos.',
+    'faq.a7': 'No: solo las selecciones que haces con una tecla pulsada. Alt por defecto (Option en Mac), porque deja la selección tal como la hiciste. Puedes cambiar la tecla a Shift, Ctrl o Super, o hacer que traduzca cada selección. Copiar y resaltar de forma normal quedan intactos.',
     'faq.q8': '¿Cómo informo de un fallo o sugiero algo?',
     'faq.a8': 'Desde la propia app. Abre la ventana de bubbleTranslate y usa <b>Enviar comentarios</b>: algo roto, algo que falta o algo que te molestó. Sale desde tu propio correo — tu app de correo, Gmail u Outlook — y lo lee quien escribió la app.',
 

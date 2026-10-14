@@ -3,9 +3,10 @@
 The website for **bubbleTranslate**, a desktop app for macOS, Windows and Linux that
 shows the translation of text you select in a small bubble at your cursor.
 
-Hold **Shift** while selecting and the bubble appears; select without it and
-nothing happens, so copying and pasting is never interrupted. The key is
-configurable — Shift, Ctrl, Alt or Super — and can be turned off to go back to
+Hold **Alt** (Option on a Mac) while selecting or double-clicking a word and
+the bubble appears; select without it and nothing happens, so copying and
+pasting is never interrupted. The key is configurable — Alt, Shift, Ctrl or
+Super — and can be turned off to go back to
 translating every selection. The copy on this site has to keep saying so: the
 gesture is the first thing a visitor needs to know, and it is what separates
 this from a translator that pops up at every stray highlight.
