@@ -21,7 +21,8 @@ looks wrong for a moment and is correct: it is a name, not a word.
 ## How this site is built
 
 Plain HTML, one stylesheet, one script. No build step and no framework — what
-is in the repository is what is served.
+is in the repository is what is served. The one exception is `worker/index.js`, which only
+redirects `www.` to the bare domain and is not served itself.
 
 - `index.html` is English; `tr/` and `es/` are full translations of it, not
   fragments. A change to one is a change to three.

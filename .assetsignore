@@ -6,6 +6,7 @@
 wrangler.jsonc
 README.md
 node_modules
+worker
 
 # App builds are gitignored and were never served from this site; the
 # download buttons point at the release binaries in the app repo. Shipping
