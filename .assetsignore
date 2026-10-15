@@ -5,6 +5,9 @@
 .wrangler
 wrangler.jsonc
 README.md
+CLAUDE.md
+.nojekyll
+scripts
 node_modules
 worker
 
