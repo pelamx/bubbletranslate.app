@@ -21,9 +21,10 @@ looks wrong for a moment and is correct: it is a name, not a word.
 ## How this site is built
 
 Plain HTML, one stylesheet, one script. No build step and no framework — what
-is in the repository is what is served. The one exception is `worker/index.js`, which only
-redirects `www.` and `http://` to `https://bubbletranslate.app` and is not
-served itself.
+is in the repository is what is served. The one exception is `worker/index.js`, which
+redirects `www.` and `http://` to `https://bubbletranslate.app`, and fills
+the blog's posts (written in Soro) into the HTML and the sitemap so search
+engines see them. It is not served itself; see the comment at its top.
 
 - `index.html` is English; `tr/` and `es/` are full translations of it, not
   fragments. A change to one is a change to three.
