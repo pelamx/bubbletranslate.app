@@ -97,7 +97,7 @@
         <a href="#languages" data-i18n="nav.languages">Idiomas</a>
         <a href="#how" data-i18n="nav.how">Cómo funciona</a>
         <a href="#privacy" data-i18n="nav.privacy">Privacidad</a>
-        <a href="pricing.html" data-i18n="nav.pricing">Precios</a>
+        <a href="pricing" data-i18n="nav.pricing">Precios</a>
         <a class="nav-mobile-only" href="/blog" data-i18n="nav.blog">Blog</a>
         <a href="#download" data-i18n="nav.download">Descargar</a>
         <a href="#faq" data-i18n="nav.faq">FAQ</a>
@@ -186,10 +186,10 @@
               loop
               playsinline
               preload="metadata"
-              poster="downloads/video/ocr-poster.jpg">
-              <source src="downloads/video/ocr-demo.mp4" type="video/mp4">
+              poster="/downloads/video/ocr-poster.jpg">
+              <source src="/downloads/video/ocr-demo.mp4" type="video/mp4">
               Your browser can't play this video.
-              <a href="downloads/video/ocr-demo.mp4">Download the demo instead.</a>
+              <a href="/downloads/video/ocr-demo.mp4">Download the demo instead.</a>
             </video>
           </div>
           <p class="video-caption" data-i18n="how.ocr.caption">▶ Leyendo texto de una imagen, en la app.</p>
@@ -335,7 +335,7 @@
         <div class="grid-3">
           <div class="card"><div class="icon">🗂️</div><h3 data-i18n="priv.1.h3">Sin historial de traducciones</h3><p data-i18n="priv.1.p">bubbleTranslate no guarda tu historial de traducciones. La lista de recientes vive en memoria durante la sesión y desaparece al cerrar la app.</p></div>
           <div class="card"><div class="icon">🔒</div><h3 data-i18n="priv.2.h3">El servidor de licencias nunca ve tu texto</h3><p data-i18n="priv.2.p">Tu servidor de licencias nunca ve lo que traduces. Recibe tu clave de licencia y un identificador de dispositivo, y nada más.</p></div>
-          <div class="card"><div class="icon">✂️</div><h3 data-i18n="priv.3.h3">Solo se envía tu selección</h3><p data-i18n="priv.3.p">Al proveedor de traducción solo se envía el texto seleccionado, junto con el idioma al que traducir.</p></div>
+          <div class="card"><div class="icon">✂️</div><h3 data-i18n="priv.3.h3">Solo se envía lo que señalas</h3><p data-i18n="priv.3.p">Al proveedor solo se envía el texto que pediste traducir, junto con el idioma al que traducir. Una zona que lees se convierte en texto en tu propia máquina primero — la imagen nunca sale de ella.</p></div>
         </div>
         <div class="priv-arch">
           <span class="tag" data-i18n="priv.arch.tag">Por diseño, no por promesa</span>
@@ -505,7 +505,7 @@ sudo pacman -S tesseract tesseract-data-spa</code></pre>
           <details><summary data-i18n="faq.q2">¿Qué obtengo con Pro?</summary><p data-i18n="faq.a2">Traducciones ilimitadas en hasta tres equipos, por $2/mes o $20/año (el plan anual regala dos meses). Una sola clave de licencia cubre todos tus equipos y apoya el desarrollo continuo de la app.</p></details>
           <details><summary data-i18n="faq.q3">¿Cómo pago Pro?</summary><p data-i18n="faq.a3">Mensual o anual. El cobro se realiza a través de Paddle, el comercio registrado, así que se te cobra en tu propia moneda. Los impuestos, si corresponden, los calcula y muestra Paddle en el checkout. Puedes cancelar cuando quieras.</p></details>
           <details><summary data-i18n="faq.q4">¿En qué sistemas funciona?</summary><p data-i18n="faq.a4">macOS, Windows y Linux. La versión de Windows es un único .exe que no requiere instalar nada y funciona en Windows 10 y 11, incluidos los equipos ARM. En Linux la descarga funciona en cualquier distribución con glibc 2.28 o superior — Ubuntu 20.04, Debian 10, Fedora, Arch y posteriores; leer texto de la pantalla funciona sin instalar nada, y lee bien — acentos y cualquier alfabeto — con Tesseract instalado.</p></details>
-          <details><summary data-i18n="faq.q5">¿Necesita conexión a internet?</summary><p data-i18n="faq.a5">Sí. Las traducciones vienen de proveedores en línea, probados por turnos hasta que uno responde. Solo se envía el texto que seleccionas, y solo para traducirlo.</p></details>
+          <details><summary data-i18n="faq.q5">¿Necesita conexión a internet?</summary><p data-i18n="faq.a5">Sí. Las traducciones vienen de proveedores en línea, probados por turnos hasta que uno responde. Solo se envía el texto que pediste traducir, y solo para traducirlo. Una zona que lees se convierte en texto en tu propia máquina primero; la imagen nunca sale de ella.</p></details>
           <details><summary data-i18n="faq.q6">¿Qué permiso necesita?</summary><p data-i18n="faq.a6">En macOS, Accesibilidad: así ve la app lo que has seleccionado, y se pide la primera vez que la abres. Leer una zona de la pantalla necesita un segundo permiso, Grabación de pantalla, y solo se pide la primera vez que pulsas el atajo; si nunca lo usas, nunca te lo piden. En Windows y en la mayoría de sesiones X11 y Wayland, seleccionar no necesita nada más; leer la pantalla usa lo que el sistema ya ofrece.</p></details>
           <details><summary data-i18n="faq.q7">¿Traduce todo lo que selecciono?</summary><p data-i18n="faq.a7">No: solo las selecciones que haces con una tecla pulsada. Alt por defecto (Option en Mac), porque deja la selección tal como la hiciste. Puedes cambiar la tecla a Shift, Ctrl o Super, o hacer que traduzca cada selección. Copiar y resaltar de forma normal quedan intactos.</p></details>
           <details><summary data-i18n="faq.q8">¿Cómo informo de un fallo o sugiero algo?</summary><p data-i18n="faq.a8">Desde la propia app. Abre la ventana de bubbleTranslate y usa <b>Enviar comentarios</b>: algo roto, algo que falta o algo que te molestó. Sale desde tu propio correo — tu app de correo, Gmail u Outlook — y lo lee quien escribió la app.</p></details>

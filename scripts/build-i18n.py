@@ -82,6 +82,8 @@ def add_hreflang(html, group):
     if 'hreflang=' in html: return html
     return re.sub(r'(<link rel="canonical"[^>]*>\n)', r'\1'+hreflang_block(group), html, count=1)
 
+TESSERACT_PACK={"tr":"tur","es":"spa"}
+
 def gen(page_file, group, lang):
     r=Render(I18N[lang]); r.feed(open(page_file,encoding="utf-8").read()); r.close()
     html="".join(r.out); table=I18N[lang]; mk=METAKEY[group]
@@ -97,9 +99,14 @@ def gen(page_file, group, lang):
     html=re.sub(r'(<meta property="og:description" content=")[^"]*(">)', lambda m:m.group(1)+desc.replace('"','&quot;')+m.group(2), html, count=1)
     for a,b in (('href="styles.css','href="/styles.css'),('src="script.js','src="/script.js'),
                 ('href="favicon.svg"','href="/favicon.svg"'),('src="favicon.svg"','src="/favicon.svg"'),
-                ('"downloads/','"/downloads/'),('href="privacy.html"','href="/privacy"'),
-                ('href="terms.html"','href="/terms"'),('href="refunds.html"','href="/refunds"')):
+                ('"downloads/','"/downloads/')):
         html=html.replace(a,b)
+    # The Linux install commands are code, not translated text, so the
+    # renderer leaves them in English. A reader of this page wants the
+    # Tesseract pack for their own language, not English's.
+    pack=TESSERACT_PACK[lang]
+    for a in ('tesseract-ocr-eng','tesseract-langpack-eng','tesseract-data-eng'):
+        html=html.replace(a, a[:-3]+pack)
     return add_hreflang(html, group)
 
 for lang in ("tr","es"):

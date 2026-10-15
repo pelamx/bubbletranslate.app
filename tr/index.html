@@ -97,7 +97,7 @@
         <a href="#languages" data-i18n="nav.languages">Diller</a>
         <a href="#how" data-i18n="nav.how">Nasıl çalışır</a>
         <a href="#privacy" data-i18n="nav.privacy">Gizlilik</a>
-        <a href="pricing.html" data-i18n="nav.pricing">Fiyatlar</a>
+        <a href="pricing" data-i18n="nav.pricing">Fiyatlar</a>
         <a class="nav-mobile-only" href="/blog" data-i18n="nav.blog">Blog</a>
         <a href="#download" data-i18n="nav.download">İndir</a>
         <a href="#faq" data-i18n="nav.faq">SSS</a>
@@ -186,10 +186,10 @@
               loop
               playsinline
               preload="metadata"
-              poster="downloads/video/ocr-poster.jpg">
-              <source src="downloads/video/ocr-demo.mp4" type="video/mp4">
+              poster="/downloads/video/ocr-poster.jpg">
+              <source src="/downloads/video/ocr-demo.mp4" type="video/mp4">
               Your browser can't play this video.
-              <a href="downloads/video/ocr-demo.mp4">Download the demo instead.</a>
+              <a href="/downloads/video/ocr-demo.mp4">Download the demo instead.</a>
             </video>
           </div>
           <p class="video-caption" data-i18n="how.ocr.caption">▶ Bir resimden yazı okunuyor, uygulamanın içinde.</p>
@@ -335,7 +335,7 @@
         <div class="grid-3">
           <div class="card"><div class="icon">🗂️</div><h3 data-i18n="priv.1.h3">Çeviri geçmişi tutulmaz</h3><p data-i18n="priv.1.p">bubbleTranslate çeviri geçmişinizi saklamaz. Son çeviriler listesi yalnızca o oturum boyunca bellekte durur ve uygulamadan çıktığınızda kaybolur.</p></div>
           <div class="card"><div class="icon">🔒</div><h3 data-i18n="priv.2.h3">Lisans sunucusu metninizi görmez</h3><p data-i18n="priv.2.p">Lisans sunucusu ne çevirdiğinizi asla görmez. Yalnızca lisans anahtarınızı ve bir cihaz kimliğini alır, başka hiçbir şey almaz.</p></div>
-          <div class="card"><div class="icon">✂️</div><h3 data-i18n="priv.3.h3">Yalnızca seçtiğiniz metin gönderilir</h3><p data-i18n="priv.3.p">Çeviri sağlayıcısına yalnızca seçtiğiniz metin ve çevrilecek dil gönderilir.</p></div>
+          <div class="card"><div class="icon">✂️</div><h3 data-i18n="priv.3.h3">Yalnızca gösterdiğiniz metin gönderilir</h3><p data-i18n="priv.3.p">Sağlayıcıya yalnızca çevrilmesini istediğiniz metin ve çevrilecek dil gönderilir. Okuttuğunuz bir alan önce kendi makinenizde metne dönüşür — görüntünün kendisi makineden çıkmaz.</p></div>
         </div>
         <div class="priv-arch">
           <span class="tag" data-i18n="priv.arch.tag">Söz değil, tasarım</span>
@@ -505,7 +505,7 @@ sudo pacman -S tesseract tesseract-data-tur</code></pre>
           <details><summary data-i18n="faq.q2">Pro ile ne elde ederim?</summary><p data-i18n="faq.a2">En fazla üç makinede sınırsız çeviri, $2/ay veya $20/yıl karşılığında (yıllık planda iki ay bedava). Tek lisans anahtarı tüm makinelerinizi kapsar ve uygulamanın sürekli gelişimini destekler.</p></details>
           <details><summary data-i18n="faq.q3">Pro için nasıl ödeme yaparım?</summary><p data-i18n="faq.a3">Aylık veya yıllık. Ödeme, kayıtlı satıcı Paddle üzerinden alınır; kendi para biriminizde ücretlendirilirsiniz. Varsa vergiler, ödeme sırasında Paddle tarafından hesaplanır ve gösterilir. İstediğiniz zaman iptal edebilirsiniz.</p></details>
           <details><summary data-i18n="faq.q4">Hangi sistemlerde çalışır?</summary><p data-i18n="faq.a4">macOS, Windows ve Linux. Windows sürümü hiçbir şey kurmayı gerektirmeyen tek bir .exe dosyasıdır ve ARM makineler dahil Windows 10 ile 11'de çalışır. Linux'ta indirilen dosya glibc 2.28 veya üstü olan her dağıtımda çalışır — Ubuntu 20.04, Debian 10, Fedora, Arch ve sonrası; ekrandaki yazıyı okumak kurulum gerektirmez; aksanlı harfleri ve tüm alfabeleri düzgün okuması için Tesseract kurulur.</p></details>
-          <details><summary data-i18n="faq.q5">İnternet bağlantısı gerekir mi?</summary><p data-i18n="faq.a5">Evet. Çeviriler çevrimiçi sağlayıcılardan gelir; biri yanıt verene kadar sırayla denenir. Yalnızca seçtiğiniz metin, yalnızca çevirmek için gönderilir.</p></details>
+          <details><summary data-i18n="faq.q5">İnternet bağlantısı gerekir mi?</summary><p data-i18n="faq.a5">Evet. Çeviriler çevrimiçi sağlayıcılardan gelir; biri yanıt verene kadar sırayla denenir. Yalnızca çevrilmesini istediğiniz metin, yalnızca çevirmek için gönderilir. Okuttuğunuz bir alan önce kendi makinenizde metne dönüşür; görüntünün kendisi makineden çıkmaz.</p></details>
           <details><summary data-i18n="faq.q6">Hangi izne ihtiyacı var?</summary><p data-i18n="faq.a6">macOS'ta Erişilebilirlik — uygulama seçtiğinizi böyle görür ve bu izin ilk çalıştırdığınızda istenir. Ekrandan bir alan okumak için ikinci bir izin gerekir, Ekran Kaydı, ve o yalnızca kısayola ilk bastığınızda istenir; hiç kullanmazsanız hiç sorulmaz. Windows'ta ve çoğu X11 ile Wayland oturumunda seçim için ek bir şey gerekmez; ekranı okumak sistemin zaten sunduğunu kullanır.</p></details>
           <details><summary data-i18n="faq.q7">Seçtiğim her şeyi çevirir mi?</summary><p data-i18n="faq.a7">Hayır — yalnızca bir tuş basılıyken yaptığınız seçimleri. Varsayılan Alt'tır (Mac'te Option), çünkü seçimi tam yaptığınız gibi bırakır. Tuşu Shift, Ctrl veya Super yapabilir ya da her seçimi çevirtebilirsiniz. Kopyalama ve sıradan işaretlemeye dokunulmaz.</p></details>
           <details><summary data-i18n="faq.q8">Hata bildirmek ya da öneri yapmak istiyorum, nasıl?</summary><p data-i18n="faq.a8">Doğrudan uygulamanın içinden. bubbleTranslate penceresini açıp <b>Geri bildirim gönder</b> bölümünü kullanın: bozuk, eksik ya da sizi rahatsız eden bir şey. Mesaj kendi e-postanızdan gider — posta uygulamanız, Gmail ya da Outlook — ve uygulamayı yazan kişi okur.</p></details>
