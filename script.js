@@ -1008,25 +1008,44 @@ function trafficSource() {
 
 const DOWNLOAD_BEACON = 'https://api.bubbletranslate.app/v1/download';
 
-function reportDownload(key) {
+function reportDownload(key, button) {
   const platform = MANIFEST_KEY[key];
-  if (!platform || !navigator.sendBeacon) return;
+  if (!platform) return;
+  // For Tag Manager: which system, which version and which button. The
+  // version is the one the button showed, so it is missing only when
+  // latest.json could not be read and the button fell back to the releases page.
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({
+    event: 'file_download',
+    platform: platform,
+    app_version: DOWNLOADS[key].version || '',
+    button: button,
+    link_url: button === 'store' ? STORE_URL : DOWNLOADS[key].file
+  });
+  if (button === 'store' || !navigator.sendBeacon) return;
   try {
     navigator.sendBeacon(DOWNLOAD_BEACON, JSON.stringify({ os: platform, src: trafficSource() }));
   } catch (e) {}
 }
 
+const STORE_URL = 'https://apps.microsoft.com/detail/9NLPPHV0JLDJ';
+
 (function countDownloads() {
   Object.keys(DOWNLOADS).forEach(key => {
     const btn = document.querySelector('.dl-card[data-os="' + key + '"] a.btn-primary');
-    if (btn) btn.addEventListener('click', () => reportDownload(key));
+    if (btn) btn.addEventListener('click', () => reportDownload(key, 'card'));
+  });
+  // The Microsoft Store is a second way to get the Windows app. It is not a
+  // file, so it is counted for Tag Manager only, not by the licence service.
+  document.querySelectorAll('a.dl-store').forEach(link => {
+    link.addEventListener('click', () => reportDownload('windows', 'store'));
   });
   // The hero button is a download only when it was pointed at this visitor's
   // file; on a system with no build it scrolls to the cards instead.
   const hero = document.getElementById('heroDownload');
   if (hero) {
     hero.addEventListener('click', () => {
-      if (/^https:\/\/github\.com\//.test(hero.getAttribute('href') || '')) reportDownload(os);
+      if (/^https:\/\/github\.com\//.test(hero.getAttribute('href') || '')) reportDownload(os, 'hero');
     });
   }
 })();
