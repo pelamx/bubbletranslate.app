@@ -143,13 +143,16 @@ section { padding: 72px 0; }
 .section-head { text-align: center; max-width: 640px; margin: 0 auto 44px; }
 .section-head h2 { font-size: clamp(1.8rem, 3.5vw, 2.5rem); margin: 0 0 12px; letter-spacing: -.4px; }
 .section-head p { color: var(--muted); font-size: 1.05rem; margin: 0; }
+/* "New" above a section's heading: the label, not the paragraph style. */
+.section-head .kicker { font-size: .78rem; margin: 0 0 10px; }
 
 .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
 /* Four benefits across, each led by what it does for the reader rather than
    what the feature is called. Two-up before it gets cramped. */
 .grid-4 { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 22px; }
 @media (max-width: 1000px) { .grid-4 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-.card .kicker {
+.card .kicker,
+.section-head .kicker {
   margin: 0 0 6px; font-size: .72rem; font-weight: 700; letter-spacing: .08em;
   text-transform: uppercase; color: var(--brand);
 }

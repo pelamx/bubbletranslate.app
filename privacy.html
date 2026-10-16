@@ -88,7 +88,7 @@
   <main class="legal">
     <div class="legal-head">
       <h1>Privacy Policy</h1>
-      <p class="updated">Last updated: 15 October 2026</p>
+      <p class="updated">Last updated: 16 October 2026</p>
     </div>
 
 
@@ -132,13 +132,20 @@
       <li><a href="https://mymemory.translated.net/doc/en/privacy.php" target="_blank" rel="noopener">MyMemory Privacy Policy</a></li>
       <li><a href="https://www.deepl.com/privacy" target="_blank" rel="noopener">DeepL Privacy Policy</a></li>
     </ul>
-    <p>Two optional settings send a little more to a provider, and only if you fill them in:</p>
+    <p>Three optional settings send a little more to a provider, and only if you fill them in:</p>
     <ul>
       <li>A <strong>DeepL API key</strong>, if you have one. It is stored on your computer and sent to
       DeepL to authenticate your own requests.</li>
       <li>A <strong>MyMemory email address</strong>. MyMemory grants a larger free allowance to requests
       that carry an email address, so if you provide one it is included with each request to that
       provider. Leave it blank and nothing is sent.</li>
+      <li>A <strong>Google Cloud Vision API key</strong>, of your own. Without one, when you ask the app
+      to read text off the screen — a box drawn with Ctrl+Shift+E or the whole screen with Ctrl+Shift+F —
+      the picture is read on your computer and never leaves it. With one, a greyscale picture of that
+      part of the screen is sent to Google Cloud Vision under your own Google account, to read the text in
+      it, and Google's <a href="https://cloud.google.com/terms/cloud-privacy-notice" target="_blank"
+      rel="noopener">Cloud Privacy Notice</a> applies. The app says so in its window while the key is set.
+      Nothing about it reaches us.</li>
     </ul>
     <p>The app keeps a short list of what you have translated recently, so that re-reading the same
     sentence does not spend your daily allowance twice. That list is held in memory only, for the length
@@ -150,8 +157,8 @@
       <tr><th>What</th><th>Contains</th></tr>
       <tr>
         <td>Settings</td>
-        <td>Your target language, provider order, bubble behaviour, and the optional DeepL key and
-        MyMemory email described above.</td>
+        <td>Your target language, provider order, bubble behaviour, and the optional DeepL key, Google
+        Cloud Vision key and MyMemory email described above.</td>
       </tr>
       <tr>
         <td>Daily counter</td>
