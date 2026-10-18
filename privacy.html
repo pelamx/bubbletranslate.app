@@ -88,7 +88,7 @@
   <main class="legal">
     <div class="legal-head">
       <h1>Privacy Policy</h1>
-      <p class="updated">Last updated: 16 October 2026</p>
+      <p class="updated">Last updated: 18 October 2026</p>
     </div>
 
 
@@ -100,6 +100,9 @@
       anonymous ping a day that tells us an installation of the app is in use, so we know how many people
       are using it. You can turn that ping off. Apart from that DeepL backup, the service is never on the path
       of a translation.</p>
+      <p>The edition sold on the Mac App Store works differently: text read off the screen is translated
+      first by Claude Haiku, an AI model from Anthropic, through our own server, which does not keep it.
+      Section 2a explains it, and how to turn it off.</p>
       <p>This website, unlike the app, shows ads from Google AdSense, which may use cookies. Section 7a
       explains what that involves and how to switch personalised ads off.</p>
       <p>This summary is here to be useful, not to replace what follows.</p>
@@ -150,6 +153,39 @@
     <p>The app keeps a short list of what you have translated recently, so that re-reading the same
     sentence does not spend your daily allowance twice. That list is held in memory only, for the length
     of the session. It is never written to disk, not even in hashed form.</p>
+
+    <h2 id="mac-app-store">2a. The Mac App Store edition</h2>
+    <p>bubbleTranslate is also sold on the Mac App Store, where it is listed as "bubbleTr4nslate". That
+    edition reads only the screen: it translates a box you draw (⌘⇧E), the whole screen (⌘⇧F), and text
+    you type into its window. Where it differs from the rest of this policy, this section applies.</p>
+    <p><strong>The picture stays on your Mac.</strong> To read the screen, the app takes a picture of the
+    display and reads its text on your Mac with Apple's Vision framework. The picture never leaves your
+    Mac; only the words read from it are sent anywhere.</p>
+    <p><strong>Screen translations.</strong> By default, the words read from the screen are sent over
+    HTTPS to our server at <b>ai.bubbletranslate.app</b>, which has them translated by Claude Haiku, an
+    AI model made by Anthropic, using our Anthropic account. Anthropic processes the text only to return
+    the translation, under its <a href="https://www.anthropic.com/legal" target="_blank"
+    rel="noopener">commercial terms</a>. Our server does not store or log the text, or its translation.
+    If our server cannot answer, the text is translated by the services in section 2 instead.</p>
+    <p>With each screen translation the app also sends an install identifier: a salted SHA-256 hash
+    derived from your Mac's hardware UUID, shortened to 32 characters, which cannot be turned back into
+    the hardware UUID. If you subscribe to Pro, it also sends the signed transaction Apple's StoreKit gives
+    it, so our server can confirm the subscription by Apple's signature. To share the service out fairly
+    and keep its cost in check, our server keeps, for each day: a keyed hash of the install identifier, a
+    keyed hash of the network the request came from (part of the IP address, never the address itself),
+    and with Pro a keyed hash of the subscription's original transaction ID, each with that day's number
+    of requests and their cost. These records are deleted within 7 days. Daily cost totals that identify
+    no one are kept for 90 days.</p>
+    <p><strong>Turning it off.</strong> In the app's settings, switch off "Translate ⌘⇧E and ⌘⇧F with
+    Claude Haiku (Anthropic) first". It is also off whenever you add your own DeepL or Anthropic API key,
+    and the text then goes to the service you chose, under your own account with it.</p>
+    <p><strong>Typed text</strong>, and screen text when the above is off or unavailable, is translated
+    as section 2 describes: Google Translate, then MyMemory, then the DeepL backup through
+    <b>api.bubbletranslate.app</b>.</p>
+    <p><strong>No licence service, no usage ping.</strong> This edition has no licence keys and sends no
+    daily usage ping; sections 4 and 4a do not apply to it. Pro is bought through Apple's In-App Purchase:
+    Apple handles the payment, and we never see your payment details or your Apple Account. You can
+    manage or cancel the subscription in your App Store account settings.</p>
 
     <h2 id="on-your-computer">3. What stays on your computer</h2>
     <p>The app stores three things locally. None of them is sent to us except where section 4 says so.</p>
@@ -368,12 +404,15 @@
     <p>Licence records are kept for as long as the licence exists and afterwards for as long as tax and
     accounting rules require us to hold records of the sale. Seat rows are deleted when you remove a
     licence from that machine. Usage-ping rows are deleted automatically once an installation has not
-    pinged for 13 months. Download-button records are deleted after 90 days. Support email is kept for as long as it is useful to answer follow-up
+    pinged for 13 months. Download-button records are deleted after 90 days. The Mac App Store
+    edition's daily records described in section 2a are deleted within 7 days, and its daily cost totals
+    after 90 days; our database provider may keep deleted records in its backups for up to 30 days. Support email is kept for as long as it is useful to answer follow-up
     questions, and then deleted.</p>
 
     <h2 id="sharing">10. Who else sees it</h2>
     <p>We do not sell personal data. It reaches other companies only where they perform part of the
-    service: the translation provider you chose, our payment providers, the email delivery service that
+    service: the translation provider you chose, Anthropic for screen translations in the Mac App Store
+    edition (section 2a), Apple for purchases in that edition, our payment providers, the email delivery service that
     sends your licence key, and Cloudflare, which hosts this site and the licence service. Visitors to
     this website are also seen by Google, which serves its ads and, with your consent, measures how the
     site is used, as described in section 7.</p>
