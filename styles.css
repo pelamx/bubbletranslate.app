@@ -217,6 +217,14 @@ section { padding: 72px 0; }
    Windows blurb, which is one line, lifts its button above the other two. */
 .dl-card p { color: var(--muted); margin: 0 0 18px; font-size: .9rem; min-height: 3.3em; }
 
+/* The browser extensions sit under the three cards as a fourth way in for
+   someone who only reads in the browser. Not .btn-primary: that class is what
+   applyManifest and the download beacon look for, and these are store links. */
+.dl-browser { margin-top: 22px; text-align: center; background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 28px 22px; }
+.dl-browser h3 { margin: 0 0 6px; }
+.dl-browser p { color: var(--muted); margin: 0 auto 18px; font-size: .9rem; max-width: 620px; }
+.dl-browser-btns { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+
 /* FAQ */
 .faq { max-width: 760px; margin: 0 auto; display: grid; gap: 12px; }
 details { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 4px 20px; }

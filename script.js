@@ -228,6 +228,11 @@ const I18N = {
     'win.install.tip': 'Nothing appears in one particular app? If that window is running as administrator, Windows hides it from every program that isn\'t — including this one — and there is no permission that changes it. Everywhere else, check that you are holding the key: Alt by default, and the window\'s Behaviour section is where you change it.',
     'dl.foot': 'Source, build instructions, and full docs live on <a href="https://github.com/pelamx/bubbleTranslate" style="color:var(--brand);" target="_blank" rel="noopener">GitHub</a>. All rights reserved — the code is public for transparency, not for reuse.',
 
+    'dl.browser.h3': 'Browser extensions — free',
+    'dl.browser.p': 'Free to use in Chrome and Firefox. They only work inside the browser, on text you select on web pages — for every other app, use the download above.',
+    'dl.browser.chrome': 'Add to Chrome',
+    'dl.browser.firefox': 'Add to Firefox',
+
     'faq.head.h2': 'Frequently asked questions',
     'faq.head.p': 'Everything worth knowing before you install.',
     'faq.q1': 'Is bubbleTranslate free?',
@@ -466,6 +471,11 @@ const I18N = {
     'win.install.tip': 'Belirli bir uygulamada hiçbir şey çıkmıyor mu? O pencere yönetici olarak çalışıyorsa Windows onu, yönetici olmayan her programdan — bu uygulama dahil — gizler ve bunu değiştiren bir izin yoktur. Diğer yerlerde tuşa basılı tuttuğunuzdan emin olun: varsayılan Alt\'tır, pencerenin Behaviour bölümünden değiştirilir.',
     'dl.foot': 'Kaynak kod, derleme talimatları ve tüm belgeler <a href="https://github.com/pelamx/bubbleTranslate" style="color:var(--brand);" target="_blank" rel="noopener">GitHub</a>\'da. Tüm hakları saklıdır; kod yalnızca şeffaflık için açık.',
 
+    'dl.browser.h3': 'Tarayıcı eklentileri — ücretsiz',
+    'dl.browser.p': 'Chrome ve Firefox\'ta ücretsiz kullanılır. Yalnızca tarayıcının içinde, web sayfalarında seçtiğiniz metinde çalışır — diğer tüm uygulamalar için yukarıdaki indirmeyi kullanın.',
+    'dl.browser.chrome': 'Chrome\'a ekle',
+    'dl.browser.firefox': 'Firefox\'a ekle',
+
     'faq.head.h2': 'Sıkça sorulan sorular',
     'faq.head.p': 'Kurmadan önce bilmeye değer her şey.',
     'faq.q1': 'bubbleTranslate ücretsiz mi?',
@@ -703,6 +713,11 @@ const I18N = {
     'win.install.5': 'Listo. Mantén <b>Alt</b> y selecciona texto en cualquier parte, o haz doble clic en una palabra, y la burbuja aparece junto al cursor.',
     'win.install.tip': '¿No aparece nada en una app concreta? Si esa ventana se ejecuta como administrador, Windows la oculta a todo programa que no lo sea — incluido este — y no hay permiso que lo cambie. En el resto, comprueba que mantienes la tecla: Alt por defecto, y se cambia en la sección Behaviour de la ventana.',
     'dl.foot': 'El código fuente, las instrucciones de compilación y toda la documentación están en <a href="https://github.com/pelamx/bubbleTranslate" style="color:var(--brand);" target="_blank" rel="noopener">GitHub</a>. Todos los derechos reservados; el código es público solo por transparencia.',
+
+    'dl.browser.h3': 'Extensiones para el navegador — gratis',
+    'dl.browser.p': 'De uso gratuito en Chrome y Firefox. Solo funcionan dentro del navegador, con el texto que seleccionas en páginas web; para las demás aplicaciones, usa la descarga de arriba.',
+    'dl.browser.chrome': 'Añadir a Chrome',
+    'dl.browser.firefox': 'Añadir a Firefox',
 
     'faq.head.h2': 'Preguntas frecuentes',
     'faq.head.p': 'Todo lo que conviene saber antes de instalar.',
