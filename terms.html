@@ -59,6 +59,9 @@
   <meta name="twitter:image" content="https://bubbletranslate.app/downloads/video/poster.jpg">
   <meta name="twitter:title" content="Terms of Service — bubbleTranslate">
   <meta name="twitter:description" content="The terms you agree to when you use bubbleTranslate or buy a Pro licence: what the app does, what a licence covers, and what we do and do not promise.">
+  <!-- AdSense requests nothing until consent.js says consent was given:
+       unpaused, it sets Google's ad cookie before anyone is asked. -->
+  <script>(window.adsbygoogle = window.adsbygoogle || []).pauseAdRequests = 1;</script>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4957515354749245"
      crossorigin="anonymous"></script>
 </head>
@@ -233,6 +236,6 @@
   </footer>
 
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
-  <script src="/consent.js?v=20260926b"></script>
+  <script src="/consent.js?v=20261022a"></script>
 </body>
 </html>

@@ -78,6 +78,9 @@
     ]
   }
   </script>
+  <!-- AdSense requests nothing until consent.js says consent was given:
+       unpaused, it sets Google's ad cookie before anyone is asked. -->
+  <script>(window.adsbygoogle = window.adsbygoogle || []).pauseAdRequests = 1;</script>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4957515354749245"
      crossorigin="anonymous"></script>
 </head>
@@ -597,6 +600,6 @@ sudo pacman -S tesseract tesseract-data-spa</code></pre>
   </footer>
 
   <script src="/script.js?v=20261020-extensions"></script>
-  <script src="/consent.js?v=20260926b"></script>
+  <script src="/consent.js?v=20261022a"></script>
 </body>
 </html>

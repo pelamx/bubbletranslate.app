@@ -56,7 +56,15 @@
         ad_personalization: value, analytics_storage: value
       });
     }
-    if (value === 'granted') keepClickIds();
+    if (value === 'granted') { keepClickIds(); allowAds(); }
+  }
+
+  // Every page loads AdSense paused (the line above its tag in <head>):
+  // running freely it sets Google's ad cookie before anyone has answered.
+  // It is let go only on a "granted" -- from this banner or from Google's.
+  function allowAds() {
+    window.adsbygoogle = window.adsbygoogle || [];
+    window.adsbygoogle.pauseAdRequests = 0;
   }
 
   function show() {
@@ -108,7 +116,7 @@
     try { return JSON.parse(sessionStorage.getItem('bt-click') || '{}'); } catch (e) { return {}; }
   }
 
-  if (stored() === 'granted') keepClickIds();
+  if (stored() === 'granted') { keepClickIds(); allowAds(); }
 
   document.addEventListener('click', function (e) {
     var a = e.target.closest && e.target.closest('a[href]');
