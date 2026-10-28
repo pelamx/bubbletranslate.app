@@ -20,12 +20,12 @@ if (y) y.textContent = new Date().getFullYear();
 const I18N = {
   en: {
     'meta.title': 'bubbleTranslate — Translate all selectable text without leaving your desktop',
-    'meta.desc': 'bubbleTranslate is a lightweight desktop app for macOS, Windows and Linux. Select text in any app and a bubble appears at your cursor with the translation. 10 free translations a day; go unlimited with Pro from $2/month.',
+    'meta.desc': 'bubbleTranslate is a lightweight desktop app for macOS, Windows and Linux. Select text in any app and a bubble appears at your cursor with the translation. 3 free a day of each feature; go unlimited with Pro from $2/month.',
 
     // -- /pricing -----------------------------------------------------------
     'pricing.meta.title': 'Pricing — bubbleTranslate',
-    'pricing.meta.desc': 'bubbleTranslate is free for 10 translations a day. Pro removes the daily limit for $2 a month or $20 a year, on up to three machines.',
-    'pricing.h1': 'Free to use. Pro when ten a day is not enough.',
+    'pricing.meta.desc': 'bubbleTranslate is free for 3 translations, 3 screen boxes and 3 whole screens a day. Pro removes the daily limit for $2 a month or $20 a year, on up to three machines.',
+    'pricing.h1': 'Free to use. Pro when three a day is not enough.',
     'pricing.sub': 'Every feature is in the free version. Pro changes exactly one thing: it removes the daily limit.',
     'pricing.counts.h3': 'What counts as a translation',
     'pricing.counts.p': 'Only a translation you asked for and actually got back. Re-selecting text you already translated today is free, a failed request costs nothing, and switching the target language on a result you have already seen does not charge you twice. The count resets at your own midnight, not at UTC.',
@@ -57,12 +57,12 @@ const I18N = {
     'foot.rights': 'All rights reserved.',
     'nav.cta': 'Get the app',
 
-    'hero.pill': '🫧 Desktop app for macOS, Windows &amp; Linux · 10 free translations a day',
+    'hero.pill': '🫧 Desktop app for macOS, Windows &amp; Linux · 3 free a day of each feature',
     'hero.h1': 'Translate anything you can read <span class="grad">without leaving your desktop.</span>',
     'hero.lead': 'No interruption while reading anymore. Stop copy-pasting text into Google Translate. <b>Hold Alt (Option on a Mac) and select text or double-click a word</b>, and read the translation right where you are.',
     'hero.dlfree': '↓ Download free',
     'hero.see': 'See how it works',
-    'hero.note': 'Ad-free · 10 translations a day · Pro from $2/month for unlimited',
+    'hero.note': 'Ad-free · 3 free a day of each feature · Pro from $2/month for unlimited',
     'video.caption': '▶ A real screen recording — select text, read the bubble.',
     'themes.head.h2': 'Make it yours with themes',
     'themes.head.p': 'Choose a look that matches your desktop. The bubble and the app follow the theme you pick.',
@@ -122,7 +122,7 @@ const I18N = {
     'how.ocr.play': 'Play the demo',
     'page.kicker': 'New',
     'page.h2': 'Still not enough? Translate the whole page in one keystroke.',
-    'page.p': 'A website, a PDF, a terminal, a game, an app nobody ever translated — press <b>⌘⇧F</b> on a Mac or <b>Ctrl+Shift+F</b> on Windows and Linux, and every paragraph on your screen turns into your language, right where it was. Same layout, same font, same size, same colours: it looks as if it had been written in your language. Code and file names stay untouched. Any key or a click brings the original back. Three free screen translations a day; unlimited with Pro.',
+    'page.p': 'A website, a PDF, a terminal, a game, an app nobody ever translated — press <b>⌘⇧F</b> on a Mac or <b>Ctrl+Shift+F</b> on Windows and Linux, and every paragraph on your screen turns into your language, right where it was. Same layout, same font, same size, same colours: it looks as if it had been written in your language. Code and file names stay untouched. Any key or a click brings the original back. Three free whole-screen translations a day; unlimited with Pro.',
     'page.caption': '▶ A whole screen translated in one keystroke, in the app.',
     'how.pic.h3': 'And when the words are a picture',
     'how.pic.p': 'Some text cannot be selected at all: a screenshot, a scanned page, a video, a game. There is nothing to highlight, so there is nothing to translate — until you draw a box around it instead.',
@@ -160,11 +160,11 @@ const I18N = {
     'priv.arch.foot': 'The one time we learn anything is a Pro purchase. Paddle takes the payment, so your card details never reach us. The licence service keeps your email, the status and end date of your licence, and one device id per machine so that the three-machine limit can work. Not even your licence key is stored — only an irreversible hash of it. What you translate is never part of any of it.',
 
     'price.head.h2': 'Simple pricing',
-    'price.head.p': 'Start free with 10 translations a day. Go unlimited when you need more.',
+    'price.head.p': 'Start free with 3 translations, 3 screen boxes and 3 whole screens a day. Go unlimited when you need more.',
     'price.free.h3': 'Free',
     'price.free.per': 'forever',
     'price.free.tag': 'For light, everyday reading.',
-    'price.free.1': '✓ <b>10 translations per day</b>',
+    'price.free.1': '✓ <b>3 translations, 3 screen boxes and 3 whole screens a day</b>',
     'price.free.2': '✓ Works wherever you can select text',
     'price.free.3': '✓ Automatic provider fallback',
     'price.free.4': '✓ Bubble at your cursor, menu bar / tray',
@@ -183,7 +183,7 @@ const I18N = {
     'price.pro.cta': 'Upgrade to Pro',
 
     'dl.head.h2': 'Download bubbleTranslate',
-    'dl.head.p': 'Free to install, with 10 translations a day. Upgrade to Pro anytime for unlimited.',
+    'dl.head.p': 'Free to install, with 3 free a day of each feature. Upgrade to Pro anytime for unlimited.',
     'dl.mac.desc': 'Universal · Apple Silicon &amp; Intel · macOS 11 or later · 15&nbsp;MB',
     'dl.mac.btn': 'Download DMG',
     'dl.mac.run': 'Open the DMG and drag the app into Applications.',
@@ -236,7 +236,7 @@ const I18N = {
     'faq.head.h2': 'Frequently asked questions',
     'faq.head.p': 'Everything worth knowing before you install.',
     'faq.q1': 'Is bubbleTranslate free?',
-    'faq.a1': 'Yes. You get 10 translations a day for free, on macOS, Windows and Linux, with no account or sign-up. If you need more, Pro removes the daily limit for $2/month or $20/year.',
+    'faq.a1': 'Yes. Every day you get 3 translations of selected text, 3 screen boxes and 3 whole screens for free, on macOS, Windows and Linux, with no account or sign-up. If you need more, Pro removes the daily limit for $2/month or $20/year.',
     'faq.q2': 'What do I get with Pro?',
     'faq.a2': 'Unlimited translations on up to three machines, for $2/month or $20/year (the yearly plan is two months free). One licence key covers all your machines, and it supports the app\'s ongoing development.',
     'faq.q3': 'How do I pay for Pro?',
@@ -263,12 +263,12 @@ const I18N = {
 
   tr: {
     'meta.title': 'bubbleTranslate — Masaüstünüzden ayrılmadan seçtiğiniz metni çevirin',
-    'meta.desc': 'bubbleTranslate, macOS, Windows ve Linux için hafif bir masaüstü uygulamasıdır. Herhangi bir uygulamada metin seçin; imlecinizin yanında çevirisiyle bir baloncuk belirir. Günde 10 ücretsiz çeviri; sınırsız için Pro aylık $2\'den başlar.',
+    'meta.desc': 'bubbleTranslate, macOS, Windows ve Linux için hafif bir masaüstü uygulamasıdır. Herhangi bir uygulamada metin seçin; imlecinizin yanında çevirisiyle bir baloncuk belirir. Her özellik günde 3 ücretsiz; sınırsız için Pro aylık $2\'den başlar.',
 
     // -- /pricing -----------------------------------------------------------
     'pricing.meta.title': 'Fiyatlandırma — bubbleTranslate',
-    'pricing.meta.desc': 'bubbleTranslate günde 10 çeviriye kadar ücretsiz. Pro, günlük sınırı kaldırır: ayda 2 dolar veya yılda 20 dolar, üç makineye kadar.',
-    'pricing.h1': 'Kullanması ücretsiz. Günde on yetmediğinde Pro var.',
+    'pricing.meta.desc': 'bubbleTranslate\'te her özellik günde 3 kez ücretsiz. Pro, günlük sınırı kaldırır: ayda 2 dolar veya yılda 20 dolar, üç makineye kadar.',
+    'pricing.h1': 'Kullanması ücretsiz. Günde üç yetmediğinde Pro var.',
     'pricing.sub': 'Bütün özellikler ücretsiz sürümde. Pro tek bir şeyi değiştirir: günlük sınırı kaldırır.',
     'pricing.counts.h3': 'Ne çeviri sayılır',
     'pricing.counts.p': 'Yalnızca sizin istediğiniz ve gerçekten dönen bir çeviri. Bugün zaten çevirdiğiniz bir metni yeniden seçmek ücretsizdir, başarısız istek hiçbir şeye mal olmaz, gördüğünüz bir sonucun hedef dilini değiştirmek de iki kez saymaz. Sayaç UTC\'de değil, sizin gece yarınızda sıfırlanır.',
@@ -300,12 +300,12 @@ const I18N = {
     'foot.rights': 'Tüm hakları saklıdır.',
     'nav.cta': 'Uygulamayı al',
 
-    'hero.pill': '🫧 macOS, Windows ve Linux için masaüstü uygulaması · günde 10 ücretsiz çeviri',
+    'hero.pill': '🫧 macOS, Windows ve Linux için masaüstü uygulaması · her özellik günde 3 ücretsiz',
     'hero.h1': '<span class="grad">Masaüstünüzden ayrılmadan</span> okuduğunuz her şeyi çevirin.',
     'hero.lead': 'Okurken artık copy/paste dikkatinizi dağıtmayacak. Metinleri Google Translate\'e kopyalayıp yapıştırmayı bırakın. <b>Alt\'ı (Mac\'te Option) basılı tutup metni seçin ya da bir kelimeye çift tıklayın</b> ve çeviriyi tam olduğunuz yerde okuyun.',
     'hero.dlfree': '↓ Ücretsiz indir',
     'hero.see': 'Nasıl çalıştığını gör',
-    'hero.note': 'Reklamsız · günde 10 çeviri · sınırsız için Pro aylık $2\'den',
+    'hero.note': 'Reklamsız · her özellik günde 3 ücretsiz · sınırsız için Pro aylık $2\'den',
     'video.caption': '▶ Gerçek bir ekran kaydı — metni seçin, baloncuğu okuyun.',
     'themes.head.h2': 'Temalarla kendinize göre ayarlayın',
     'themes.head.p': 'Masaüstünüze uyan bir görünüm seçin. Baloncuk ve uygulama, seçtiğiniz temayı izler.',
@@ -365,7 +365,7 @@ const I18N = {
     'how.ocr.play': 'Demoyu oynat',
     'page.kicker': 'Yeni',
     'page.h2': 'Bunlar da yetmez mi? Tüm sayfayı tek tuşla çevir.',
-    'page.p': 'Bir web sitesi, bir PDF, bir terminal, bir oyun, hiç çevrilmemiş bir uygulama — Mac\'te <b>⌘⇧F</b>, Windows ve Linux\'ta <b>Ctrl+Shift+F</b> tuşlarına bas, ekrandaki her paragraf olduğu yerde senin dilinde olsun. Aynı düzen, aynı yazı tipi, aynı boyut, aynı renkler: sanki baştan senin dilinde yazılmış gibi. Kod ve dosya adları olduğu gibi kalır. Bir tuş ya da tık orijinali geri getirir. Günde üç ekran çevirisi ücretsiz; Pro ile sınırsız.',
+    'page.p': 'Bir web sitesi, bir PDF, bir terminal, bir oyun, hiç çevrilmemiş bir uygulama — Mac\'te <b>⌘⇧F</b>, Windows ve Linux\'ta <b>Ctrl+Shift+F</b> tuşlarına bas, ekrandaki her paragraf olduğu yerde senin dilinde olsun. Aynı düzen, aynı yazı tipi, aynı boyut, aynı renkler: sanki baştan senin dilinde yazılmış gibi. Kod ve dosya adları olduğu gibi kalır. Bir tuş ya da tık orijinali geri getirir. Günde üç tüm ekran çevirisi ücretsiz; Pro ile sınırsız.',
     'page.caption': '▶ Tüm ekran tek tuşla çevriliyor, uygulamanın içinde.',
     'how.pic.h3': 'Ya yazı bir resimse',
     'how.pic.p': 'Bazı yazılar hiç seçilemez: ekran görüntüsü, taranmış sayfa, video, oyun. Seçilecek bir şey olmayınca çevrilecek bir şey de olmaz — ta ki etrafına bir kutu çizene kadar.',
@@ -403,11 +403,11 @@ const I18N = {
     'priv.arch.foot': 'Bir şey öğrendiğimiz tek an Pro satın alımı. Ödemeyi Paddle alır; kart bilgileriniz bize hiç ulaşmaz. Lisans servisi e-postanızı, lisansınızın durumunu ve bitiş tarihini, bir de üç makine sınırı işleyebilsin diye makine başına bir cihaz kimliği tutar. Lisans anahtarınız bile saklanmaz — yalnızca geri döndürülemez bir özeti tutulur. Çevirdiğiniz metin bunların hiçbirine dahil değildir.',
 
     'price.head.h2': 'Basit fiyatlandırma',
-    'price.head.p': 'Günde 10 çeviriyle ücretsiz başlayın. Daha fazlası gerektiğinde sınırsıza geçin.',
+    'price.head.p': 'Günde 3 metin çevirisi, 3 ekran kutusu ve 3 tüm ekranla ücretsiz başlayın. Daha fazlası gerektiğinde sınırsıza geçin.',
     'price.free.h3': 'Ücretsiz',
     'price.free.per': 'sonsuza dek',
     'price.free.tag': 'Günlük, hafif okumalar için.',
-    'price.free.1': '✓ <b>Günde 10 çeviri</b>',
+    'price.free.1': '✓ <b>Günde 3 metin çevirisi, 3 ekran kutusu, 3 tüm ekran</b>',
     'price.free.2': '✓ Metin seçebildiğiniz her yerde çalışır',
     'price.free.3': '✓ Otomatik sağlayıcı geçişi',
     'price.free.4': '✓ İmlecinizde baloncuk, menü çubuğu / tepsi',
@@ -426,7 +426,7 @@ const I18N = {
     'price.pro.cta': 'Pro\'ya geç',
 
     'dl.head.h2': 'bubbleTranslate\'i indirin',
-    'dl.head.p': 'Kurulumu ücretsiz, günde 10 çeviriyle. Sınırsız için istediğiniz zaman Pro\'ya geçin.',
+    'dl.head.p': 'Kurulumu ücretsiz, her özellik günde 3 kez ücretsiz. Sınırsız için istediğiniz zaman Pro\'ya geçin.',
     'dl.mac.desc': 'Universal · Apple Silicon ve Intel · macOS 11 veya üzeri · 15&nbsp;MB',
     'dl.mac.btn': 'DMG indir',
     'dl.mac.run': 'DMG\'yi açın ve uygulamayı Applications klasörüne sürükleyin.',
@@ -479,7 +479,7 @@ const I18N = {
     'faq.head.h2': 'Sıkça sorulan sorular',
     'faq.head.p': 'Kurmadan önce bilmeye değer her şey.',
     'faq.q1': 'bubbleTranslate ücretsiz mi?',
-    'faq.a1': 'Evet. macOS, Windows ve Linux\'ta, hesap veya kayıt olmadan günde 10 ücretsiz çeviri alırsınız. Daha fazlası gerekirse Pro, günlük sınırı $2/ay veya $20/yıl karşılığında kaldırır.',
+    'faq.a1': 'Evet. macOS, Windows ve Linux\'ta, hesap veya kayıt olmadan her gün 3 metin çevirisi, 3 ekran kutusu ve 3 tüm ekran çevirisini ücretsiz alırsınız. Daha fazlası gerekirse Pro, günlük sınırı $2/ay veya $20/yıl karşılığında kaldırır.',
     'faq.q2': 'Pro ile ne elde ederim?',
     'faq.a2': 'En fazla üç makinede sınırsız çeviri, $2/ay veya $20/yıl karşılığında (yıllık planda iki ay bedava). Tek lisans anahtarı tüm makinelerinizi kapsar ve uygulamanın sürekli gelişimini destekler.',
     'faq.q3': 'Pro için nasıl ödeme yaparım?',
@@ -506,12 +506,12 @@ const I18N = {
 
   es: {
     'meta.title': 'bubbleTranslate — Traduce cualquier texto seleccionable sin salir de tu escritorio',
-    'meta.desc': 'bubbleTranslate es una ligera app de escritorio para macOS, Windows y Linux. Selecciona texto en cualquier app y aparece una burbuja junto al cursor con la traducción. 10 traducciones gratis al día; pásate a ilimitado con Pro desde $2/mes.',
+    'meta.desc': 'bubbleTranslate es una ligera app de escritorio para macOS, Windows y Linux. Selecciona texto en cualquier app y aparece una burbuja junto al cursor con la traducción. 3 gratis al día de cada función; pásate a ilimitado con Pro desde $2/mes.',
 
     // -- /pricing -----------------------------------------------------------
     'pricing.meta.title': 'Precios — bubbleTranslate',
-    'pricing.meta.desc': 'bubbleTranslate es gratis con 10 traducciones al día. Pro quita el límite diario por 2 $ al mes o 20 $ al año, en hasta tres equipos.',
-    'pricing.h1': 'Gratis para usar. Pro cuando diez al día no bastan.',
+    'pricing.meta.desc': 'bubbleTranslate es gratis con 3 usos al día de cada función. Pro quita el límite diario por 2 $ al mes o 20 $ al año, en hasta tres equipos.',
+    'pricing.h1': 'Gratis para usar. Pro cuando tres al día no bastan.',
     'pricing.sub': 'Todas las funciones están en la versión gratuita. Pro cambia exactamente una cosa: quita el límite diario.',
     'pricing.counts.h3': 'Qué cuenta como traducción',
     'pricing.counts.p': 'Solo una traducción que pediste y que realmente llegó. Volver a seleccionar un texto que ya tradujiste hoy es gratis, una petición fallida no cuesta nada, y cambiar el idioma de destino de un resultado que ya viste no se cobra dos veces. El contador se reinicia a tu medianoche, no a la de UTC.',
@@ -543,12 +543,12 @@ const I18N = {
     'foot.rights': 'Todos los derechos reservados.',
     'nav.cta': 'Descargar la app',
 
-    'hero.pill': '🫧 App de escritorio para macOS, Windows y Linux · 10 traducciones gratis al día',
+    'hero.pill': '🫧 App de escritorio para macOS, Windows y Linux · 3 gratis al día de cada función',
     'hero.h1': 'Traduce cualquier cosa que puedas leer <span class="grad">sin salir de tu escritorio.</span>',
     'hero.lead': 'Se acabaron las interrupciones mientras lees. Deja de copiar y pegar texto en Google Translate. <b>Mantén pulsada la tecla Alt (Option en Mac) y selecciona el texto o haz doble clic en una palabra</b> para leer la traducción justo donde estás.',
     'hero.dlfree': '↓ Descargar gratis',
     'hero.see': 'Mira cómo funciona',
-    'hero.note': 'Sin anuncios · 10 traducciones al día · Pro desde $2/mes para ilimitado',
+    'hero.note': 'Sin anuncios · 3 gratis al día de cada función · Pro desde $2/mes para ilimitado',
     'video.caption': '▶ Una grabación de pantalla real: selecciona texto, lee la burbuja.',
     'themes.head.h2': 'Adáptalo con temas',
     'themes.head.p': 'Elige un aspecto que combine con tu escritorio. La burbuja y la app siguen el tema que elijas.',
@@ -608,7 +608,7 @@ const I18N = {
     'how.ocr.play': 'Reproducir la demo',
     'page.kicker': 'Nuevo',
     'page.h2': '¿Aún no es suficiente? Traduce la página entera con una sola tecla.',
-    'page.p': 'Una web, un PDF, una terminal, un juego, una app que nadie tradujo — pulsa <b>⌘⇧F</b> en un Mac o <b>Ctrl+Shift+F</b> en Windows y Linux, y cada párrafo de tu pantalla pasa a tu idioma, justo donde estaba. El mismo diseño, la misma letra, el mismo tamaño, los mismos colores: parece escrito en tu idioma desde el principio. El código y los nombres de archivo no se tocan. Cualquier tecla o un clic devuelve el original. Tres traducciones de pantalla gratis al día; ilimitadas con Pro.',
+    'page.p': 'Una web, un PDF, una terminal, un juego, una app que nadie tradujo — pulsa <b>⌘⇧F</b> en un Mac o <b>Ctrl+Shift+F</b> en Windows y Linux, y cada párrafo de tu pantalla pasa a tu idioma, justo donde estaba. El mismo diseño, la misma letra, el mismo tamaño, los mismos colores: parece escrito en tu idioma desde el principio. El código y los nombres de archivo no se tocan. Cualquier tecla o un clic devuelve el original. Tres traducciones de pantalla completa gratis al día; ilimitadas con Pro.',
     'page.caption': '▶ Toda la pantalla traducida con una sola tecla, en la app.',
     'how.pic.h3': 'Y cuando las palabras son una imagen',
     'how.pic.p': 'Hay texto que no se puede seleccionar: una captura, una página escaneada, un vídeo, un juego. Si no hay nada que resaltar, no hay nada que traducir — hasta que dibujas un recuadro a su alrededor.',
@@ -646,11 +646,11 @@ const I18N = {
     'priv.arch.foot': 'Lo único que llegamos a saber es una compra de Pro. Paddle cobra el pago, así que los datos de tu tarjeta nunca nos llegan. El servicio de licencias guarda tu correo, el estado y la fecha de fin de tu licencia, y un identificador de dispositivo por máquina para que funcione el límite de tres equipos. Ni siquiera se guarda tu clave de licencia: solo un hash irreversible de ella. Lo que traduces nunca forma parte de nada de eso.',
 
     'price.head.h2': 'Precios sencillos',
-    'price.head.p': 'Empieza gratis con 10 traducciones al día. Pásate a ilimitado cuando necesites más.',
+    'price.head.p': 'Empieza gratis con 3 traducciones de texto, 3 recuadros y 3 pantallas completas al día. Pásate a ilimitado cuando necesites más.',
     'price.free.h3': 'Gratis',
     'price.free.per': 'para siempre',
     'price.free.tag': 'Para lecturas ligeras del día a día.',
-    'price.free.1': '✓ <b>10 traducciones al día</b>',
+    'price.free.1': '✓ <b>3 traducciones, 3 recuadros y 3 pantallas completas al día</b>',
     'price.free.2': '✓ Funciona allí donde puedas seleccionar texto',
     'price.free.3': '✓ Cambio automático de proveedor',
     'price.free.4': '✓ Burbuja en el cursor, barra de menú / bandeja',
@@ -669,7 +669,7 @@ const I18N = {
     'price.pro.cta': 'Pásate a Pro',
 
     'dl.head.h2': 'Descarga bubbleTranslate',
-    'dl.head.p': 'Instalación gratuita, con 10 traducciones al día. Pásate a Pro cuando quieras para ilimitado.',
+    'dl.head.p': 'Instalación gratuita, con 3 gratis al día de cada función. Pásate a Pro cuando quieras para ilimitado.',
     'dl.mac.desc': 'Universal · Apple Silicon e Intel · macOS 11 o posterior · 15&nbsp;MB',
     'dl.mac.btn': 'Descargar DMG',
     'dl.mac.run': 'Abre el DMG y arrastra la app a Aplicaciones.',
@@ -722,7 +722,7 @@ const I18N = {
     'faq.head.h2': 'Preguntas frecuentes',
     'faq.head.p': 'Todo lo que conviene saber antes de instalar.',
     'faq.q1': '¿bubbleTranslate es gratis?',
-    'faq.a1': 'Sí. Obtienes 10 traducciones al día gratis, en macOS, Windows y Linux, sin cuenta ni registro. Si necesitas más, Pro elimina el límite diario por $2/mes o $20/año.',
+    'faq.a1': 'Sí. Cada día obtienes gratis 3 traducciones de texto, 3 recuadros y 3 pantallas completas, en macOS, Windows y Linux, sin cuenta ni registro. Si necesitas más, Pro elimina el límite diario por $2/mes o $20/año.',
     'faq.q2': '¿Qué obtengo con Pro?',
     'faq.a2': 'Traducciones ilimitadas en hasta tres equipos, por $2/mes o $20/año (el plan anual regala dos meses). Una sola clave de licencia cubre todos tus equipos y apoya el desarrollo continuo de la app.',
     'faq.q3': '¿Cómo pago Pro?',
@@ -836,7 +836,7 @@ if (langSwitch) {
 // One place that maps an OS to its download, so a file that lands here is
 // offered by the whole site at once — the hero button, the pricing CTA and the
 // card all read it.
-// Only the metered build (10 free translations a day, then Pro) is ever
+// Only the metered build (3 free a day of each feature, then Pro) is ever
 // offered. All three are the plain-named metered builds on the app repo's main
 // branch. The Windows build is x86-64 and runs under emulation on an ARM
 // machine, so there is one file for both; `file: null` is what puts an OS back
