@@ -177,8 +177,12 @@
     and keep its cost in check, our server keeps, for each day: a keyed hash of the install identifier, a
     keyed hash of the network the request came from (part of the IP address, never the address itself),
     and with Pro a keyed hash of the subscription's original transaction ID, each with that day's number
-    of requests and their cost. These records are deleted within 7 days. Daily cost totals that identify
-    no one are kept for 90 days.</p>
+    of requests and their cost. These records are deleted within 7 days. If Apple reports a subscription
+    period refunded or revoked, a keyed hash of that period's transaction ID is kept until the period
+    would have ended plus 16 days, so that its signed transaction stops working for this service. Daily
+    cost totals that identify no one are kept for 90 days.</p>
+    <p><strong>Your permission.</strong> The app asks before any screen text goes to our server and
+    Anthropic. Until you allow it, or if you decline, the text goes only to the services in section 2.</p>
     <p><strong>Turning it off.</strong> In the app's settings, switch off "Translate ⌘⇧E and ⌘⇧F with
     Claude Haiku (Anthropic) first". It is also off whenever you add your own DeepL or Anthropic API key,
     and the text then goes to the service you chose, under your own account with it.</p>

@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>bubbleTranslate Support</title>
+<style>
+  :root { color-scheme: light dark; --fg: #1d1d1f; --muted: #6e6e73; --bg: #ffffff; --card: #f5f5f7; --accent: #0066cc; }
+  @media (prefers-color-scheme: dark) {
+    :root { --fg: #f5f5f7; --muted: #a1a1a6; --bg: #1d1d1f; --card: #2c2c2e; --accent: #2997ff; }
+  }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 28px; line-height: 1.2; margin: 0 0 4px; }
+  .sub { color: var(--muted); margin: 0 0 28px; }
+  h2 { font-size: 19px; margin: 32px 0 8px; }
+  .contact { background: var(--card); border-radius: 12px; padding: 16px 18px; }
+  a { color: var(--accent); }
+  kbd { font: inherit; background: var(--card); border-radius: 6px; padding: 1px 6px; }
+  ul { padding-left: 20px; }
+  li { margin: 4px 0; }
+</style>
+</head>
+<body>
+<main>
+  <h1>bubbleTranslate for the Mac App Store</h1>
+  <p class="sub">Support for the App Store edition, listed on the App Store as “bubbleTr4nslate”.</p>
+
+  <div class="contact">
+    <strong>Contact</strong><br>
+    Write to <a href="mailto:pelamx@bubbletranslate.app">pelamx@bubbletranslate.app</a>. Please include your macOS version and what you tried.
+  </div>
+
+  <h2>Getting started</h2>
+  <ul>
+    <li><kbd>⌘⇧E</kbd>: drag a box over any text on the screen. Its translation appears in a bubble under the box. Press <kbd>Esc</kbd> to close the bubble.</li>
+    <li><kbd>⌘⇧F</kbd>: the whole screen is translated in place. Any key or click closes it.</li>
+    <li>The app's window has a Translate box for text you type or paste.</li>
+    <li>The app lives in the menu bar (🌐). Open the window or quit the app from there.</li>
+  </ul>
+
+  <h2>Screen Recording permission</h2>
+  <p>The app needs Screen Recording to read text on the screen. It asks the first time you use a shortcut.</p>
+  <ul>
+    <li>Open System Settings → Privacy &amp; Security → Screen &amp; System Audio Recording (called Screen Recording on macOS 13 and 14), and turn bubbleTranslate on.</li>
+    <li>Then quit the app from its menu bar icon and open it again. macOS applies the permission only after the app is reopened.</li>
+  </ul>
+
+  <h2>Common questions</h2>
+  <ul>
+    <li><strong>A shortcut does nothing.</strong> Another app may already use <kbd>⌘⇧E</kbd> or <kbd>⌘⇧F</kbd>. The buttons in the app's window, “Try it now” and “Translate the screen”, do the same.</li>
+    <li><strong>It says the text is already in English.</strong> Pick another language under Languages → “Translate into”.</li>
+    <li><strong>Free use.</strong> Every day you get 3 screen translations and 3 typed translations. They come back at midnight, your local time.</li>
+  </ul>
+
+  <h2>Pro subscription</h2>
+  <ul>
+    <li>Pro removes the daily limits. You can buy it in the Pro section of the app's window.</li>
+    <li>Manage or cancel it in your <a href="https://apps.apple.com/account/subscriptions">App Store subscriptions</a>.</li>
+    <li>On a new Mac, or after reinstalling, click “Restore Purchases” in the Pro section.</li>
+  </ul>
+
+  <h2>Privacy</h2>
+  <p>The screen is read on your Mac, and the picture never leaves it. The words read from it go to our server and to Anthropic's Claude Haiku only if you allow it when the app asks; you can change this in the app's settings. See the <a href="https://bubbletranslate.app/privacy">privacy policy</a>.</p>
+</main>
+</body>
+</html>
