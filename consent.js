@@ -118,6 +118,27 @@
 
   if (stored() === 'granted') { keepClickIds(); allowAds(); }
 
+  // -- Counting pages ---------------------------------------------------------
+  // Each page tells the licence service it was opened: its path and where the
+  // visitor came from, 'internal' when it was another page here. No cookie,
+  // nothing stored, no identifier -- the same kind of beacon as a download
+  // click, so it needs no consent. Here because every page loads this file.
+  (function countPage() {
+    if (location.hostname !== 'bubbletranslate.app' || !navigator.sendBeacon) return;
+    var q = new URLSearchParams(location.search);
+    var src = q.get('utm_source') || q.get('ref') || '';
+    if (!src) {
+      var from = null;
+      try { from = document.referrer ? new URL(document.referrer) : null; } catch (e) {}
+      src = !from ? 'direct' : from.host === location.host ? 'internal' : from.hostname;
+    }
+    var post = q.get('post');
+    var path = location.pathname + (location.pathname === '/blog' && post ? '?post=' + post : '');
+    try {
+      navigator.sendBeacon('https://api.bubbletranslate.app/v1/view', JSON.stringify({ path: path, src: src }));
+    } catch (e) {}
+  })();
+
   document.addEventListener('click', function (e) {
     var a = e.target.closest && e.target.closest('a[href]');
     if (!a) return;
