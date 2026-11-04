@@ -20,11 +20,11 @@
   var DOWNLOAD = TAG + '/UsaFCKfvq4YdEIqQs95E';
   var CLICK_IDS = ['gclid', 'gbraid', 'wbraid'];
   var TEXT = {
-    en: { msg: 'We use Google Ads cookies to measure whether our ads work. They are off unless you allow them.',
+    en: { msg: 'We use Google Ads and Google Analytics cookies to measure whether our ads work and which pages people visit. They are off unless you allow them.',
           accept: 'Allow', reject: 'Decline', more: 'Privacy Policy' },
-    tr: { msg: 'Reklamlarımızın işe yarayıp yaramadığını ölçmek için Google Ads çerezleri kullanıyoruz. İzin vermediğiniz sürece kapalıdır.',
+    tr: { msg: 'Reklamlarımızın işe yarayıp yaramadığını ve hangi sayfaların ziyaret edildiğini ölçmek için Google Ads ve Google Analytics çerezleri kullanıyoruz. İzin vermediğiniz sürece kapalıdır.',
           accept: 'İzin ver', reject: 'Reddet', more: 'Gizlilik Politikası' },
-    es: { msg: 'Usamos cookies de Google Ads para medir si nuestros anuncios funcionan. Están desactivadas salvo que las permitas.',
+    es: { msg: 'Usamos cookies de Google Ads y Google Analytics para medir si nuestros anuncios funcionan y qué páginas se visitan. Están desactivadas salvo que las permitas.',
           accept: 'Permitir', reject: 'Rechazar', more: 'Política de privacidad' }
   };
 
