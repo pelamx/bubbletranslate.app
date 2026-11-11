@@ -126,7 +126,9 @@
   (function countPage() {
     if (location.hostname !== 'bubbletranslate.app' || !navigator.sendBeacon) return;
     var q = new URLSearchParams(location.search);
-    var src = q.get('utm_source') || q.get('ref') || '';
+    // A Google Ads click arrives with a click id and google.com as referrer; without this it reads as search.
+    var src = q.get('utm_source') || q.get('ref') ||
+      (CLICK_IDS.some(function (k) { return q.get(k); }) ? 'google-ads' : '');
     if (!src) {
       var from = null;
       try { from = document.referrer ? new URL(document.referrer) : null; } catch (e) {}

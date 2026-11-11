@@ -1054,7 +1054,8 @@ function trafficSource() {
   const tagOf = (href) => {
     try {
       const q = new URL(href).searchParams;
-      return q.get('utm_source') || q.get('ref') || '';
+      return q.get('utm_source') || q.get('ref') ||
+        (['gclid', 'gbraid', 'wbraid'].some((k) => q.get(k)) ? 'google-ads' : '');
     } catch (e) { return ''; }
   };
   const here = tagOf(location.href);
