@@ -739,3 +739,9 @@ img, video { max-width: 100%; height: auto; }
   .consent-actions { flex: 1 1 100%; }
   .consent-actions .btn { flex: 1; justify-content: center; }
 }
+
+/* A slim strip above the header for our other app. It is not in the header
+   row because that row has no room left: see the note on .nav-links. */
+.sibling { font-size: .8rem; padding: 5px 0; border-bottom: 1px solid var(--border); }
+.sibling a { color: var(--muted); }
+.sibling a:hover { color: var(--text); }
