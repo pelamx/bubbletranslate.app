@@ -740,8 +740,9 @@ img, video { max-width: 100%; height: auto; }
   .consent-actions .btn { flex: 1; justify-content: center; }
 }
 
-/* A slim strip above the header for our other app. It is not in the header
-   row because that row has no room left: see the note on .nav-links. */
-.sibling { font-size: .8rem; padding: 5px 0; border-bottom: 1px solid var(--border); }
-.sibling a { color: var(--muted); }
-.sibling a:hover { color: var(--text); }
+/* Our other app, under the name in the header. Under it rather than beside
+   it because the row has no room left: see the note on .nav-links. */
+.brand-group { display: flex; flex-direction: column; gap: 3px; }
+.sibling { display: flex; align-items: center; gap: 6px; font-weight: 600; font-size: .9rem; white-space: nowrap; }
+.sibling img { width: 22px; height: 22px; border-radius: 6px; }
+.sibling:hover { color: var(--brand); }
